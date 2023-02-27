@@ -1,0 +1,120 @@
+@bgm 메인03
+@back JianRoomDay
+@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+N: 좀 괜찮아?
+N: 오늘은 집에 있어 내가 예배 가서 공무원 오빠나... 아무튼 그 사람 불러줄테니까
+@hide N
+
+@printer Narration wait:false
+어젯밤 사색이 되어 집에 돌아온 나를 보며 나연이는 집이 떠나가라 비명을 질렀다
+이장님과의 일을 이야기 하니 나연이는 아무 말 없이 연신 내 등을 쓸어내렸다
+J: 자고 일어나니까 좀 괜찮아, 결 씨를 좀 만나야할 것 같아 아니면 다함 씨나...
+
+@printer Narration wait:false
+창문을 통해 하늘을 보니 금방이라도 비가 올 것 같은 날씨였다
+J: 비가 오겠네
+J: 안 그래도 심란한데 더 심란하게...
+@char N.Face>짜증,Body>팔짱 position:0,-13.5 scale:1
+N: 무슨 소리야? 절대 비 오면 안돼
+J: 응? 왜?
+N: 우산이 하나 밖에 없었는데 망가졌어
+N: 회관에 남아돌던데 하나 가져와야지 해놓고 며칠 째 까먹는 바람에...
+@char N.Face>기본,Body>기본
+N: 아무튼, 나 예배 갔다가 일손 돕고 바로 올 거야
+@char N.Face>기본,Body>팔짱
+N: 너 당분간 나돌아다닐 생각 하지마
+J: 응, 알겠어
+@char N.Face>짜증,Body>팔짱
+N: 너 안색이 곧 죽어도 이상하지 않을 것 같거든? 
+N: 내 집에서 상 치르기 싫으니까 절~대 돌아다니면 안돼
+J: 네~ 잘 알겠어요
+@char N.Face>기본,Body>기본
+N: 집 밖으로 나오지 말고 꼭 집 안에서 있어
+N: 그렇다고 집 안에서 돌아다니란 말은 아니야, 가만히 누워있어 오늘은
+@printer Narration wait:false
+나연이는 잔소리를 1,2절을 넘어 10절까지 하는구나
+@char N.Face>기본,Body>기본
+N: 저녁 전까지는 올 거니까 정말로 절~대 돌아다니지 마
+J: 응! 알겠어! 알겠다고…!
+@printer Narration wait:false
+@hide N
+나연은 현관이 다 울릴 정도로 거세게 문을 닫고 나갔다
+나연이가 올 때까지 다시 잠이나 자야겠다
+@hidePrinter
+
+@back JianRoomDay visible:false time:2
+J: ...
+J: ... ...
+@hidePrinter
+
+;플래시백 (3-8)
+@back HallNight_on
+@stopBgm 메인03
+@bgm 심각2
+;이장님 CUT
+@wait i
+@back HallNight_on visible:false
+; 플래시백 (3-8) out
+
+@spawn ShakePrinter wait:false
+J: !!!
+@back JianRoomNight
+J: 헉… 허억…!
+J: …꿈인가?
+@printer Narration wait:false
+잠옷이 흠뻑 젖어있었다
+일어나 불을 켜고 싶었지만 손가락 하나 까딱할 수 없었다
+J: 심호흡… 심호흡…
+@printer Narration wait:false
+숫자를 세며 천천히 숨을 내쉬니 마음이 진정되기 시작했다
+J: …
+J: …지금 몇 시지?
+@printer Narration wait:false
+창 밖을 보니 캄캄한데, 나연이는 들어 온 건가?
+그래도 하루종일 자서 그런가, 기운이 조금 돌아오는 기분이다
+J: 폰은 또 어딨나 몰라, 캐리어 어디에 넣어놨던 거 같은데…
+@printer Narration wait:false
+가방을 뒤적여 핸드폰을 꺼냈다
+J: 8시 55분?
+J: 나연인 들어왔나?
+J: 나연이 방에 다녀와야겠어
+@hidePrinter
+@back JianRoomNight visible:false time:1
+
+@back JianRoomNight visible:true time:1
+@printer Narration wait:false
+나연의 방은 텅 비어있었다
+아리송한 기분으로 방으로 돌아와 창 밖을 보니, 부슬부슬 비가 내리고 있었다
+J: 아까 나연이가 우산 없다고 했는데...
+J: 아, 맞다!
+J: 나 캐리어에 우산 있었지!
+
+@hidePrinter
+@back JianRoomNight visible:false wait:false
+@back StreetNight
+; 비오는 효과
+;빗소리
+J: 얘는 시간이 몇 신데 안 오는 거야…
+J: 일단 마을 어귀에서 기다려봐야겠다
+@printer Narration wait:false
+나는 마을 어귀를 향해 걷기 시작했다
+@hidePrinter
+
+;플래시백 (3-9)
+@back StreetNight visible:false wait:false
+@back JianRoomDay
+@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+N: 아무튼, 나 예배 마치고 일손 돕고 바로 올 거야
+N: 저녁 전까지는 올 거니까 정말로 절~대 돌아다니지 마
+@hidePrinter
+@hide N
+@back JianRoomDay visible:false wait:false
+@back StreetNight
+;플래시백 (3-9) out
+
+@printer Narration wait:false
+달이 비구름에 가려진 채 모습을 드러내지 않던 밤이었다
+
+@hidePrinter
+@back StreetNight visible:false time:1
+@endscript

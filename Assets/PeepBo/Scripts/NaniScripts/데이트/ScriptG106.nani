@@ -1,0 +1,305 @@
+@back HallNight_on
+@bgm 메인03
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+@printer Narration time:0
+막 테이블 정리를 끝낸 마을회관
+이만 집으로 돌아가려는 채비를 하는데 누군가 나를 불러세웠다
+@char G.Face>거만,Body>기본 position:-0.5,-15.5
+G: 데려다줄게, 따라와
+@printer Narration time:0
+@sfx 숨
+어느 새 내게로 다가온 고결이 고개짓했다
+@char G.Face>기본,Body>기본
+J: 저도 혼자 갈 수 있는데요?
+@char G.Face>비웃음,Body>기본
+G: 갈 수는 있겠지
+G: 괜히 헤매다가 엄한 곳 가서 울고있을 수도 있고
+@spawn ShakeBackground wait:false
+J: 우, 울긴 누가...!
+@char G.Face>기본,Body>팔짱
+G: 아까부터 계속 하품 하던데, 걷다가 잠들기도 하냐?
+J: 그게 무슨 질문이에요? 제가 무슨 어린애도 아니고...?
+@char G.Face>비웃음,Body>팔짱
+G: 다행이네
+@sfx 슝
+@char G.Face>무표정,Body>팔짱 position:-0.5,-23 scale:1.3
+G: 널 어떻게 업고 가야 할 지 잠깐 고민했거든
+G: 사람을 짊어져 본 건 유도할 때 밖에 없어서
+@char G.Face>기본,Body>기본 position:-0.5,-15.5 scale:1
+J: .....그거랑은 많이 다르지 않아요?
+J: 아니 애초에 제가 왜 길에서 잠든....
+@printer Narration time:0
+결은 시끄럽다는 듯 새끼 손가락으로 귀를 후비더니
+@sfx 발소리
+@hide G time:0
+@char Silhouette.G scale:1.2 position:-0.5,-15
+기다란 다리로 성큼성큼 마을회관을 빠져나갔다
+J: 저기요! 데려다준다면서요?!
+@printer Narration time:0
+나는 그의 뒤를 따라붙으며 소리쳤다
+@hide Silhouette time:0
+@char G.Face>비웃음,Body>기본 position:-0.5,-15.5
+G: 잘 따라오고 있네
+@printer Narration time:0
+...어쩜 사람이 저렇게 뻔뻔하지?
+@hide G
+@hidePrinter
+
+@back HallNight_on visible:false time:0
+@back StreetNight
+@char G.Face>기본,Body>기본 position:-0.5,-15.5
+결과 티격태격하면서 걷다보니
+; 파티클 효과-반딧불처럼
+희미한 가로등이 듬성듬성 비치는 골목이 나왔다
+@sfx 풀벌레
+섬 자체에 꽃이 많아서 그런지 곳곳에 풀벌레 소리가 선명히 들려왔다 
+J: 새삼 정말 아름다운 섬이네요
+J: 생각보다 더 캄캄하긴 하지만
+; 파티클 효과 out
+@stopSfx 풀벌레
+J: 파도 소리와 풀벌레 소리가 함께 들리는 길이라니...
+; @sfx 타자
+@char G.Face>무표정,Body>기본
+G: ....
+J: 그나저나 결 씨는 여기서 꽤 오래 머물었던 모양인데
+@startchoice 0
+@choice "혼자 걸으면서 무슨 생각하세요?" goto:.a
+@choice "길 잃어본 적 있으세요?" goto:.b
+@hidePrinter
+@stop
+
+#a
+J: 이런 곳에서 산책하고 있으면 막 영감이 떠오르고
+J: 없던 예술혼도 불타오를 것 같거든요
+J: 결 씨는 안 그래요?
+@goto .con1
+#b
+J: 섬에 온 지 얼마 안됐을 때는 골목이 좀 헷갈렸죠?
+J: 제가 길치라서 하는 소리가 아니고~
+J: 골목이 다 비슷하게 생겨서 한번쯤 길을 잃을 수도 있겠다~ 싶어서요
+
+#con1
+; @sfx 타자
+@char G.Face>무표정,Body>팔짱
+G: 어어
+J: ....
+@char G.Face>무표정,Body>기본
+G: ....
+; @stopSfx 타자
+J: ...저기요? 그렇게 자꾸 폰만 들여다볼 거예요?
+@printer Narration time:0
+나는 그를 째려보며 물었다
+@char G.Face>기본,Body>기본
+데려다준다더니 아까부터 제대로 된 대답도 없이 핸드폰만 두드리던 그였다
+인터넷도 안 터지는 곳에서 뭘 저렇게 열심히 치고 있는거야?
+나는 까치발을 들어 그의 핸드폰 화면을 훔쳐봤다
+J: ...메모장?
+@sfx 슝
+@char G.Face>찡그림,Body>기본 position:-0.5,-23 scale:1.3
+@spawn ShakeBackground wait:false
+G: 야야, 뭘 봐!
+@printer Narration time:0
+@char G.Face>찡그림,Body>기본 position:-0.5,-15.5 scale:1
+그러자 결이 도둑질을 들킨 사람처럼 황급히 핸드폰 화면을 껐다
+저렇게 당황해하는 모습은 처음이었다
+J: 난 또 특별한 거라도 하나 했더니
+J: 뭘 그렇게 구구절절 적고 있어요? 일기라도 써요?
+@sfx 슝
+@char G.Face>무표정,Body>손머리 position:-0.5,-23 scale:1.3
+G: 아니거든?
+@char G.Face>무표정,Body>손머리 position:-0.5,-15.5 scale:1
+G: 넌 몰라도 돼
+@char G.Face>기본,Body>손머리
+J: 왜요, 알면 다쳐요?
+@printer Narration time:0
+내가 멈춰서자, 결이 고개를 돌려 날 쳐다봤다
+@char G.Face>거만,Body>팔짱
+G: 어
+@printer Narration time:0
+그의 눈빛을 보니 마냥 장난은 아닌 것 같은데...
+나는 하하 어설프게 웃으며 팔짱을 꼈다
+J: 그런 게 어딨어요? 나 놀리는 거죠?
+@printer Narration time:0
+@char G.Face>비웃음,Body>기본
+그러자 그는 고민하는 기색도 없이 내게 휴대폰을 내밀었다
+G: 그렇게 궁금하면 보여줄까? 내가 뭘 적었는지
+@char G.Face>거만,Body>팔짱
+G: 근데 나는 분명 경고했다? 몰라도 된다고
+@startchoice 1
+@choice "본다" goto:.c
+@choice "안 본다" goto:.d
+@hidePrinter
+@stop
+
+#c
+@printer Narration time:0
+왠지 불안하긴 하지만 궁금하긴 하니까...
+@char G.Face>찡그림,Body>팔짱
+내가 그의 휴대폰을 받아들자 결의 표정이 조금 못마땅해졌다
+@char G.Face>찡그림,Body>손머리
+G: 위험한 상황을 즐기는거야, 아니면 그냥 겁이 없는거야?
+J: 따지자면 둘 다죠
+@char G.Face>무표정,Body>팔짱
+G: 피곤한 녀석이군
+@printer Narration time:0
+그가 뭐라고 궁시렁거리든 나는 침을 한번 꿀꺽 삼킨 뒤
+버튼을 눌러 화면을 켰다
+메모장에 뭘 그렇게 열심히 썼던 걸까
+; 경고음
+<i>비밀번호를 입력하세요</i>
+J: 이거 잠겨있는데...
+@char G.Face>비웃음,Body>기본
+G: 아아. 그건 알아서 풀어야지. 내가 비밀번호까지 알려준단 말은 없었잖아?
+@sfx 슝
+@printer Narration time:0
+결은 씨익 입꼬리를 끌어올리며 휴대폰을 휙 낚아채갔다
+아씨, 당했다
+@goto .con2
+#d
+; +5
+@char G.Face>기본,Body>기본
+J: ...안 볼래요, 그냥
+@printer Narration time:0
+내가 그의 휴대폰을 밀어내자 결이 의외라는 듯 눈썹을 들어올렸다
+@char G.Face>비웃음,Body>기본
+G: 궁금하다며?
+J: 그렇긴한데, 결 씨가 별로 원하는 것 같지도 않고
+J: 또 위험하다고 하니까... 
+J: 전 일부러 사고를 만들어 치는 피곤한 타입은 아니거든요
+@printer Narration time:0
+@char G.Face>거만,Body>팔짱
+결은 휴대폰을 다시 가져가며 씨익 입꼬리를 끌어올렸다
+오늘 본 표정중에 가장 흥미롭다는 얼굴이었다
+J: 게다가 결 씨라면....
+@char G.Face>기본,Body>팔짱
+J: 분명 화면을 이중 삼중으로 잠궈놨겠죠?
+@char G.Face>거만,Body>팔짱
+@spawn ShakeBackground wait:false
+G: 하하하
+@sfx 슝
+@char G.Face>거만,Body>손머리 position:-0.5,-23 scale:1.3
+G: 미치겠군
+@char G.Face>거만,Body>손머리 position:-0.5,-15.5 scale:1
+J: 그게 아니라면 직접 켜서 보여주시던가요
+@spawn ShakeBackground wait:false
+@char G.Face>거만,Body>팔짱
+G: 하하하
+@printer Narration time:0
+한참을 크게 웃던 결은 돌연 내 머리에 큼지막한 손을 얹었다
+@sfx 슝
+@char G.Face>비웃음,Body>팔짱 position:-0.5,-23 scale:1.3
+G: 어디가서 당하진 않겠다, 너
+
+#con2
+@char G.Face>기본,Body>기본 position:-0.5,-15.5 scale:1
+@printer Narration time:0
+이제 좀 대화를 하나 싶었는데, 결은 또다시 홀가분하게 휴대폰을 켰다
+J: 결 씨, 솔직히 말해봐요
+G: 또 뭐를
+J: 솔직히 제가 걱정된 게 아니고
+J: 식사 자리 빠져나가고 싶어서 데려다준다고 한 거죠
+J: 저는 그냥 좋은 핑계거리고?
+@printer Narration time:0
+@char G.Face>거만,Body>팔짱
+결이 휴대폰을 두드리다말고 어이가 없다는 듯 코웃음쳤다
+G: 그게 뭔-
+; 진동
+@char G.Face>당황,Body>팔짱
+@spawn ShakeBackground wait:false
+G: 아악!
+J: 아씨, 깜짝이야! 뭐, 뭐에요!
+@printer Narration time:0
+결이 갑자기 소리를 지르는 바람에 놀라서 쳐다보니
+; 윙윙 - 소리?
+@char G.Face>찡그림,Body>팔짱
+휴대폰 불빛을 따라온 듯한 나방 한 마리가 그의 주위를 날아다니고 있었다
+; 진동
+@char G.Face>당황,Body>손머리 position:-0.5,-23 scale:1.3
+@spawn ShakeBackground wait:false
+G: 야, 야! 이것 좀! 악!
+@char G.Face>당황,Body>손머리 position:-0.5,-15.5 scale:1
+J: 휴대폰을 꺼요!
+@char G.Face>찡그림,Body>손머리
+G: 뭐? 부시라고? 알겠-
+@spawn ShakeBackground wait:false
+J: 아니! 화면을 끄라고!
+@printer Narration time:0
+@hide G time:0
+@char Silhouette.G scale:1.2 position:-0.5,-15
+나는 휴대폰을 땅에 처박으려고 하는 그의 손에서 휴대폰을 뺏었다
+휴대폰 화면을 끄자 곧 나방이 가로등 쪽으로 날아가는 게 보였다
+J: 으휴. 안그래도 캄캄한 공간에 휴대폰 불빛을 환하게 켜두니 벌레가 꼬이죠!
+@hide Silhouette time:0
+@char G.Face>당황,Body>손머리 position:-0.5,-15.5
+G: 헉...허억...갔어...?
+@startchoice 2
+@choice "갔어요" goto:.e
+@choice "아뇨, 아직 있어요" goto:.f
+@hidePrinter
+@stop
+
+#e
+J: 걱정마세요. 이미 날아갔으니까
+@spawn ShakeBackground wait:false
+@char G.Face>비웃음,Body>팔짱
+G: 진짜지? 거짓말이면 가만 안둔다?
+@goto .con3
+#f
+@spawn ShakeBackground wait:false
+J: 아앗! 아직 근처에 있어요!
+J: 어어! 한 마리, 두 마리.. 떼로 몰려와요!
+@spawn ShakeBackground wait:false
+@char G.Face>찡그림,Body>팔짱
+G: 야. 이상한 장난치면 죽는다?
+
+#con3
+@char G.Face>찡그림,Body>기본
+@printer Narration time:0
+사색이 된 결은 어느새 내 뒤에서 소리치고 있었다
+덩치 차이 때문에 방어막 구실도 못 할 내 등 뒤에서...
+방금 전까지 위험하다느니, 알면 다친다느니 겁을 잔뜩 준 사람 어딨어?
+J: ...결 씨
+G: ...
+J: 결 씨?
+@sfx 슝
+@char G.Face>무표정,Body>기본 position:-0.5,-23 scale:1.3
+G: 야... 돌아보지 말고 그대로 계속 걸어
+@printer Narration time:0
+@char G.Face>무표정,Body>기본 position:-0.5,-15.5 scale:1
+자기도 민망한지
+@char G.Face>기본,Body>기본
+내가 고개를 돌리지 못하도록 양 손으로 내 머리를 붙잡은 결이 진지하게 읆조렸다
+J: 풉...
+@sfx 슝
+@char G.Face>찡그림,Body>팔짱 position:-0.5,-23 scale:1.3
+G: 지금 웃었냐...?
+@printer Narration time:0
+뒷통수에서 이를 악문 목소리가 들려왔다
+@char G.Face>찡그림,Body>팔짱 position:-0.5,-15.5 scale:1
+J: 흠흠.. 죄송해요
+J: 근데 벌레가 그렇게 무서워요?
+J: 벌레가 결 씨를 더 무서워할 것 같은데...
+G: 무서운 게 아니고 징그러운 거야. 평범한 구석이 단 한 개도 없어
+J: 많이 무섭구나
+@sfx 슝
+@char G.Face>무표정,Body>팔짱 position:-0.5,-23 scale:1.3
+@spawn ShakeBackground wait:false
+G: 야!
+
+@char G.Face>기본,Body>기본 position:-0.5,-15.5 scale:1
+@back StreetNight position:-8.3,0
+@printer Narration time:0
+결을 놀리는 동안 벌써 집앞에 도착했다
+G: 오늘 일 싹 잊어버리고 잠이나 자라
+J: 네네
+@hide G
+@printer Narration time:0
+@sfx 뛰는_발소리
+결은 휙 돌아서 거의 뛰어가다시피 빠른 걸음으로 사라졌다
+생각보다 재밌는 사람이네?
+
+@hidePrinter
+@back StreetNight visible:false time:2
+@endscript

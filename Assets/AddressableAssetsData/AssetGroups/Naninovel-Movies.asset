@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Naninovel-Movies
+  m_EditorClassIdentifier: 
+  m_GroupName: Naninovel-Movies
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e668b0b20e92a9547bae99a964fa4e8b
+  m_SerializeEntries:
+  - m_GUID: b83e8f7f5ef000e47a1dd278b9d0d0d9
+    m_Address: Naninovel/Movies/WMovie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: a03c97da4bfd167498744cc0a6529ceb
+    m_Address: Naninovel/Movies/DMovie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 04eb28ac0203a3d4ca4b12de1be85337
+    m_Address: Naninovel/Movies/YMovie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: da5448a105b36024b9370f82d6739a56
+    m_Address: Naninovel/Movies/GMovie
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 0fa257604c1504342b3cb6c466eb27da
+    m_Address: Naninovel/Movies/Prologue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f1b98389cf4afe9439b8b40f55cb3ffc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a9244963a9eccef48a008ac23d017ad8, type: 2}
+    - {fileID: 11400000, guid: 2647da28a829d9a44bc533df26c406d7, type: 2}

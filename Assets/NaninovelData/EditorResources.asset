@@ -1,0 +1,919 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06386b10f29c770408fc88b031c4d7fd, type: 3}
+  m_Name: EditorResources
+  m_EditorClassIdentifier: 
+  resourceCategories:
+  - Id: TextPrinters/a8cb01e8-1b1f-46ad-9e1e-2f9468258e0f
+    Resources:
+    - name: Dialogue
+      pathPrefix: TextPrinters
+      guid: b731cf4f0e0d55e4ebd35f3247a9a307
+  - Id: TextPrinters/870cd28a-da03-4493-8e3d-9060490e5f0f
+    Resources:
+    - name: Fullscreen
+      pathPrefix: TextPrinters
+      guid: c87cebd3f0d4f174789cd351ce9591c4
+  - Id: TextPrinters/6845a971-68df-44e7-86f8-70d9c1451d75
+    Resources:
+    - name: Wide
+      pathPrefix: TextPrinters
+      guid: 781828b806deb1e4cbf50ef9de41da10
+  - Id: TextPrinters/83686de4-5174-4401-94cc-8b8c59eaed36
+    Resources:
+    - name: Chat
+      pathPrefix: TextPrinters
+      guid: 0126b92e4ff0f564aaa7a38eae3ef6e7
+  - Id: TextPrinters/c9b77a5a-8218-469a-b901-73233f2148d2
+    Resources:
+    - name: Bubble
+      pathPrefix: TextPrinters
+      guid: b47d9659b2be5ee4e95a776f213c9d4b
+  - Id: TextPrinters/5afd3187-7bcd-432a-9c7b-b784f271cfc8
+    Resources:
+    - name: TMProDialogue
+      pathPrefix: TextPrinters
+      guid: 5838611042eaced44954639c4ea4d81e
+  - Id: TextPrinters/f3a42059-256e-4206-8a5d-05943acc3acb
+    Resources:
+    - name: TMProFullscreen
+      pathPrefix: TextPrinters
+      guid: a2aaa417785eeca409e78c404f333ee5
+  - Id: TextPrinters/52bb5419-e8ec-4b71-b9f0-d11c05077f7a
+    Resources:
+    - name: TMProWide
+      pathPrefix: TextPrinters
+      guid: 7860ef40eae6a3341be02586f7edd980
+  - Id: TextPrinters/738ec401-8196-4751-b1ad-8b0afca5b7f6
+    Resources:
+    - name: TMProChat
+      pathPrefix: TextPrinters
+      guid: 6f9836a3c4f777741b1962979d97e485
+  - Id: TextPrinters/b37cd5bf-adc2-416a-8c22-599a79316983
+    Resources:
+    - name: TMProBubble
+      pathPrefix: TextPrinters
+      guid: 18cfa78b5fc89b745ba69d51a6a8629a
+  - Id: ChoiceHandlers/f1504f4d-1b69-4b5a-ae24-50a9ccc80919
+    Resources:
+    - name: ButtonList
+      pathPrefix: ChoiceHandlers
+      guid: 1f6aa29000e839c409e6a9c0704adc96
+  - Id: ChoiceHandlers/9cd776c9-fe31-462a-94bb-cb2f4f782104
+    Resources:
+    - name: ButtonArea
+      pathPrefix: ChoiceHandlers
+      guid: 4fa6d62f894ae6e4698bfa8af59e7942
+  - Id: Spawn
+    Resources:
+    - name: Animate
+      pathPrefix: Spawn
+      guid: 7bf06fa813bb9c34daf521998fa72ab1
+    - name: DepthOfField
+      pathPrefix: Spawn
+      guid: ea76638b26a915946b62907dd1e776fd
+    - name: DigitalGlitch
+      pathPrefix: Spawn
+      guid: be75a73ecccb90b4caa5c14edb9ac467
+    - name: Rain
+      pathPrefix: Spawn
+      guid: a9117e2fa90704d45b3e1461596c11ee
+    - name: ShakeBackground
+      pathPrefix: Spawn
+      guid: 9f56c556ba32fd54fae62347c25a8145
+    - name: ShakeCamera
+      pathPrefix: Spawn
+      guid: 1c5b86cf3cfbb1f44ae5641699077da4
+    - name: ShakeCharacter
+      pathPrefix: Spawn
+      guid: 1224d69e1592d624cbde93d0f7383d91
+    - name: ShakePrinter
+      pathPrefix: Spawn
+      guid: 2795040988e866646801c80024c50be1
+    - name: Snow
+      pathPrefix: Spawn
+      guid: 9f4e71cb27fffa04486737d2cf8d622d
+    - name: SunShafts
+      pathPrefix: Spawn
+      guid: c4bf810b9b6cc9f44a58fd670678ded4
+    - name: Blur
+      pathPrefix: Spawn
+      guid: e466d9326b30a4b49a3dad428b4d9968
+    - name: RunShake
+      pathPrefix: Spawn
+      guid: 9d85e331c59e8764a82f9f3d8d2cf7cf
+    - name: ShakeRoomBackground_101
+      pathPrefix: Spawn
+      guid: 2faf63c3573a3744f88e9750d7a3e726
+    - name: ShakeRoomBackground_206
+      pathPrefix: Spawn
+      guid: d6635595b2b688c46836701041eb380d
+    - name: HogamEffect
+      pathPrefix: Spawn
+      guid: 1231f5a0bd53ea24385050ffb0468e53
+    - name: GEffect
+      pathPrefix: Spawn
+      guid: e5ed7a19f08d0a14dba00e8b1b99139c
+    - name: WEffect
+      pathPrefix: Spawn
+      guid: fa99c3babda488d4b974d656d64f5ac9
+    - name: DEffect
+      pathPrefix: Spawn
+      guid: 22edeabe5f64f774ab8010b97bb8c6ed
+    - name: YEffect
+      pathPrefix: Spawn
+      guid: a3853124af3d9a44c8037bfa144fe219
+    - name: CloseEyes
+      pathPrefix: Spawn
+      guid: c78ccd7b712242543a2258422b8b98d6
+    - name: OpenEyes
+      pathPrefix: Spawn
+      guid: f9de67df67ed0914fbdab4941bf58c30
+    - name: OpenClose
+      pathPrefix: Spawn
+      guid: 3b39d3e29739e194c9ec7e640c684d1f
+  - Id: UI
+    Resources:
+    - name: ClickThroughPanel
+      pathPrefix: UI
+      guid: 702c32b2de0c0784b9a66ec90601874f
+    - name: BacklogUI
+      pathPrefix: UI
+      guid: e74c2ef535f21ed4086fce2a2dc619e2
+    - name: CGGalleryUI
+      pathPrefix: UI
+      guid: 71da50c8dae82bd42ba67528804e820c
+    - name: ConfirmationUI
+      pathPrefix: UI
+      guid: afcf812068df3634284878e0cb9e4552
+    - name: ContinueInputUI
+      pathPrefix: UI
+      guid: 1add671f8348e8443bcc56290e82fc5e
+    - name: ExternalScriptsUI
+      pathPrefix: UI
+      guid: 671ceb4f549ddf046913d7debf113469
+    - name: LoadingUI
+      pathPrefix: UI
+      guid: 53aad00e5cf184e458adb001c550518a
+    - name: MovieUI
+      pathPrefix: UI
+      guid: f9a211517d1cb1a44964dc2254463049
+    - name: RollbackUI
+      pathPrefix: UI
+      guid: a32c73a3aff4b274c85b3ff16c854b07
+    - name: SaveLoadUI
+      pathPrefix: UI
+      guid: 8d53726b3d08433479398f02b4780e7f
+    - name: SceneTransitionUI
+      pathPrefix: UI
+      guid: e3b234b4273b7f64ab3f1d9fe425ed23
+    - name: SettingsUI
+      pathPrefix: UI
+      guid: 65c37f59e9b266f468dd5381fdc03fc3
+    - name: TipsUI
+      pathPrefix: UI
+      guid: f5aae572225ee1b4c96d1a17fc5cb073
+    - name: TitleUI
+      pathPrefix: UI
+      guid: 4b121aa1be1b7e04480b452c595ff17a
+    - name: VariableInputUI
+      pathPrefix: UI
+      guid: bb95f484e341dcd4391a572f22b7d067
+    - name: PauseUI
+      pathPrefix: UI
+      guid: 480f5db62ea305c46b89a86496d2a0c9
+    - name: Clicker
+      pathPrefix: UI
+      guid: 2b168868baa61f841987f2a8f21554f3
+    - name: StartRoomModeUI
+      pathPrefix: UI
+      guid: 90ebbca669bb9464d9a17315169aee35
+    - name: LeftTopUI
+      pathPrefix: UI
+      guid: 4bfb885f3af2d75439e3bf894c81aac7
+    - name: RightTopUI
+      pathPrefix: UI
+      guid: c3996255676b9de4cb30c8097ce2ad32
+    - name: 1-1RoomPopup
+      pathPrefix: UI
+      guid: ea17e4fa02015bb48868867e8906f88d
+    - name: RoomModeUI
+      pathPrefix: UI
+      guid: 4602ffa6f460e88479fbe8c6a5d596a6
+    - name: NoExitRoomModeUI
+      pathPrefix: UI
+      guid: f3df7abf44c7c864eb21ea17275b86c6
+    - name: ExitRoomModeUI
+      pathPrefix: UI
+      guid: cf958e958def4a947b470929c9223694
+    - name: DockFindUI
+      pathPrefix: UI
+      guid: 5d2c697cc93453f46a30f8685376f76a
+    - name: ForFindUI
+      pathPrefix: UI
+      guid: b658b70fc904bff4986e42ef9045f8e8
+    - name: HallFindUI
+      pathPrefix: UI
+      guid: 597a874da7226834cae52506bdf20e10
+    - name: LHFindUI
+      pathPrefix: UI
+      guid: 5abc82a40ae462144bac3ecbc4d4d300
+    - name: NHouseUI
+      pathPrefix: UI
+      guid: 2a37272c8b91ea74aafe6e7f323dba1a
+    - name: ParaFindUI
+      pathPrefix: UI
+      guid: bceb521471ab06f4f8df78b556a15c81
+    - name: StoreFindUI
+      pathPrefix: UI
+      guid: 82ea6f798da02754c8d1db419e18cdad
+    - name: AngelFindUI
+      pathPrefix: UI
+      guid: 60bbc4d1b151fee4f9fe9139e4afea16
+    - name: UncleDiaryFind
+      pathPrefix: UI
+      guid: ae51112d420e49c4eae3d7d2fc374ee6
+    - name: OpenDate
+      pathPrefix: UI
+      guid: acd6362c5642d2146b81b40c71dd5809
+    - name: 2-6Clicker
+      pathPrefix: UI
+      guid: e0001dda69680764abdba1c812b084cf
+    - name: 2-6Clicker2
+      pathPrefix: UI
+      guid: c62843ac8383e9942bb348e23b06ae5a
+    - name: 2-6RoomPopup1
+      pathPrefix: UI
+      guid: 7339194a4e63cc9419d2274384477b82
+    - name: 2-6RoomPopup2
+      pathPrefix: UI
+      guid: 9d89027ec696be244ac50155ff87141d
+    - name: EpisodeTitle
+      pathPrefix: UI
+      guid: 9ad8bc95500509d419b9525b0ed88f7b
+  - Id: Scripts
+    Resources:
+    - name: Script101
+      pathPrefix: Scripts
+      guid: 2aee5ceb46c6f564fa83fe64b9d7122a
+    - name: Script110
+      pathPrefix: Scripts
+      guid: d933b7131ab15fb43a885c73c0acc2cb
+    - name: Script206
+      pathPrefix: Scripts
+      guid: f7e5bb8901f5c4240961028d01ba5591
+    - name: Script102
+      pathPrefix: Scripts
+      guid: 7f96ba6eb5df81b4f864f60095a02d17
+    - name: Script108
+      pathPrefix: Scripts
+      guid: 0b15e88b7a0d9d9488c4d121b9f21b52
+    - name: Script000
+      pathPrefix: Scripts
+      guid: 888d0553bf3591a44a75f5aa3ec4f5fa
+    - name: Script103
+      pathPrefix: Scripts
+      guid: 1eb66423d7b1bb24d9d99a9ee2e7b9df
+    - name: Script104
+      pathPrefix: Scripts
+      guid: 5e15cc5b933223a40bc908065c26f0ef
+    - name: Script105
+      pathPrefix: Scripts
+      guid: 3ab9a41eca5e1c8468f16476dcb0aaa9
+    - name: Script106
+      pathPrefix: Scripts
+      guid: 079ebc90a19580d40a31d79169339c55
+    - name: Script107
+      pathPrefix: Scripts
+      guid: 4615ac0960ee33543b85d7fff2dcaf3f
+    - name: Script109
+      pathPrefix: Scripts
+      guid: 141e213688f62694887677ab617b5d1e
+    - name: Script111
+      pathPrefix: Scripts
+      guid: 735b4b6ac466f28438f2f46f3fd79147
+    - name: ScriptD106
+      pathPrefix: Scripts
+      guid: 82cff767b61bd2942b120097f6baeb3a
+    - name: ScriptG106
+      pathPrefix: Scripts
+      guid: 4cabd228ab1cc4044be032912330fe96
+    - name: ScriptG000
+      pathPrefix: Scripts
+      guid: 1cfcf04832007fa4383633aa88c9d953
+    - name: ScriptD000
+      pathPrefix: Scripts
+      guid: 323543a2563b66048b5db4798204593e
+    - name: ScriptY000
+      pathPrefix: Scripts
+      guid: 179cf6d0aac204b439128111030ade49
+    - name: ScriptW000
+      pathPrefix: Scripts
+      guid: 57e096249daac284b9a60736bf21bdc2
+    - name: Script201
+      pathPrefix: Scripts
+      guid: 019dbc5c672896e4bb514e869ec9fd00
+    - name: Script301
+      pathPrefix: Scripts
+      guid: c3b94225f9c9eed4799e5147e52af7cf
+    - name: Script302
+      pathPrefix: Scripts
+      guid: b52a344771be1f148b56e3938bd690b8
+    - name: Script309
+      pathPrefix: Scripts
+      guid: ba9e660947197db4aad2ce346a4174e7
+    - name: Script308
+      pathPrefix: Scripts
+      guid: 8531d50ada6fb1e41b5c0a129db41608
+    - name: Script307
+      pathPrefix: Scripts
+      guid: 813154bfc92ddd144a4f24c8b245b368
+    - name: Script306
+      pathPrefix: Scripts
+      guid: 42b207d5ff3a40e47842cb3447bcd9a3
+    - name: Script305
+      pathPrefix: Scripts
+      guid: 9e124f12f28e8fb44a2547825faa72db
+    - name: Script304
+      pathPrefix: Scripts
+      guid: c04c39cc361325d478f77d96c7ec4fdb
+    - name: Script303
+      pathPrefix: Scripts
+      guid: 116a939c6031f2549a3131c0e7183b4c
+    - name: Script202
+      pathPrefix: Scripts
+      guid: d5c7f6fbc1f4e6540b8c09649843f9e3
+    - name: Script203
+      pathPrefix: Scripts
+      guid: 967f5a0404c434c45a9b084ea5c6d0ea
+    - name: Script204
+      pathPrefix: Scripts
+      guid: 7b1880360207a9a419bfd85ab64af6b9
+    - name: Script205
+      pathPrefix: Scripts
+      guid: 0ec1a8c5a15d0854e8b1b57bdbef3dbb
+    - name: Script207
+      pathPrefix: Scripts
+      guid: f6b6c6aacdc8e0b48b6831a3ce6679bd
+    - name: Script208
+      pathPrefix: Scripts
+      guid: 0bc2db82bff01b344a6266dcb272733f
+    - name: Script209
+      pathPrefix: Scripts
+      guid: 981407756d709854ea6222c7ca957312
+    - name: Script210
+      pathPrefix: Scripts
+      guid: 5c0959049f7c278498522f40f3956c67
+  - Id: Characters/1bf256a8-2304-449f-b5a7-ccfda577d5b2
+    Resources:
+    - name: N
+      pathPrefix: Characters
+      guid: 4586b504f73cff143bcb8ed85b211b30
+  - Id: CharacterAvatars
+    Resources:
+    - name: Headman
+      pathPrefix: CharacterAvatars
+      guid: 294749e3d5c5a6740945f28441c303d8
+    - name: People
+      pathPrefix: CharacterAvatars
+      guid: a873523757eefcf499542584e1a7d917
+    - name: Boy
+      pathPrefix: CharacterAvatars
+      guid: 49e1703e0cfb972459857e1f09344a68
+    - name: Aram
+      pathPrefix: CharacterAvatars
+      guid: 1f00d5395af1ce8469aa5cee3252e968
+    - name: Girl
+      pathPrefix: CharacterAvatars
+      guid: 2053e88fab47a6141874ea99b58610d0
+    - name: Captain
+      pathPrefix: CharacterAvatars
+      guid: 639a283f5d826d74c9385607e8ac3a72
+    - name: man1
+      pathPrefix: CharacterAvatars
+      guid: 7dc641d080babf74997c622ab196ce88
+    - name: woman1
+      pathPrefix: CharacterAvatars
+      guid: 926fc09a944d3f443bdf78b2c07949b4
+    - name: woman2
+      pathPrefix: CharacterAvatars
+      guid: ae07ca5e673aaa7459af86e27291daaa
+    - name: boy_s
+      pathPrefix: CharacterAvatars
+      guid: 940c3b7009c76af4cb5c5207ecd38d80
+    - name: girl1_s
+      pathPrefix: CharacterAvatars
+      guid: d7a18bd63cbe37d48a62b64bdb95c423
+    - name: girl2_s
+      pathPrefix: CharacterAvatars
+      guid: c3383009e81d8d94087bed6a4f324a59
+  - Id: Characters/e594e7c3-75d7-4878-9bdd-1590889ea972
+    Resources:
+    - name: Y
+      pathPrefix: Characters
+      guid: 6e8669f8065e7774c9d5ef638b523540
+  - Id: Backgrounds/81f4d5bd-eb19-4c54-a1f8-ca53f4f17845
+    Resources:
+    - name: Black
+      pathPrefix: Backgrounds/MainBackground
+      guid: 014cfd3a9ceda6b4eb26e78e937e8af1
+    - name: Black4
+      pathPrefix: Backgrounds/MainBackground
+      guid: aedb95039a2ae5a44b6ed3d04110fe2b
+    - name: Remine
+      pathPrefix: Backgrounds/MainBackground
+      guid: 9359608e160cac5419760cd575f9aa4b
+    - name: White
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1af713c4b68c533408bb4e0b6a1a66a1
+    - name: Sail
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2ea86f54422d8e54a986016f35a6f116
+    - name: Map
+      pathPrefix: Backgrounds/MainBackground
+      guid: 53dd11c2899521c4c8b4103ddb1b182c
+    - name: Sea
+      pathPrefix: Backgrounds/MainBackground
+      guid: b06b61a11282baf418f9f0730b4e2bf2
+    - name: JianRoomDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5a284a6c0d602744f91ef8b1e25440d0
+    - name: JianRoomNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2f819926ce0ea6f498fa86a29736506e
+    - name: Hospital
+      pathPrefix: Backgrounds/MainBackground
+      guid: f89b26f59d968ea4ba0585facf56e5f7
+    - name: HallDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: d82d8f20d2407c84bad3b8995bd0f565
+    - name: HallNight_on
+      pathPrefix: Backgrounds/MainBackground
+      guid: ad9d5df22ee6bfd4fb119411fffe008b
+    - name: HallNight_off
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1a926bd43aa0452469838557cac4f4cd
+    - name: StreetDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: e13cb99a3c44a9642af3575f03b0bc55
+    - name: StreetNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8f1b4eddf3130d447979dc5a0cfdcf99
+    - name: DockDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: a88f759698b14e7499d96b296bdce8e2
+    - name: LighthouseDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 21af9e9f52a69204b850b397fff54f0c
+    - name: LighthouseNight1
+      pathPrefix: Backgrounds/MainBackground
+      guid: 92abc75daac9b4445a2e121c37b5b440
+    - name: LighthouseNight2
+      pathPrefix: Backgrounds/MainBackground
+      guid: a45646716e71ebb4d8bb470b870972d1
+    - name: ForestDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 692b272cbdd02124288161fdf8d2bb49
+    - name: ForestNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 78584917595c236468ad79dde0bfb0f2
+    - name: ForestNightBlood
+      pathPrefix: Backgrounds/MainBackground
+      guid: 859f1163d25042844a953d1e21ae5503
+    - name: StoreDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3be969e174206cc4ab16f133b59ea4a2
+    - name: StoreEye
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4b96165fc4af6e14eac4d3adbbf3d032
+    - name: CamelliaDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6cb601229690ac14bb1721adf48f8099
+    - name: CamelliaNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3534a4ba3c179974b9b799f3f547349b
+    - name: ParadiseOutsideDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 5fc19a49777083543a06c3fb28840dd5
+    - name: ParadiseOutsideDay_cut
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7a56e97ac117436458f5ed975bcce4e8
+    - name: ParadiseOutsideNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8b6be6e8d48c75e41903715db6697e47
+    - name: ParadiseOutsideNight_cut
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8fb1fa61cadaf3a4a95222667cde3f9e
+    - name: ParadiseInsideDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 8f966c37384d74145ad7c15bab38cc28
+    - name: ParadiseInsideNight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7568a3c84e928354782ff45d1e00b51f
+    - name: ChurchInTheForest
+      pathPrefix: Backgrounds/MainBackground
+      guid: 75c7ad8f3262cab45abd0aa188082db0
+    - name: AngelDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 7b7a7002d8ce1ff40af3bfeabbe6c2e0
+    - name: AngelDayRight
+      pathPrefix: Backgrounds/MainBackground
+      guid: 53f650c268af2694cb24d93ae9f306f3
+    - name: AngelDayLeft
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4151a6c7df9d7774e8ce47510abbe6ca
+    - name: AngelNight1
+      pathPrefix: Backgrounds/MainBackground
+      guid: bd0d7fec75b05894e96eb3f7138c8815
+    - name: AngelNight2
+      pathPrefix: Backgrounds/MainBackground
+      guid: f141fd69168a9774d852b96073ed3c06
+    - name: YIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: 2e0a200c3d62c404ba4d0c62f2be1d28
+    - name: WIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: 62f4c96bf249f2741bde92dc0bc6211b
+    - name: GIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: 05941b43bf23387448bb2634ed2bf019
+    - name: DIllust
+      pathPrefix: Backgrounds/MainBackground
+      guid: 57bdaccc495d41e4281436fb7513566f
+    - name: Feet
+      pathPrefix: Backgrounds/MainBackground
+      guid: aafb35b7212423b4892f85c753845b73
+    - name: "\uC6B0\uC6E9"
+      pathPrefix: Backgrounds/MainBackground
+      guid: 6ed4826d01822494abefc39cd5902211
+    - name: LivingroomDay
+      pathPrefix: Backgrounds/MainBackground
+      guid: 541ef2b39fd66a5439d6f618523fd12e
+    - name: LivingroomNight1
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1828067acf21c7d45acd153bf7247d7f
+    - name: LivingroomNight2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4e3e583cd1b4c5346857c8c296ef05c0
+    - name: WIllust2
+      pathPrefix: Backgrounds/MainBackground
+      guid: c00c8fecb88ec354590f9fc2329173ba
+    - name: GIllust2
+      pathPrefix: Backgrounds/MainBackground
+      guid: bb79ad350c1750943aa49500eeb84a7c
+    - name: DIllust2
+      pathPrefix: Backgrounds/MainBackground
+      guid: f2f197ffbd6bc644d8b66ae7b7f357f1
+    - name: YIllust2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 187cb46fdc30b084dbe27d970614f878
+  - Id: Characters/1d3108a1-685d-45db-b23b-33ed0e3ea76c
+    Resources:
+    - name: Square
+      pathPrefix: Characters/J
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/333b7453-a471-41ee-a4d5-5c125e28553f
+    Resources:
+    - name: Square
+      pathPrefix: Characters/First
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/dba19237-489d-48a1-8a25-60bb73cdf88d
+    Resources:
+    - name: W
+      pathPrefix: Characters
+      guid: d66b759034bf95e4db605e37edc6653f
+  - Id: Characters/e7176b69-1c7a-4549-a3a7-b17b2c6b1df1
+    Resources:
+    - name: Kitaek
+      pathPrefix: Characters
+      guid: 071f9642b73d40a42a0f97b74301a803
+  - Id: Characters/1028d037-171f-4ca5-947e-4f042a71163f
+    Resources:
+    - name: G
+      pathPrefix: Characters
+      guid: 1b75d46c57c71ae4d87935967fe00de1
+  - Id: Characters/cd421d86-f7a1-446d-81ca-364da8cbc1ef
+    Resources:
+    - name: Women
+      pathPrefix: Characters/Woman
+      guid: 851ee04113b1e5b498780ebeeaab8a57
+  - Id: Characters/c99abe0a-ac72-4d60-ab0d-aa1526acab73
+    Resources:
+    - name: Headman
+      pathPrefix: Characters/Man
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/69eeeeb1-1679-4f45-a45b-6beb71d6ac50
+    Resources:
+    - name: Headman
+      pathPrefix: Characters/Headman
+      guid: 8e5ce50bf2c98334a82d4db2cef4fcb5
+  - Id: Unlockables
+    Resources: []
+  - Id: TextPrinters/e5f62f8b-db2c-416e-828a-bf2768c4de73
+    Resources:
+    - name: Narration
+      pathPrefix: TextPrinters
+      guid: afa643b9a322bb0428790841dfb36e3c
+  - Id: Characters/02dcbd0b-6da9-487e-ab23-b4f1f44c5fcc
+    Resources:
+    - name: Square
+      pathPrefix: Characters/Boy
+      guid: 18e8058a3d46ad148aaf5bfd9596f732
+  - Id: Characters/8036479c-651c-4f9c-94dd-f8fb935adb24
+    Resources:
+    - name: aram
+      pathPrefix: Characters/Girl
+      guid: c1223bbfe15aa974a932ff7774a5c5ce
+  - Id: Characters/f51a3560-5e6c-4cb6-b004-448baf885272
+    Resources:
+    - name: Square
+      pathPrefix: Characters/Aram
+      guid: 1f00d5395af1ce8469aa5cee3252e968
+  - Id: Characters/d52f8e69-2ae4-4cbd-8a00-49da76d5ce32
+    Resources:
+    - name: cut_phone
+      pathPrefix: Characters/Phone
+      guid: 26db4d66d57989342b335e64b4b37252
+    - name: impossible
+      pathPrefix: Characters/Phone
+      guid: 23efd9f81cfd416469904416986e4769
+  - Id: Backgrounds/0b7a40ea-4f8a-476f-863a-229a86bc3c6b
+    Resources:
+    - name: RoomBackground1-1
+      pathPrefix: Backgrounds
+      guid: e560388d0f6c7ae47950e373d8244861
+  - Id: Characters/966cb5da-f631-4fa1-a128-d7238411beb6
+    Resources:
+    - name: Square
+      pathPrefix: Characters/Uncle
+      guid: 4726cf0d034b1734a962f4a4f437f05f
+  - Id: Characters/f2398f00-ebde-4f0d-a8f2-ce60497f41a5
+    Resources:
+    - name: D
+      pathPrefix: Characters
+      guid: 30d5403ddf41d6a499389b21e8ad5466
+  - Id: Audio
+    Resources:
+    - name: "\uBA54\uC77800"
+      pathPrefix: Audio
+      guid: b4f066d3deeaf234a9d8067b25462751
+    - name: "\uBA54\uC77801"
+      pathPrefix: Audio
+      guid: 05b91c849e0959944aca3cf9c74051c4
+    - name: "\uBA54\uC77803"
+      pathPrefix: Audio
+      guid: 0cdc7f4a2106e3a4595c079b381b94be
+    - name: "\uC9C0\uC548_\uB3C5\uBC31"
+      pathPrefix: Audio
+      guid: cb3830e7062f7ed40b965f5160de6275
+    - name: "\uC2EC\uAC011"
+      pathPrefix: Audio
+      guid: 5c0a69db0d43fb645b2687dc07e88bbd
+    - name: "\uC2EC\uAC012"
+      pathPrefix: Audio
+      guid: 6426d8415c14b734f900cfa89deaaa0f
+    - name: "\uC120\uB77D\uC6D0_BG"
+      pathPrefix: Audio
+      guid: 249867eb83fb21f448b87a3548552dfd
+    - name: "\uC12C\uB729_BG"
+      pathPrefix: Audio
+      guid: d027275feb774ec4e8c41819dd66850e
+    - name: "\uCC28\uBD84_BG"
+      pathPrefix: Audio
+      guid: 65714d22ad1ee934b9850e71699bddc2
+    - name: "\uC232_\uB0AE"
+      pathPrefix: Audio
+      guid: 160fb49d65682fe41ac93c56c0aa969e
+    - name: "\uC232_\uBC24"
+      pathPrefix: Audio
+      guid: de805ad0370713d428c39b75199d2c7d
+    - name: "\uACE0\uACB0_\uB4F1\uC7A5"
+      pathPrefix: Audio
+      guid: d67c55fa03bd85e4c8705a90c9400942
+    - name: "\uC6B0\uC900_\uB4F1\uC7A5"
+      pathPrefix: Audio
+      guid: 822dfb3eb3d3bea4b8cc53caf3eea1e3
+    - name: "\uC720\uACB8_\uB4F1\uC7A5"
+      pathPrefix: Audio
+      guid: 8f9e972eb629f4449921caf8b3c609c3
+    - name: "\uB2E4\uD568_\uB4F1\uC7A5"
+      pathPrefix: Audio
+      guid: 0ffbdc1da32293f42a6bf15de149b068
+    - name: "\uD074\uB9AD"
+      pathPrefix: Audio
+      guid: 190d6ac874d0f1d4bac844238ba1cb42
+    - name: "\uC120\uD0DD\uC9C0"
+      pathPrefix: Audio
+      guid: 00d7555e8f29e554e89d0b73edb9222e
+    - name: "\uC7A5\uC18C\uBC1C\uACAC"
+      pathPrefix: Audio
+      guid: 7bdff8394e0b67640b5df26f51b402c9
+    - name: "\uC12C\uB4F1\uC7A5"
+      pathPrefix: Audio
+      guid: 34ccaea5a35345447a0d0f494bc66f58
+    - name: "\uC154\uD130"
+      pathPrefix: Audio
+      guid: 79620773779fa8444b3fd54a50a5a141
+    - name: "\uD578\uB4DC\uD3F0_\uC5D0\uB7EC"
+      pathPrefix: Audio
+      guid: c63948d3056767140a91ad5b1e486212
+    - name: "\uACE0\uC591\uC774"
+      pathPrefix: Audio
+      guid: 728cc098e0fb54a4a98ac69f9144e7f4
+    - name: "\uB178\uD06C"
+      pathPrefix: Audio
+      guid: 516709723336db7429604e42bf1d0cfd
+    - name: "\uB2F9\uD669"
+      pathPrefix: Audio
+      guid: 72438071228c76549a445b91049cd66d
+    - name: "\uC29D"
+      pathPrefix: Audio
+      guid: e3c2648f958cd9b428c5eda97af0a35e
+    - name: "\uCE90\uB9AC\uC5B4"
+      pathPrefix: Audio
+      guid: 1790258e2aec2224681eb917b2b9fb46
+    - name: "\uBB38\uC5EC\uB294_\uB098\uBB34\uBB38"
+      pathPrefix: Audio
+      guid: a339ae99152ef7146aa04ab832e45ae6
+    - name: "\uBB38\uC5EC\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: d9acdd556c617fb448361ac29a6b8248
+    - name: "\uBB38\uB2EB\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 1471ad8a646abfb458fe2e1ec3cbe5d5
+    - name: "\uCC60\uC784\uBCA8"
+      pathPrefix: Audio
+      guid: ca11b42e5da68344bad00d02671534be
+    - name: "\uD30C\uB3C4"
+      pathPrefix: Audio
+      guid: 7e6d068f8fcf2294b9d5d123dab739a3
+    - name: "\uC720\uACB8_\uB4F1\uC7A5_\uD6A8\uACFC\uC74C"
+      pathPrefix: Audio
+      guid: b1c044d9d3a24654280a9584f001ccd9
+    - name: "\uC6C5\uC131\uC6C5\uC131"
+      pathPrefix: Audio
+      guid: 2baf63d81bb3cbe47917aa1ffbc0aaee
+    - name: "\uC2DD\uAE30\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: cd78b5859c16db94d91457a20cd747bc
+    - name: "\uACE0\uAE30"
+      pathPrefix: Audio
+      guid: 7efc9bf7b1b8f0348b5dc7fda8da9548
+    - name: "\uC720\uB9AC\uAE68\uC9C0\uB294\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: d21d353c93ec20e4dbfb93b2bb97b90f
+    - name: "\uC228"
+      pathPrefix: Audio
+      guid: 90707297f7cccf343bdf716134dfd5be
+    - name: "\uC0C8\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: afe99cde5cddd7649911198eec45aca2
+    - name: "\uBD80\uC2A4\uB7ED"
+      pathPrefix: Audio
+      guid: 899763be678dcfb41a6a42cda899ec4b
+    - name: "\uBC1C\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 87b192d5f5f553d4786b5ee7f724c1e8
+    - name: "\uB6F0\uB294_\uBC1C\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: bf63fd93ade200145adf6603e561628b
+    - name: "\uC544\uC774\uB4E4_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 171b68d7d84d90d44aadeac0aaa17139
+    - name: "\uACF5"
+      pathPrefix: Audio
+      guid: 381b9a843f72ede4b8d85c42db0517c5
+    - name: "\uC2EC\uC7A5\uBC15\uB3D9"
+      pathPrefix: Audio
+      guid: 3cecf8634362e21499008ad0c014c637
+    - name: "\uC218\uD480"
+      pathPrefix: Audio
+      guid: 17db941569f22194eab74e5a60ecb9aa
+    - name: "\uB5A8\uC5B4\uC9D0"
+      pathPrefix: Audio
+      guid: 1eb7203746d866d4ebea3704e9d606c3
+    - name: "\uB2E4\uAC00\uC624\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: 1554c41f4a6b0c544bd46e27afced09c
+    - name: "\uD480\uBC8C\uB808"
+      pathPrefix: Audio
+      guid: 59be5f0a070d5654e866f0f7df1fef19
+    - name: "206_\uBB38_\uC138\uAC8C_\uB2EB\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: f4ce79d29a7b33147b7a7d0c9b462e21
+    - name: "206_\uBB38_\uC138\uAC8C_\uB178\uD06C"
+      pathPrefix: Audio
+      guid: 6607dfd1d4024b24eaa89659524692b1
+  - Id: Characters/896b4cd6-5e3e-4688-9c8f-8de0404325b3
+    Resources:
+    - name: "\uD53C\uBB4D\uC740\uC190"
+      pathPrefix: Characters/BloodHand
+      guid: 87cd829dc527cc64e90df85c26811b4d
+  - Id: Movies
+    Resources:
+    - name: Prologue
+      pathPrefix: Movies
+      guid: 0fa257604c1504342b3cb6c466eb27da
+    - name: GMovie
+      pathPrefix: Movies
+      guid: da5448a105b36024b9370f82d6739a56
+    - name: YMovie
+      pathPrefix: Movies
+      guid: 04eb28ac0203a3d4ca4b12de1be85337
+    - name: DMovie
+      pathPrefix: Movies
+      guid: a03c97da4bfd167498744cc0a6529ceb
+    - name: WMovie
+      pathPrefix: Movies
+      guid: b83e8f7f5ef000e47a1dd278b9d0d0d9
+  - Id: Backgrounds/8d365e56-e777-460e-b314-e80fad2497b7
+    Resources:
+    - name: RoomBackground2-6
+      pathPrefix: Backgrounds
+      guid: 5f0dc435a9f7c5140a81e93746bc6535
+  - Id: TextPrinters/f978568d-5f16-405e-aa80-d2f3b566985f
+    Resources:
+    - name: Dialogue_O
+      pathPrefix: TextPrinters
+      guid: 1cb4fe1315f43d94e88e4b906540822b
+  - Id: TextPrinters/ccb65af7-d765-42a6-9753-b052f5730364
+    Resources:
+    - name: Dialogue_A
+      pathPrefix: TextPrinters
+      guid: b94329ab94a211e4ca0ba59fdef5944a
+  - Id: Characters/8f6200fa-7470-46c5-b32b-2a8e16b989b1
+    Resources: []
+  - Id: Characters/6c943e4c-be5b-4b1b-8528-e3e7731a7cb0
+    Resources:
+    - name: W
+      pathPrefix: Characters/Silhouette
+      guid: 8b7f706b709e603428ddc70f1e82c12b
+    - name: G
+      pathPrefix: Characters/Silhouette
+      guid: 6a8aed2aef7f71a45a0ccabcc0dd2fb4
+    - name: D
+      pathPrefix: Characters/Silhouette
+      guid: f64bf3a1984b78644b5e7bcc42f9ed95
+    - name: N
+      pathPrefix: Characters/Silhouette
+      guid: 2859e7ba2de24ac4fabb84051e03379b
+  - Id: Characters/07224c1b-23a3-4fd6-ac30-6bb07c96a26e
+    Resources:
+    - name: "\uBC14\uB2E4 \uC0AC\uC9C4"
+      pathPrefix: Characters/SeePhoto
+      guid: 981ad2a8121430d4ebc76eac73dc3c24
+  - Id: Backgrounds/247a02fa-006a-47d1-bd95-197d02bd55b9
+    Resources:
+    - name: "\uC9D1\uC911\uC120"
+      pathPrefix: Backgrounds/EffectBackground
+      guid: e0ffb049f95bf6c408f8439d4c778874
+  - Id: Characters/78e3bcf9-4a4d-42d4-9496-5c9338e69532
+    Resources:
+    - name: Wall
+      pathPrefix: Characters/Cut
+      guid: b9cb6bb3a3577a24b831965a4efc6481
+    - name: UncleDiary
+      pathPrefix: Characters/Cut
+      guid: 5862917ea02932c429c63bc7b1e8253a
+    - name: BloodHand
+      pathPrefix: Characters/Cut
+      guid: 87cd829dc527cc64e90df85c26811b4d
+    - name: SeePhoto
+      pathPrefix: Characters/Cut
+      guid: af939647f043db148ab637ee7f003938
+    - name: FlowerCrown
+      pathPrefix: Characters/Cut
+      guid: f78edc2aafdb5764bb90165c7700ab21
+    - name: ChildhoodPhoto
+      pathPrefix: Characters/Cut
+      guid: 8baeb447d5b25b84688a9ff36cc2d869
+    - name: StoreDoor
+      pathPrefix: Characters/Cut
+      guid: 5a1eb01c403d03a44ba373a0b97e0a32
+    - name: WooBook
+      pathPrefix: Characters/Cut
+      guid: cceb1357d1057984e81cc09e57c22866
+    - name: Pendant
+      pathPrefix: Characters/Cut
+      guid: 0b8c227789b797246889d8079b6947fd
+  - Id: ChoiceHandlers/ae83efad-428a-4b13-8c1c-d372a8a318fc
+    Resources:
+    - name: PeepBoButtonList
+      pathPrefix: ChoiceHandlers
+      guid: 
+  - Id: ChoiceHandlers/891281fb-1361-4df4-8071-f0e8c07c6520
+    Resources:
+    - name: PeepboButtonList
+      pathPrefix: ChoiceHandlers
+      guid: 24d9472eb80209540b9ee6cd9fff0de9
+  - Id: Characters/7702c9b3-9308-46d6-80d3-7fcb47b82c95
+    Resources: []

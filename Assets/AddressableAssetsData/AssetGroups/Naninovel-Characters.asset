@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Naninovel-Characters
+  m_EditorClassIdentifier: 
+  m_GroupName: Naninovel-Characters
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b2f2df24830bbec49a21b663e16e3e24
+  m_SerializeEntries:
+  - m_GUID: f78edc2aafdb5764bb90165c7700ab21
+    m_Address: Naninovel/Characters/Cut/FlowerCrown
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 5862917ea02932c429c63bc7b1e8253a
+    m_Address: Naninovel/Characters/Cut/UncleDiary
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: b9cb6bb3a3577a24b831965a4efc6481
+    m_Address: Naninovel/Characters/Cut/Wall
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 981ad2a8121430d4ebc76eac73dc3c24
+    m_Address: "Naninovel/Characters/SeePhoto/\uBC14\uB2E4 \uC0AC\uC9C4"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 2859e7ba2de24ac4fabb84051e03379b
+    m_Address: Naninovel/Characters/Silhouette/N
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: f64bf3a1984b78644b5e7bcc42f9ed95
+    m_Address: Naninovel/Characters/Silhouette/D
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 6a8aed2aef7f71a45a0ccabcc0dd2fb4
+    m_Address: Naninovel/Characters/Silhouette/G
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 8b7f706b709e603428ddc70f1e82c12b
+    m_Address: Naninovel/Characters/Silhouette/W
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 87cd829dc527cc64e90df85c26811b4d
+    m_Address: "Naninovel/Characters/BloodHand/\uD53C\uBB4D\uC740\uC190"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 30d5403ddf41d6a499389b21e8ad5466
+    m_Address: Naninovel/Characters/D
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 23efd9f81cfd416469904416986e4769
+    m_Address: Naninovel/Characters/Phone/impossible
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 26db4d66d57989342b335e64b4b37252
+    m_Address: Naninovel/Characters/Phone/cut_phone
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1b75d46c57c71ae4d87935967fe00de1
+    m_Address: Naninovel/Characters/G
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 071f9642b73d40a42a0f97b74301a803
+    m_Address: Naninovel/Characters/Kitaek
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: d66b759034bf95e4db605e37edc6653f
+    m_Address: Naninovel/Characters/W
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 4726cf0d034b1734a962f4a4f437f05f
+    m_Address: Naninovel/Characters/J/Square
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 6e8669f8065e7774c9d5ef638b523540
+    m_Address: Naninovel/Characters/Y
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 4586b504f73cff143bcb8ed85b211b30
+    m_Address: Naninovel/Characters/N
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f1b98389cf4afe9439b8b40f55cb3ffc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b5e399b7c07e9cc42a7fda8256680b36, type: 2}
+    - {fileID: 11400000, guid: 717be7ff86b6dc641b12f49c86ae78bf, type: 2}

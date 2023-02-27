@@ -1,0 +1,223 @@
+@back HallNight_on
+@bgm 메인03
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+@printer Narration time:0
+막 테이블 정리를 끝낸 마을회관
+이만 집으로 돌아가려는 채비를 하는데 누군가 나를 불러세웠다
+@char D.Face>기본,Body>기본 position:0,-16
+D: 데려다줄게요
+@printer Narration time:0
+웃으며 내 손목을 부드럽게 끌어당기는 다함이었다
+J: 다함 씨도 피곤하지 않으세요?
+J: 저녁 예배까지 마치고 오신 것 같은데...
+@char D.Face>웃는,Body>기본
+D: 전 괜찮아요
+@char D.Face>아련,Body>기본
+D: 지안 씨가 아까부터 연신 하품을 쏟는 걸 보니 걸어가면서 잠드는 건 아닐까 걱정되기도 하고
+@char D.Face>웃는,Body>기본
+J: 하하하, 설마요!
+D: ....
+@printer Narration time:0
+....
+@char D.Face>기본,Body>기본
+... 뭐야, 진심으로 하는 소리였어?
+@char D.Face>기본,Body>기본 position:0,-23 scale:1.3
+D: 장난입니다
+@printer Narration time:0
+@char D.Face>웃는,Body>기본
+다함이 내 마음을 읽기라도 했다는 듯 입꼬리를 올렸다
+@char D.Face>웃는,Body>기본 position:0,-16 scale:1
+장난같은 건 하나도 모를 줄 알았는데.... 의외의 면을 발견한 것 같다
+@sfx 발소리
+덕분에 어색한 기류가 풀어진 우리는 나란히 마을회관을 빠져나왔다
+
+@hide D
+@back HallNight_on visible:false time:0
+@back StreetNight position:8.3,0
+; 파티클 효과-반딧불처럼
+길목에 희미한 가로등이 듬성듬성 담벼락을 비추고 있었다
+@sfx 풀벌레
+섬 자체에 꽃이 많아서그런지 곳곳에 풀벌레 소리가 선명히 들려왔다 
+; 파티클 효과 out
+@char D.Face>아련,Body>입에손 position:0,-16
+D: 발에 상처는 좀 어때요?
+@printer Narration time:0
+내 보폭에 맞추어 천천히 걷던 다함이 물었다
+어제, 선락원으로 가던 중에 다친 내 발이 신경쓰였던 모양이었다
+그렇다면 나를 배려하느라 천천히 걷고 있었구나
+@startchoice 0
+@choice "이제 괜찮아요" goto:.a
+@choice "아직 쓰라려요" goto:.b
+@hidePrinter
+@stop
+
+#a
+J: 다함 씨가 치료해준 덕분에 다 나았어요
+J: 주신 연고도 잘 바르고 있구요
+J: 집에 와서 보니 꽤 상처가 깊었더라고요, 하하
+J: 다함 씨가 아니었다면 한동안 고생했을거예요
+@printer Narration time:0
+내 말에 그가 눈을 내리깔며 희미하게 웃었다
+@char D.Face>웃는,Body>가슴에손
+D: 도움이 되어서 다행입니다
+D: 부디 흉터로 남지 않길 바래요
+@char D.Face>아련,Body>입에손
+D: 해록도에서는 좋은 기억만 간직했으면 하니까
+@goto .con1
+#b
+J: 그래서 씻을 때 특히 조심하고 있어요
+J: 집에 와서 보니까 꽤 상처가 깊었더라고요, 하하
+J: 다함 씨가 치료해주지 않았더라면 한동안 더 고생했을 거예요
+@printer Narration time:0
+내 말에 그가 눈을 내리깔며 희미하게 웃었다
+@char D.Face>웃는,Body>가슴에손
+D: 도움이 되어서 다행입니다
+D: 부디 흉터로 남지 않길 바래요
+@char D.Face>아련,Body>입에손
+D: 해록도에서는 좋은 기억만 간직했으면 하니까
+
+#con1
+@char D.Face>기본,Body>기본
+J: 그럼요! 벌써 소중한 추억이 생겼는걸요
+D: 오늘 주민분들이 마련한 자리가 마음에 들었나 보군요
+J: 그런 환영은 처음 받아보는거라 얼떨떨하면서도 신기했어요
+J: 해록도를 떠난 후에도 오래도록 기억에 남을 거예요
+@char D.Face>웃는,Body>기본
+D: 하하하...
+D: 저도 기억하겠습니다
+@char D.Face>아련,Body>가슴에손
+D: 지안 씨와 함께 걷는 이 길을
+@printer Narration time:0
+문득 다함이 고백하듯 나지막하게 속삭였다
+D: 이렇게라도 함께 시간을 보내 다행입니다
+D: 제가 환영회에 늦게 참석한 탓에 지안 씨와 많은 대화를 나누지 못했으니까요
+@char D.Face>아련,Body>입에손
+D: 주변이 쓸데없이 시끄럽기도 했고...
+J: 네?
+@char D.Face>웃는,Body>입에손
+D: 아무것도 아니에요
+@char D.Face>아련,Body>입에손
+D: 저도 일찍 참석하고 싶었는데 오늘 한 신도분의 중요한 기도가 예정되어 있었거든요 
+D: 끝내고 나와보니 벌써 해가 저물었더군요
+@char D.Face>기본,Body>기본
+J: 에이, 당연히 일이 먼저죠
+J: 그리고 늦게나마 오셨잖아요
+J: 아마 오늘 다함 씨가 오지 않았다면....
+@startchoice 1
+@choice "아쉬웠을 거예요" goto:.c
+@choice "기다렸을 거예요" goto:.d
+@hidePrinter
+@stop
+
+#c
+@printer Narration time:0
+다함이 문득 고개를 돌려 나를 바라보았다
+생각치못한 답변을 들은 얼굴이었다
+그리고 내 다음 말을 기다린다는 듯 가만히 있었다
+흩날리는 머리카락 사이로 다함의 시선이 느껴졌다
+아앗... 이런 시선은 왠지 낯간지러운데
+J: 하하, 원래 밥 먹으면서 친해지는 거잖아요
+J: 당분간 종종 만날텐데, 이럴 때 가까워지면 좋을 것 같아서요
+@printer Narration time:0
+@char D.Face>아련,Body>기본
+내가 재빨리 덧붙이자 다함은 아아- 하며 짧게 고개를 끄덕였다
+@goto .con2
+#d
+; +10
+@printer Narration time:0
+다함이 문득 고개를 돌려 나를 바라보았다
+생각치못한 답변을 들은 얼굴이었다
+@char D.Face>아련,Body>기본
+D: 저를... 기다렸을 거라고요?
+J: 네
+J: 아마도...신께서?
+@printer Narration time:0
+내가 그를 따라하듯 고개를 살짝 기울이자
+@char D.Face>웃는,Body>기본
+뒤늦게 다함이 후후 웃었다
+D: 어제 우리가 비슷한 대화를 나누지 않았던 것 같은데요
+J: 맞아요, 다함 씨 따라 흉내 좀 내봤어요
+@printer Narration time:0
+무슨 말에도 흐트러질 것 같지 않은 사람이 저렇게 웃으니까 더 뿌듯하네
+@char D.Face>기본,Body>기본
+흩날리는 머리카락 사이로 다함의 시선이 느껴졌다
+....꽤 오랫동안
+J: 그렇게 뚫어지게 쳐다보면 저 부담스러워요
+J: 그리고 원래 밥 먹으면서 친해지는 거잖아요
+J: 당분간 종종 만날텐데, 이렇 때 가까워지면 좋죠
+@char D.Face>웃는,Body>기본
+D: 하하하, 그러네요
+
+#con2
+@char D.Face>기본,Body>기본
+D: 그럼 다른 사람들과는 친해졌나요?
+@printer Narration time:0
+다른 사람이라면 유겸이나 결을 말하는 건가?
+@startchoice 2
+@choice "조금은 친해진 것 같아요" goto:.e
+@choice "아뇨, 딱히...." goto:.f
+@hidePrinter
+@stop
+
+#e
+J: 조금은 친해진 것 같아요 특히 유겸이는 워낙 밝으니까요
+@char D.Face>아련,Body>입에손
+D: 아아
+@printer Narration time:0
+응? 어쩐지 반응이 차갑네
+@back StreetNight position:-8.3,0
+D: 대화를 더 나누고 싶지만 벌써 다 와버렸군요
+@printer Narration time:0
+집 앞에 도착하니
+웬일로 나연이 일찍 돌아왔는지 창문마다 불이 환하게 켜져 있었다
+D: 바람이 차니 어서 들어가요
+J: 아, 네네
+@goto .con3
+#f
+J: 사실 제가 낯을 많이 가려요
+J: 원래 살던 곳에서는 가족 외에 사람들 만날 일도 거의 없었거든요
+J: 하하, 유겸이나 결 씨가 들으면 서운해하겠죠?
+@printer Narration time:0
+너무 좋은 날씨 때문인지 나도 모르게 속마음을 털어놓아버렸다
+@char D.Face>웃는,Body>기본
+J: 이거 비밀이예요?
+@printer Narration time:0
+내가 머쓱해하며 당부하자
+@char D.Face>기본,Body>입에손
+다함도 나를 따라 제 입술에 손가락을 가져다댔다
+@char D.Face>웃는,Body>입에손
+D: 그럼요 오늘은 정말 특별한 밤이네요
+D: 조금만 더 천천히 걷고 싶었는데
+@back StreetNight position:-8.3,0
+@char D.Face>아련,Body>가슴에손
+D: 벌써 다 왔군요
+@printer Narration time:0
+집 앞에 도착하니
+웬일로 나연이 일찍 돌아왔는지 창문마다 불이 환하게 켜져 있었다
+
+#con3
+D: 지안 씨
+@printer Narration time:0
+다함이 돌아서는 나의 이름을 읊조렸다
+D: 제가 데려다줄 수 있게 허락해줘서 고마워요
+J: 에이... 고마워해야 할 대상이 바뀐 거 아닌가요?
+J: 물론 저는 혼자서도 잘 갈 수 있지만
+@sfx 문여는_소리
+@printer Narration time:0
+나는 어깨를 한번 으쓱이고나서 문고리를 잡았다
+J: 맞다 다함 씨
+@printer Narration time:0
+이번엔 내가 그를 불렀다
+J: 다함 씨는 정말 다정한 분 같아요
+@printer Narration time:0
+잠시 놀란 듯하던 다함은 이내 여느 때와 같이 미소 지었다
+D: 지안 씨도요
+J: 그럼 다음에 또 봬요
+D: 네, 저는 언제나 선락원에 있으니 필요하면 찾아주세요
+@sfx 문닫는_소리
+@hide D
+@hidePrinter
+@back StreetNight visible:false time:2
+@endscript

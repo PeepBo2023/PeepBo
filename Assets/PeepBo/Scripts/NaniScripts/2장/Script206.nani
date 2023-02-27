@@ -1,0 +1,336 @@
+@back JianRoomDay
+@bgm 메인03
+@printer Narration time:0
+으...이제 이곳에서의 아침도 익숙해졌네
+처음에는 잠도 안 오고, 약의 금단 증상도 있었는데...
+이제는 좀 괜찮아진 것 같아
+게다가 어젯밤은 여러가지 정보도 얻었고....
+;삐그덕 소리
+나는 기지개를 길게 편 뒤, 창문을 열었다
+어젯밤, 나는 목사님에게 나에 대해 물어보기로 결심했다
+J: 생각해보면 별 것도 아닌데, 나만 괜히 예민한걸까
+J: 하지만 유겸이도 그렇고 나연이도 그렇고
+J: 그동안 해록도에서 벌어졌던 여러 사건사고들도 그렇고...
+J: 이곳에서는 뭐든지 조심하는 편이 좋을 것 같아
+@printer Narration time:0
+나는 창밖으로 평화로운 거리의 풍경을 한눈에 담은 뒤
+@sfx 부스럭
+자리에서 일어났다
+J: 으으.... 목사님께 내 이야기를 밝힌다고 생각하니 좀 떨리네
+J: 먼저 마음을 진정시킬만한 곳에 들러야겠어
+@printer Narration time:0
+예를 들면 탁 트인 곳에서 바다나…
+아님 귀여운 아이들을 보러가는 것도 좋을 거 같은데
+어딜가지?
+@stopBgm 메인03
+@bgm 차분_BG
+@choice "등대" goto:.a
+@choice "천사의 집" goto:.b
+@hidePrinter
+@stop
+
+#a
+;(다함+5)
+J: 그래 등대에 가서 바다를 봐야겠어
+
+@hidePrinter
+@back JianRoomDay visible:false wait:false
+@back LighthouseDay
+@sfx 파도 volume:0.5
+@printer Narration time:0
+열심히 걷다보니 저 멀리 높이 솟아난 등대가 보였다
+녹슨 풍향계가 끼긱끼긱 기괴한 소리를 내며 돌아가고 있었다
+어라? 저기....
+등대와 가까워질수록 익숙한 뒷모습이 눈에 들어왔다
+먼저온 손님이 있었잖아?
+
+@char Silhouette.D scale:1.23 position:0,-15.6
+그는 무슨 생각을 하는지 내가 다가오는 줄도 모르고 하염없이 바다를 바라보고 있었다
+J: 주다함 씨?
+@printer Narration time:0
+그는 그제서야 뒤를 돌아 나를 바라봤다
+@hide Silhouette wait:false
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+J: 뭐하고 계셨어요? 이런 곳에서 혼자…
+@char D.Face>아련,Body>가슴에손
+D: 이런, 지안 씨에게 어색한 모습을 보였네요
+@printer Narration time:0
+다함은 아무 것도 아니라는 듯 가만히 고개를 저었다
+J: 하지만 제가 이렇게 가까이 다가오는 것도 모르고 하염없이 바다를 노려보던데요
+@char D.Face>웃는,Body>입에손
+D: 노려보다뇨, 감상하고 있었습니다
+@printer Narration time:0
+햇빛에 반짝이는 금발 머리카락과 부드러운 곡선을 그리며 올라가는 입꼬리
+다정함이 잔뜩 묻어나는 목소리였지만
+@char D.Face>아련,Body>입에손
+오늘따라 왠지 그 아름다운 얼굴에 작은 피로감이 느껴졌다
+@char D.Face>기본,Body>기본
+D: 지안 씨
+J: ....
+D: 지안 씨?
+J: 앗! 네?
+@char D.Face>웃는,Body>입에손
+D: 지안 씨야 말로 무슨 생각을 하시길래 저를 그렇게 노려보고 있는 건가요
+J: 노려보다뇨, 저야말로 감상하고 있던 거거든요?
+@printer Narration time:0
+@char D.Face>기본,Body>입에손
+내 말에 다함이 눈썹을 들썩였다
+J: 달빛 아래가 아닌 밝은 곳에서 보는 건 처음인 것 같아서요
+J: 그동안 다함 씨의 눈동자는 붉다고 생각했는데
+J: 이렇게 햇빛 아래서 보니, 다홍색으로도 비치네요
+@printer Narration time:0
+@char D.Face>아련,Body>입에손
+그러자 그는 눈을 내리깔며 시선을 피했다
+J: ...설마 지금 부끄러워하는 거에요?
+@char D.Face>기본,Body>입에손
+D: ...아닙니다?
+J: 맞는 것 같은데
+@char D.Face>웃는,Body>기본
+D: 하하. 지안 씨는 여기 어쩐 일로 오신 건가요? 산책 중인가요?
+@printer Narration time:0
+다함이 말을 돌리는 게 느껴져 이번만 넘어가주기로 했다
+J: 네. 탁 트인 곳에서 바람 좀 쐬려고 했어요, 고민거리가 좀 있어서
+@char D.Face>아련,Body>기본
+D: 저랑 같네요
+D: 저는 요즘....
+@char D.Face>기본,Body>기본
+D: 악몽을 꾸거든요
+@printer Narration time:0
+악몽을 얘기하는 그의 얼굴엔 더할나위 없이 평안한 미소가 걸렸다
+J: 악몽이라면 어떤...?
+@char D.Face>아련,Body>기본
+D: 글쎄요… 그냥 절대 일어나지 않을 헛되고 헛된 악몽이죠
+@printer Narration time:0
+그때 다함이 팔목을 들어 시간을 확인했다
+@char D.Face>웃는,Body>기본
+D: 이런, 벌써 기도 시간이네요. 저는 이만 돌아가보겠습니다
+@printer Narration time:0
+@char D.Face>기본,Body>기본
+아까부터 느꼈지만 역시 다함은 평소보다 기운이 없는 듯했다
+J: 음, 무슨 일있는 건 아니죠?
+@printer Narration time:0
+@char D.Face>웃는,Body>기본
+다함은 대답 대신 무슨 말이냐는 듯 빙그레 웃어보였다
+@char D.Face>기본,Body>기본
+J: 그게… 평소보다 기운이 없어보인달까… 아니 솔직히 말하면…
+J: … 기분이 안 좋아보여요
+@char D.Face>아련,Body>기본
+D: 그래요?
+@printer Narration time:0
+그는 잠시 시선을 떨군 뒤 말을 골랐다
+D: 뭐랄까. 조금 피곤하군요
+@printer Narration time:0
+@char D.Face>기본,Body>기본
+다함은 왠지 내가 더이상 질문하길 꺼려하는 기색이었다
+D: 초봄이라 아직은 바닷 바람이 차요, 이 곳에 너무 오래 있진 말아요
+J: 네, 다함 씨도 너무 피곤하면 하루 쯤은 그냥 쉬어요
+J: 다함 씨가 믿는 그분도 하루 쯤은 이해할 거예요
+@char D.Face>웃는,Body>기본
+D: 후후후...
+@sfx 발소리
+@hide D
+@printer Narration time:0
+다함은 내게 등을 돌려 마을을 향해 사라졌다
+가만히 서서 그의 뒷모습을 바라보고 있자니
+그의 말대로 으슬으슬 점점 추워졌다
+@spawn ShakeBackground wait:false
+J: 으으~
+J: 이대로 그냥 들어가긴 아쉬운데… 어디 또 들릴만 한 곳 없나?
+J: 아 맞다, 천사의 집도 있었지!
+J: 이왕 나온 거 천사의 집도 들러서 아이들이랑 놀아야겠다
+@printer Narration time:0
+한바탕 움직이고나면 머릿속도 개운해질거야
+@stopSfx 파도
+
+@hidePrinter
+@sfx 발소리
+@back LighthouseDay visible:false wait:false
+@back AngelDay
+얼마 쯤 걸자 저 멀리 천사의 집이 보였다
+@goto .con1
+
+#b
+;(유겸+5)
+@printer Narration time:0
+그래, 천사의 집에 가서 아이들이랑 신나게 놀아야지!
+@hidePrinter
+@sfx 발소리
+@back JianRoomDay visible:false wait:false
+@back AngelDay
+@printer Narration time:0
+얼마 쯤 걸었을까 저 멀리 천사의 집이 보였다
+
+#con1
+@printer Narration time:0
+;유겸 실루엣
+그리고 정원에 딸린 그네에 앉아있는 홍유겸의 모습도
+J: 홍유겸?
+@sfx 아이들_소리
+@printer Narration time:0
+유겸은 그네에 앉아서, 뛰노는 아이들을 바라보고 있는 듯 했다
+같이 놀지도 않고..청승맞게 왜 저러고 있담?
+무심코 그를 부르려다가
+어젯밤 일이 떠올라 걸음을 멈췄다
+@stopSfx 아이들_소리
+어제...그렇게 헤어지고 나서 조금 어색해진 것 같지만...
+내가 먼저 평소처럼 아무렇지 않게 대하는 게 좋겠지
+@sfx 발소리
+결심한 나는 살금살금 그에게 다가가
+@choice "귓가에 입김을 분다" goto:.c
+@choice "어깨를 콕 찌른다" goto:.d
+@hidePrinter
+@stop
+
+#c
+귓가에 입김을 후 불었다
+; @hide Silhouette wait:false time:0
+@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1 time:0
+;진동
+@spawn ShakeBackground wait:false
+Y: !!!
+J: 홍유겸~ 여기서 뭐 해?
+@char Y.Face>웃는,Body>기본
+Y: 까, 깜짝이야~
+Y: 누나...변태에요?
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+유겸은 자신의 귓가를 감싸며 돌아보다가
+급히 반대쪽으로 휙 고개를 돌렸다
+@goto .con2
+#d
+손가락으로 그의 어깨를 콕 찔렀다
+J: 홍유겸~ 여기서 뭐 해?
+; @hide Silhouette wait:false
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+Y: 응?
+@printer Narration time:0
+유겸은 멍한 눈빛으로 돌아보다가
+나를 발견하고는 반대쪽으로 휙 고개를 돌렸다
+
+#con2
+@char Y.Face>아련,Body>입에손
+Y: 아, 오늘은 마주치면 안 되는데...
+J: ...어?
+J: 너...너
+@printer Narration time:0
+그를 살피던 내 눈이 점점 커졌다
+@spawn ShakeBackground wait:false
+@char Y.Face>기본,Body>기본 position:-0.25,-21.5 scale:1.3
+J: 다쳤어?
+
+@hidePrinter
+@hide Y
+@back AngelDay visible:false wait:false
+@back YIllust2
+@wait i
+@printer Narration time:0
+나는 그의 얼굴을 양 손으로 붙잡았다
+; 진동
+@spawn ShakeBackground wait:false
+Y: 아얏, 누나 만지면 아파요~
+@printer Narration time:0
+뽀얗던 유겸의 피부에 생체기가 선명하게 나 있었다
+J: ...누가...누가 그랬어??
+Y: 누가 그러긴요~ 그냥 길에서 넘어졌어요!
+@printer Narration time:0
+유겸이 피가 고인 입술로 해맑게 웃으며 내 손을 잡았다
+J: 뭐? 그 말을 누가 믿어?!
+J: 마을 어른들이야? 아니면....
+@printer Narration time:0
+몇몇 젊은 주민들의 얼굴이 스쳐지났다
+Y: 누나도 참 상상력이 풍부하다니까~ 
+Y: 진짜로 폰 보면서 걷다가 넘어지구~ 데굴데굴 굴러서 벽에 부딪혔어요!
+Y: 오해받을까봐 오늘은 아무도 마주치지 않으려고 숨어있었던 거예요
+@printer Narration time:0
+유겸은 낼름 혀를 내밀더니 제 입술을 훑었다
+Y: 으~ 비려
+
+@hidePrinter
+@back YIllust2 visible:false wait:false
+@back AngelDay
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@printer Narration time:0
+여전히 의심스럽긴 하지만
+유겸이 강경하게 부정해서 더 캐물을 수 없었다
+J: 너...진짜로 누구랑 싸운 거 아니지?
+@char Y.Face>웃는,Body>입에손
+Y: 그럼요! 유겸이는 평화주의자니까요
+Y: 그보다 아이들이랑 놀아주려고 온 거죠?
+J: 어어...그렇긴한데
+@sfx 슝
+@char Y.Face>윙크,Body>브이 position:-0.25,-21.5 scale:1.3
+Y: 얘들아~ 지안 누나가 같이 놀아준대!
+@sfx 아이들_소리
+@char Y.Face>윙크,Body>브이 position:-0.25,-15 scale:1
+@printer Narration time:0
+유겸은 큰 목소리로 손을 흔들며 아이들을 불렀다
+@char Y.Face>웃는,Body>기본
+Y: 그럼 유겸이는 이만 갈게요~ 오늘은 너무 피곤하거든요
+J: 유겸이 너 진짜 집에 가서 약 꼭 발라! 흉지지 않게!
+@stopSfx 아이들_소리
+@hide Y wait:false
+; 유겸 실루엣
+@printer Narration time:0
+나는 새로촘하게 돌아서는 유겸이의 등을 향해 소리쳤다
+@sfx 발소리
+Y: 네네~ 당연하죠~
+;유겸 실루엣out
+
+@stopBgm 차분_BG
+@bgm 메인03
+@sfx 아이들_소리
+@printer Narration time:0
+유겸이가 떠나자 아이들이 기다렸다는 듯 내 팔에 하나둘 매달렸다
+@char Girl visible:false avatar:girl1_s
+@stopSfx 아이들_소리
+Girl: 술래잡기 시작!
+J: 어어...어?!
+@sfx 아이들_소리
+@printer Narration time:0
+아이들은 내 대답을 듣기도 전에 꺄르르 웃으며 흩어졌다
+
+@hidePrinter
+@back AngelDay visible:false time:1
+@wait i
+@back AngelDay visible:true time:1
+@printer Narration time:0
+아이들을 쫓아 정신없이 뛰어다닌 지 한 시간이 흘렀다
+머리를 비우러 온 건 맞지만... 영혼까지 털어버릴 생각은 아니었어
+
+@back AngelDay visible:false wait:false
+@back AngelDayRight
+J: 으아...잠깐만 쉬자 얘들아!
+@printer Narration time:0
+아이들의 왁자지껄한 웃음 소리를 베개 삼아 잔디 위에 풀썩 쓰러지듯 누웠다
+@char Boy visible:false avatar:boy_s
+Boy: 누나!!! 우리랑 놀아주러 왔다면서요!!! 빨리 일어나요!!!
+J: 얘들아 벌써 한 시간 째 술래잡기 중이야… 너넨 지치지도 않아?
+@printer Narration time:0
+쉬지 않고 뛰어다녔더니 혈중 산소 농도가 낮아지는 느낌이라고
+Girl: 언니 힘들어요? 그럼 우리 다른 놀이해요!
+J: 너무 힘들어... 안 뛰어다니는 놀이는 없어?
+@char Girl visible:false avatar:girl2_s
+Girl: 숨바꼭질 해요. 나 진짜 짱 잘 숨어요!
+J: 언니 조금만 쉬면 안돼? 진짜 조금만..
+Boy: 안돼! 빨리 빨리! 놀이 시간 끝나간단 말이야!!
+@printer Narration time:0
+정신없이 내 주변을 뛰어다니며 재촉하는 아이들 때문에 더는 쉴수가 없었다
+J: 으, 알겠어. 그럼 술래는 누구,
+Boy: 당연히 누나가 술래지! 10초씩 다섯 번 세고 우리 찾으면 돼!
+@printer Narration time:0
+아이들은 우르르 정원을 가로질러 달려나갔다
+J: 그래 너네 마음대로 해라…
+@printer Narration time:0
+나는 몸을 일으키지 않고 그대로 누워 눈을 감고 조용히 수를 셋다
+J: 사십 칠, 사십 팔, 사십 구… 오십!
+@bgm 메인03 volume:0.5
+J: 얘들아~ 나 이제 너네 찾는다!
+@sfx 풀벌레
+@printer Narration time:0
+몸을 일으켜 주위를 둘러보니 아이들이 사라진 자리가 고요했다
+꽤...잘 숨었는걸?
+하지만 내가 아무리 여기 두 번 밖에 안 와봤다고 해도 난 어른이고 너넨 어린이라고
+
+@hidePrinter
+@back AngelDayRight visible:false time:1
+@endscript

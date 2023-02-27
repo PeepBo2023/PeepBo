@@ -1,0 +1,402 @@
+@back JianRoomDay
+@bgm 메인03
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+@printer Dialogue_O time:0
+@spawn ShakePrinter wait:false
+; 진동
+N: 김지안! 일어나!
+@printer Narration time:0
+으음... 
+익숙한 목소리에 얼굴까지 끌어올린 이불을 내리자
+@char N.Face>기본,Body>기본 position:0,-13.5
+나연이 평소와 같이 화가 잔뜩 어린 얼굴로 날 내려다보고 있었다
+이쯤되면 내 공식 알람 아니냐구...
+@char N.Face>짜증,Body>팔짱
+N: 혹시 너 곰이야? 혹시 지금 겨울이야?
+@printer Narration time:0
+시계를 바라보자 오후 12시가 넘어가고 있었다
+J: 나보고 겨울 잠 자는 곰이라고 한 거야 너?
+J: 깨워줘서 고맙긴한데, 오늘은 그냥 쉬려고 했단 말야
+@char N.Face>기본,Body>기본
+N: 그 쪽 예뻐서 깨운 거 아니거든?
+@char N.Face>짜증,Body>팔짱
+N: 그리고 쟨 왜 자꾸 너 찾아오는 건데? 남의 집 현관을 부서져라 두드리기나 하고
+J: 응? 누구...?
+@printer Narration time:0
+누가 날 찾아왔다는 거지?
+@sfx 부스럭
+나는 기지개를 펴며 침대에서 일어났다
+@stopSfx 부스럭
+J: 아! 나연아 시간되면 나랑 같이 아침밥 먹을...
+@printer Narration time:0
+@hide N
+@sfx 문닫는_소리
+@spawn ShakeBackground wait:false
+말이 끝나기도 전에 나연은 부서져라 문을 닫고 나갔다
+그래, 밥은 혼자 먹는 게 낫지
+J: 아~ 어제 오랜만에 푹 자서 그런가 몸이 엄청 가볍네
+J: 그러고보니 어젯밤에...
+@printer Narration time:0
+어제 회관에 나선 뒤 '그'와 했던 대화를 떠올렸다
+J: 그 사람은 생각보다...
+@startchoice 0
+@choice "다정한 사람이었어" goto:.daham target:D score:5
+@choice "재밌는 사람이었어" goto:.gyeol target:G score:5
+@hidePrinter
+@stop
+
+#daham
+J: 다정했어, 처음에 선락원에서 마주쳤을 때는 조금 차가운 인상이었는데...
+@goto .street
+#gyeol
+J: 재밌는 사람이었어, 처음에는 조금 무서웠는데...
+
+#street
+@printer Narration time:0
+@sfx 발소리
+어젯밤 나를 데려다주던 그 남자를 생각하는데...
+@sfx 노크
+; 진동
+N: 야 너 빨리 안 나가?! 쟤 문 계속 두드리잖아!
+@printer Narration time:0
+문 밖에서 나연이 소리를 빽 질렀다
+대체 아침부터 찾아온 손님이 대체 누굴까?
+@sfx 문여는_나무문
+예상은 가지만, 일단 씻고 얼른 나가보자
+@hidePrinter
+
+@stopBgm 메인03 fade:1
+@back JianRoomDay visible:false time:1
+@back StreetDay
+@bgm 유겸_등장 fade:1
+
+@wait 1
+@char Y.Face>웃는,Body>브이 position:-0.25,-15
+Y: 누나!
+@printer Narration time:0
+@sfx 뛰는_발소리
+@char Y.Face>웃는,Body>기본
+담벼락에 기대어있던 유겸이 나를 보자마자 눈웃음을 지으며 달려왔다
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 좋은 아침이에요!
+J: 너일 줄 알았다
+@printer Narration time:0
+@char Y.Face>윙크,Body>기본 position:-0.25,-15 scale:1
+왜 저렇게 반갑게 달려와?
+왠지 유겸이에게 마구 흔들리는 꼬리 하나가 보이는 것 같다
+@stopSfx 뛰는_발소리
+@char Y.Face>웃는,Body>기본
+J: 무, 무슨 일이야?
+@printer Narration time:0
+나는 괜히 주춤 뒤로 물러서며 물었다
+@char Y.Face>윙크,Body>브이
+Y: 무슨 일은 없고, 누나랑 놀고 싶어서 왔는데요?
+@printer Narration time:0
+유겸이 웃으며 대수롭지 않게 말했다
+@char Y.Face>기본,Body>브이
+J: 나랑?
+@startchoice 1
+@choice "왜?" goto:.a
+@choice "뭐하고?" goto:.b
+@hidePrinter
+@stop
+
+#a
+J: 나랑...왜?
+@char Y.Face>웃는,Body>입에손
+Y: 그야 누나랑 놀면 재밌을 것 같으니까?
+@goto .con1
+#b
+J: 나랑...뭐하고?
+@char Y.Face>웃는,Body>입에손
+Y: 그건 이제부터 생각해봐야죠?
+Y: 근데 누나랑은 뭘 해도 재밌을 것 같아요!
+
+#con1
+J: 내가... 그렇게 한가해보이는 편인가?
+@char Y.Face>놀란,Body>기본
+Y: 누나 오늘 바빠요? 뭐하는데요? 누구랑 바쁠 예정인데요?
+@printer Narration time:0
+@char Y.Face>아련,Body>기본
+왜 유겸이의 귀가 축 늘어지는 것 같지
+하마터면 머리를 쓰다듬을 뻔했다
+@char Y.Face>웃는,Body>기본
+J: 흠흠, 사실 엄청 바쁜진 않고. 적당히 바쁘거든
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+나는 오늘 새로운 장소를 탐방할 계획이었다
+기왕 이렇게된 거, 유겸이한테 안내해달라고 할까?
+@startchoice 2
+@choice "한다" goto:.c target:Y score:5
+@choice "안 한다" goto:.d
+@hidePrinter
+@stop
+
+#c
+J: 그러면 나랑 어디 좀 같이 갈래?
+@char Y.Face>웃는,Body>기본
+Y: 응! 좋아요! 어디요?
+@goto .con2
+#d
+@printer Narration time:0
+아니, 굳이 같이 갈 필요는 없으니까 적당히 둘러대자
+J: 미안한데 내가 지금....
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 나는 오늘 하나도 안 바빠요!
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+J: ... ...
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 하나도!
+@printer Narration time:0
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+쟤는 저 표정이 얼마나 치사한 건지 알까?
+저렇게 동그란 눈으로 쳐다보면, 누가 밀어낼 수 있냔 말이야
+나는 어쩔 수 없이 웃음을 흘렸다
+J: 후... 그러면 나랑 어디 좀 같이 갈래?
+Y: 응! 좋아요! 어디요?
+
+#con2
+@printer Narration time:0
+나는 유겸에게 지도를 펼쳐보이며 말했다
+J: 오늘은 이곳으로 가보려고 해
+@char Y.Face>기본,Body>기본
+Y: ...'천사의 집'이요?
+@printer Narration time:0
+어라? 시종일관 해맑게 웃던 유겸의 뺨이 방금 떨린 것 같은데
+@char Y.Face>웃는,Body>입에손
+언제 그랬냐는 듯이 곧 평소의 표정으로 돌아왔다
+J: '천사의 집'이 뭐하는 곳이야?
+@char Y.Face>윙크,Body>입에손
+Y: 이름 그대로 천사들이 사는 집이죠
+@char Y.Face>기본,Body>기본
+Y: 여기에 정말 가보고 싶어요?
+J: 응. 이왕 해록도에 왔으니 여기저기 다녀봐야 아쉽지 않을 것 같아
+@sfx 슝
+@char Y.Face>윙크,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 그럼 이쪽이에요, 저를 따라오세요!
+@hide Y
+@sfx 발소리
+@printer Narration time:0
+유겸이를 따라 골목을 몇개 꺾어 들어가자
+@stopSfx 발소리
+해록도에서 유난히 깨끗한 표지판이 보였다
+@stopBgm 유겸_등장 fade:1
+그렇게 5분 여를 걸었을까,
+
+@bgm 메인03 fade:1
+@sfx 아이들_소리
+높은 톤의 웃음 소리가 이리저리 뒤섞여 들려왔다
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+Y: 다 왔어요!
+J: 응?
+@hidePrinter
+@hide Y
+@back StreetDay visible:false time:1
+@back AngelDayLeft
+@printer Narration time:0
+곧 눈앞에 펼쳐진 건 너른 앞마당에 흰 울타리를 두른 깨끗한 신식 건물이었다
+건물에 '천사의 집'이라는 간판이 크게 붙어 있었다
+@stopSfx 아이들_소리
+@hidePrinter
+@sfx 장소발견 wait:false
+@showUI AngelFindUI
+@wait i
+@hideUI AngelFindUI
+
+@char Y.Face>웃는,Body>입에손 position:-0.25,-15 scale:1
+Y: 마침 다들 놀이 시간이네요!
+@printer Narration time:0
+낮은 울타리 너머로 뛰노는 아이들의 모습이 보였다
+J: 여기가 천사의 집...
+@printer Narration time:0
+@sfx 공
+@char Y.Face>기본,Body>기본
+그때 알록달록한 고무 공이 이쪽으로 날아왔다
+@stopSfx 공
+@char Girl visible:false avatar:girl1_s
+@char Boy visible:false avatar:boy_s
+Girl: 어? 유겸이 오빠다!
+Boy: 옆에는 누구지?
+
+@printer Narration time:0
+@char Y.Face>웃는,Body>기본
+내가 공을 잡자 아이들이 쭈뼛거리며 울타리 가까이 다가왔다
+J: 자, 여기 공! 아주 잘 차던데?
+@printer Narration time:0
+공을 건네받은 아이들의 눈에 호기심이 잔뜩 서려있다
+J: 안녕?
+@char Y.Face>윙크,Body>기본
+Y: 처음 보는 누나지? 다들 한명 씩 인사해~
+@printer Narration time:0
+유겸이 허리를 숙이며 아이들과 눈을 맞췄다
+@hide Y
+@char Girl visible:false avatar:girl2_s
+Girl: 언니한테 좋은 냄새 난다
+@char Girl visible:false avatar:girl1_s
+Girl: 언니도 밖에서 왔어요?
+@printer Narration time:0
+공을 받아가며 여자아이가 물었다
+J: 나는 서울에서 배를 타고 왔어
+Boy: 어? 나도 배 타고 왔는데!
+Girl: 나도나도!
+@printer Narration time:0
+이 아이들 모두 해록도에서 태어난 건 아닌 모양이다
+J: 그러면 저 친구도 다른 지역에서 온 거야?
+@printer Narration time:0
+저 멀리 토끼풀 밭에 홀로 앉아있는 아이를 가리키며 묻자, 모두가 그쪽으로 고개를 돌렸다
+@hide Y
+@char Aram scale:1.2 pos:50,39
+소란에는 관심도 없는 듯, 혼자서 꽃을 만지고있는 여자아이였다
+@hide Aram
+@char Girl visible:false avatar:girl1_s
+Boy: 쟤는 몰라요, 말을 걸어도 대답을 안하거든요
+J: 으응? 왜?
+Girl: 몰라요, 말을 안 하니까 재미없어서 같이 안 놀아요
+@printer Narration time:0
+말을 안 한다니, 나는 여자아이의 왜소한 어깨를 걱정스럽게 바라보았다
+J: 그래도 다같이 노는 게 좋지 않을까? 혼자 놀면 외로울거야
+Boy: 그럼 누나도 같이 놀아요!
+J: 어? 나?
+@startchoice 3
+@choice "좋아" goto:.e
+@choice "유겸이를 대신 보낸다" goto:.f
+@hidePrinter
+@stop
+
+#e
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@printer Narration time:0
+아이들이 내게 울타리 안으로 들어오라고 손짓했다
+하지만 뭐하는 곳인지도 모르는데 함부로 들어가도 될까?
+유겸이에게 눈짓으로 묻자, 유겸은 웃으며 어깨를 으쓱였다
+@char Y.Face>웃는,Body>브이
+Y: 잠깐은 괜찮을거예요!
+J: 흠... 좋아! 얘들아, 언니랑 같이 놀자!
+@goto .con3
+#f
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@printer Narration time:0
+아이들이 내게 울타리 안으로 들어오라고 손짓했다
+하지만 뭐하는 곳인지도 모르는데 함부로 들어가도 될까?
+@char Y.Face>웃는,Body>입에손
+괜히 관리자에게 혼나는 거 아니야?
+고민끝에 나는 유겸이의 옷소매를 잡아끌었다
+@char Y.Face>놀란,Body>기본
+Y: 으응? 
+J: 유겸이 너 오늘 안 바쁘댔으니까, 대신 들어가서 놀아줘!
+@char Y.Face>아련,Body>기본
+Y: 에엑?! 나는 지안 누나랑 놀려고 온건데요?!
+@printer Narration time:0
+유겸이 입을 비죽 내밀었다
+J: 나는 외지인이니까 멋대로 들어갈 수 없잖아
+@char Y.Face>웃는,Body>입에손
+Y: 에이~ 잠깐은 괜찮을거예요!
+@printer Narration time:0
+@char Y.Face>윙크,Body>입에손
+유겸이 눈을 찡긋하며 내 손을 잡았다
+
+#con3
+@sfx 아이들_소리
+Girl: 와아~ 유겸이 오빠도 같이 놀아요! 다같이요, 다같이!
+@char Y.Face>기본,Body>기본
+@stopSfx 아이들_소리
+Y: ...
+@printer Narration time:0
+응? 좋아서 당장이라도 뛰어들 줄 알았는데 가만히 있네?
+@char Y.Face>웃는,Body>기본
+… 라고 생각하자마자 유겸의 눈꼬리가 휘어졌다
+@sfx 슝
+@char Y.Face>웃는,Body>브이 position:-0.25,-21.5 scale:1.3
+Y: 오빠한테 잡히는 사람이 술래!
+@printer Narration time:0
+@sfx 아이들_소리
+@sfx 뛰는_발소리
+말을 마친 유겸은 곧장 아이들에게 달려들었다
+@hide Y
+J: …너 엄청 놀고 싶었구나
+@printer Narration time:0
+@stopSfx 뛰는_발소리
+@stopSfx 아이들_소리
+나는 유겸이의 뒷 모습을 바라보다가 홀로 앉아있는 여자아이에게로 시선을 옮겼다
+J: 아무래도 혼자 놀고있는 모습이 신경 쓰인단 말이지
+@printer Narration time:0
+기억을 잃고 오랜 병원 생활을 했던 나는 퇴원한 뒤에도 한참을 학교생활에 적응하지 못했다.
+J: 그땐 나도 저렇게 늘 혼자였는데…
+
+@back AngelDayRight
+@printer Narration time:0
+어린시절 내 모습이 겹쳐보인 탓인지 난 어느새 여자아이에게 다가가고 있었다
+@char Girl visible:false avatar:Aram
+J: 저기, 안녕?
+Girl: …
+J: 언니는 섬 밖에서 온 김지안이라고 해! 너는 이름이 뭐니?
+Girl: …
+@printer Narration time:0
+가까이서 보니 유치원생 정도의 더 어린아이였다
+그때 아이의 옆에 펼쳐진 일기장이 보였다
+J: 우와~ 이거 네가 쓴 거야? 너 글씨를 엄청나게 잘 쓰는구나?
+@printer Narration time:0
+아이답지 않은 수려한 글씨체였다
+Girl: …
+@printer Narration time:0
+아이는 내 칭찬을 들은 채 만 채 하며 제 손에 쥐어진 꽃을 만지작 거리고 있었다
+J: 그러고보니 여기는 온통 토끼풀이네, 뭘 만들고 있던거야?
+@printer Narration time:0
+아무리 말을 건내도 아이는 날 쳐다도 보지 않는다
+역시 아이들은 어렵네
+나는 대답을 듣는 걸 포기하고, 그 옆에 무릎을 모으고 앉았다
+J: 꽃반지 만드는구나! 손가락에 끼면 너무 예쁘겠는걸?
+Girl: …
+Girl: …왕관
+@spawn ShakeBackground wait:false
+@printer Narration time:0
+말했다?!
+J: 아~ 토끼풀로 화관을 만드는 중이었구나!
+Girl: …
+@printer Narration time:0
+그러고보니 아이 주변에는 만들다만 것으로 보이는 토끼풀 화관이 이리저리 널려있었다
+아마도 제 마음대로 되지 않는 모양이다
+좋아, 아이의 마음을 열 기회다!
+@startchoice 4
+@choice "화관을 만들어 준다" goto:.g
+@choice "화관 만드는 법을 알려준다" goto:.h
+@hidePrinter
+@stop
+
+#g
+@printer Narration time:0
+나는 소매를 걷어붙였다
+J: 그러면 언니가 조금 도와줘도 될까?
+J: 아주 예쁜 화관을 만들어줄게!
+Girl: …에쁜?
+@goto .Con4
+#h
+@printer Narration time:0
+나는 소매를 걷어붙였다
+J: 그러면 언니가 조금 도와줘도 될까?
+J: 우리 함께 아주 예쁜 화관을 만드는 거야!
+Girl: …함께?
+
+#Con4
+@printer Narration time:0
+예상대로 아이도 관심을 보이는 듯 눈을 크게 떴다
+나는 그대로 기세를 몰아 최선을 다해 토끼풀을 엮기 시작했다
+솔직히 화관 만드는 법 따위 모르지만 뭐 엮다보면 대충 모양은 잡히겠지
+중요한 건 마음 아니겠어?
+J: 어라, 근데...
+@printer Narration time:0
+어째서인지, 습관처럼 손이 마음대로 움직이고 있다
+Girl: 우와…
+J: 우와...
+J: …신기하지? 나도 신기하네…?
+@printer Narration time:0
+나… 토끼풀로 화관을 만들어본 적 있었던가?
+내가 이걸 어떻게 만든 거지? 그것도 이렇게 잘...
+@hidePrinter
+@back AngelDayRight visible:false time:2
+@endscript

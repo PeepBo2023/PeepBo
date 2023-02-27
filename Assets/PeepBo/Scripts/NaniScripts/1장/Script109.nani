@@ -1,0 +1,445 @@
+@back StreetDay position:8.8,0
+@bgm 메인03
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+@char Y.Face>기본,Body>기본 position:-0.25,-15
+J: 으아, 고작 두 시간 놀았는데 체력이 이렇게 바닥날 수 있어?
+@char Y.Face>웃는,Body>기본
+Y: 그래도 아이들 보니까 기분 좋아지지 않아요? 저는 울적할 때마다 와요
+J: 너도 그럴 때가 있어?
+@char Y.Face>놀란,Body>입에손
+Y: 당연하죠? 누난 대체 날 뭘로 아는 거야? 
+J: 해록도 마스코드
+@char Y.Face>웃는,Body>기본
+Y: 정답! 학습 능력이 뛰어나네~
+@printer Narration time:0
+천사의 집 아이들과 뒹굴며 온 체력을 쏟아내고 나니 발걸음이 천근만근이었다
+J: 갑자기 피곤해졌어 우리 이제 집에 가서 좀 쉬자
+@sfx 슝
+@char Y.Face>놀란,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: ...뭐라고요?
+@printer Narration time:0
+유겸이 제자리에 우뚝 멈춰섰다
+J: 왜?
+Y: 집에서 쉬자고요? ...아직 너무 일러요 누나, 우린 조금 더 알아갈 시간이 필요...
+J: 각자 집에서 쉬자고 각자! 대체 무슨 소리를 하는 거야?
+@sfx 슝
+@char Y.Face>윙크,Body>기본 position:-0.25,-15 scale:1
+Y: 에이 뭐야, 설렜는데...
+@char Y.Face>기본,Body>기본
+Y: 아무튼, 바래다줄게요 누나
+J: 데려다준다고? 아직 너무 일러 유겸아...
+@printer Narration time:0
+나는 유겸이의 표정을 최대한 따라하며 방금 전 말투를 흉내냈다
+@char Y.Face>놀란,Body>입에손
+Y: 우와... 누나 그런 캐릭터 진짜 안 어울리네요 저 좀 당황스러운 거 같기도...
+@char Y.Face>기본,Body>기본
+@printer Narration time:0
+유겸이는 정말 나를 데려다줄 셈인지 쫄래쫄래 나를 따라오며 장난을 걸었다
+@hidePrinter
+
+@stopBgm 메인03
+@sfx 웅성웅성
+J: 응? 이게 무슨 소리지?
+@printer Narration time:0
+구름이 지나가는 소리마저 들릴만큼 조용한 마을이라고 생각했는데
+오늘따라 이상하게 소란스러웠다
+
+@hide Y wait:false
+@back StreetDay visible:false time:0
+@back HallDay position:0,0
+모퉁이를 돌자, 저 멀리 마을 회관 앞에 모여있는 주민들이 보였다
+뭔가, 어제 왁자지껄한 분위기와는 정반대의 분위기였다
+@stopSfx 웅성웅성
+@bgm 심각1 fade:1
+@char Man visible:false avatar:man1
+@char Woman visible:false avatar:woman1
+Man: 피야, 피가 틀림없다고!
+Woman: 그냥 물을 많이 탄 페인트 같기도 하고…
+@char Woman visible:false avatar:woman2
+Woman: 대체 누가 저런 끔찍한 짓을!
+@printer Narration time:0
+모여있는 주민들 사이로 마을 회관의 담벼락이 언뜻 보였다
+담벼락에 뭐가 있는데... 저게 뭐지? 글씨? 그림?
+눈을 찡그리며 회관 가까이 다가가자 담벼락을 뒤덮은 새빨간 글씨가 눈에 들어왔다.
+@sfx 당황
+@back 집중선 id:EffectBackground position:0,0,10 wait:false
+@char Cut.Wall scale:0.5 position:0,-1
+네가 성읍에서도 저주를 받고 들에서도 저주를 받을 것이요
+@back 집중선 id:EffectBackground visible:false
+@spawn ShakeBackground wait:false
+; 진동
+순간 비명이 튀어나올 것 같아 서둘러 입을 막았다
+J: 이게… 무슨…?!
+@printer Narration time:0
+아직 마르지 않은 붉은 글씨가 끈적하게 흘러내려 한 방울 씩 바닥에 떨어졌다
+@hide Cut
+@char Headman visible:false avatar:Headman
+Headman: 자, 여러분 소란떨 것 없어요. 누구의 짓인진 모르겠지만 지웁시다!
+@printer Narration time:0
+이장님이 애써 당황스러움을 숨기며 말했다
+@char Woman visible:false avatar:woman1
+@spawn ShakeBackground wait:false
+Woman: 아니, 주민들을 다 소집해서 범인을 먼저 가려내는게 좋을 것 같아요!
+Man: 지금 여기 없는 사람이 누구요?
+Headman: 누가 장난을 좀 쳐놓은 것 뿐이니 일단 진정들하세요
+Headman: 보기 흉하니 이 끔찍한 글씨 먼저 지웁시다!
+Man: 필체라도 확인을 해서 범인을 찾아야지 이걸 왜 지운다는 거요?!
+@char Woman visible:false avatar:woman2
+Woman: 됐어요, 이 좁은 섬에서 아무리 숨겨봤자 금방 들키지
+Woman: 일 크게 벌리지 말고 이장님 말씀대로 보기만 해도 끔찍한 저것부터 지워버려요
+@printer Narration time:0
+글씨를 지우는 것과 범인을 찾는 것을 두고 또 다시 주민들 사이에 소란이 일었다
+@char Y.Face>기본,Body>기본 position:-0.25,-15
+그때 옆에 있던 유겸이가 불쑥 대화에 끼어들었다.
+Y: 저, 그럼요….
+Y: 거수를 해서 더 많은 의견대로 하는 건 어떨까요?
+@printer Narration time:0
+유겸이 의견을 내자 곳곳에서 동조하는 목소리들이 들렸다
+Headman: 그럼, 글씨를 먼저 지우는 쪽이 좋다고 생각하는 주민들부터 거수해주세요
+@char Y.Face>아련,Body>기본
+Headman: 음… 아홉 명
+Headman: 이번엔 범인을 먼저 찾아야 한다고 생각하는 주민들이요
+@printer Narration time:0
+이장님은 가만히 눈으로 주민들을 훑으며 수를 헤아렸다
+@spawn ShakeBackground wait:false
+Headman: 이런, 이쪽도 아홉 명이네…
+@char Y.Face>기본,Body>입에손
+Y: 지안 누나는 손 안들었는데요?
+@printer Narration time:0
+유겸이 나를 가르키자 나는 퍼뜩 정신이 들어 손을 내 저었다
+J: 아, 저는 주민이 아닌걸요…?
+Headman: 하지만 지금 결과가 딱 반반이니 어쩔 수 없지, 지안 씨 의견도 들어봐야겠어
+@printer Narration time:0
+이런...나는 잠시 생각하다가 입을 열었다
+@startchoice 0
+@choice "글씨를 먼저 지우는 것이 좋겠어요" goto:.A
+@choice "범인을 먼저 찾는 것이 좋겠어요" goto:.B
+@hidePrinter
+@hide Y
+@stop
+
+#A
+J: 그렇다면... 글씨를 먼저 지우는 것이 좋겠어요
+Headman: 좋아, 물과 닦을 것을 가져와요
+@printer Narration time:0
+이장님은 회관 문 가장 가까이 서있던 주민에게 말했다
+@goto .Con1
+#B
+J: 그렇다면... 범인을 먼저 찾는 것이 좋겠어요
+Headman: 그래요. 지금 주민들을 모을 테니 다들 회관으로 들어갑시다
+@printer Narration time:0
+이장님이 탐탁지 않다는 듯이 말하며 돌아섰다
+
+#Con1
+사람들이 분주하게 움직이던 그때였다
+First: 간밤에 평안하지 않은 일이 있었나보군요
+@printer Narration time:0
+@stopBgm 심각1 fade:1
+주민들이 소리를 따라 일제히 고개를 돌렸다
+@bgm 차분_BG fade:1
+@char Kitaek.Face>기본,Body>기본 position:0,-14.3
+Kitaek: 여러분들의 한숨 소리가 선락원까지 들려 내려왔습니다
+@printer Narration time:0
+눈가에 진 주름과 더할 나위 없이 어울리는 인자한 미소
+군데군데 자란 백발이 어깨 맡에서 흩날리는, 아주 선한 인상의 중년 남성이었다
+@char Woman visible:false avatar:woman1
+Headman: 아이고, 목사님...!
+Woman: 목사님! 와서 이것 좀 보세요
+Man: 누군가 아주 끔찍하고 역겨운 장난을 쳐놨습니다!
+@printer Narration time:0
+아 이 사람이 어제 갔던 그 선락원의 목사구나
+목사는 주민들을 지나쳐 담벼락 앞에 멈춰섰다. 그리곤 소리내 글씨를 읽어내렸다
+@sfx 슝
+@char Kitaek.Face>기본,Body>기본 scale:1.2 position:0,-19
+Kitaek: 네가 성읍에서도 저주를 받고 들에서도 저주를 받을 것이요
+@char Kitaek.Face>기본,Body>기본 scale:1 position:0,-14.3
+@printer Narration time:0
+그리고는 주민들을 돌아보며 말했다
+@char Kitaek.Face>먼산,Body>손든
+Kitaek: 신명기 말씀이군요
+@printer Narration time:0
+평안하고 따뜻한 어조
+누군가 이 상황을 알지 못한 채 목소리만 들었다면
+피로 쓴 글씨가 아닌 성경책을 읽었다고 생각할 만할 말투였다
+Kitaek: 갑자기 신의 계시가 해록도에 떨어질리는 없으니
+@char Kitaek.Face>기본,Body>기본
+Kitaek: 아무래도 우리 주민들 중 누군가의 소행이겠죠
+@spawn ShakeBackground wait:false
+Man: 목사님, 어서 범인을 찾아야 합니다! 이건 신성모독이나 다름없어요!
+@printer Narration time:0
+계속해 범인 색출에 목소리를 냈던 주민은
+목사가 나타나자 더더욱 열을 올려 소리쳤다
+Man: 저게 피인지 뭔지 모르겠지만 단순한 장난치고는 너무 과한거 아니요!
+Headman: 목사님, 한시라도 빨리 지워내고 싶습니다. 어떻게 하는 게 좋을까요?
+@printer Narration time:0
+@char Kitaek.Face>먼산,Body>기본
+목사는 다시 담벼락에 다가가 글씨에 손을 얹었다
+@spawn ShakeBackground wait:false
+Headman: 목, 목사님! 만지시면…!
+@printer Narration time:0
+만류하는 이장님의 손길에도 불구하고 붉은 글씨를 쓸어내린 목사는
+주민들이 가장 듣고 싶어했던 말을 꺼냈다
+@sfx 슝
+@char Kitaek.Face>기본,Body>기본 scale:1.2 position:0,-19
+Kitaek: 피는 아닙니다
+@char Kitaek.Face>기본,Body>손든 scale:1 position:0,-14.3
+Kitaek: 누군가 천사의 집에서 아이들의 물감을 훔치기라도 했나보군요
+@printer Narration time:0
+주민들 몇몇이 목사의 말을 듣고 안도의 한숨을 터트렸다
+피가 아니었다니 정말 다행이야... 
+하지만 아무리 물감으로라도 이런 짓을 하다니...
+Kitaek: 이장님 말씀대로 어서 물로 씻어내리는 게 좋겠어요
+@char Kitaek.Face>먼산,Body>기본
+Kitaek: 낙인처럼 흔적이 남기 전에 말이죠
+Kitaek: 그리고, 애쓰지 않아도 이런 장난을 친 짓궂은 주민은 곧 밝혀질 겁니다
+@char Kitaek.Face>웃는,Body>기본
+Kitaek: 우리 해록도의 형제 자매님들은 모두… 죄 고백을 두려워하시지 않으니까요
+@printer Narration time:0
+목사는 눈가의 주름이 깊이 패이도록 미소지으며 말을 이었다
+@sfx 슝
+@char Kitaek.Face>기본,Body>손든 scale:1.2 position:0,-19
+Kitaek: 전 여러분의 양심을 믿습니다
+@char Kitaek.Face>기본,Body>손든 scale:1 position:0,-14.3
+Kitaek: 괜히 서로를 의심하며 분란의 싹을 키우지 마시고 인내하며 기다리세요
+@hide Kitaek
+@printer Narration time:0
+목사님이 말을 마치자 주민들이 일사분란하게 움직이기 시작했다
+J: 오자마자 바로 상황을 정리하시네
+J: 역시 목사님이라 그런지 카리스마가 넘치시는 구나...
+@printer Narration time:0
+나도 주민들을 도와야겠다는 생각에 담벼락 가까이 다가가려는데
+@char Y.Face>윙크,Body>기본 position:-0.25,-15
+Y: 누나!
+@spawn ShakeBackground wait:false
+; 진동
+J: 악, 깜짝이야! 너 어디갔다오는 거야?
+@char Y.Face>웃는,Body>기본
+Y: 대체 왜 이렇게 잘 놀라요? 
+@char Y.Face>아련,Body>기본
+Y: 심장이 약한 거야, 아니면.... 
+@sfx 슝
+@char Y.Face>웃는,Body>기본 scale:1.3 position:-0.25,-21.5
+Y: 찔리는 게 많은가?!
+@char Y.Face>웃는,Body>기본 scale:1 position:-0.25,-15
+@printer Narration time:0
+싱글벙글 웃는 얼굴이 오늘따라 얄밉다
+J: 안 그래도 심각한 상황에 니가 갑자기 나타나서 그렇거든?
+@char Y.Face>울먹,Body>기본
+Y: 힝. 나는 누나 표정이 너무 안 좋아서 긴장을 풀어주려고 그런건데!
+J: 근데 너는 이와중에도 여기저기 돌아다니고 있네?
+@sfx 슝
+@char Y.Face>웃는,Body>입에손 scale:1.3 position:-0.25,-21.5
+@printer Narration time:0
+장난스럽게 웃던 유겸이 쓰윽 가까이 다가와 소리를 낮추며 말했다
+Y: 에이, 제가 사건의 전말을 열심히 파헤치고 왔단 말이에요~
+@printer Narration time:0
+안 봐도 뻔하다, 분명 여기저기 쏘다니며 주민들한테 물어보고 왔겠지
+Y: 누나도 궁금하지 않아요?
+@startchoice 1
+@choice "관여하고 싶지 않아" goto:.C
+@choice "글쎄... 나도 궁금하긴 해" goto:.D
+@hidePrinter
+@stop
+
+#C
+@char Y.Face>웃는,Body>입에손 scale:1 position:-0.25,-15
+J: 괜히 관여하고 싶지 않아, 나는 외부인일 뿐인걸
+@char Y.Face>놀란,Body>기본
+Y: 에이...누나 매정해! 너무 선 긋는 거 아녜요?
+J: 머리 아픈 일에 엮이는 건 딱 질색이야
+@char Y.Face>웃는,Body>기본
+Y: 하지만 이미 깊숙이 엮인 것 같은데?
+J: ...뭐?
+Y: 헤헤. 아무튼 제 말 좀 들어봐요~
+@goto .Con2
+#D
+@char Y.Face>웃는,Body>입에손 scale:1 position:-0.25,-15
+J: 글쎄... 나도 궁금하긴 해
+@char Y.Face>웃는,Body>기본
+Y: 역시 그럴 줄 알았어!
+
+#Con2
+@char Y.Face>기본,Body>입에손
+Y: 저 낙서, 이장님이랑 신씨 아저씨가 한시간 전 쯤 회관에 왔다가 발견한 거래요
+Y: 저 글씨를 보자마자 신씨 아저씨가 아주 고래고래~
+Y: 해록도 떠나가라 소리를 질러서 주민들도 나와서 보게 된 거예요
+@char Y.Face>웃는,Body>입에손
+Y: 오늘은 토요일이라 새벽 예배가 없어서 주민들 모두 평소보다 늦게 일어나거든요
+@printer Narration time:0
+유겸은 조잘조잘 얘기했다
+J: 너는 해록도에 의심이 될 만한 사람이 있어?
+@char Y.Face>아련,Body>입에손
+Y: 음….
+@printer Narration time:0
+고개를 갸웃 갸웃거리며 잠시 생각하던 유겸이 말을 이었다
+Y: 전혀요. 이런 질나쁜 장난을 할 사람은 없어요
+Y: 만약 있다고 해도 정말 물감이면 모를까
+@sfx 슝
+@char Y.Face>아련,Body>기본 scale:1.3 position:-0.25,-21.5
+Y: 피로 글씨를 쓰는 기괴한 짓을 할 강심장은 없죠
+@char Y.Face>아련,Body>기본 scale:1 position:-0.25,-15
+@startchoice 2
+@choice "피가 아니고 물감이야" goto:.E
+@choice "역시 피였어?" goto:.F
+@hidePrinter
+@stop
+
+#E
+J: 바보야, 목사님이 물감이라고 하셨잖아
+@printer Narration time:0
+@sfx 슝
+@char Y.Face>놀란,Body>입에손 scale:1.3 position:-0.25,-21.5
+유겸이 눈을 동그랗게 뜨고 나를 쳐다봤다
+@char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-15
+Y: 누나는 꽤 순진한 편이네요, 기억해놔야지!
+@printer Narration time:0
+순진하긴 누가 순진.....어라
+@spawn ShakeBackground wait:false
+; 진동
+J: 뭐, 뭐?.... 그러면 저게 진짜 피라고? 누, 누구의?!
+@char Y.Face>웃는,Body>기본
+Y: 아이 목소리 낮춰요 누나~ 육지까지 다 들리겠네
+@printer Narration time:0
+유겸의 반응을 보아하니 농담은 아닌 것 같다
+@goto .Con3
+#F
+J: 역시 물감이 아니라 피인거지?
+@printer Narration time:0
+@sfx 슝
+@char Y.Face>놀란,Body>입에손 scale:1.3 position:-0.25,-21.5
+유겸이 눈을 동그랗게 뜨더니 작게 박수를 쳤다
+@char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-15
+Y: 누나는 꽤 예리한 편이네요, 기억해놔야지!
+J: 그런데 정말 피라면... 누구거지?
+
+#Con3
+@char Y.Face>기본,Body>기본
+Y: 사람 피는 아니니까 너무 놀라지 않아도 돼요!
+Y: 주민들이 키우는 가축이면 벌써 들통났을 테니까 그것도 아닐테고…
+@char Y.Face>윙크,Body>기본
+Y: 아마 숲에 있는 산짐승이 아닐까요? 뭐… 멧돼지라던가?
+J: 그것도 너무 끔찍해… 
+J: 목사님은 대체 왜 주민들에게 사실대로 말씀하지 않으신 거야?
+Y: 그야, 여기 주민들 모두 연세가 있으신데 이런 끔찍한 얘기를 했다가
+@char Y.Face>아련,Body>기본
+Y: 심장에 무리라도 가면 어떡해요. 혈압이 갑자기 뚝 떨어진다거나
+Y: 그리고 이 좁은 섬에서 괜히 분란 일으키지 않는 편이 좋죠
+@char Y.Face>웃는,Body>입에손
+Y: 목사님은 우리에게 평안과 안식을 주셔야 하는 분이잖아요? 
+Y: 지혜로우신 대처였다고 생각해요
+J: 정말 그럴까? 그런데...
+@printer Narration time:0
+나는 잠시 할 말을 골랐다
+J: 해록도에 이런 짓을 할만 한 주민은 없다고 했잖아
+@char Y.Face>기본,Body>기본
+Y: 네 아마도 그렇죠?
+J: 그럼 외부인 짓이라는 거야? 이 섬에 외부인은 나밖에 없잖아
+@printer Narration time:0
+얘 설마 나를 의심하는 건가?
+@char Y.Face>아련,Body>기본
+유겸이는 갑자기 한껏 미간을 찌푸리며 진지한 표정을 했다
+@sfx 슝
+@char Y.Face>아련,Body>기본 scale:1.3 position:-0.25,-21.5
+Y: 흠...
+@char Y.Face>아련,Body>기본 scale:1 position:-0.25,-15
+J: 뭐야 왜 대답을 안 해, 너 정말 날 의심하는 거야?
+@char Y.Face>기본,Body>입에손
+Y: 누나말고 한 명 더 있죠. 외부에서 온 사람
+J: 뭐? 누구?
+Y: 얼마 전에 해록도에 온 공무원 형이요
+@spawn ShakeBackground wait:false
+J: ...뭐? 고결 씨...?
+@char Y.Face>기본,Body>기본
+Y: ...
+@spawn ShakeBackground wait:false
+J: 야 진짜로? 진짜 고결 씨를 의심해, 너?
+@printer Narration time:0
+나는 다급하게 유겸이의 소매를 잡아끌며 물었다
+Y: ...
+@printer Narration time:0
+유겸이는 내게 대답을 해주지 않고 나를 빤히 바라보고만 있었다
+@char Y.Face>웃는,Body>입에손
+Y: 풉...
+J: 응...?
+@sfx 슝
+@char Y.Face>웃는,Body>입에손 scale:1.3 position:-0.25,-21.5
+@spawn ShakeBackground wait:false
+Y: 푸하하하, 누나 표정 풀어요!
+@char Y.Face>윙크,Body>입에손 scale:1 position:-0.25,-15
+Y: 장난이였어요 장난!
+@printer Narration time:0
+유겸이는 이제 아주 배를 잡고 웃음을 터트리고 있었다
+Y: 아 진짜 웃기네! 누나가 하도 심각하길래 장난 좀 쳐본 거예요
+@spawn ShakeBackground wait:false
+J: 이씨, 놀랐잖아! 왜 그런 장난을 치고 그래! 그것도 엄한 사람 걸고 말이야!
+@char Y.Face>웃는,Body>기본
+@printer Narration time:0
+나는 유겸이의 팔을 마구잡이로 때렸다
+Y: 아파요 아파, 미안해요 누나
+@printer Narration time:0
+전혀 아픈 표정이 아니었다
+J: 그나저나 너는 뭐야?
+@char Y.Face>놀란,Body>입에손
+Y: 네? 저 뭐요?
+@startchoice 3
+@choice "넌 저게 피인 줄 어떻게 알았는데?" goto:.G
+@choice "넌 왜 나한테 사실대로 말해준거야?" goto:.H
+@hidePrinter
+@stop
+
+#G
+J: 넌 저게 피인 줄 어떻게 알았는데?
+@char Y.Face>기본,Body>기본
+Y: 일단 천사의 집엔 저만한 물감도 없을 뿐더러
+@printer Narration time:0
+유겸이 주변을 둘러보며 눈치를 살피더니 손을 슬쩍 내밀어보였다
+@char Y.Face>웃는,Body>입에손
+Y: 궁금해서 아주 살짝 만져봤어요
+@spawn ShakeBackground wait:false
+J: 아으, 야! 너 정말 왜 못 말리겠다. 그걸 대체 왜 만져!
+@printer Narration time:0
+최소한으로 낮춘 목소리에 최대한으로 힘을 실어 다그쳤다
+@char Y.Face>윙크,Body>입에손
+Y: 궁금하잖아요~ 저 이런 거 못 참는단 말이예요
+J: 됐고, 너 빨리 손 씻으러 가!
+@printer Narration time:0
+킥킥 대며 회관으로 뛰어들어가는 유겸의 뒷모습을 보며 머리를 부여잡았다
+@hide Y
+@goto .Con4
+#H
+J: 넌 왜 나한테 사실대로 말해준거야?
+@sfx 슝
+@char Y.Face>기본,Body>기본 scale:1.3 position:-0.25,-21.5
+Y: 음? 음… 혼자만 알고 있기 무서워서?
+@char Y.Face>기본,Body>기본 scale:1 position:-0.25,-15
+Y: 저거 쓴 범인이 막 저한테 찾아와서 해코지 하면 어떡해요
+@char Y.Face>웃는,Body>입에손
+Y: 증인을 한 명이라도 더 늘려놔야 나만 혼자 안 당하지
+J: 와…. 너 은근히 비겁한 구석이 있구나?
+Y: 하하하, 다채로운 매력의 유겸이~
+J: 그럼 넌 저게 피인 줄 어떻게 알았는데?
+@char Y.Face>기본,Body>기본
+Y: 일단 천사의 집엔 저만한 물감도 없을 뿐더러
+@printer Narration time:0
+유겸이 주변을 둘러보며 눈치를 살피더니 손을 슬쩍 내밀어보였다
+@char Y.Face>웃는,Body>입에손
+Y: 궁금해서 아주 살짝 만져봤어요
+@spawn ShakeBackground wait:false
+J: 아으, 야! 너 정말 왜 못 말리겠다. 그걸 대체 왜 만져!
+@printer Narration time:0
+최소한으로 낮춘 목소리에 최대으로 힘을 실어 다그쳤다
+@char Y.Face>윙크,Body>입에손
+Y: 궁금하잖아요~ 저 이런 거 못 참는단 말이예요
+J: 됐고, 너 빨리 손 씻으러 가!
+@printer Narration time:0
+킥킥 대며 회관으로 뛰어들어가는 유겸의 뒷모습을 보며 머리를 부여잡았다
+@hide Y
+
+#Con4
+그나저나 정말 무섭다, 이 조그만 섬에서 대체 이게 무슨 일이야….
+일단 일손을 좀 돕고 천천히 생각해봐야겠다
+@hidePrinter
+@back HallDay visible:false time:2
+@endscript

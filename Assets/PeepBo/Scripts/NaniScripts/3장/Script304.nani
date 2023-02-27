@@ -1,0 +1,351 @@
+@back StreetNight
+@bgm 메인03
+@printer Narration wait:false
+이쪽으로 곧장 걸어오던 다함이
+집앞에 멈춰서는 게 보였다
+J: 헉!
+
+@back StreetNight visible:false wait:false time:0
+@back LivingroomNight1 time:0
+@choice "창문 아래로 숙인다" goto:.a
+@choice "커튼 뒤로 숨는다" goto:.b
+@hidePrinter
+@stop
+
+#a
+@printer Narration wait:false
+반사적으로 나는 창문 아래로 몸을 숙였다
+@goto .con1
+#b
+@printer Narration wait:false
+반사적으로 나는 커튼 뒤로 몸을 숨겼다
+#con1
+J: 하마터면 눈 마주칠 뻔했네!
+@printer Narration wait:false
+창문으로 지켜봤다는 걸 들키면 상황이 이상해질테니까...
+게다가 그런 꿈을 꾸고 난 뒤라서 아무도 만나고 싶지 않았다
+오늘따라 왜 이렇게 불편한 손님이 많은거야!
+다함씨에겐 미안하지만 집에 없는 척 해야겠다...
+J: ...해록도는 좁아서 금방 들키려나?
+J: 그, 그러면 깊게 잠들었다고 하지, 뭐
+J: 그런데 여긴 무슨 일로 찾아온걸까?
+@printer Narration wait:false
+이러저러한 생각을 하며 슬쩍 창밖을 바라봤다
+
+@back LivingroomNight1 visible:false wait:false
+@back StreetNight
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+다함은 여전히 그 자리에 가만히 서 있었다
+문을 두드리지도, 그렇다고 누군가를 기다리는 것 같지도 않았다
+그저 가만히 서 있을 뿐
+뭐하는 거지...?
+목적이 있어서 찾아온 게 아닌가?
+@hide D wait:false
+@char Silhouette.D scale:1.23 position:0,-15.6
+J: 언제까지 저러고 있을 예정이람...
+@printer Narration wait:false
+늘 선락원에서만 만나서 그런가
+우리 집 앞에 서 있는 그의 모습이 낯설었다
+가까이서 봤을 때는 몰랐는데 이렇게 보니까...
+@choice "목사님과 비슷한 분위기가 풍겨" goto:.c
+@choice "목사님과 전혀 다른 분위기가 풍겨" goto:.d
+@hidePrinter
+@stop
+
+#c
+의외로 목사님과 비슷한 분위기가 풍겼다
+같은 종교를 가지면 묘하게 닮게 되는 걸까
+하긴 다함이 나이가 들면 주기택 목사님처럼 될 것 같기도...
+이런 말 하면 싫어하려나?
+@goto .con2
+#d
+자세히 보니 목사님과 전혀 다른 분위기가 풍겼다
+예전엔 조금 비슷한 느낌을 가졌다고 생각했는데,
+겉보기엔 둘 다 온화해 보이지만
+어딘가 정 반대의 방향을 바라보고 있는 것만 같아
+이런 말 하면 싫어하려나?
+#con2
+@hide Silhouette wait:false
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+그때, 문득 고개를 돌린 다함과 눈이 마주쳤다
+; 진동
+J: 헉...!
+@hide D
+@printer Narration wait:false
+뒤늦게 몸을 숨겼지만 ...
+@sfx 노크
+<i>똑똑똑</i>
+의미가 없다는 걸 증명해주듯 노크 소리가 울려퍼졌다
+@choice "자는 척하자" goto:.e
+@choice "당당하게 문 열자" goto:.f
+@hidePrinter
+@stop
+
+#e
+J: 으앗! 어쩌지? 지금이라도 자는 척...
+J: ...할 수 있을 리가 없잖아!
+@printer Narration wait:false
+나는 쿵쿵거리는 가슴을 붙잡고 한숨을 내쉬었다
+@goto con3
+#f
+J: 그래, 내가 죄를 지은 것도 아니고 숨을 이유가 없지!
+#con3
+@printer Narration wait:false
+@sfx 노크
+똑똑똑
+J: 자, 잠시만요!
+@sfx 문여는_소리
+
+;@back LivingroomNight1 visible:false wait:false
+;@back StreetNight
+@stopBgm 메인03
+@bgm 차분_BG
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+@printer Narration wait:false
+문을 열자 마침 노크를 하려던 참이었는지 다함이 한쪽 손을 들고 있었다
+J: 아, 안녕하세요. 다함 씨
+@char D.Face>웃는,Body>기본
+D: 열어주지 않을 줄 알았는데
+@printer Narration wait:false
+다함은 손을 내리며 싱긋 웃었다
+@char D.Face>웃는,Body>가슴에손
+D: 혼자 계시면서 아무나 들여보내면 위험해요, 지안 씨
+J: 네?
+@choice "제가 혼자 있는 건 어떻게 알았죠?" goto:.g
+@choice "그러면 안녕히 가세요" goto:.h
+@hidePrinter
+@stop
+
+#g
+J: 제가 혼자 있는 건 어떻게...
+@printer Narration wait:false
+@char D.Face>기본,Body>기본
+내 눈을 빤히 바라보던 다함은 조용히 답했다
+@char D.Face>웃는,Body>기본 position:0,-23 scale:1.3
+D: 여긴 해록도니까요
+@char D.Face>웃는,Body>기본 position:0,-16 scale:1
+D: 이곳의 모든 일은 알고 있답니다
+@printer Narration wait:false
+그 이상한 대답이 어쩐지 납득이 갔다
+@char D.Face>기본,Body>기본
+다함의 입에서 흘러나오니까, 더욱 더
+#h
+J: 역시 그렇죠? 그러면 안녕히...
+@printer Narration wait:false
+@char D.Face>기본,Body>기본
+잘됐다싶어 문고리를 당기려는데 다함이 비켜주질 않는다
+그리고 내 눈을 빤히 바라보며 조용히 답했다
+@char D.Face>기본,Body>기본 position:0,-23 scale:1.3
+D: 저한테 말고요
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+@printer Narration wait:false
+그러면 뭐 누구한테 하라는...
+D: 저한테 말고
+@printer Narration wait:false
+@char D.Face>웃는,Body>기본
+다함이 눈을 접으며 반복했다
+J: 왜... 다함 씨는 빠지죠?
+@char D.Face>기본,Body>기본
+D: 여긴 해록도니까요
+@printer Narration wait:false
+이상한 대답이었지만 어쩐지 납득이 갔다
+다함의 입에서 흘러나오니까, 더욱 더
+
+#con4
+@sfx 슝
+@char D.Face>웃는,Body>입에손 position:0,-23 scale:1.3
+D: 그러니까 제가 아닌 다른 사람은 부디 경계해주세요
+@char D.Face>웃는,Body>입에손 position:0,-16 scale:1
+D: 함부로 문을 열어주지도 말고요
+@printer Narration wait:false
+@char D.Face>기본,Body>기본
+그는 이미 누가 다녀갔는지 안다는 듯이 말했다
+J: 걱정해주는 거라면 고맙지만
+J: 차라리 조금 더 일찍 오지 그랬어요
+J: 제가 그 다른 사람 때문에 얼마나 곤란했었는데요
+@printer Narration wait:false
+나는 잠시 고민하다가 입술을 뗐다
+J: 그...원장님이라고 아세요?
+J: 선락원 아이들을 돌봐주시는 분이라던데
+@printer Narration wait:false
+@char D.Face>아련,Body>입에손
+내가 떠보자 다함은 대답대신 고운 손가락으로 제 턱을 쓸었다
+J: 유겸이는 좋은 분이라고 소개했지만 제가 볼 땐 잘못된 평가 같아요
+@char D.Face>기본,Body>기본
+J: 집에 불쑥 찾아온 것도 그렇고...
+J: 심히 의심스러운 관상이랄까 기운이랄까, 아니 계속 듣기만 할 거예요?
+J: 반박이라도 좀 해줘요!
+@printer Narration wait:false
+차라리 다함도 유겸이처럼 후하게 평가해주면 안심이 될 텐데
+@char D.Face>웃는,Body>기본
+그는 흥미로운 미소만 지은 채 고개를 까닥거릴 뿐이었다
+괜히 고자질만 했다는 생각에 죄책감이 밀려올 즈음
+@char D.Face>웃는,Body>입에손
+D: 지안 씨 말이 맞아요
+@printer Narration wait:false
+@char D.Face>아련,Body>입에손
+다함이 선선히 동의했다
+@char D.Face>웃는,Body>기본
+D: 지안 씨의 기분을 망치다니 정말 실망스러운 분이군요
+J: ....말과 달리 표정은 즐거워보이는데요?
+D: 그럴 리가요
+@printer Narration wait:false
+전혀 신빙성이 없었지만 다함은 뒤늦게 정색했다
+@char D.Face>웃는,Body>기본
+D: 밥은 먹었어요? 약은요?
+J: 으음, 이따가 먹을 거예요
+D: 집에 사탕 있어요?
+@printer Narration wait:false
+그의 입에서 뜬금없이 아기자기한 단어가 튀어나왔다
+J: 갑자기 무슨 사탕이요?
+@char D.Face>아련,Body>기본
+D: 저번에 지안 씨가 그랬잖아요, 약은 사탕과 함께 먹어야 한다고
+J: ...아!
+@printer Narration wait:false
+@char D.Face>기본,Body>기본
+며칠 전, 다함과 단둘이 선락원에 머물렀던 그 날
+그에게 건내준 사탕을 아직도 기억하고 있는 듯 했다
+@char D.Face>웃는,Body>기본
+D: 그때 받았던 선물 덕분에 기분이 꽤 나아졌었죠
+J: 그래요? 다행이네요
+@sfx 슝
+@char D.Face>기본,Body>입에손 position:0,-23 scale:1.3
+D: 그래서 지안 씨에게도 답례를 주고 싶었어요
+@char D.Face>기본,Body>입에손 position:0,-16 scale:1
+J: 사탕을요?
+@char D.Face>아련,Body>입에손
+D: 사탕보다 더 달콤한 거요
+@printer Narration wait:false
+;진동
+@char D.Face>기본,Body>입에손 position:0,-23 scale:1.3
+다함이 갑자기 보폭을 넓히는바람에 내 시야에 그가 가득 찼다
+@char D.Face>기본,Body>입에손 position:0,-16 scale:1
+J: 네, 네?
+@printer Narration wait:false
+나는 반사적으로 손을 뻗어 그를 막아냈지만
+그의 단단한 몸은 꿈쩍하지 않았다
+J: 저, 저기 잠깐만...
+D: 싫으면 말해요
+@choice "싫어요!" goto:.i
+@choice "계속 해보세요" goto:.j
+@hidePrinter
+@stop
+
+#i
+J: 시...싫어요!
+D: ....
+@printer Narration wait:false
+@char D.Face>기본,Body>기본
+내 말에 그가 정말로 발걸음을 멈췄고
+우리 사이에 잠깐동안 침묵이 부풀었다
+@char D.Face>웃는,Body>기본
+그것을 터뜨린 것은 다함의 웃음이었다
+@goto .con5
+#j
+J: ...아뇨, 싫긴요?!
+J: 계속 해보세요
+@printer Narration wait:false
+@char D.Face>아련,Body>입에손
+내 반응이 예상범주를 벗어났는지 그의 눈매가 가늘어졌다
+@char D.Face>기본,Body>입에손
+정말 해도 돼? 라고 묻는 듯 했다
+나는 침을 꼴깍 집어삼키고 입꼬리를 끌어올렸다
+소심한 도발이었다
+그가 날 놀리고 싶어하는게 보여서
+지지 않으려고 버틴다는 게 그만...
+@char D.Face>기본,Body>기본 position:0,-23 scale:1.3
+다함의 저 황금빛 눈동자를 반짝거리게 만들어버렸다
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+J: 하하하... 다함 씨가 사탕 대신 내게 주고 싶은 게 뭘까...~
+J: 너무 궁금한데요...~
+@printer Narration wait:false
+그러자 다함은 허공에서 갈 곳 잃은 내 손을 붙잡더니
+자신의 허리를 감싸도록 끌어당겼다
+D: 계속 해보라 하면, 멈출 이유가 없죠
+@char D.Face>웃는,Body>기본
+D: 지안 씨는 그냥 가만히 있어요
+@printer Narration wait:false
+그가 말 할 때마다 숨결이 내게 내려앉았다
+눈앞이 어지러운 건 감기기운 때문일까...?
+@char D.Face>아련,Body>입에손
+D: 지안 씨 지금 얼굴이 빨개요
+D: 힘들어보이는데,
+@char D.Face>기본,Body>기본
+D: 일단 침대로 모셔드릴까요
+J: 아, 아뇨 괜찮...!
+@sfx 슝
+@char D.Face>기본,Body>기본 position:0,-23 scale:1.3
+D: 그럼 여기서 할게요
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+@printer Narration wait:false
+뭘 하겠다는 건지 모르겠으면서도, 알 것 같아서
+나도 모르게 눈을 꾹 감아버렸다
+@hidePrinter
+@hide D
+
+@back StreetNight visible:false wait:false
+@back Black
+@sfx 부스럭
+<i>부스럭</i>
+...부스럭?
+내 예상과 달리 지연되는 시간에 슬쩍 눈을 뜨려는 순간
+입술에 낯선 감촉의 무언가 닿았다
+@hidePrinter
+
+@back Black visible:false wait:false
+@back LivingroomNight1
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+J: 읍
+@printer Narration wait:false
+...음? 달다
+입술을 부드럽게 벌리고 안으로 들어온 것은...
+@char D.Face>기본,Body>기본
+J: 초, 초콜릿?
+@printer Narration wait:false
+자그마한 초콜릿이었다
+얼떨떨한 표정으로 너무나 달달한 초콜릿을 녹여 먹고 있으니
+다함이 참았던 웃음을 터뜨렸다
+@char D.Face>웃는,Body>입에손
+D: 눈까지 감을 필요는 없었는데
+
+#con5
+J: 뭐, 뭐에요?
+@char D.Face>아련,Body>기본
+D: 정말...
+@printer Narration wait:false
+날 내려다보는 다함의 눈빛이 나른해졌다
+왜 아까보다 더 즐거워보이는 거지
+@char D.Face>웃는,Body>기본
+D: 놀려서 미안해요
+@char D.Face>기본,Body>가슴에손
+D: 이만 쉬어요
+@printer Narration wait:false
+나는 황당해져서 그를 올려다봤다
+뒤늦게 미간을 팍 구겼지만, 온몸은 여전히 열감으로 뜨거웠다
+J: 덕분에 아팠던 것도 다 잊어버렸어요
+J: 고맙네요, 아주!
+@printer Narration wait:false
+그는 내가 떠미는대로 순순히 문 밖으로 나가더니 불쑥 멈춰섰다
+J: 또 왜요?!
+@char D.Face>기본,Body>기본
+D: 내일 저녁 예배 때 선락원에 와요
+J: 선락원이요? 왜요?
+@char D.Face>웃는,Body>기본
+D: 지안 씨한테 전해줄 말이 있어요
+@printer Narration wait:false
+그의 얼굴을 뚫어져라 쳐다보자 다함이 소리내며 웃었다
+J: ...알겠어요
+J: 아무튼 다시는 이런 장난 치지 마요!
+@sfx 문닫는_소리
+@hide D
+@printer Narration wait:false
+문 밖으로 그를 떠밀고 쾅 방문을 닫았다
+그리고 뒤늦게 그의 대답을 듣지 못했다는 사실을 깨달았다
+다신 이런 장난 치지않겠다는 대답을 제대로 들었어야했는데
+망설이다 다시 문고리를 잡았지만 그는 이만 사라지고 없었다
+J: 알고보면 다함 씨도 은근히 장난끼가 많다니까...
+
+@sfx 문닫는_소리
+@back LivingroomNight1 visible:false time:1
+@hidePrinter
+@endscript

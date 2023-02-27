@@ -1,0 +1,564 @@
+@back LivingroomDay
+@bgm 우준_등장
+@printer Narration wait:false
+겨우 기침 한번가지고 호들갑은…
+나는 코를 훌쩍이며 뻘쭘하게 돌아섰다
+그러고보니 비가 온 뒤라 날이 맑던데...
+내일 쯤 동백나무 숲으로 가면 그를 만날 수 있는 걸까?
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+...
+@hide W
+아니! 무슨 생각을 하는거야
+J: 이러면 꼭 내가 기다리기라도 하는 것 같잖아?!
+J: 정신 차려, 이지안
+@printer Narration wait:false
+나는 이게 다 감기기운 때문이라고 믿으며 이마를 짚었다
+다행히도 미열이 남아있엇다
+안그래도 수상한 원장때문에 신경을 썼더니 졸음도 몰려왔다
+그래. 자고나면 다 괜찮아질거야
+J: 나연이도 금방 돌아올테니까
+J: 나연이가 돌아오면 오늘 겪었던 일을 얘기해줘야지
+J: 유겸이는 좋은 사람이라고 했지만
+J: 영 찝찝하단 말이지
+J: 그 다음에는 고결 씨나 다함 씨한테도 한번 물어보자
+@printer Narration wait:false
+나는 소파에 털썩, 몸을 던졌다
+잠시 눈만 붙이고 일어나야겠다
+침대에 누워버리면 너무 깊게 잠들 것 같으니까
+나는 근처에 있던 담요를 끌어안고 눈을 감았다
+@stopBgm 우준_등장
+@hidePrinter
+
+@back LivingroomDay visible:false wait:false
+@back Black
+;@sfx 달그락소리
+얕은 잠을 깨운 건 
+@bgm 메인03
+그릇을 달그락거리는 듯한 작은 소음이었다
+J: 으음....
+@printer Narration wait:false
+얼마나 잠들었는지는 모르겠지만
+온몸이 뻐근하고 물에 불린 솜처럼 무거웠다
+어쩐지 굳어버린 몸을 뒤척이려고 애쓰는 동안
+@back Black visible:false wait:false
+@back LivingroomDay
+;@sfx 달그락소리
+부엌 쪽에서 들리는 듯한 소음이 커져갔다
+J: 으음...시끄러워
+@choice "일어나서 확인해보자" goto:.a
+@choice "잠이나 자자" goto:.b
+@hidePrinter
+@stop
+
+#a
+@printer Narration wait:false
+더이상 자긴 그른 것 같아, 이만 일어나려는데
+@goto .con1
+#b
+@printer Narration wait:false
+담요를 머리 끝까지 끌어당기고 다시 잠들려는데
+#con1
+First: ...죽 좋아하려나
+@printer Narration wait:false
+아직 채 가시지 못한 졸음 사이에서 눈꺼풀이 번쩍 뜨였다
+당연히 나연이가 요리를 한다고 생각했는데
+귓가에 들려온 음성은 생각보다 낮고 굵었다
+나연이가 ... 아닌거야?
+또렷해지는 의식과 달리 힘이 반쯤밖에 들어가지지 않는 몸뚱이를
+열심히 움직이려고 버둥거리는 사이
+First: 어?
+@printer Narration wait:false
+그런 나를 발견한 듯 누군가 짧게 반응했다
+가만 이 목소리는...
+소파 너머로 서서히 머릿속에 그려지는 윤곽
+서, 설마....
+이쪽으로 걸어오는 발자국 소리가 커질수록 내 눈도 점점 동그래졌다
+@sfx 발소리
+지금 우리 집에 와 있는 건...
+@choice "홍유겸" goto:.c
+@choice "고결" goto:.d
+@choice "주다함" goto:.e
+@choice "차우준" goto:.f
+@hidePrinter
+@stop
+
+#c
+; 홍유겸 +15
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+Y: 누나~ 이제 일어났어요?
+@spawn ShakeCamera wait:false
+J: 호, 홍유겸..?!
+@printer Narration wait:false
+유겸의 얼굴을 보자마자 꽉 막혔던 목소리가 터져나왔다
+@spawn ShakeCamera wait:false
+@char Y.Face>기본,Body>기본
+J: 너, 너가 또 여기 왜 있어?!
+@char Y.Face>윙크,Body>브이
+Y: 왜 있긴요~
+Y: 누나의 헬쓱한 얼굴이 자꾸만 생각나서 일이 손에 잡혀야 말이죠!
+@char Y.Face>울먹,Body>입에손
+Y: 제 앞에서 쿨럭쿨럭, 이렇게 피를 막 토할 것처럼 아파했잖아요
+J: 그냥 목에 침이 잘못 넘어가서 기침 한번 한거였어!
+@printer Narration wait:false
+@char Y.Face>기본,Body>기본
+나는 소파에 벌떡 일어나 앉았다
+J: 그보다 문은 어떻게 연거야?!
+@char Y.Face>웃는,Body>기본
+Y: 그냥 문고리를 잡고 돌렸더니 열리던 걸요~?
+@printer Narration wait:false
+내가 문을 안 잠그고 잤던가?
+방금 전에 그 일을 겪어놓고도 문단속을 못하다니
+J: 너, 넌 그렇다고 남의 집에 막 들어오면 어떡해?
+@printer Narration wait:false
+나는 애꿎은 유겸에게 화를 냈다
+@char Y.Face>윙크,Body>입에손
+Y: 누나~ 그렇게 찌푸리면 이마에 주름 생겨요
+@printer Narration wait:false
+유겸이 손가락으로 내 미간을 살짝 눌렀다
+@sfx 슝
+@char Y.Face>윙크,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 누나가 걱정하는 일은 이제 더 이상 일어나지 않을거에요
+@char Y.Face>윙크,Body>입에손 position:-0.25,-15 scale:1
+J: 뭐?
+@printer Narration wait:false
+@char Y.Face>기본,Body>기본
+유겸이 장난스러운 목소리로,
+내 마음을 읽은 것처럼 위로했다
+@char Y.Face>웃는,Body>브이
+Y: 내가 늘 누가 곁에 있을 거니까!
+@printer Narration wait:false
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+어느새 유겸의 따스한 두 손이 내 뺨을 감쌌다
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+Y: 누나가 불안하지 않도록 원장님께도 말씀드려놨어요
+@printer Narration wait:false
+그 말에 나는 눈썹을 크게 들어올렸다
+홍유겸이 이렇게 든든한 사람이었던가?
+@char Y.Face>기본,Body>기본
+Y: 자, 그리고 이거
+@sfx 발소리
+@printer Narration wait:false
+유겸이 도도도 부엌으로 달려가더니 쟁반을 들고 왔다
+; 죽 cut
+J: 이, 이게 뭐야?
+Y: 죽이요!
+J: 아니 그건 알겠는데...
+Y: 누나, 아픈 거 빨리 나으라고
+Y: 오랜만에 실력 발휘 좀 했어요
+Y: 우리 집 주방이 아니라서 헤매긴 했지만
+Y: 맛은 보장해도 돼요!
+; 죽 cut out
+@printer Narration wait:false
+모락모락 피어오르는 김 사이로
+@char Y.Face>웃는,Body>기본
+유겸의 뽀얀 얼굴과 미소가 흐릿해졌다 
+Y: 그러니까 지안 누나!
+J: 응?
+@sfx 슝
+@char Y.Face>윙크,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 그만 일어나요!
+@char Y.Face>윙크,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+...응?
+@hide Y
+@hidePrinter
+@back LivingroomDay visible:false wait:false
+@back Black
+... 어라?
+@hidePrinter
+@back Black visible:false wait:false
+@back LivingroomNight1
+@spawn OpenEyes
+@wait 2
+@despawn OpenEyes
+@goto .con2
+
+#d
+; 고결 +15
+@char G.Face>찡그림,Body>팔짱 position:-0.5,-15.5 scale:1
+G: 날 언제까지 기다리게 할 거야?
+@spawn ShakeCamera wait:false
+J: ...고, 고결 씨?!
+@printer Narration wait:false
+@char G.Face>기본,Body>팔짱
+결의 얼굴을 보자마자 꽉 막혔던 목소리가 터져나왔다
+@spawn ShakeCamera wait:false
+J: 여, 여긴 왜...?!
+@printer Narration wait:false
+나는 소파에 벌떡 일어나 앉았다
+@char G.Face>거만,Body>팔짱
+G: 왜 왔냐고?
+@sfx 슝
+@char G.Face>거만,Body>팔짱 position:-0.5,-23 scale:1.3
+G: 또 혼자서 골골거리고 있을 것 같아서 죽었나 살았나 보러왔다
+@char G.Face>거만,Body>팔짱 position:-0.5,-15.5 scale:1
+G: 근데 침대도 아니고 소파에서 왜 이러고 있는건데?
+@char G.Face>기본,Body>기본
+G: 밥은 먹었냐?
+J: 그...이제 먹어야죠?
+J: 아니, 그보다 문은 어떻게 연거에요?!
+@char G.Face>비웃음,Body>팔짱
+G: 미리 말하지만 문 따는 재주는 없다
+@printer Narration wait:false
+...내가 문을 안 잠그고 잤던가?
+방금 전에 그 일을 겪어놓고도 문단속을 못하다니
+J: 아, 아무리 문이 열려있었다고 해도 남의 집에 막 들어오면 어떡해요?!
+@printer Narration wait:false
+나는 애꿎은 결에게 화를 냈다
+@char G.Face>찡그림,Body>팔짱
+G: 그럼 현관 밖까지 애 죽어가는 소리가 들려오는데
+G: 그냥 무시하고 지나갈까?
+G: 그날 밤 그렇게 비를 맞았다는 걸 아는데?
+@printer Narration wait:false
+@sfx 슝
+@char G.Face>거만,Body>기본 position:-0.5,-23 scale:1.3
+결이 피식 웃으며 내 이마에 손을 얹었다
+@char G.Face>거만,Body>기본 position:-0.5,-15.5 scale:1
+G: 성질내는 걸 보니 열은 내렸네
+J: 아니, 그래도...!
+@char G.Face>기본,Body>팔짱
+G: 뭐, 그리고 난 괜찮잖아
+J: 네?
+@char G.Face>거만,Body>팔짱
+G: 네가 걱정할 만한 일, 안 만든다고 나는
+J: 내가 뭘 걱정하는 줄 알고요?
+G: 글쎄, 이런거?
+@printer Narration wait:false
+@char G.Face>비웃음,Body>팔짱
+결이 장난스러운 목소리로,
+@sfx 슝
+@char G.Face>비웃음,Body>팔짱 position:-0.5,-23 scale:1.3
+내게 자신의 얼굴을 훅 들이밀었다
+코 끝이 닿을만큼 가까운 거리였다
+게다가 그의 커다란 손은 어느새 내 뒷목을 감싸고 있었다
+J: ...!!
+@char G.Face>거만,Body>기본 position:-0.5,-15.5 scale:1
+G: 눈 안 감네
+J: ...장난해요?
+@char G.Face>기본,Body>기본
+J: 이런 장난 싫거든요?!
+@char G.Face>당황,Body>기본
+G: 아, 미안
+@printer Narration wait:false
+결이 헛기침을 몇 번 쏟고는 두 걸음이나 떨어졌다
+G: 내가 원래 이런 장난 안 치는 사람인데...
+@printer Narration wait:false
+@sfx 슝
+@char G.Face>당황,Body>기본 position:-0.5,-23 scale:1.3
+자기가 먼저 도발해놓고 왜 본인 귀가 빨개지는 걸까?
+@char G.Face>당황,Body>기본 position:-0.5,-15.5 scale:1
+G: 흠흠...뭐 아무튼
+G: 난 걱정하지 말라는 말이 하고 싶었어
+G: 함부로 들어온 건 미안하지만, 네가 걱정되어서 그랬고
+@char G.Face>거만,Body>기본
+G: ..이것만 끓여주고 바로 나가려고 했다고
+@printer Narration wait:false
+결이 도망치듯 부엌으로 가더니 웬 쟁반을 들고 왔다
+;죽 CUT
+J: ...이게 뭐에요?
+G: 보면 모르냐, 죽이지
+J: ...그건 알겠는데...직접 만든거에요?
+@printer Narration wait:false
+그가 주방에 서서 죽을 끓이고 있었다고 상상하니 눈썹이 들썩였다
+G: 너, 아픈 거 빨리 나으라고
+G: 보아하니 밥도 제대로 못 먹었을 것 같은데
+G: 밥 먹어야 약도 먹지
+;죽 CUT 끝
+J: 아...
+J: 원래 요리 잘해요?
+@char G.Face>거만,Body>손머리
+G: 왜, 맛이 걱정돼?
+@printer Narration wait:false
+그제야 고결이 날 바라보며 실소를 터뜨렸다
+모락모락 피어오르는 김 사이로 
+결의 굵직한 얼굴선과 미소가 흐릿해졌다
+@char G.Face>비웃음,Body>기본
+G: 그러니까 이지안
+J: 네?
+; 진동
+@char G.Face>비웃음,Body>기본 position:-0.5,-23 scale:1.3
+G: 그만 일어나
+@printer Narration wait:false
+@char G.Face>비웃음,Body>기본 position:-0.5,-15.5 scale:1
+...응?
+@hide G
+@hidePrinter
+@back LivingroomDay visible:false wait:false
+@back Black
+... 어라?
+@hidePrinter
+@back Black visible:false wait:false
+@back LivingroomNight1
+@spawn OpenEyes
+@wait 2
+@despawn OpenEyes
+@goto .con2
+
+#e
+; 주다함 +15
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+D: 내가 너무 소란스러웠나봐요
+D: 더 자고 일어나도 되는데
+@printer Narration wait:false
+다, 다함 씨?!
+@char D.Face>웃는,Body>가슴에손
+다함의 얼굴을 보자마자 꽉 막혔던 목소리가 터져나왔다
+J: 여, 여기 왜...?!
+@printer Narration wait:false
+나는 소파에 벌떡 일어나 앉았다
+@sfx 슝
+@char D.Face>아련,Body>가슴에손 position:0,-23 scale:1.3
+D: 보고 싶어서
+@char D.Face>아련,Body>가슴에손 position:0,-16 scale:1
+J: 네?
+@char D.Face>기본,Body>가슴에손
+D: 보고 싶어서 왔다고 하면, 이상한가요?
+J: 네, 네?!
+@char D.Face>아련,Body>가슴에손
+D: 밤새 비를 맞았다고 들었어요
+D: 그래서 감기에 걸렸다고
+@printer Narration wait:false
+다함이 한숨을 쉬며 우아한 걸음으로 다가왔다
+@char D.Face>기본,Body>기본
+D: 지안 씨는 혼자 두면 안 될 것 같아요
+D: 제가 불안해서 견딜 수가 없으니까요
+J: 제가 어린애도 아니고...아니, 그보다 문은 어떻게 연거에요?!
+@char D.Face>아련,Body>입에손
+D: 문단속 하는 법부터 알려드려야하나 고민이 되네요
+@printer Narration wait:false
+윽
+내가 문을 안 잠그고 잤던가?
+방금 전에 그 일을 겪어놓고도 문단속을 못하다니
+@char D.Face>기본,Body>기본
+J: 아, 아무리 문이 열려있었다고 해도 남의 집에 막 들어오면 어떡해요?!
+@printer Narration wait:false
+나는 애꿎은 다함에게 화를 냈다
+@char D.Face>아련,Body>입에손
+D: 그러게요, 제가 아닌 다른 사람이 이곳에 함부로 들어왔다고 생각하면
+D: 화가 나네요
+D: 아마, 죽여버리고 싶을지도 모르겠어요
+@printer Narration wait:false
+@char D.Face>웃는,Body>입에손
+다함은 마치 가벼운 농담을 뱉듯 싱긋 웃었다
+D: 그러니까 오늘만 서로를 용서해주죠
+@printer Narration wait:false
+뭔가 말려든 것 같지만, 반박할 말이 떠오르지 않았다
+@sfx 슝
+@char D.Face>기본,Body>기본 position:0,-23 scale:1.3
+입술을 씰룩거리는 사이 다함은 내 이마에 손을 짚었다
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+D: 아픈 곳은
+J: ...없어요
+@char D.Face>아련,Body>입에손
+D: 아까 잔기침이 남아있던데
+@printer Narration wait:false
+얼굴 윤곽으로 따라 내려오던 다함의 손이 어느새 내 입술에 닿았다
+D: 내가 없는 곳에서, 내가 모르는 이유로 아프지 않았으면 좋겠어요
+J: ...그게 어디 내 맘대로 되나요
+@printer Narration wait:false
+침묵이 길어지면 어색해질까봐 내가 중얼거렸다
+@char D.Face>기본,Body>기본
+D: 되게 만들어야죠
+@printer Narration wait:false
+다함이 달콤한 목소리로 속삭이고는
+@sfx 발소리
+저벅저벅, 부엌으로 걸어들어갔다
+잠시후 돌아온 그의 손에는 웬 쟁반이 들려있었다
+;죽 CUT
+J: ...이게 뭐에요?
+D: 죽입니다
+J: ...그건 알겠는데...직접 만든거에요?
+@printer Narration wait:false
+그가 주방에 서서 죽을 끓이고 있었다고 상상이 잘 되지 않았다
+D: 아프면 죽을 먹어야 하니까요
+D: 몸을 따듯하게 만들고, 한숨 자고 일어나면 금방 나을 거에요
+D: 요리에 자신은 없지만...맛은 있을 겁니다
+;죽 CUT 끝
+@printer Narration wait:false
+나는 슬쩍 그의 어깨 너머로 시선을 옮겼다
+그의 노고가 짐작되듯 부엌이 꽤 어질러져 있었다
+J: 풉...
+@printer Narration wait:false
+나도 모르게 웃음이 터졌다
+J: 같이 먹어요
+@char D.Face>아련,Body>입에손
+D: 전 배가 불러서
+@printer Narration wait:false
+다함도 장난스럽게 입술을 끌어올렸다
+모락모락 피어오르는 김 사이로
+@char D.Face>웃는,Body>기본
+다함의 부드러운 얼굴과 미소가 흐릿해졌다 
+D: 그러니까 지안 씨...
+J: 네?
+; 진동
+@char D.Face>기본,Body>기본 position:0,-23 scale:1.3
+D: 그만 일어날까요
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+@printer Narration wait:false
+...응?
+@hide D
+@hidePrinter
+@back LivingroomDay visible:false wait:false
+@back Black
+... 어라?
+@hidePrinter
+@back Black visible:false wait:false
+@back LivingroomNight1
+@spawn OpenEyes
+@wait 2
+@despawn OpenEyes
+@goto .con2
+
+#f
+; 차우준 +15
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+W: ...
+@printer Narration wait:false
+...엉?!
+J: 차...차우준?!
+@printer Narration wait:false
+우준의 얼굴을 보자마자 꽉 막혔던 목소리가 터져나왔다
+@spawn ShakeCamera wait:false
+J: 다, 당신이 여긴 왜...?!
+@char W.Face>기본,Body>기본
+W: 네가 날 불렀잖아
+J: ...뭐?
+@printer Narration wait:false
+우준은 뜻 모를 말을 중얼거리더니 천천히 다가왔다
+@char W.Face>기본,Body>기본
+W: 나, 안 찾았어?
+@printer Narration wait:false
+그의 창백한 피부가 한눈에 들어왔다
+무심한 듯 차가운 눈빛과 일자로 다물린 입술이 정말 차우준이었다 
+J: 차, 찾긴 누가...
+J: 아...!
+@printer Narration wait:false
+설마, 유겸이가 데려온건가?
+차우준을 만나러 갈 생각은 있었지만, 이렇게 불러오라는 뜻은 아니었는데!
+J: 저, 기 뭔가 착오가 있었던 것 같아요!
+@printer Narration wait:false
+나는 소파에 벌떡 일어나 앉았다
+@char W.Face>화난,Body>기본
+W: 착오?
+@printer Narration wait:false
+그의 얼굴이 움찔 움직였다
+@char W.Face>기본,Body>기본
+J: 동백나무 숲은 오늘 밤에 찾아가려고 했-
+J: 아니, 아니 그보다 문은 어떻게 연거야?!
+@char W.Face>기본,Body>기본
+W: ...열려있었어
+@printer Narration wait:false
+헉, 내가 문을 안 잠그고 잤던가?
+방금 전에 그 일을 겪어놓고도 문단속을 못하다니
+@char W.Face>기본,Body>기본
+J: 그, 그렇다고 남의 집에 막 들어오면 어떡해요?
+@printer Narration wait:false
+나는 애꿎은 우준에게 화를 냈다
+그러자 우준은 눈을 끔뻑거리더니, 슬쩍 시선을 피했다
+@char W.Face>기본,Body>기본
+W: ...문 밖에서 네 기침 소리가 들렸어
+J: 네?
+W: 그날, 비를 맞았으니까
+@printer Narration wait:false
+많이 아플지도 모른다고 생각해서
+흔들림없던 우준의 목소리가 점점 작아졌다
+그는 자신의 앞머리를 어색하게 매만지고는 다시 입술을 열었다
+@sfx 슝
+@char W.Face>기본,Body>기본 position:0,-26 scale:1.3
+W: 미안
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+J: ...
+@char W.Face>기본,Body>기본
+W: 멋대로 들어와서 미안
+J: ...두 번씩이나 사과하진 않아도 돼요
+@printer Narration wait:false
+풀이 죽은 듯한 그의 어깨를 보니
+머리를 쓰다듬어주고 싶어졌다
+@char W.Face>기본,Body>기본
+W: ...뭐야
+J: 어?
+@printer Narration wait:false
+어라? 쓰다듬고 싶다는 생각만했을 뿐인데...
+@spawn ShakeCamera wait:false
+왜 내 손이 그의 검은 머리카락 사이에 파묻혀 있는거야?!
+@char W.Face>기본,Body>기본
+J: 으아, 미, 미안해요!
+W: ....
+@char W.Face>기본,Body>기본
+W: 괜...
+J: 진짜 미안해요! 내가 정신이 없어서!
+@char W.Face>화난,Body>기본
+W: ...너도 두번 씩 사과하지마
+@printer Narration wait:false
+우준은 곧 등을 돌려 부엌으로 가더니, 웬 쟁반을 들고 돌아왔다
+;죽 CUT
+J: 이, 이게 뭐죠?
+W: 죽
+J: 아니 그건 알겠는데...
+W: 너는 아파도 내가 해줄 수 있는 게 별로 없으니까
+W: 그래서... 죽
+@printer Narration wait:false
+뭔가 뒷말이 많이 생략된 것 같지만
+그는 긴말을 붙이지 않고 쟁반을 내 쪽으로 내밀었다
+;죽 CUT 끝
+모락모락 피어오르는 김 사이로
+@char W.Face>기본,Body>기본
+어느새 고개를 돌린 우준의 옆 선이 흐릿해졌다 
+W: 그러니까...
+J: 네?
+@sfx 슝
+@char W.Face>기본,Body>기본 position:0,-26 scale:1.3
+W: 일어나보라고
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+@printer Narration wait:false
+...응?
+@hide W
+@hidePrinter
+@back LivingroomDay visible:false wait:false
+@back Black
+... 어라?
+@hidePrinter
+@back Black visible:false wait:false
+@back LivingroomNight1
+@spawn OpenEyes
+@wait 2
+@despawn OpenEyes
+
+#con2
+;진동
+@spawn ShakeBackground wait:false
+J: ...헉!
+@printer Narration wait:false
+...나 꿈 꾼거야?
+J: 그것도... 꿈에서 그 사람을...
+J: 으악! 말도 안 돼!
+@printer Narration wait:false
+;진동
+나는 손등까지 새빨개진 채로 이불을 퍽퍽 걷어찼다
+미쳤어, 이지안!
+J: 사춘기때도 이런 꿈따위 꿔본 적 없는데!
+@printer Narration wait:false
+홧홧해진 얼굴을 식히기위해 얼른 창문을 열었다
+
+@hidePrinter
+@back LivingroomNight1 visible:false wait:false
+@back StreetNight
+벌써 해가 저물어있었다
+J: 나, 나연이 얘는 아직까지 안들어오고 뭐하는거야!
+@printer Narration wait:false
+일부러 큰소리를 치고는 나연이 지나다닐만한 길목을 째려봤다
+J: 어?
+@printer Narration wait:false
+@sfx 발소리
+꺾인 골목사이로 나타난 건 나연이 아니라
+J: ....다함 씨잖아?
+@printer Narration wait:false
+선락원에서 나오는 길인지 여느때처럼 반듯한 차림새
+그런데 이쪽으로 오면 우리 집밖에 없는데...
+아니나다를까
+다함이 우뚝 집 앞에 멈춰섰다
+
+@back StreetNight visible:false time:1
+@hidePrinter
+@endscript

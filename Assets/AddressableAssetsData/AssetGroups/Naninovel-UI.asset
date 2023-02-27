@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Naninovel-UI
+  m_EditorClassIdentifier: 
+  m_GroupName: Naninovel-UI
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 711b0b6527cba4c4dafaeef51d1b4cfd
+  m_SerializeEntries:
+  - m_GUID: 9ad8bc95500509d419b9525b0ed88f7b
+    m_Address: Naninovel/UI/EpisodeTitle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 9d89027ec696be244ac50155ff87141d
+    m_Address: Naninovel/UI/2-6RoomPopup2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 7339194a4e63cc9419d2274384477b82
+    m_Address: Naninovel/UI/2-6RoomPopup1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: c62843ac8383e9942bb348e23b06ae5a
+    m_Address: Naninovel/UI/2-6Clicker2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: e0001dda69680764abdba1c812b084cf
+    m_Address: Naninovel/UI/2-6Clicker
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: acd6362c5642d2146b81b40c71dd5809
+    m_Address: Naninovel/UI/OpenDate
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: ae51112d420e49c4eae3d7d2fc374ee6
+    m_Address: Naninovel/UI/UncleDiaryFind
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 60bbc4d1b151fee4f9fe9139e4afea16
+    m_Address: Naninovel/UI/AngelFindUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 82ea6f798da02754c8d1db419e18cdad
+    m_Address: Naninovel/UI/StoreFindUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: bceb521471ab06f4f8df78b556a15c81
+    m_Address: Naninovel/UI/ParaFindUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 2a37272c8b91ea74aafe6e7f323dba1a
+    m_Address: Naninovel/UI/NHouseUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 5abc82a40ae462144bac3ecbc4d4d300
+    m_Address: Naninovel/UI/LHFindUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 597a874da7226834cae52506bdf20e10
+    m_Address: Naninovel/UI/HallFindUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: b658b70fc904bff4986e42ef9045f8e8
+    m_Address: Naninovel/UI/ForFindUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 5d2c697cc93453f46a30f8685376f76a
+    m_Address: Naninovel/UI/DockFindUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: cf958e958def4a947b470929c9223694
+    m_Address: Naninovel/UI/ExitRoomModeUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: f3df7abf44c7c864eb21ea17275b86c6
+    m_Address: Naninovel/UI/NoExitRoomModeUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 4602ffa6f460e88479fbe8c6a5d596a6
+    m_Address: Naninovel/UI/RoomModeUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: ea17e4fa02015bb48868867e8906f88d
+    m_Address: Naninovel/UI/1-1RoomPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: c3996255676b9de4cb30c8097ce2ad32
+    m_Address: Naninovel/UI/RightTopUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 4bfb885f3af2d75439e3bf894c81aac7
+    m_Address: Naninovel/UI/LeftTopUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 90ebbca669bb9464d9a17315169aee35
+    m_Address: Naninovel/UI/StartRoomModeUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 2b168868baa61f841987f2a8f21554f3
+    m_Address: Naninovel/UI/Clicker
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 480f5db62ea305c46b89a86496d2a0c9
+    m_Address: Naninovel/UI/PauseUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: bb95f484e341dcd4391a572f22b7d067
+    m_Address: Naninovel/UI/VariableInputUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 4b121aa1be1b7e04480b452c595ff17a
+    m_Address: Naninovel/UI/TitleUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: f5aae572225ee1b4c96d1a17fc5cb073
+    m_Address: Naninovel/UI/TipsUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 65c37f59e9b266f468dd5381fdc03fc3
+    m_Address: Naninovel/UI/SettingsUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: e3b234b4273b7f64ab3f1d9fe425ed23
+    m_Address: Naninovel/UI/SceneTransitionUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 8d53726b3d08433479398f02b4780e7f
+    m_Address: Naninovel/UI/SaveLoadUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: a32c73a3aff4b274c85b3ff16c854b07
+    m_Address: Naninovel/UI/RollbackUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: f9a211517d1cb1a44964dc2254463049
+    m_Address: Naninovel/UI/MovieUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 53aad00e5cf184e458adb001c550518a
+    m_Address: Naninovel/UI/LoadingUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 671ceb4f549ddf046913d7debf113469
+    m_Address: Naninovel/UI/ExternalScriptsUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1add671f8348e8443bcc56290e82fc5e
+    m_Address: Naninovel/UI/ContinueInputUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: afcf812068df3634284878e0cb9e4552
+    m_Address: Naninovel/UI/ConfirmationUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 71da50c8dae82bd42ba67528804e820c
+    m_Address: Naninovel/UI/CGGalleryUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: e74c2ef535f21ed4086fce2a2dc619e2
+    m_Address: Naninovel/UI/BacklogUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 702c32b2de0c0784b9a66ec90601874f
+    m_Address: Naninovel/UI/ClickThroughPanel
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f1b98389cf4afe9439b8b40f55cb3ffc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0163ac43733372b4897fa3eca8e92a24, type: 2}
+    - {fileID: 11400000, guid: dbd0d13568709e941bbef9ad4cb698a1, type: 2}

@@ -1,0 +1,282 @@
+@back JianRoomDay
+; 진동효과
+@sfx 노크
+J: …!!
+@printer Narration wait:false
+뭐지...? 누가 왔나?
+@sfx 노크
+누군가 다시 문을 두드렸다
+@sfx 문여는_소리
+나는 걸쇠를 채우고 조심스럽게 문을 열었다
+J: 누구세요?
+
+@back JianRoomDay visible:false wait:false
+@back StreetDay position:-8.3,0
+@bgm 심각1
+; @char 강신재
+First: 안녕하세요
+@printer Narration wait:false
+차분하게 내려앉은 짧은 머리스타일에,
+연한 립스틱을 바른 여자였다
+나는 흠칫 놀라 몸을 굳힌채 물었다
+J: 누,누구…세요?
+First: 육지에서 온 그 아가씨군요
+First: 혼자 있나요?
+@printer Narration wait:false
+그동안 만났던 해록도 주민들과는 미묘하게 분위기가 다른 여자였다
+여자는 열린 문틈으로 얼굴을 바짝 붙였다
+나도 모르게 한 걸음 뒤로 물러서자
+여자가 눈을 도로록 굴려 집안을 훑어봤다
+J: 누구시냐고 물었어요
+@printer Narration wait:false
+내가 목소리를 높이자 여자의 시선이 내게 멈췄다
+눈가에 가느다란 주름이 잡혀있었지만
+쉽게 나이를 가늠할 수 없는 얼굴이었다
+First: 아, 나연이를 보러 왔는데, 안에 없나요?
+@printer Narration wait:false
+나연이에게 오늘 누군가 찾아온다는 소식은 듣지 못했다.
+J: 나연이는 외출 중이니 다음에 다시 와주세요
+@printer Narration wait:false
+이만 문을 닫으려는데
+
+; 진동효과
+J: !!!
+@printer Narration wait:false
+여자가 문 틈 사이로 불쑥 손을 내밀어 내 얼굴을 만지려했다
+; 진동효과
+나는 그 손목을 날카롭게 낚아챘다
+@spawn ShakeBackground wait:false
+J: 뭐하시는 거예요?
+First: 안색이 안 좋아보여요, 아가씨
+J: 네?
+First: 호흡도 불안정 하고
+First: 열은, 이제 거의 떨어졌으려나
+@printer Narration wait:false
+이 여자 뭐야?
+First: 혼자 불편한게 한둘이 아닐텐데…
+@printer Narration wait:false
+여자는 내게 잡힌 손을 힘줘 빼내며 말했다
+First: 잠시 들어가서 아가씨의 살펴봐도 될까요?
+@choice "아뇨 괜찮습니다" goto:.a
+@choice "누구시냐고 물었어요" goto:.b
+@hidePrinter
+@stop
+
+#a
+J: 아뇨 괜찮습니다
+@printer Narration wait:false
+걸쇠 때문에 문이 열리진 않겠지만 어딘가 불안해,
+나는 단호하게 고개를 저었다
+@goto .con1
+#b
+J: 누구시냐고 물었어요
+#con1
+@printer Narration wait:false
+여자는 대답대신 빙그레 웃었다
+First: 약도 다 떨어졌을텐데...
+@printer Narration wait:false
+@spawn ShakeBackground wait:false
+그걸 어떻게 알았지?
+실제로 구급상자에 감기약이 똑 떨어진 상태였다
+감기약 뿐 아니라 소화제나 진통제도
+; 클로즈업
+@sfx 슝
+그래서 마을회관이라도 찾아가야하나 생각 중이었는데…
+내 표정을 읽었는지 여자가 한발짝 물러났다
+First: 아. 내가 또 쓸데없이 오지랖을 부렸네요
+First: 직업병이라, 미안해요
+J: 직업… 병이요?
+First: 내가 해록도의 유일한 의사거든
+First: 강신재 라고 해요
+@printer Narration wait:false
+이 여자가 의사라고?
+의심스러워진 나는 눈을 가늘게 떴다
+병원이라면 질리도록 다녀본 몸으로서 여자의 말이 신뢰가 가지 않았다
+J: 약이 없는 건 어떻게…
+Kang: 섬에 들어오는 의약품은 모두 내가 관리해요
+Kang: 적당량을 주민들한테 배분하는데, 나연이는 다녀간지 꽤 되었으니…
+Kang: 지금쯤이면 상비약이 떨어졌을 거라 짐작했고요
+@printer Narration wait:false
+여자가 아이를 어르듯 여유롭게 말했다
+J: 나연이를 보러오셨다고 했죠?
+J: 오늘 손님이 온다는 얘기는 못 들었는데…
+Kang: 나연이가 혼자 사니 종종 이렇게 나연이를 보러 오거든요
+Kang: 마을에 어린 여자애를 챙겨줄 만한 사람이 없어서,
+Kang: 알다시피 그 애가 다른 사람한테 살가운 애는 아니잖아요
+@printer Narration wait:false
+여자는 나연이를 잘 알고 있는 듯했다
+Kang: 아프면 의원에 오지 왜 집에서 혼자 앓고 있었어요?
+Kang: 얘는 아픈 사람을 두고 어딜 가있는 건지 참…
+@printer Narration wait:false
+여자를 마주하고 있자니 잠시 사라졌던 두통이 밀려왔다
+J: 나연이가 오면 손님이 왔었다고 전해드릴게요
+J: 그럼 이만
+Kang: 마을 주민들에게 듣기로는,
+@printer Narration wait:false
+문을 닫으려는데 차분한 여자의 목소리가 들려왔다
+Kang: 아가씨가 굉장히 밝고 사교성이 좋다던데...
+J: 네?
+Kang: 그렇게 날 경계하지 않아도 괜찮아요
+@printer Narration wait:false
+뭐지? 지금 나 비꼬는 거야?
+.. 참자, 그래도 어른이니까..
+J: 그렇게 느끼셨다면 미안해요. 그러니 이만 돌아가주실 수-
+@printer Narration wait:false
+그때, 낯익은 목소리가 들려왔다
+
+@stopBgm 심각1 fade:1
+@bgm 메인03
+First: 어라? 원장님, 여기까지 어쩐 일이세요?
+; @hide 강신재
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+유겸이다!
+하마터면 반가워서 걸쇠를 풀 뻔했다
+@spawn ShakeBackground wait:false
+; 진동
+J: 유겸아!
+@char Y.Face>놀란,Body>입에손
+Y: 응? 이렇게 반갑게 맞아준다고?
+J: 왜, 왜 이렇게 늦게 와! 기다렸잖아!
+@char Y.Face>웃는,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 아…
+@printer Narration wait:false
+@char Y.Face>웃는,Body>입에손 position:-0.25,-15 scale:1
+유겸이는 당황하는 듯하더니 이내 내 말을 받아쳤다
+@char Y.Face>기본,Body>입에손
+Y: 그러게요. 내가 왜 이렇게 늦었을까…
+@char Y.Face>웃는,Body>입에손
+Y: 내가… 오늘 분명히 누나를 만나러 오기로…
+J: 했었지
+@char Y.Face>윙크,Body>기본
+Y: 네
+@printer Narration wait:false
+순발력인지 뭔지, 하여간 쿵짝은 잘 맞다
+
+; 홍유겸 (왼) 강신재 (오)
+; @char Y.Face>기본,Body>기본 position:-3.1,-13.5 scale:0.9 wait:false
+; @char Kang.Face>기본,Body>기본 position:2.5,-13.5 scale:0.9
+Kang: 유겸아
+Y: 아, 맞다. 안녕하세요. 원장님
+@printer Narration wait:false
+문틈으로 유겸이 여자에게 고개를 숙이는 게 보였다
+이장님한테도 하이파이브하던 애가 저렇게 깍듯하게 인사를 하다니
+Y: 누나는 왜 문을 요만큼밖에 못 열고 있어요?
+Y: 문 고장났어요?
+Y: 지금 갇혀있는 거에요?
+J: 그게 아니구. 저 사람이…
+Y: 저 사람이 아니고 원장님이세요. 누나
+@printer Narration wait:false
+…뭐야, 단호하게
+유겸의 처음보는 모습에 조금 당황했다
+J: 그래. 저 분이 자꾸 안으로 들어오려고 하셔서 곤란하던 참이야
+Kang: 나연이를 보러왔다가 아가씨 안색이 안 좋아보여서 잠깐 살펴보려고 했지
+Kang: 유겸이 너도 알다시피 내가… 아픈 사람을 보면 그냥 두지 못하잖니
+@printer Narration wait:false
+그러자 유겸은 잠시 고민하더니 입을 열었다.
+Y: 지안 누나, 어디 아파요?
+; @hide Kang
+;@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1
+@choice "나 아파보여?" goto:.c
+@choice "응, 나 아파" goto:.d
+@hidePrinter
+@stop
+
+#c
+J: 응? 나 아파보여?
+@char Y.Face>울먹,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 오늘따라 누나 얼굴이 빨개요!
+@char Y.Face>울먹,Body>기본 position:-0.25,-15 scale:1
+J: 아…
+@printer Narration wait:false
+나는 뺨에 손등을 가져다댔다
+J: 어제 비맞고 감기에 걸렸었거든
+J: 그런데 거의 다 나았어. 괜찮아
+@goto .con2
+#d
+J: 응. 나 아파
+@char Y.Face>울먹,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 어쩐지 오늘따라 누나 얼굴이 빨개요!
+Y: 어디가 아파요? 열나요?
+@char Y.Face>울먹,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+나는 뺨에 손등을 가져다댔다
+J: 어제 비맞고 감기에 걸렸었거든
+J: 그런데 거의 다 나았어. 괜찮아
+#con2
+@char Y.Face>울먹,Body>기본
+Y: 감기라니…
+Y: 비는 왜 맞아요?
+Y: 안 그래도 누나 볼 때마다 작고 말라서 걱정스러운데…
+@char Y.Face>울먹,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 아프지 마요!
+@char Y.Face>울먹,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+유겸이 툴툴거리는 말투로 잔소리를 했다
+J: 알겠어. 지금은 괜찮다니까?
+@char Y.Face>기본,Body>기본
+Y: 그래도 원장님을 만나 다행이에요
+J: 응?
+@char Y.Face>웃는,Body>기본
+Y: 그렇게까지 경계하지 않아도 괜찮아요
+Y: 원장님은 해록도에 없어서는 안될 분이시거든요
+@printer Narration wait:false
+@char Y.Face>기본,Body>기본
+여자를 향한 유겸의 목소리엔 흔들림이 없었다
+나와는 달리 여자에 대한 신뢰로 가득찬 목소리였다
+@char Y.Face>웃는,Body>기본
+Y: 오신 김에 진찰이라도 받아보는 게 어때요?
+Y: 가벼운 감기라도 방심하면 큰일나요!
+@printer Narration wait:false
+아니, 들여보내기 싫다고....!
+또 다시 머리가 지끈 거렸지만 최대한 괜찮아보이는 얼굴을 했다
+@char Y.Face>기본,Body>기본
+J: 하하하 내가 진짜, 진짜로 괜찮아서 그래
+
+; 홍유겸 (왼) 강신재 (오)
+; @char Y.Face>기본,Body>기본 position:-3.1,-13.5 scale:0.9 wait:false
+; @char Kang.Face>기본,Body>기본 position:2.5,-13.5 scale:0.9
+@printer Narration wait:false
+나는 여자를 보며 애써 입꼬리를 끌어올렸다
+J: 선생님, 제가 작은 오해를 한 모양이에요. 요즘 신경쓰이는 일이 좀 있어서...
+J: 그런데 전 정말 한숨 푹 자면 나아요
+J: 그러니까… 이만 돌아가셔도 괜찮아요
+Kang: 그래요, 감기가 오래갈 것 같으면 꼭 의원에 들러요
+@printer Narration wait:false
+여자는 다정한 미소를 지으며 유겸이의 머리를 쓰다듬었다
+Kang: 의원의 위치는 유겸이가 알려주고
+Y: 네. 원장님! 걱정마세요
+Kang: 다음에 또 봐요. 아가씨, 아니 지안 씨
+@printer Narration wait:false
+해록도에 내 이름 모르는 사람이 없네…
+; @sfx 달그락소리
+여자의 뒷모습이 완전히 사라지고나서야 나는 걸쇠를 풀었다
+
+; @hide Kang
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+Y: 원장님이 걱정이 많으신가봐요
+@printer Narration wait:false
+남의 속도 모르고 유겸이 말했다
+@char Y.Face>웃는,Body>입에손
+Y: 정말 좋은 분이세요. 저한테는 많이 고마운 분이시기도 하고요
+@char Y.Face>기본,Body>입에손
+Y: 저는 원장님을 해록도에서 가장 좋아하고 존경해요
+J: 의사면 다 좋은 사람인가
+@char Y.Face>웃는,Body>기본
+Y: 이 누나 단단히 삐뚤어졌네
+Y: 원장님은 천사의 집도 운영하고 계시다고요
+@char Y.Face>기본,Body>기본
+Y: 그러니까 그렇게 경계하지 않아도 돼요
+@printer Narration wait:false
+그래서 원장님이라고 부르는구나
+근데 그렇게 좋은 사람이 왜…
+@back StreetDay visible:false time:0 wait:false
+@back StoreEye time:0
+@stopBgm 메인03
+@bgm 심각1
+왜 그날 창고에서 날 훔쳐보고 있던건데?
+
+@back StoreEye visible:false time:1
+@hidePrinter
+@endscript
+; 홍유겸 프로필: 좋아하는 사람 -> 천사의 집 원장님

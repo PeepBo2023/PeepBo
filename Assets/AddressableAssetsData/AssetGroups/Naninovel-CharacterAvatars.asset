@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Naninovel-CharacterAvatars
+  m_EditorClassIdentifier: 
+  m_GroupName: Naninovel-CharacterAvatars
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9cd57a3cbd119964e9caf78faf4d2054
+  m_SerializeEntries:
+  - m_GUID: c3383009e81d8d94087bed6a4f324a59
+    m_Address: Naninovel/CharacterAvatars/girl2_s
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: d7a18bd63cbe37d48a62b64bdb95c423
+    m_Address: Naninovel/CharacterAvatars/girl1_s
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 940c3b7009c76af4cb5c5207ecd38d80
+    m_Address: Naninovel/CharacterAvatars/boy_s
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: ae07ca5e673aaa7459af86e27291daaa
+    m_Address: Naninovel/CharacterAvatars/woman2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 926fc09a944d3f443bdf78b2c07949b4
+    m_Address: Naninovel/CharacterAvatars/woman1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 7dc641d080babf74997c622ab196ce88
+    m_Address: Naninovel/CharacterAvatars/man1
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 639a283f5d826d74c9385607e8ac3a72
+    m_Address: Naninovel/CharacterAvatars/Captain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 2053e88fab47a6141874ea99b58610d0
+    m_Address: Naninovel/CharacterAvatars/Girl
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1f00d5395af1ce8469aa5cee3252e968
+    m_Address: Naninovel/CharacterAvatars/Aram
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 49e1703e0cfb972459857e1f09344a68
+    m_Address: Naninovel/CharacterAvatars/Boy
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: a873523757eefcf499542584e1a7d917
+    m_Address: Naninovel/CharacterAvatars/People
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 294749e3d5c5a6740945f28441c303d8
+    m_Address: Naninovel/CharacterAvatars/Headman
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f1b98389cf4afe9439b8b40f55cb3ffc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b086ec88fb2907f48b32aa5ff719c8f7, type: 2}
+    - {fileID: 11400000, guid: 80c90a40189b28d46996b635d5b42533, type: 2}

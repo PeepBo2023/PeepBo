@@ -1,0 +1,367 @@
+@back AngelDayRight
+@bgm 메인03
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+@char Girl visible:false avatar:Aram
+Girl: 예...쁘다
+@printer Narration time:0
+아예 내 쪽으로 틀어앉은 아이는 화관에 온통 시선을 빼앗긴 듯 했다
+@char Cut.FlowerCrown scale:0.4 position:0,-1.3
+J: 짜,짜잔!
+@printer Narration time:0
+완성된 화관은 내가 봐도 놀라울 정도로 완벽했다
+J: 이거 머리에 써볼까? 우와~ 쓰니까 더 예쁘네
+@printer Narration time:0
+@hide Cut
+아이에게 화관을 씌어주는데 불쑥 낯익은 목소리가 끼어들었다
+
+@spawn ShakeBackground wait:false
+Y: 오오, 뭐에요? 둘이 몰래 뭐 해요!
+@printer Narration time:0
+아이들하고 한바탕 술래잡기를 끝내고 돌아온 유겸이었다
+@char Y.Face>기본,Body>기본 position:-0.25,-15
+얼마나 뛰어다닌건지 벌써 송글송글 땀이 맺혀 있었다
+어느새 다가온 유겸이 웃으며 끼어들었다.
+@char Y.Face>웃는,Body>기본
+Y: 와아! 정말 예쁜 화관이네요!
+@char Y.Face>놀란,Body>기본
+Y: 누나가 만든 거예요?
+J: 응. 나한테 숨겨진 재능이 있었나봐
+@sfx 슝
+@char Y.Face>웃는,Body>브이 position:-0.25,-21.5 scale:1.3
+Y: 나도 만들어줘요! 꽃하면 따라오는 수식이 홍유겸이란 말이에요!
+@char Y.Face>웃는,Body>브이 position:-0.25,-15 scale:1
+@printer Narration time:0
+저런 말을 아무렇지 않게 하는 걸 보니 이 애는 멘탈도 참 튼튼하다
+@char Y.Face>기본,Body>기본
+우리가 만난 지 얼마나 됐다고 너무 친밀한 거 아니냐고
+그런 내 마음을 아는지 모르는지 유겸이 입술을 비죽 내밀며 중얼거렸다
+@char Y.Face>아련,Body>기본
+Y: 나는 누나 주려고 이런 것도 준비해왔는데!
+@printer Narration time:0
+그러고보니 유겸의 양 손에 종이컵이 들려있었다
+물?
+@char Y.Face>윙크,Body>기본
+Y: 지금 고작 물이라고 생각했죠?
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 그냥 물 아니고, 유겸이가 탄 시원~한 아이스 아메리카노거든요?
+J: ...뭐?!
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+@printer Narration time:0
+아이스 아메리카노라는 말에 나도 모르게 입술을 혀로 쓸었다
+여기 오기 전까지만 해도 하루 두 세잔도 찾아마시던 아이스 아메리카노를
+이 섬마을에서 마실 수 있단 말이야?!
+J: 그걸 어, 어디서 탔어?
+@char Y.Face>윙크,Body>기본
+Y: 다 방법이 있지요~ 해록도는 제 안방이라니까요~
+@printer Narration time:0
+역시 얘랑은 친하게 지내야겠다
+@char Y.Face>놀란,Body>기본
+Y: 어? 누나 지금 눈빛 바꼈다
+@sfx 슝
+@char Y.Face>윙크,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 이거 마시고 싶어요?
+@printer Narration time:0
+윽. 벌써부터 놀리고 싶다는 저 표정...왠지 얄미운데! 어떻게 할까?
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@startchoice 0
+@choice "받는다" goto:.A target:Y score:5
+@choice "거절한다" goto:.B
+@hidePrinter
+@stop
+
+#A
+@printer Narration time:0
+놀리든가 말든가 나는 지금 시원한 아이스 아메리카노가 마시고 싶다!
+@spawn ShakeBackground wait:false
+J: 제발 저 주세요!
+@char Y.Face>아련,Body>기본
+Y: 흠. 원래 오는 게 있어야 가는 것도 있는 법인데….
+J: 화관 만들어줄게!
+@char Y.Face>웃는,Body>기본
+Y: 크, 엎드려서 절 받는 것도 재밌네요. 여기요!
+@printer Narration time:0
+유겸이 내민 종이컵에는 얼음이 가득한 믹스커피가 담겨있었다
+한 모금 마시니, 달달하고 시원한 향이 입안 가득 퍼졌다
+그래, 이거지!
+@goto .Con1
+#B
+J: …. 아닌데? 나 원래 커피 안 좋아해
+@char Y.Face>웃는,Body>기본
+Y: 그래요? 그러면 어쩔 수 없죠. 내가 다 마시는 수 밖에?
+@char Y.Face>아련,Body>기본
+Y: 아~ 아쉬워라. 얼음도 한 가득 넣었는데
+J: …..
+@printer Narration time:0
+Y: 마을회관에서도 예약해야 겨우 마실 수 있는 유겸표 커피인데~
+Y: 아쉽다. 아쉬워!
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+내가 애써 시선을 돌리고 있는데, 유겸이 슬쩍 물었다
+@char Y.Face>윙크,Body>기본
+Y: 딱 한 입만 마셔볼래요?
+J: 흠흠....그렇게 권유하면 어쩔 수 없지
+@printer Narration time:0
+유겸이 내민 종이컵에는 얼음이 가득한 드립커피가 담겨있었다
+@char Y.Face>웃는,Body>기본
+한 모금 마시니 그리웠던 쌉싸름한 향이 입안 가득 퍼졌다
+그래, 이거지!
+
+#Con1
+@char Y.Face>윙크,Body>입에손
+Y: 맛있죠? 제 사랑과 정성을 듬뿍 담은 거라 그래요!
+Y: 곁들여먹을 과자도 있으면 좋을텐데...
+@char Y.Face>웃는,Body>브이
+Y: 사실 제 취미가 베이킹이거든요
+J: 베이킹?
+@char Y.Face>기본,Body>브이
+@startchoice 1
+@choice "오... 의외로 잘 어울려" goto:.C
+@choice "뭐 만들 줄 아는데?" goto:.D
+@hidePrinter
+@stop
+
+#C
+@char Y.Face>웃는,Body>브이
+@printer Narration time:0
+유겸은 답지 않게 머리카락을 매만지며 웃었다
+@char Y.Face>웃는,Body>기본
+Y: 나중에 우리 집으로 초대할게요!
+@char Y.Face>기본,Body>기본
+Y: 그때 맛 한번 봐줘요
+J: 나야 좋지
+J: 근데 어쩌다 베이킹을 취미로 하게 된거야? 식구들이 빵을 좋아해?
+@char Y.Face>아련,Body>기본
+Y: ... 뭐, 그렇죠?
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+나는 얼음을 오도독 씹어먹으며 고개를 끄덕였다
+커피도 잘 타는 걸 보니, 유겸이 만든 빵도 꽤 맛있을 것 같다
+@goto .Con2
+#D
+@char Y.Face>기본,Body>기본
+@printer Narration time:0
+유겸은 눈동자를 도르르 굴리며 답했다
+Y: 웬만한건 다 만들어봤어요! 
+Y: 쿠키나 마카롱... 파이, 컵케익, 타르트....
+J: 와.. 생각만해도 맛있겠다
+@char Y.Face>웃는,Body>브이
+Y: 그쵸?
+Y: 나중에 우리 집으로 초대할게요!
+@char Y.Face>웃는,Body>기본
+Y: 그때 맛 한번 봐줘요
+J: 나야 좋지
+J: 근데 어쩌다 베이킹을 취미로 하게 된거야? 식구들이 빵을 좋아해?
+@char Y.Face>아련,Body>기본
+Y: ... 뭐, 그렇죠?
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+나는 얼음을 오도독 씹어먹으며 고개를 끄덕였다
+커피도 잘 타는 걸 보니, 유겸이 만든 빵도 꽤 맛있을 것 같다
+
+#Con2
+Y: 그나저나 오늘따라 선생님들이 늦네요, 냉장고에서 과자라도 꺼내먹으려고 했는데~
+@hide Y
+@back AngelDayLeft
+@printer Narration time:0
+유겸이 말을 돌리듯 건물을 바라보며 말했다
+J: 선생님이라면 역시 여기는 어린이집인거야?
+Y: 쉽게 말하자면 보육원이에요
+@camera offset:-2.5,0,-5 zoom:0.5
+@printer Narration time:0
+나도 '천사의 집'이라고 적힌 간판으로 시선을 돌렸다
+얼핏 보육원 같은 시설일 거라고는 생각했지만
+직접 들으니 기분이 조금 이상했다
+@camera offset:0,0 zoom:0
+@char Y.Face>웃는,Body>입에손 position:-0.25,-15
+Y: ‘천사의 집’은 저희 목사님이 해록도에 교회를 개척한 후에
+@char Y.Face>웃는,Body>브이
+Y: 가장 먼저 만든 시설이죠!
+J: 보육원을 가장 먼저 만들었다고?
+@char Y.Face>기본,Body>기본
+Y: 육지에 있는 보육원 중 정원이 꽉 차 아이들을 수용할 수 없는 곳이 있는데
+Y: 그런 곳에서 가끔 해록도로 아이들을 보내거든요
+@char Y.Face>웃는,Body>입에손
+Y: 아이들이 중학교에 입학하기 전까지 돌보다
+Y: 이후엔 육지에 있는 보육원으로 보내고 있어요
+J: 아하...
+@char Y.Face>윙크,Body>브이
+Y: 섬에서 태어난 아이들도 여기서 자주 놀았어요!
+Y: 보다시피 해록도에는 흔한 놀이터도 없으니까~ 
+@char Y.Face>기본,Body>기본
+Y: 아마, 저기 저 나무 그네는 제 나이보다도 오래 됐을걸요?
+J: 그럼 지금 섬엔 아이들이 얼마나 있어?
+@char Y.Face>아련,Body>입에손
+Y: 음, 보자보자...
+Y: 저 아이들 4명을 제외하고, 안에 2명의 아이들이 더 있어요
+@char Y.Face>기본,Body>기본
+Y: ‘천사의 집’에는 사랑반이라는 교실이 있거든요
+J: 사랑반?
+@char Y.Face>아련,Body>입에손
+Y: 건강이 안 좋거나, 특별한 보호가 필요한 아이들이 따로 모여서 지내고 있어요
+Y: 그 아이들만 따로 담당하는 선생님도 있고….
+J: 아아, 그런 교실이 있구나. 목사님이 정말로 신경을 많이 쓰셨네
+@char Y.Face>웃는,Body>기본
+Y: 그럼요.
+@printer Narration time:0
+@char Y.Face>아련,Body>입에손
+유겸이 종이컵을 입술로 물었다.
+어쩐지 유겸이의 목소리에 물기가 많아진 것 같은데
+@char Y.Face>기본,Body>입에손
+… 내 착각일까
+J: 음…. 이렇게 좋은 시설이 외부에도 많이 알려지면 좋을텐데
+@char Y.Face>웃는,Body>기본
+Y: 안그래도 ‘천사의 집’이 생긴 뒤로 육지에 있는 여러 복지 재단에서
+Y: 해록도를 많이 후원해주고 있어요
+@printer Narration time:0
+그가 다시 목소리에 힘을 실었다
+@char Y.Face>윙크,Body>기본
+Y: 그래서 작은 섬이지만 풍족한 편이에요!
+@printer Narration time:0
+육지와의 교류도 별로 없는데 풍족한 이유가 이거였구나
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 누나, 이제 궁금한 건 끝이예요?
+@printer Narration time:0
+유겸이 웃으며 고개를 기울였다
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@sfx 부스럭
+그때, 아이가 내 옷 자락을 잡아당겼다
+
+@stopBgm 메인03 fade:1
+@bgm 차분_BG fade:1
+Girl: ...이거 화관
+@stopSfx 부스럭
+J: 응?
+@char Y.Face>놀란,Body>기본
+Girl: 아람이... 하나만... 더 만들어줘
+J: 아람이?
+J: 아, 너 이름이 아람이였구나
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+아이는 손가락을 꼼지락거리며 고개를 끄덕였다
+@char Aram visible:false avatar:Aram
+@char Y.Face>웃는,Body>기본
+J: 그래, 그래! 언니가 또 만들어줄게, 아람이 다 가져!
+Aram: ...아니야
+@char Y.Face>기본,Body>기본
+J: 응?
+Aram: 하나만.... 아람이 꺼야
+
+@hide Aram
+@char Y.Face>윙크,Body>브이 position:-0.25,-15
+Y: 그러면 나머지 하나는 누구 줄건데? 내 선물? 오빠 주는 거야?
+Y: 역시 해록도에서 이 홍유겸의 인기란….
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+유겸이 어쩔 수 없다는 듯 고개를 젓는데, 아이가 따라 저었다
+무척 단호하게
+J: 유겸아 아니래
+Aram: 언니.... 줄 거야
+J: 언니? 혹시 나?
+@char Y.Face>놀란,Body>기본
+Aram: 언니는.... 저...기 있어
+@printer Narration time:0
+아이가 가리키는 곳은 '천사의 집' 안쪽이었다
+그렇다면 좀전에 유겸이가 말한 ‘사랑반’의 아이인걸까?
+@char Y.Face>기본,Body>기본
+Y: ….뭐?
+@printer Narration time:0
+유겸이도 나와 같은 생각을 했는지 잠시 말이 없어졌다
+Aram: 언니... 꽃... 좋아해
+@char Y.Face>놀란,Body>입에손
+Y: ...그 언니가 누군데? 이름이 뭔데?
+@printer Narration time:0
+어라… 얘는 왜 갑자기 심각해졌어? 자기 안 줬다고 삐진 거야?
+@char Y.Face>아련,Body>입에손
+@startchoice 2
+@choice "말린다" goto:.E
+@choice "지켜본다" goto:.F
+@hidePrinter
+@stop
+
+#E
+J: 그냥 쿨하게 포기해. 선물하고 싶은 사람이 따로 있나본데…
+@char Y.Face>놀란,Body>기본
+Y: 그러니까 그게 누군데? 응? 
+Y: 말해봐, 누구야? 지금 ‘사랑반’에 있어?
+@printer Narration time:0
+이제는 아예 애원하는 것처럼 매달리는 유겸이었다
+@char Y.Face>아련,Body>기본
+얘는 누군지가 그렇게 궁금한건가…?
+장난의 연장선이라 하기엔 그의 행동이 이해가 되지 않았다
+원래 정체가 파악이 안 되는 유형이긴 했지만…
+@goto .Con3
+#F
+@char Y.Face>놀란,Body>기본
+Y: 그러니까 그게 누군데? 응? 
+Y: 말해봐, 누구야? 지금 ‘사랑반’에 있어?
+@printer Narration time:0
+이제는 아예 애원하는 것처럼 매달리는 유겸이었다
+@char Y.Face>아련,Body>기본
+얘는 누군지가 그렇게 궁금한건가…?
+장난의 연장선이라 하기엔 그의 행동이 이해가 되지 않았다
+원래 정체가 파악이 안 되는 유형이긴 했지만…
+
+#Con3
+@char Y.Face>놀란,Body>기본
+@char Boy visible:false avatar:boy_s
+@sfx 공
+@spawn ShakeBackground wait:false
+Boy: 유겸이 형! 공 차 줘요!
+@printer Narration time:0
+@char Y.Face>기본,Body>기본
+그때 유겸의 발 밑으로 고무 공 하나가 굴러왔다
+@stopSfx 공
+@sfx 아이들_소리
+저 멀리서 놀고 있던 아이들이었다
+@stopSfx 아이들_소리
+@char Y.Face>웃는,Body>기본
+Y: 어어-
+@printer Narration time:0
+@sfx 공
+유겸은 멍하니 한손으로 공을 휙 던졌다
+@stopSfx 공
+@char Y.Face>기본,Body>기본 
+Y: 그래서 아람아, 이 꽃을 누구한테 줄 거라고?
+Aram: ….
+Y: 아람아, 내 말-
+@printer Narration time:0
+@sfx 공
+그의 말을 자르듯 또 다시 공이 이쪽으로 굴러왔다
+@stopSfx 공
+@spawn ShakeBackground wait:false
+Boy: 형! 공!
+Y: …
+@char Y.Face>웃는,Body>기본 
+Y: ...너희 일부러 그러는 거 아니지?
+Boy: 빨리요! 공!
+@char Y.Face>기본,Body>기본
+@printer Narration time:0
+@sfx 공
+유겸은 한숨을 쉬며 공을 던져주었고
+@stopSfx 공
+결국 아람이는 입을 닫은 채 다른 쪽으로 쪼르르 가 버렸다
+@char Y.Face>아련,Body>기본
+Y: …하
+J: 너무 실망하지마. 내가 화관 하나 선물해줄게
+@printer Narration time:0
+@char Y.Face>웃는,Body>기본
+유겸이 그런 나를 가만히 바라보다가, 평소처럼 웃었다
+@char Y.Face>기본,Body>기본
+Y: 와~ 신.난.다.
+J: …영혼 어디 갔니?
+@sfx 슝
+@char Y.Face>웃는,Body>브이 position:-0.25,-21.5 scale:1.3
+@spawn ShakeBackground wait:false
+Y: 와아~ 신난다!!!!
+J: …
+@printer Narration time:0
+어휴, 저 장난기 가득한 홍유겸 표정 좀 봐
+진짜로 화관 때문에 상처 받은 줄 알았네
+@hidePrinter
+@hide Y
+@back AngelDayLeft visible:false time:2
+@endscript

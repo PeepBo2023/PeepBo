@@ -1,0 +1,10 @@
+@back ParadiseOutsideDay
+@bgm 메인03
+@sfx 노크
+@printer Narration time:0
+왠일인지 선락원의 문은 굳게 닫혀있었다.
+J: 다함 씨는 어딜 간 거지?
+
+@hidePrinter
+@back ParadiseOutsideDay visible:false time:1
+@endscript

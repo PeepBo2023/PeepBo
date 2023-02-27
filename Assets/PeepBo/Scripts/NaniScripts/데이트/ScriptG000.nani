@@ -1,0 +1,9 @@
+@back LighthouseDay
+@bgm 메인03
+@sfx 파도
+J: 어? 없네?
+J: 보나마나 또 어디 사람 없는 곳에서 뺀질 거리고 있겠지!
+
+@hidePrinter
+@back LighthouseDay visible:false time:1
+@endscript

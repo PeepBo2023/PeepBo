@@ -1,0 +1,143 @@
+{
+    "m_SelectedDeviceId": "R3CR40EYALH",
+    "m_SelectedPackage": {
+        "deviceId": "R3CR40EYALH",
+        "name": "com.Peepbo.RecordOfEden",
+        "processId": 13855,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.Peepbo.RecordofEden",
+            "processId": 25119,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.Peepbo.RecordofEden",
+            "processId": 27325,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.Peepbo.RecordofEden",
+            "processId": 29283,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.Peepbo.RecordofEden",
+            "processId": 31590,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.Peepbo.RecordofEden",
+            "processId": 13821,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN70GBX0T",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3804,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR40EYALH",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3196,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CR40EYALH",
+            "name": "com.Peepbo.RecordOfEden",
+            "processId": 8251,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CR40EYALH",
+            "name": "com.Peepbo.RecordOfEden",
+            "processId": 8627,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CR40EYALH",
+            "name": "com.Peepbo.RecordOfEden",
+            "processId": 10583,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CR40EYALH",
+            "name": "com.Peepbo.RecordOfEden",
+            "processId": 11962,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CR40EYALH",
+            "name": "com.Peepbo.RecordOfEden",
+            "processId": 12638,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CR40EYALH",
+            "name": "com.Peepbo.RecordOfEden",
+            "processId": 13855,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}

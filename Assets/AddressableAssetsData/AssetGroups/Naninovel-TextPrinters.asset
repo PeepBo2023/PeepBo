@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Naninovel-TextPrinters
+  m_EditorClassIdentifier: 
+  m_GroupName: Naninovel-TextPrinters
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 994c912d854cab3458b495c8ce4b6dd3
+  m_SerializeEntries:
+  - m_GUID: b94329ab94a211e4ca0ba59fdef5944a
+    m_Address: Naninovel/TextPrinters/Dialogue_A
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1cb4fe1315f43d94e88e4b906540822b
+    m_Address: Naninovel/TextPrinters/Dialogue_O
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: afa643b9a322bb0428790841dfb36e3c
+    m_Address: Naninovel/TextPrinters/Narration
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 18cfa78b5fc89b745ba69d51a6a8629a
+    m_Address: Naninovel/TextPrinters/TMProBubble
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 6f9836a3c4f777741b1962979d97e485
+    m_Address: Naninovel/TextPrinters/TMProChat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 7860ef40eae6a3341be02586f7edd980
+    m_Address: Naninovel/TextPrinters/TMProWide
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: a2aaa417785eeca409e78c404f333ee5
+    m_Address: Naninovel/TextPrinters/TMProFullscreen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 5838611042eaced44954639c4ea4d81e
+    m_Address: Naninovel/TextPrinters/TMProDialogue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: b47d9659b2be5ee4e95a776f213c9d4b
+    m_Address: Naninovel/TextPrinters/Bubble
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 0126b92e4ff0f564aaa7a38eae3ef6e7
+    m_Address: Naninovel/TextPrinters/Chat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 781828b806deb1e4cbf50ef9de41da10
+    m_Address: Naninovel/TextPrinters/Wide
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: c87cebd3f0d4f174789cd351ce9591c4
+    m_Address: Naninovel/TextPrinters/Fullscreen
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: b731cf4f0e0d55e4ebd35f3247a9a307
+    m_Address: Naninovel/TextPrinters/Dialogue
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f1b98389cf4afe9439b8b40f55cb3ffc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 73e6487b17fcb124c9df513a063ce6be, type: 2}
+    - {fileID: 11400000, guid: bd86a5acc8e98d8448adc82ad389fc0f, type: 2}

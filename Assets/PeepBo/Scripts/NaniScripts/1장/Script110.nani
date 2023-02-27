@@ -1,0 +1,370 @@
+@back HallDay
+@bgm 차분_BG
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+@char Headman visible:false avatar:Headman
+Headman: 이 정도면 된 것 같네, 나중에 페인트로 벽을 한 번 덮어야겠어요
+Headman: 모두 경황이 없었을 테니 회관에서 차나 한 잔 합시다
+@hide Headman
+@printer Narration time:0
+주민들이 하나 둘 회관으로 들어가고 
+나는 잠시 담벼락 앞에 서서 글씨가 있던 자리를 바라봤다
+J: 정말 유겸이 말대로 피였을까? 날 놀리려고 그런건 아니고?
+J: …으 모르겠다, 머리 아파
+@printer Narration time:0
+일단 회관에서 차를 마실까? 아님 집으로 돌아갈까?
+@startchoice 0
+@choice "회관에서 차를 마신다" goto:.A
+@choice "집으로 돌아간다" goto:.B
+@hidePrinter 
+@stop
+
+# A
+J: 그래 고생했으니 차나 한 잔 마시고 가야지
+@printer Narration time:0
+회관으로 들어가려는데 문 앞에서 날 바라보고 있던 남자와 눈이 마주쳤다
+@goto .Con1
+
+# B
+J: 아침부터 너무 기운을 뺐다. 집에 돌아가서 한 숨 자야겠어
+@printer Narration time:0
+몸을 돌려 집으로 가려는데 회관 앞에서 날 바라보고 있던 남자와 눈이 마주쳤다
+
+# Con1
+@char Kitaek.Face>기본,Body>기본 position:0,-14.3
+선락원의 목사님이었다
+Kitaek: 해록도에 오랜만에 손님이 찾아왔다고 들었는데…
+J: 아, 안녕하세요 목사님
+@char Kitaek.Face>기본,Body>손든
+Kitaek: 이런 자리에서 인사를 나누게 돼 유감이군요
+@printer Narration time:0
+단호한 목소리로 주민들을 달랠 때완 달리, 
+주민들 사이에 섞여 소탈하게 벽을 닦아 내리던 중년의 남성
+으레 모든 사람들이 생각하는 ‘종교인’의 기준에 딱 알맞아 보이는 사람이었다
+J: 섬이 정말 아름다워요. 주민들도 모두 친절하시고요
+@char Kitaek.Face>웃는,Body>기본
+Kitaek: 해록도는 사시사철 아름답지만 봄이 그 절정이죠
+@char Kitaek.Face>기본,Body>기본
+Kitaek: 나무에서 떨어진 동백꽃들이 온통 산을 뒤덮은 모습은,
+@sfx 슝
+@char Kitaek.Face>기본,Body>기본 scale:1.3 position:0,-21
+Kitaek: 한 번 보면 잊을 수 없을 만큼 강렬하거든요
+@char Kitaek.Face>기본,Body>기본 position:0,-14.3 scale:1
+J: 네, 지는 순간이 더 아름다운 꽃은 처음 봤어요.
+J: 꽃으로 둘러쌓인 섬이라 그런지 섬 전체가 하나의 꽃다발 같아요
+@char Kitaek.Face>웃는,Body>손든
+Kitaek: 하하, 신의 작품이죠
+J: 아하, 네… 아! 머무는 동안 잘 부탁드립니다
+J: 주민들께 폐가 되지않게 조용히 머물다 갈게요!
+@char Kitaek.Face>기본,Body>기본
+Kitaek: 우리야 말로 잘 부탁합니다, 언제 한 번 선락원에도 들러요
+@sfx 슝
+@char Kitaek.Face>기본,Body>기본 scale:1.3 position:0,-21
+@printer Narration time:0
+그가 악수를 하자는 듯 손을 내밀었다. 그 손을 마주잡으려던 순간
+
+@spawn ShakeBackground wait:false
+@stopBgm 차분_BG
+@bgm 심각1
+@sfx 당황 wait:false
+J: 헉!
+@stopSfx 당황
+@printer Narration time:0
+나는 황급히 손을 거둬들였다
+@char Kitaek.Face>기본,Body>기본피 scale:1.3 position:0,-21
+그의 소매가 붉게 물들어있었다
+@char Kitaek.Face>당황,Body>기본피 position:0,-14.3 scale:1
+Kitaek: 아, 이런….
+@printer Narration time:0
+살펴보니 소매 뿐 아니라 목사님의 옷 여기저기 붉게 번져있는 자국들이 보였다
+아, 아까 글씨를 닦다가 이렇게 되버린 거구나…
+옷소매가 다 물들어가는 것도 모르고 솔선수범하며 궂은 일을 하셨다니, 
+뉴스에서만 보던 여타 목사들과는 다른 분 같았다
+갑자기 손을 마주잡지 못한 내가 부끄럽게 느껴졌다
+J: 순간적으로 너무 놀라서 그만… 죄송해요, 제가 너무 실례되는 행동을 했죠
+@printer Narration time:0
+죄송한 마음에 머쓱하게 웃으며 그를 바라봤다
+@char Kitaek.Face>기본,Body>기본피
+Kitaek: …
+Kitaek: 구약시대 때는 짐승의 피로 죄사함을 받았다고 하죠
+J: 네…?
+@char Kitaek.Face>먼산,Body>기본피
+Kitaek: 이 자 또한 무엇인가 사함 받고 싶었던 걸까요?
+J: 그게 무슨…
+@char Kitaek.Face>기본,Body>기본피
+Kitaek: 여행 온 곳에서 안 좋은 것을 보게해 마음이 좋지 않군요
+@char Kitaek.Face>웃는,Body>손든피
+Kitaek: 다음엔 웃으며 만날 수 있길
+@sfx 발소리
+@hide Kitaek
+@printer Narration time:0
+목사님의 말을 이해할 수 없어 잠시 굳어있는 사이 그는 회관 안으로 사라졌다
+@stopSfx 발소리
+J: 도대체 무슨 말을 하신 거지?
+J: 헉, 설마… 날 전도하려고 한 건가?
+J: 정말 참 종교인이시네?
+J: 그나저나 안 하던 일을 해서 그런가 슬슬 근육통이 올 것 같단 말이야...
+@stopBgm 심각1 fade:1
+J: 빨리 집에 돌아가야겠다, 그리고 당분간 해지고는 돌아다니지 말아야겠어
+@hidePrinter
+
+@back HallDay visible:false time:2
+@wait 2
+
+@bgm 심각2 fade:1
+@spawn OpenEyes
+@back JianRoomNight
+@despawn OpenEyes
+@wait 0.5
+@spawn DigitalGlitch
+@wait 1
+@printer Narration time:0
+@despawn DigitalGlitch
+으…. 추워….
+…. 으으….
+@spawn CloseEyes
+@hidePrinter
+
+@wait 0.5
+@back JianRoomNight visible:false
+@despawn CloseEyes
+@wait 2
+여기가… 어디지…?
+@hidePrinter
+
+@spawn OpenEyes
+@back StreetNight
+@despawn OpenEyes
+@wait 0.5
+@spawn DigitalGlitch
+@wait 1
+@despawn DigitalGlitch
+….
+……
+나 지금 어디있는 거야?
+분명 낮에 회관을 갔다가 곧 바로 집에 돌아왔는데…
+
+@spawn CloseEyes
+@hidePrinter
+@wait 0.5
+@back StreetNight visible:false
+@despawn CloseEyes
+@wait 0.5
+@spawn OpenEyes 
+@back ForestNight visible:true time:0
+@wait 0.5
+@despawn OpenEyes
+@wait 0.5
+@spawn DigitalGlitch
+@wait 1
+@despawn DigitalGlitch
+J: !!!
+@printer Narration time:0
+눈을 뜨자 숲 한 가운데였다
+J: 내가 왜 여기….
+J: 아, 머리가 깨질 것 같아….
+@printer Narration time:0
+지끈거리는 머리를 부여잡으려는 순간,
+
+@char BloodHand position:0,-8
+@wait i
+@sfx 당황
+@spawn ShakeCamera wait:false
+; 진동
+J: 아악!
+J: 이, 이게 뭐… 피? 왜, 왜 내 손에 피가
+@printer Narration time:0
+피 묻은 손을 연신 옷에 닦아내려했지만
+@hide BloodHand wait:false
+J: 왜… 왜 안 지워지는 거야 왜…!
+J: 누, 누가 좀 도와주….!
+@sfx 당황
+@spawn ShakeBackground wait:false
+; 진동
+@printer Narration time:0
+어디든 도움을 청하려 주변을 둘러본 순간 나는 황급히 입을 틀어막았다
+
+@back ForestNightBlood
+<i>숲이 온통 피로 뒤덮여 있었다</i>
+J: 하아… 하아….
+@startchoice 1
+@choice "안돼... 난 여기서 도망칠 수 없어" goto:.c
+@choice "여기 있으면 안돼, 벗어나야 해!" goto:.d
+@hidePrinter 
+@stop
+
+#c
+@printer Narration time:0
+안돼... 난 여기서 도망칠 수 없어
+이곳에서 난...
+숲은 커다란 입을 벌린채 내가 주저 앉기만을 기다리고 있었다
+@spawn ShakeBackground wait:false
+J: 아니야, 아니야
+@printer Narration time:0
+여기 있으면 안 돼...!
+@sfx 뛰는_발소리
+@spawn RunShake
+나는 희뿌연 시야를 헤치며 방향도 모른채 내달렸다
+그러나 분명 앞을 향해 달리고 있는데도 미로에 갇힌 듯 숲에서 벗어날 수 없었다
+@despawn RunShake
+@goto .con2
+#d
+J: 여, 여기 있으면 안돼... 벗어나야 돼!
+@printer Narration time:0
+@sfx 뛰는_발소리
+@spawn RunShake
+이 곳을 벗어나야 한다는 생각에 방향도 모른채 내달렸다
+달리는 내내 머릿속에선 피 묻은 손과 숲의 풍경이 번갈아가며 재생됐고
+피로 뒤덮힌 숲은 끝도 없이 이어져 있었다
+분명 앞을 향해 달리고 있는데도 미로에 갇힌 듯 숲에서 벗어날 수 없었다
+@despawn RunShake
+
+#con2
+@stopSfx 뛰는_발소리
+J: 왜 계속, 허억… 제자리…
+; 진동
+First: 멈춰!
+@printer Narration time:0
+@sfx 뛰는_발소리
+뒤에서 빠르게 다가오는 발소리가 들렸다
+J: 안돼… 도, 도망가야...
+; 진동
+First: 멈추라고!
+@stopSfx 뛰는_발소리
+@sfx 당황
+@printer Narration time:0
+발소리의 주인은 곧장 내 허리를 낚아채 날 돌려세웠다
+@stopSfx 당황
+First: 정신차려...!
+@hidePrinter
+
+@back ForestNight visible:false
+@stopBgm 심각2
+@bgm 우준_등장
+@movie WMovie time:0.5
+@back WIllust time:0.3
+@spawn WEffect
+@wait i
+@printer Narration time:0
+시간이 멈춘 것 같았다
+귓가를 새차게 때리던 바람 소리가 멀어지고 오감마저 정지된 느낌
+날 멈춰세운 남자는 내가 조금이라도 움직이는 걸 허락하지 않겠다는 듯 
+내 온 몸을 꽉 붙들었다
+First: 숨 쉬어
+@printer Narration time:0
+나즈막히 들리는 남자의 말을 따라 나도 모르는 새 참고 있던 숨을 내뱉었고
+그제서야 멀어졌던 바람 소리가 들려오기 시작했다
+아니, 이건 바람 소리가 아니라…
+@sfx 파도
+J: 파도 소리?
+@printer Narration time:0
+덜렁이던 머리끈이 기어코 끊어지며 추락했지만
+바닥과 부딪히는 소리는 들리지 않았다
+왜냐하면 나는 지금…
+@sfx 파도 volume:0.5
+절벽 끝에서, 바다를 등지고 서있었으니까
+; 진동
+J: 피, 피가…!
+First: 그런 거 없어, 정신차리고 봐
+First: 그냥…
+First: ...꽃일 뿐이야
+@despawn WEffect wait:false
+@back WIllust visible:false time:0 wait:true
+@back ForestNightBlood
+@printer Narration time:0
+@sfx 심장박동
+서서히 손 끝에서부터 감각이 돌아오며 주변이 자각되기 시작했다
+남자의 어깨에 묻고 있던 고개를 들어 천천히 주위를 살폈다
+@stopSfx 심장박동
+@hidePrinter
+
+@back ForestNightBlood visible:false wait:false
+@back CamelliaNight time:1
+@wait 2
+@char Silhouette.W position:0,-18.3 scale:1.3
+J: 동백…꽃?
+@printer Narration time:0
+숲을 뒤덮은 건 피가 아닌 붉은 동백꽃이었다
+J: 내가 이 꽃들을 다 피라고…
+@printer Narration time:0
+순간 나를 붙들고 있던 손이 빠르게 떨어져나갔다
+J: ...가, 감사합니다
+@printer Narration time:0
+남자는 대답 없이 몸을 돌려 숲을 내려가기 시작했고
+당황한 난 그를 뒤쫓아가 그의 팔을 잡았다
+J: 저기 잠시만, 앗!
+@printer Narration time:0
+; 진동
+매몰차게 내 팔을 뿌리친 남자는 서늘하게 가라앉은 눈으로 날 바라봤다
+
+@hide Silhouette wait:false
+@char W.Face>기본,Body>기본 position:0,-17.8
+J: …
+@printer Narration time:0
+하려던 말을 잊어버릴 만큼 차가운 눈빛
+이 사람, 방금 전 날 구해준 사람과 동일인물이 맞는 건가?
+나는 침을 한번 삼킨 뒤 더듬거리며 입술을 움직였다
+J: 구해주셔서 감사해요, 하마터면… 절벽 아래로 떨어질 뻔 했어요
+@sfx 슝
+@char W.Face>화난,Body>경계 scale:1.3 position:0,-26
+First: 왜 다시 돌아왔지?
+
+@char W.Face>화난,Body>경계 scale:1 position:0,-17.8
+@printer Narration time:0
+뼈가 시릴만큼 낮고 위협적인 목소리와는 달리, 남자는 무척이나 혼란스러워 보였다
+J: 네? 그게 무슨…
+@sfx 슝
+@char W.Face>화난,Body>경계 scale:1.3 position:0,-26
+First: 이번엔 어떤 말로 나를 홀려내려고
+@char W.Face>화난,Body>경계 scale:1 position:0,-17.8
+@printer Narration time:0
+그가 나지막이 중얼거린다
+...대체 뭐라는 거야 이 남자? 안색이 안 좋아보이는데...
+@startchoice 2
+@choice "...저를 아세요?" goto:.e
+@choice "괜찮으세요?" goto:.f
+@hidePrinter 
+@stop
+
+#e
+J: ...저를 아세요?
+; 진동
+@char W.Face>화난,Body>기본
+First: 돌아가
+@goto .con3
+#f
+J: 괜찮으세요? 안색이 안 좋아요
+@printer Narration time:0
+@char W.Face>화난,Body>기본
+안 좋아해야 하는 건 나 아닌가?
+
+#con3
+@hide W wait:false
+@char Silhouette.W scale:1.3 position:0,-18.3
+@printer Narration time:0
+내 말에 제대로 된 대답도 없이 그는 다시 돌아섰다
+뭐, 뭐야. 나는 그저 감사인사를 하려던 것 뿐인데...
+아직도 얼떨떨한 정신에 당혹감이 더해지니 신경이 더 예민해지는 기분이었다
+나는 그의 등을 바라보며 할말을 이었다
+J: 무슨 말을 하는지 모르겠지만 저는 그쪽을 전혀 몰라요
+J: 구해주셔서 감사한데, 사람을 착각하신 것 같거든요?
+@hide Silhouette wait:false
+@char W.Face>기본,Body>기본 position:0,-17.8
+@printer Narration time:0
+그러자 그의 걸음이 우뚝 멈췄다
+@char W.Face>냉소,Body>주머니
+First: 그래, 예상했던 그대로야. 하나도 변하지 않았어
+@printer Narration time:0
+역시나 전혀 대화가 통하질 않네
+영문을 알 수 없는 반응에 말문이 막혀 주춤거리는 사이
+남자는 서서히 내게서 멀어지고 있었다
+@hide W
+붙잡을까 고민할 필요조차 없었다
+구해준 건 진심으로 고맙지만 어쩐지 알면 안될 것 같은 남자였다
+나는 그렇게 한참을 남자가 사라진 곳을 바라보았다
+어둠이 더욱 깊어져 마치 우물 속을 들여다보는 듯 새까만 동백나무 군락 사이를…
+@hidePrinter
+
+@back CamelliaNight visible:false time:2
+@endscript

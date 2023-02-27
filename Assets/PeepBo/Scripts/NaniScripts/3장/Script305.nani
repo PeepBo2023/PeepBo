@@ -1,0 +1,457 @@
+@back LivingroomDay
+@bgm 메인03
+@printer Narration wait:false
+다함이 돌아가고 뜨거워진 볼을 쓸어내렸다
+열 때문인지, 다함 때문인지 집 안의 공기가 뜨겁게 느껴졌다
+
+@back LivingroomDay visible:false wait:false
+@back JianRoomDay
+@sfx 뛰는_발소리
+나는 도망치듯 방으로 올라갔다
+; @sfx 바람
+그래도 열감이 식지를 않아서 창문을 벌컥 열었다
+J: 아...?
+@printer Narration wait:false
+문득 불어온 바람 때문에 옷걸이에 걸려있던 옷 하나가 떨어졌다
+J: 저 옷은...
+;플레시백 2-9
+@printer Narration wait:false
+빗줄기가 거세진다 싶을 무렵, 내 머리 위로 그늘이 드리워졌다
+J: 뭐하는,
+@printer Narration wait:false
+남자가 입고 있던 겉옷을 내 머리 위에 풀썩 얹은 것이었다
+그의 옷이 얼굴까지 모두 가려 시야가 캄캄했다
+;플레시백 2-9
+
+J: 그저께 그 남자가 준 옷...
+J: 돌려주긴 해야하는데
+J: 생각난김에 지금 돌려주러 갈까?
+@printer Narration wait:false
+창 밖을 보니 어느새 노을이 지고 있었다
+J: 해지기 전에 빨리 다녀오는게 좋겠어
+@printer Narration wait:false
+서둘러 옷을 갈아입고 집을 나섰다
+
+@back JianRoomDay visible:false wait:false
+@back StreetDay
+J: 그런데 그 남자, 어디로 가야 만날 수 있다고 했지?
+J: 아까 유겸이가 알려줬던 것 같은데...
+; 중요 선택지
+;2번 선택시 차우준 프로필: 신체특징에 '쇄골이 깊다' 오픈
+@choice "선락원" goto:.a
+@choice "동백나무 숲" goto:.b
+@choice "천사의 집" goto:.c
+@hidePrinter
+@stop
+
+#a
+J: 선락원이었던 것 같아!
+J: 좋아, 선락원으로 가보자
+
+@hidePrinter
+@back StreetDay visible:false wait:false
+@back ParadiseOutsideDay
+@printer Narration wait:false
+선락원에 도착해 예배당 문을 소심하게 밀어 문틈으로 안을 살펴봤다
+예배당 안엔 몇몇 주민이 곳곳에 앉아 조용히 기도를 하고 있을 뿐,
+그 남자는 보이지 않았다
+J: 하긴 기도를 하는 모습이 어울리지는 않을 것 같았어
+J: 그럼 그냥 바깥에서 기다려볼까...
+@printer Narration wait:false
+계단에 털썩 주저앉아 기지개를 쭉 켰다
+J: 이렇게 있다보면 만날 수도 있고...
+
+@hidePrinter
+@back ParadiseOutsideDay visible:false wait:false
+@back Black
+@wait 2
+First: ...누...
+First: 왜 여기서...
+First: 누나!
+@back Black visible:false wait:false time:0
+@back ParadiseOutsideDay time:0
+; 진동
+J: !!!
+@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1
+Y: 나참, 대체 왜 여기서 자고 있는 거예요?
+@printer Narration wait:false
+번쩍 눈을 뜨니 유겸이 황당하다는 표정으로 나를 내려다보고 있었다
+J: 뭐야, 나 잠들었어?
+@char Y.Face>웃는,Body>기본
+Y: 응, 난간에 기대서 아주 쿨쿨 잘 자던데요?
+Y: 나는 내가 누나가 너무 보고싶은 나머지 헛걸 보는 줄 알았다고요
+J: 언제 잠들었지? 분명히 잠깐 앉아있다 가려고 했는데
+@char Y.Face>윙크,Body>기본
+Y: 여긴 왜 온 거예요? 저녁 예배드리러?
+J: 아니 그건 아닌데... 곧 저녁 예배 시간이야?
+@char Y.Face>웃는,Body>기본
+Y: 네 이제 주민들 오기 시작할 거예요
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 근데 정말 왜 온 거예요?
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+J: 내가 아까 말했던 그 남자, 차우준이라는...
+@printer Narration wait:false
+@char Y.Face>기본,Body>기본
+유겸이에게 옷을 보여주며 말했다
+J: 그 남자한테 빌린 옷인데 오늘 돌려주려고 했거든
+@printer Narration wait:false
+@char Y.Face>놀란,Body>기본
+유겸은 눈을 동그랗게 뜨고 이상하다는 표정을 지었다
+Y: 응? 그런데 선락원에는 왜...
+J: 네가 아침에 선락원에 오면 만날 수 있다고 했잖아
+@char Y.Face>웃는,Body>입에손
+Y: 으아?
+@printer Narration wait:false
+당황스러운 표정을 짓던 유겸이는 곧 크게 웃음을 터트렸다
+@sfx 슝
+@char Y.Face>웃는,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 하하하, 누나!
+@char Y.Face>웃는,Body>입에손 position:-0.25,-15 scale:1
+J: 뭐야 왜 웃어?
+@char Y.Face>윙크,Body>기본
+Y: 누나 우준히 형 그다지 만나고 싶지 않구나?
+Y: 불과 몇 시간 전에 얘기해줬는데 그새 기억에서 싹 잊은 걸 보면
+J: 뭐야, 선락원 아니었어?
+@char Y.Face>기본,Body>기본
+Y: 응 아니에요
+J: 어쩐지 영 여기랑은 안 어울린다 싶었어
+J: 그럼 어디가면 만날 수 있다고 했지? 다시 알려줘
+@char Y.Face>웃는,Body>기본
+Y: 음...
+@printer Narration wait:false
+대답 대신 짓궃은 표정으로 뜸을 들이는 유겸이의 팔을 잡고 흔들었다
+J: 장난치지 말고 빨리~
+Y: 알겠어요, 또 잊어버리면 그땐 다시 안 알려줄 거예요
+J: 절대 안 잊어버릴게
+@sfx 슝
+@char Y.Face>윙크,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 동백나무 숲!
+@printer Narration wait:false
+@char Y.Face>윙크,Body>입에손 position:-0.25,-15 scale:1
+유겸이는 내 귓가에 나즈막히 속삭이더니 한 발자국 뒤로 물러났다
+@char Y.Face>웃는,Body>기본
+Y: 오늘은 해가 다 졌으니 위험해요 다음에 가봐요
+J: 그래야겠다 고마워 유겸아
+Y: 넹, 예배 안 드릴거면 빨리 내려가요 주민들한테 붙잡힐라
+J: 앗! 맞다, 알겠어 나 먼저 갈게 다음에 봐!
+@printer Narration wait:false
+@hide Y
+붕붕 손을 흔드는 유겸이를 지나쳐 언덕을 내려왔다
+J: 그래 오늘은 피곤하니까 다음에 가봐야겠다
+J: 꼭 전해줘야 하는데...
+; 3-5 엔딩
+@back ParadiseOutsideDay visible:false time:1
+@hidePrinter
+@endscript
+
+#b
+;차우준 호감도 + 30
+J: 맞아, 동백나무 숲이었던 것 같아!
+@hidePrinter
+@back StreetDay visible:false wait:false
+@back CamelliaDay
+@sfx 발소리
+J: 헉, 헉... 다, 다 왔다...
+@printer Narration wait:false
+이마에 송골송골 맺친 땀을 훔쳐내며 숨을 골랐다
+J: 생각보다 가파르잖아, 힘들어 죽겠네
+@printer Narration wait:false
+@sfx 숲_낮
+숲길을 지나 더 안 쪽으로 들어오니 동백나무가 가득한 군락지에 다다랐다
+J: 곧 해가 지겠는데? 그 남자는 대체 왜 이런 곳에 있는 걸 좋아하는 거야
+J: 물론 동백꽃들이 아름답긴 하지만...
+@printer Narration wait:false
+주위를 둘러보니 동백나무 외엔 아무 것도 보이지 않았다 
+간간히 새소리만 울려퍼지는 동백나무 숲이 적막하게 느껴졌지만,
+이상하게 마음이 평안해지는 곳이기도 했다
+J: 약간 명상하러 온 기분도 들고 말이야
+@printer Narration wait:false
+가만히 눈을 감고 동백나무 숲 한 가운데서 숨을 크게 내쉬고 들이마시기를 반복했다
+한참 그렇게 있었을까, 귓가에 낯선 소리 하나가 스치듯 들려왔다
+J: 뭐지?
+@printer Narration wait:false
+@stopSfx 숲_낮
+;@sfx 시냇물 volume:0.5
+아주 작게 들려왔지만 분명 물이 흐르는 소리였다
+J: 물 소리...?
+@printer Narration wait:false
+집중하지 않으면 금새 놓쳐버릴만큼 작은 소리
+나는 눈을 감고 소리가 나는 곳을 향해 천천히 발을 움직였다
+
+@hidePrinter
+@back CamelliaDay visible:false wait:false
+@back Black
+;@sfx 시냇물 volume:1
+물 소리가 점점 가까워지자 나는 점점 걸음을 빨리하기 시작했다
+그때, 
+; 진동
+누군가 내 손목을 잡아세웠다
+
+@hidePrinter
+@back Black visible:false wait:false
+@back CamelliaNight
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+@wait 1
+J: 어?
+J: 당신은...
+@printer Narration wait:false
+내가 찾던 그 남자였다
+차우준은 왜 인지 다급한 얼굴로 나를 내려다보고 있었다
+@sfx 슝
+@char W.Face>기본,Body>기본 position:0,-26 scale:1.3
+W: 너...!
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+J: 어?
+@sfx 슝
+@char W.Face>화난,Body>기본 position:0,-26 scale:1.3
+W: 너 괜찮아?
+@printer Narration wait:false
+@char W.Face>화난,Body>기본 position:0,-17.8 scale:1
+그는 나를 얼굴을 뚫어져라 쳐다보며 내 기색을 살폈다
+; 진동
+J: 왜 이러는 거예요!
+@printer Narration wait:false
+@char W.Face>화난,Body>경계
+당황한 것 같기도, 화가 난 것 같기도 한 얼굴이었다
+J: 아, 설마...
+@printer Narration wait:false
+차우준은 그때, 내가 숲을 헤매다 절벽 앞에 멈춰섰던 날을 떠올리는 듯 했다
+그날처럼 눈을 감고 숲을 걷고 있었으니, 아무래도 오해할만 했다는 생각이 들었다
+@char W.Face>기본,Body>손올림
+J: 저 괜찮아요 차우준 씨
+J: 그저께 빌렸던 옷을 돌려주려고 차우준 씨를 만나러 왔는데,
+J: 물 소리가 들리길래 어디서 나는 건지 찾고 있었어요
+@printer Narration wait:false
+@char W.Face>기본,Body>경계
+그는 쥐고있던 내 손목을 힘주어 한 번 꽉 잡고는 내려놨다
+W: 내가 여기있는 건 어떻게 알고
+@char W.Face>기본,Body>경계
+J: 유겸이가 알려줬어요
+@printer Narration wait:false
+@char W.Face>기본,Body>경계
+차우준은 곧 인상을 찌푸리며 못마땅한 표정을 지었다
+J: 그러고 보니까,
+@printer Narration wait:false
+나는 남자의 어깨너머로 시선을 돌렸다
+J: 이런 곳에 계곡이 있네요?
+@printer Narration wait:false
+; @sfx 물소리
+계곡이라고 부르기엔 민망한 크기의 아주 작은 계곡이었다
+가장 깊은 곳이어봐야 내 무릎만큼도 안 올 만큼의 깊이
+@char W.Face>기본,Body>경계
+W: 돌아,
+J: 돌아가라고 하지 말고요 내가 가고 싶으면 알아서 갈 거니까
+@char W.Face>기본,Body>경계
+W: ...
+@printer Narration wait:false
+차우준은 적잖게 황당해 보였다
+@sfx 발소리
+나는 차우준에게 한 발자국 다가갔다
+@stopSfx 발소리
+@sfx 발소리
+그러자 차우준은 한 발자국 뒤로 물러났다
+@char W.Face>화난,Body>경계
+J: 저번부터 느낀건데, 혹시 나를 피해요?
+@char W.Face>기본,Body>경계
+W: 여긴 달이 잘 안들어, 내려가는 길이 어두울 거야
+@printer Narration wait:false
+@sfx 발소리
+나는 또 다시 차우준에게 다가갔다
+@stopSfx 발소리
+@sfx 발소리
+물론 그는 또 내가 다가간만큼 물러났고
+@char W.Face>기본,Body>경계
+J: 그런데 왜 나한테 반말해요?
+@char W.Face>화난,Body>경계
+W: 너 계속 이런 식으로...!
+J: 또 너라 그랬어, 자꾸 그럼 나도 반말 한다?
+@sfx 슝
+@char W.Face>화난,Body>경계 position:0,-26 scale:1.3
+W: 그만하라니,
+@char W.Face>화난,Body>경계 position:0,-17.8 scale:1
+J: 야, 차우준!
+@printer Narration wait:false
+@char W.Face>화난,Body>기본
+그러자 차우준은 우뚝 그 자리에 얼어붙었다
+놀란 그의 표정을 보자 놀려주고 싶은 마음이 삐쭉 솟아났다
+J: 옷 빌려줘서 고마워, 덕분에 덜 아팠던 것 같아
+@char W.Face>기본,Body>기본
+W: ...
+W: ...아팠다고?
+@char W.Face>화난,Body>기본
+J: 좀 피곤한 상태에서 비를 맞아서 그런지 몸살이 왔어
+J: 오, 반말도 해보니까 나쁘지 않은데? 
+J: 앞으로 나한테 반말하는 사람들한테 다 똑같이 해줘야겠어
+J: 이 섬엔 무례한 사람들이 왜 이렇게나 많은 건지 계속 먼저,
+@printer Narration wait:false
+; 진동
+@sfx 슝
+@char W.Face>기본,Body>기본 position:0,-26 scale:1.3
+순간 내 뺨에 차가운 무언가가 살풋 내려앉았다
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+차우준의 손이었다
+J: ...
+@char W.Face>화난,Body>기본
+W: 아직 미열이 있어 빨리 돌아가
+J: ...
+@printer Narration wait:false
+@sfx 발소리
+@char W.Face>기본,Body>기본
+그를 가만히 보던 나는 아까처럼 또 다시 차우준에게 한 발자국 다가갔고,
+@stopSfx 발소리
+@sfx 발소리
+역시나 차우준은 뒤로 물러났다
+J: 어디까지 가려고?
+@printer Narration wait:false
+오기가 생겨 계속 그에게 다가갔다
+J: 너 뒤에 계곡 있는 거 알지?
+J: 자꾸 그렇게 가면 빠질,
+; 진동
+J: 으악!
+@printer Narration wait:false
+차우준의 보폭을 따라잡으려다 그만 나무 뿌리에 발이 걸렸다
+@hide W
+@hidePrinter
+@back CamelliaNight visible:false
+@wait 1
+넘어질게 분명해 눈을 꾹 감은 순간, 단단한 팔이 내 허리를 움켜잡았다
+@hidePrinter
+; 진동
+;@sfx 풍덩 빠지는 효과음
+
+@back WIllust2
+차우준의 목을 타고 굴러내려온 물방울이 그의 쇄골에 맺혔다
+손바닥 아래로 그의 심장박동이 느껴졌다
+천천히 고개를 드니 계속 나를 보고 있었는지
+차우준의 시린 눈과 마주쳤다
+@back WIllust2 visible:false wait:false
+@back CamelliaNight
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+J: 괜, 괜찮...아?
+@printer Narration wait:false
+@char W.Face>기본,Body>경계
+차우준은 한 팔로 가볍게 나를 일으켰다
+J: 어떡하지? 네 옷이 다 젖어버렸어, 돌려주려고 가져온 건데...
+@printer Narration wait:false
+들고 있던 옷을 살피는데, 순간 그의 오른손에 흐르는 피가 보였다
+; 진동
+J: 너... 손 다쳤나봐
+J: 땅을 짚다가 바위에 부딪힌거 같은데, 좀 봐봐
+@char W.Face>기본,Body>기본
+W: 됐어
+@printer Narration wait:false
+@sfx 발소리
+그렇게 말하면서도 차우준은 가만히 내가 하는 대로 끌려왔다
+가까이서 보니 아무래도 조금 찢어진 것 같았다
+J: 이 시간에 꿰맬 수 있는 곳도 없고 어떡하지...
+J: 일단 우리 집이라도 갈래? 나연이가 있긴 하겠지만 그래도 양해를 구하면...
+@printer Narration wait:false
+그때, 차우준이 내게 잡힌 손을 천천히 움직이더니
+내 손가락 사이사이에 자기 손가락을 끼워넣었다
+꼭, 깍지를 낀 모양새였다
+J: 뭐 하는 거야...?
+@printer Narration wait:false
+차우준은 깍지 낀 손을 잡아내리곤 내게 가까이 다가왔다
+그에게 붙잡힌 손이 불에 데인듯 뜨거웠다
+@char W.Face>기본,Body>경계
+W: ...비에 젖고, 물에 빠지고...
+J: 뭐?
+@char W.Face>기본,Body>기본
+W: 다치고... 울고...
+@printer Narration wait:false
+가만히 나를 내려다보는 그의 눈길을 왜인지 피할 수 없었다
+얼마나 그렇게 있었을까 이상하게 자꾸만 다리에 힘이 풀려 비틀거리자,
+; 진동
+@sfx 슝
+@char W.Face>기본,Body>기본 position:0,-26 scale:1.3
+J: 엇!
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+@printer Narration wait:false
+@spawn ShakeBackground wait:false
+차우준이 나를 번쩍 들어 안았다
+@sfx 발소리
+@hide W wait:false
+@char Silhouette.W scale:1.3 position:0,-18.3
+그리고는 성큼 성큼 계곡을 빠져나가 동백나무 숲을 내려가기 시작했다
+J: 나 괜찮은데, 내가 걸어가도 돼! 너 다쳤잖아
+@printer Narration wait:false
+그는 역시나 묵묵부답이었다
+J: 오, 옷을 돌려주러 온 건데 다 젖어버려서 어떡해?
+@printer Narration wait:false
+더 이상 말해봤자 듣지 않을 분위기라 민망함을 꾹 참고 그에게 가만히 안겨있기로 했다
+동백나무 숲 초입에 다다르자 그제서야 차우준은 나를 내려주었다
+@hide Silhouette wait:false
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+W: 이제 걸을 수 있어?
+J: 응? 걸을 수야 있지... 원래도 걸을 수 있었거든?
+@printer Narration wait:false
+무안함에 괜히 퉁명스럽게 대답했다
+@char W.Face>기본,Body>기본
+W: 줘, 옷
+@printer Narration wait:false
+차우준이 내 손에 들린 옷을 가져가려 해 나는 황급히 옷을 뒤로 숨겼다
+J: 세탁!
+J: 다시 세탁해서 줄게
+@char W.Face>기본,Body>기본
+W: ...
+@printer Narration wait:false
+그는 잠시 고민하는 듯 하더니 이내 한숨을 내쉬었다
+무언의 긍정이라고 생각하지 뭐
+이내 그에게서 뒤를 돌아가려는데,
+@char W.Face>기본,Body>경계
+W: 가는 길
+J: 어, 어?!
+W: 가는 길 알아?
+J: 내가 애도 아니고 그걸 왜 몰라?
+@char W.Face>기본,Body>손올림
+W: 가
+J: 아, 갈 거거든?
+@printer Narration wait:false
+@sfx 발소리
+나는 뒤를 돌아 얼마나 내가 씩씩한지 보여주겠다는 마음으로 힘차게 발을 내딛었다
+@stopSfx 발소리
+@sfx 뛰는_발소리
+두어걸음 걸었을 때 문득 무언가 떠올라 다시 휙 뒤를 돌아 차우준에게 다가갔다
+@char W.Face>기본,Body>경계
+차우준은 내가 다시 다가오자 순간 당황한 표정을 지었다
+J: 근데 너
+@printer Narration wait:false
+@sfx 슝
+@char W.Face>기본,Body>경계 position:0,-26 scale:1.3
+나는 손가락으로 그의 이마를 짚었다
+@char W.Face>기본,Body>경계 position:0,-17.8 scale:1
+J: 다음에 만날 땐 인상 좀 펴
+@printer Narration wait:false
+@sfx 슝
+@char W.Face>기본,Body>경계 position:0,-26 scale:1.3
+차우준의 눈이 토끼처럼 동그래졌다
+@char W.Face>기본,Body>경계 position:0,-17.8 scale:1
+한 방 먹였다는 생각에 기분이 좋아져 가벼운 마음으로 집에 돌아갈 수 있었다
+
+@hide W
+@hidePrinter
+@back CamelliaNight visible:false time:1
+@endscript
+;2번 선택시 차우준 프로필: 신체특징에 '쇄골이 깊다' 오픈
+
+#c
+J: 천사의 집이었던 것 같아!
+@hidePrinter
+@back StreetDay visible:false wait:false
+@back AngelDay
+@printer Narration wait:false
+오늘은 아이들이 없는지 천사의 집 앞뜰이 조용했다
+J: 아무도 없나보네...
+@printer Narration wait:false
+그저께 그 남자를 만났던 뒷뜰로 가볼까 하는 생각이 잠시 들었지만,
+아무래도 혼자 가기에는 용기가 나지 않아 앞마당 벤치에 털썩 앉았다
+J: 음... 그런데 이렇게 기다리면 올까? 안 올 것 같은데...
+@printer Narration wait:false
+그렇게 해가질 때까지 벤치에서 그를 기다렸지만,
+그 남자는커녕 사람 그림자조차 보이지 않았다
+J: 아침에 유겸이가 말해준 곳이 여기가 아니었나?
+; 3-5 엔딩
+@back AngelDay visible:false time:1
+@hidePrinter
+@endscript

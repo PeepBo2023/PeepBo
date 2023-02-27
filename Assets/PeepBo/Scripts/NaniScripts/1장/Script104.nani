@@ -1,0 +1,303 @@
+@bgm 메인03 volume:0.5
+@back Black
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+First: .... 어나...
+@printer Narration time:0
+…
+First: 일어...
+@printer Narration time:0
+… 뭐지? 누가 날 부르나?
+First: 야…
+@printer Narration time:0
+으, 시끄러워…
+일어나고 싶은데 몸이 무거워 움직일 수가 없어…
+여기가 어디더라...
+@printer Dialogue_O time:0
+@spawn ShakePrinter wait:false
+First: 야! 일어나라니까!
+@hidePrinter
+
+@back Black visible:false time:0
+@back JianRoomDay time:1
+@bgm 메인03 volume:1
+N: 진짜 귀찮게 하네!
+@printer Narration time:0
+@spawn OpenClose
+@wait 1.5
+@despawn OpenClose
+앙칼진 목소리에 눈을 번쩍 떠보니 낯선 천장이 보인다
+아, 맞아. 여기 해록도지
+@char N.Face>짜증,Body>팔짱 position:0,-13.5
+N: 벌써 해가 중천인데 아직도 자도 있으면 어떡해?
+@sfx 슝
+@char N.Face>짜증,Body>팔짱 position:0,-20 scale:1.3
+J: ....어?
+@printer Narration time:0
+@char N.Face>짜증,Body>팔짱 position:0,-13.5 scale:1
+고개를 돌리자 팔짱을 낀 채 나를 내려다보고 있는 나연이었다
+@startchoice 0
+@choice "벌써 아침이야?" goto:.morning
+@choice "잘잤어?" goto:.good
+@hidePrinter
+@stop
+
+#morning
+@char N.Face>짜증,Body>기본
+J: 벌써 아침이야?
+@sfx 슝
+@char N.Face>짜증,Body>팔짱 position:0,-20 scale:1.3
+N: 그럼 한밤중에 내가 널 깨웠을까?
+@printer Narration time:0
+@char N.Face>짜증,Body>팔짱 position:0,-13.5 scale:1
+나는 주춤거리며 침대에 걸터앉았다
+@goto .bed
+#good
+@char N.Face>짜증,Body>기본
+J: 잘잤어?
+@printer Narration time:0
+@char N.Face>짜증,Body>팔짱
+내가 주춤거리며 침대에 걸터앉자 나연이는 한층 더 이상해진 표정을 지었다
+@sfx 슝
+@char N.Face>짜증,Body>팔짱 position:0,-20 scale:1.3
+N: 그, 그런 건 왜 물어봐!
+@char N.Face>짜증,Body>팔짱 position:0,-13.5 scale:1
+@printer Narration time:0
+성격하고는...
+
+#bed
+N: 그런데 너, 여기 언제까지 있을거야?
+J: 글쎄? 일단 금방 돌아가진 않을 계획인데...
+N: 나 너 좋아서 우리집에 머물게 한 거 아니고 어쩔 수 없이 떠맡은 거야
+@char N.Face>기본,Body>기본
+N: 그러니까 없는 사람처럼 최대한 조용히 있다가 떠나
+@sfx 슝
+@char N.Face>기본,Body>기본 position:0,-20 scale:1.3
+N: 나한테나 다른 주민들한테나
+@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+J: ...
+J: 근데 너 나한테 왜 이렇게 화를 내 자꾸?
+N: ...
+@printer Narration time:0
+나연은 내 말에 대답하지 않은 채 나를 빤히 바라보기만 했다
+@char N.Face>짜증,Body>팔짱
+묵묵부답인 나연을 마주보다 나는 결의 말을 떠올렸다
+<i>마을 사람들이 외지인을 경계한다는 말</i>
+주민들은 친절하기만 하던데... 고결 씨도 나연이를 만난 걸까?
+J: 내가 여기 묵는 게 마음에 들지 않는 모양인데... 
+J: 걱정 하지마, 나도 시끄러운 건 딱 질색이니까
+J: 조용히 있다가 돌아갈게, 당분간 함께 지내게 될 테지만 아마 네가 신경쓸 일 없을거야
+@printer Narration time:0
+내가 미소 짓자 나연이는 입술을 씰룩거릴 뿐 아무 대꾸도 하지않고
+@hide N
+@sfx 문닫는_소리 wait:false
+쌩하니 방 밖으로 나갔다
+J: 그래도 오늘은 문을 부서져라 닫진 않네
+J: 아, 나도 일단 나도 씻고 나가야겠다
+J: 오늘은 어제 안 가 본 곳을 가봐야지
+
+@char Cut.UncleDiary scale:0.5 position:0,-1
+@printer Narration time:0
+나는 책상 위에 올려진 삼촌의 다이어리를 집어 들었다
+삼촌이 해록도를 담당하면서 겪은 일들을 적어두었다는 다이어리다
+J: 천천히 읽어보려고 했는데, 이상하게 해록도에 온 뒤로 정신이 없단 말이야?
+@hidePrinter
+@sfx 장소발견
+@showUI UncleDiaryFind
+@wait i
+@hideUI UncleDiaryFind
+J: 오늘 자기 전에 읽어봐야지, 일단 나가보자!
+@hidePrinter
+@hide Cut
+
+@back JianRoomDay visible:false time:0
+@back StreetDay position:-8.3,0
+@wait 2
+@sfx 문여는_소리
+@printer Narration time:0
+문을 열자 쌀쌀한 아침 공기가 나를 맞았다
+J: 으아~ 공기 좋다
+@printer Narration time:0
+오늘부터 제대로 해록도를 둘러볼 생각이다
+J: 회관 뒤 쪽으로는 가본 적이 없으니까 오늘은 거길 가볼까?
+@printer Narration time:0
+기지개를 켜며 길을 나서는데, 
+저 멀리 낯익은 인영이 보였다
+
+@back StreetDay position:0,0
+J: 어? 고...결씨?
+@char Silhouette.G scale:1.2 position:-0.5,-15
+J: 이 아침부터 어딜 저렇게 가는 거야?
+@stopSfx 발소리
+@printer Narration time:0
+털레털레 걷고 있는 뒷모습을 보니 괜한 호기심이 일었다
+J: 한 번 따라가봐?
+@hide Silhouette
+@startchoice 1
+@choice "따라간다" goto:.A
+@choice "따라가지 않는다" goto:.B
+@hidePrinter
+@stop
+
+#A
+@printer Narration time:0
+십 여 미터의 간격을 두고 살금살금 그의 뒤를 따랐다
+인사할 타이밍을 재며 몇 분을 걸었을까
+앞서 가던 결이 먼저 코너를 돌고 나도 그를 따라 코너를 돈 순간,
+J: 어? 뭐지? 사라졌어
+@printer Narration time:0
+분명 이쪽으로 간 것 같은데 그새 어딜갔지?
+@char G.Face>비웃음,Body>팔짱 position:-0.5,-15.5
+G: 이제 보니 관광객이 아니라 도둑 고양이었군?
+@spawn ShakeBackground wait:false
+J: 으악!
+@printer Narration time:0
+갑자기 귓가에서 들리는 목소리에 화들짝 놀라 주저앉을 뻔 했다.
+J: 고, 고결씨?
+@char G.Face>무표정,Body>기본
+G: 대체 왜 따라오는 거야?
+J: 아니 그냥 이렇게 이른 아침부터 어딜 가시나해서…
+J: 근데 제가 따라가고 있는 걸 어떻게 알았어요?
+@char G.Face>비웃음,Body>팔짱
+G: 못 알아채는 게 바보 아냐? 대놓고 날 좀 봐주십사 쫓아왔잖아
+@printer Narration time:0
+와, 이 사람 눈치가 백단이야
+@char G.Face>거만,Body>손머리
+G: 귀찮아서 그냥 따돌리려고 했는데 니 꼴이 하도 웃겨서 참을 수가 있어야지
+@goto .Con1
+#B
+@printer Narration time:0
+결의 뒷 모습을 지켜보던 나는 그가 골목 안으로 사라진 뒤에야 발을 뗐다
+J: 에이, 뭘 따라가. 피차 어색할 테니까 그냥 내 갈 길이나 가자
+J: 일단 등대부터 가볼까? 
+J: 어제 언뜻 보니까 빨간 등대가 바다랑 그림 같이 어울리던데…
+@printer Narration time:0
+행선지를 생각하며 결이 사라졌던 골목을 지나쳐 직진하려는 순간,
+@char G.Face>기본,Body>팔짱 position:-0.5,-15.5
+G: 아침부터 바빠보이네?
+@spawn ShakeBackground wait:false
+J: 으악!
+@printer Narration time:0
+@char G.Face>비웃음,Body>팔짱
+갑자기 귓가에서 들리는 목소리에 화들짝 놀라 주저앉을 뻔 했다.
+J: 고, 고결씨? 왜 여기 있어요? 아까 이 골목으로 들어갔잖아요!
+@char G.Face>찡그림,Body>팔짱
+G: 날 지켜보고 있던게 너였어?
+@printer Narration time:0
+결은 수상하다는 듯 눈썹을 찡그리며 나를 내려다봤다
+J: 지, 지켜본게 아니고 그냥 우연히 본 거예요. 그나저나 왜 여기 있는데요?
+@char G.Face>거만,Body>손머리
+G: 날 향한 은근-한 시선이 계속 느껴져서 말이지?
+@char G.Face>비웃음,Body>기본
+G: 누군지 얼굴이나 보려고 기다리고 있었다, 왜
+@printer Narration time:0
+와, 이 사람 눈치가 백단이야
+
+#Con1
+J: 참나, 그래서 어디가시는데요?
+@char G.Face>거만,Body>기본
+G: 비밀인데?
+J: 네?
+@char G.Face>비웃음,Body>팔짱
+G: 알고 싶어? 그럼 말해
+@stopBgm 메인03 fade:1
+J: 뭐… 뭘요?
+@bgm 심각1 fade:1
+@sfx 슝
+@char G.Face>무표정,Body>기본 scale:1.3 position:-0.5,-23
+G: 니가 해록도에 온 이유
+@char G.Face>무표정,Body>기본 scale:1 position:-0.5,-15.5
+J: 아니 그런거 정말 없어요. 그냥 휴양온 거예요
+@printer Narration time:0
+@char G.Face>비웃음,Body>기본
+무슨 사람이 이렇게 의심이 많아?
+아니, 감이 좋은건가?
+@sfx 슝
+@char G.Face>거만,Body>기본 scale:1.3 position:-0.5,-23
+G: 핸드폰도 안 터지는 이런 답답한 오지에 휴양을 왔다?
+@char G.Face>거만,Body>기본 scale:1 position:-0.5,-15.5
+J: 안 그래도 핸드폰 안 돼서 답답해 죽겠… 아, 아니
+@char G.Face>비웃음,Body>팔짱
+J: 답답하지만 속세와 떨어져 여유를 만끽하는 중이라 행복합니다
+@printer Narration time:0
+애써 입꼬리를 끌어올리며 말했다
+근데 이 사람은 왜 이렇게 내가 섬에 온 이유를 궁금해하지?
+@char G.Face>무표정,Body>팔짱
+G: 있잖아
+@printer Narration time:0
+@sfx 숨
+결은 내 말을 끊더니 불쑥 다가와 내 귀에 속삭였다
+@sfx 슝
+@char G.Face>거만,Body>기본 scale:1.3 position:-0.5,-23
+G: 내가 이 섬의 숨겨진 비밀 장소를 하나 알거든?
+G: 해록도 주민들 중에서도 소수만 아는 곳인데,
+@char G.Face>비웃음,Body>기본
+G: 한 번 가본 사람은 그 곳을 잊지 못하고 꼭 다시 찾게 되는 곳이라고나 할까?
+J: 그...그래서요?
+@char G.Face>무표정,Body>기본 scale:1 position:-0.5,-15.5
+G: 그래서는 뭘 그래서야
+@char G.Face>비웃음,Body>기본
+G: 니가 여기 온 이유를 솔직하게 말해주면 나도 내 비밀 장소를 알려주겠다, 뭐 그런 간단한 말이지
+J: 제가 그 비밀 장소를 알아서 뭐하게요?
+@char G.Face>거만,Body>손머리
+G: 핸드폰 안 돼서 답답해 죽겠다며
+J: …
+@char G.Face>비웃음,Body>팔짱
+G: 내가 이 섬에서 유일하게 전파가 터지는 곳을 알고 있거든
+@spawn ShakeBackground wait:false
+J: ?!
+J: 어, 어딘데요?
+@char G.Face>무표정,Body>기본
+G: …
+J: 친구들한테 잘 도착했다고 연락해야 한단 말이에요!
+@char G.Face>거만,Body>기본
+G: …
+J: 아, 좀 알려주세요!
+@sfx 슝
+@char G.Face>찡그림,Body>팔짱 scale:1.3 position:-0.5,-23
+G: 어허
+@printer Narration time:0
+@char G.Face>찡그림,Body>팔짱 scale:1 position:-0.5,-15.5
+결은 으레 그 오만한 표정으로 날 내려다보며 어른인 체했다
+@char G.Face>비웃음,Body>팔짱
+이걸 어떡하지... 꼭 연락해야 하는데…
+아 모르겠다, 그냥 대충 둘러대고 넘기자!
+@char G.Face>기본,Body>팔짱
+J: 결씨가 해록도 담당 공무원이라고 하셨죠…?
+@bgm 심각1 volume:0.5 fade:2
+J: 사실…
+@char G.Face>무표정,Body>기본
+J: 저희 삼촌도 해록도 생태 관리 담당하시는 공무원이셨어요
+J: 얼마 전에 돌아가셨지만…
+@printer Narration time:0
+@char G.Face>찡그림,Body>팔짱
+순간 결의 표정이 싸늘하게 굳어졌다
+@char G.Face>찡그림,Body>기본
+G: 이장우 씨?
+J: 네! 맞아요 같은 업무하시는 분이라 그런지 저희 삼촌을 아시네요
+@sfx 슝
+@char G.Face>찡그림,Body>손머리 scale:1.3 position:-0.5,-23
+G: 죽었다고?
+@printer Narration time:0
+@char G.Face>찡그림,Body>손머리 scale:1 position:-0.5,-15.5
+갑자기 왜 저러지? 해록도에 있어서 몰랐나?
+J: 네... 2주 정도 됐어요
+@printer Dialogue_O time:0
+@spawn ShakePrinter wait:false
+G: 하! 하하하…
+@printer Narration time:0
+@char G.Face>찡그림,Body>기본
+이마를 짚으며 헛웃음을 치던 그는 곧바로 정색하며 내 팔을 잡아 끌었다
+@stopBgm 심각1
+@bgm 지안_독백
+@sfx 당황
+@char G.Face>찡그림,Body>기본 scale:1.3 position:-0.5,-23
+G: 너, 여기 왜 왔어? 솔직하게 말해
+@printer Narration time:0
+으르렁 거리는 낮은 목소리,
+결은 매서운 눈으로 나를 꿰뚫듯 내려다보며 물었다
+@hidePrinter
+@hideChars
+@back StreetDay visible:false time:2
+@endscript

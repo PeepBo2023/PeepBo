@@ -1,0 +1,8 @@
+@back HallDay
+@bgm 메인03
+J: 유겸이가 없잖아?
+J: 또 여기저기 참견하러 갔나보네!
+
+@hidePrinter
+@back HallDay visible:false time:1
+@endscript

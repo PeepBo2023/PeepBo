@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Naninovel-Audio
+  m_EditorClassIdentifier: 
+  m_GroupName: Naninovel-Audio
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 07fd207b9ac098140ae229d41a39ea2b
+  m_SerializeEntries:
+  - m_GUID: 6607dfd1d4024b24eaa89659524692b1
+    m_Address: "Naninovel/Audio/206_\uBB38_\uC138\uAC8C_\uB178\uD06C"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: f4ce79d29a7b33147b7a7d0c9b462e21
+    m_Address: "Naninovel/Audio/206_\uBB38_\uC138\uAC8C_\uB2EB\uB294_\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 59be5f0a070d5654e866f0f7df1fef19
+    m_Address: "Naninovel/Audio/\uD480\uBC8C\uB808"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1554c41f4a6b0c544bd46e27afced09c
+    m_Address: "Naninovel/Audio/\uB2E4\uAC00\uC624\uB294_\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1eb7203746d866d4ebea3704e9d606c3
+    m_Address: "Naninovel/Audio/\uB5A8\uC5B4\uC9D0"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 17db941569f22194eab74e5a60ecb9aa
+    m_Address: "Naninovel/Audio/\uC218\uD480"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 3cecf8634362e21499008ad0c014c637
+    m_Address: "Naninovel/Audio/\uC2EC\uC7A5\uBC15\uB3D9"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 381b9a843f72ede4b8d85c42db0517c5
+    m_Address: "Naninovel/Audio/\uACF5"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 171b68d7d84d90d44aadeac0aaa17139
+    m_Address: "Naninovel/Audio/\uC544\uC774\uB4E4_\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: bf63fd93ade200145adf6603e561628b
+    m_Address: "Naninovel/Audio/\uB6F0\uB294_\uBC1C\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 87b192d5f5f553d4786b5ee7f724c1e8
+    m_Address: "Naninovel/Audio/\uBC1C\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 899763be678dcfb41a6a42cda899ec4b
+    m_Address: "Naninovel/Audio/\uBD80\uC2A4\uB7ED"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: afe99cde5cddd7649911198eec45aca2
+    m_Address: "Naninovel/Audio/\uC0C8\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 90707297f7cccf343bdf716134dfd5be
+    m_Address: "Naninovel/Audio/\uC228"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: d21d353c93ec20e4dbfb93b2bb97b90f
+    m_Address: "Naninovel/Audio/\uC720\uB9AC\uAE68\uC9C0\uB294\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 7efc9bf7b1b8f0348b5dc7fda8da9548
+    m_Address: "Naninovel/Audio/\uACE0\uAE30"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: cd78b5859c16db94d91457a20cd747bc
+    m_Address: "Naninovel/Audio/\uC2DD\uAE30\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 2baf63d81bb3cbe47917aa1ffbc0aaee
+    m_Address: "Naninovel/Audio/\uC6C5\uC131\uC6C5\uC131"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: b1c044d9d3a24654280a9584f001ccd9
+    m_Address: "Naninovel/Audio/\uC720\uACB8_\uB4F1\uC7A5_\uD6A8\uACFC\uC74C"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 7e6d068f8fcf2294b9d5d123dab739a3
+    m_Address: "Naninovel/Audio/\uD30C\uB3C4"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: ca11b42e5da68344bad00d02671534be
+    m_Address: "Naninovel/Audio/\uCC60\uC784\uBCA8"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1471ad8a646abfb458fe2e1ec3cbe5d5
+    m_Address: "Naninovel/Audio/\uBB38\uB2EB\uB294_\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: d9acdd556c617fb448361ac29a6b8248
+    m_Address: "Naninovel/Audio/\uBB38\uC5EC\uB294_\uC18C\uB9AC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: a339ae99152ef7146aa04ab832e45ae6
+    m_Address: "Naninovel/Audio/\uBB38\uC5EC\uB294_\uB098\uBB34\uBB38"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1790258e2aec2224681eb917b2b9fb46
+    m_Address: "Naninovel/Audio/\uCE90\uB9AC\uC5B4"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: e3c2648f958cd9b428c5eda97af0a35e
+    m_Address: "Naninovel/Audio/\uC29D"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 72438071228c76549a445b91049cd66d
+    m_Address: "Naninovel/Audio/\uB2F9\uD669"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 516709723336db7429604e42bf1d0cfd
+    m_Address: "Naninovel/Audio/\uB178\uD06C"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 728cc098e0fb54a4a98ac69f9144e7f4
+    m_Address: "Naninovel/Audio/\uACE0\uC591\uC774"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: c63948d3056767140a91ad5b1e486212
+    m_Address: "Naninovel/Audio/\uD578\uB4DC\uD3F0_\uC5D0\uB7EC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 79620773779fa8444b3fd54a50a5a141
+    m_Address: "Naninovel/Audio/\uC154\uD130"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 34ccaea5a35345447a0d0f494bc66f58
+    m_Address: "Naninovel/Audio/\uC12C\uB4F1\uC7A5"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 7bdff8394e0b67640b5df26f51b402c9
+    m_Address: "Naninovel/Audio/\uC7A5\uC18C\uBC1C\uACAC"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 00d7555e8f29e554e89d0b73edb9222e
+    m_Address: "Naninovel/Audio/\uC120\uD0DD\uC9C0"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 190d6ac874d0f1d4bac844238ba1cb42
+    m_Address: "Naninovel/Audio/\uD074\uB9AD"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 0ffbdc1da32293f42a6bf15de149b068
+    m_Address: "Naninovel/Audio/\uB2E4\uD568_\uB4F1\uC7A5"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 8f9e972eb629f4449921caf8b3c609c3
+    m_Address: "Naninovel/Audio/\uC720\uACB8_\uB4F1\uC7A5"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 822dfb3eb3d3bea4b8cc53caf3eea1e3
+    m_Address: "Naninovel/Audio/\uC6B0\uC900_\uB4F1\uC7A5"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: d67c55fa03bd85e4c8705a90c9400942
+    m_Address: "Naninovel/Audio/\uACE0\uACB0_\uB4F1\uC7A5"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: de805ad0370713d428c39b75199d2c7d
+    m_Address: "Naninovel/Audio/\uC232_\uBC24"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 160fb49d65682fe41ac93c56c0aa969e
+    m_Address: "Naninovel/Audio/\uC232_\uB0AE"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 65714d22ad1ee934b9850e71699bddc2
+    m_Address: "Naninovel/Audio/\uCC28\uBD84_BG"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: d027275feb774ec4e8c41819dd66850e
+    m_Address: "Naninovel/Audio/\uC12C\uB729_BG"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 249867eb83fb21f448b87a3548552dfd
+    m_Address: "Naninovel/Audio/\uC120\uB77D\uC6D0_BG"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 6426d8415c14b734f900cfa89deaaa0f
+    m_Address: "Naninovel/Audio/\uC2EC\uAC012"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 5c0a69db0d43fb645b2687dc07e88bbd
+    m_Address: "Naninovel/Audio/\uC2EC\uAC011"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: cb3830e7062f7ed40b965f5160de6275
+    m_Address: "Naninovel/Audio/\uC9C0\uC548_\uB3C5\uBC31"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 0cdc7f4a2106e3a4595c079b381b94be
+    m_Address: "Naninovel/Audio/\uBA54\uC77803"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 05b91c849e0959944aca3cf9c74051c4
+    m_Address: "Naninovel/Audio/\uBA54\uC77801"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: b4f066d3deeaf234a9d8067b25462751
+    m_Address: "Naninovel/Audio/\uBA54\uC77800"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f1b98389cf4afe9439b8b40f55cb3ffc, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 22eaf364ae4a8db4c8b7e05b39b32c98, type: 2}
+    - {fileID: 11400000, guid: 09228a1f2e29c5b40824a0d5541c2976, type: 2}

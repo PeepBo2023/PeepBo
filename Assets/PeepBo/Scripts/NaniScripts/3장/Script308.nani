@@ -1,0 +1,559 @@
+@back StreetNight
+@bgm 차분_BG
+@printer Narration wait:false
+이장님 댁은 마을회관 바로 뒷 집이라고 했지?
+해록도는 가로등이 먼 간격으로 서있다
+그리고 다른 지역 가로등보다 조도가 낮았는데,
+식물들도 밤엔 잠을 자야하기 때문이라고 얼마 전 이장님이 말씀해주셨었다
+J: 어두운데다 인적도 드문데, 익숙해져서 그런지 이젠 별로 무섭지도 않네?
+@printer Narration wait:false
+이장님 댁으로 가는 길, 저 멀리 마을회관이 보였다
+그런데, 회관이 가까워질수록 익숙한 기침소리가 들려왔다
+
+@back StreetNight visible:false wait:false
+@back HallNight_on
+; 진동
+First: 켁, 켁!
+@printer Narration wait:false
+이 기침 소리는, 이장님?
+누군가 회관 앞에서 느리게 어슬렁 거리고 있었다
+J: 이장님이 아닌가...?
+@stopBgm 차분_BG
+@bgm 심각2
+@printer Narration wait:false
+마을회관 앞 누군가는 상체를 굽힌채 머리마저 아래로 깊이 떨구고 있었다
+J: 무슨 좀비 영화에나 나올 것 같은...
+@printer Narration wait:false
+이제 여기선 모르는 사람이 없으니 분명 주민들 중 한 명일터였다
+J: 이장...님?
+@printer Narration wait:false
+이장님은 내 말을 듣지 못 한 건지 아주 느린 걸음으로 제자리를 빙빙 돌고만 있었다
+J: 내 목소리가 안 들리시나?
+@choice "가까이 다가간다" goto:.a
+@choice "제자리에서 이장님을 부른다" goto:.b
+@hidePrinter
+@stop
+
+#a
+@printer Narration wait:false
+나는 조금 더 가까이 다가가 이장님을 불렀다
+@goto .con1
+#b
+@printer Narration wait:false
+다가가기에는 왜인지 섬뜩한 기분에 소리만 조금 높혀 다시 한 번 이장님을 불렀다
+J: 이장님!
+@printer Narration wait:false
+여전히 내 목소리가 들리지 않는지 이장님은 제자리에서 미동조차 없었다
+어쩔 수 없이 나는 몇 걸음 더 다가가 이장님을 불렀다
+#con1
+;이장님 CUT
+@char Headman visible:false avatar:Headman
+그러자 이장님은 천천히 내 쪽으로 고개만 돌려 나를 바라봤다
+아니, 바라보는 것 같았다
+초점없는 이장님의 눈에 순간적으로 이채가 돌았다
+눈이 마주쳤다고 생각한 순간 나도 모르게 움츠러들었지만,
+이장님은 그저 나를 제자라에서 바라만 보고 있을 뿐 아무 움직임도 없었다
+그때, 이장님이 천천히 내게 다가왔다
+Headman: 니가, 니가
+J: 네?
+Headman: 니가, 가져갔구나, 니가
+@stopBgm 심각2
+@bgm 섬뜩_BG
+@printer Narration wait:false
+이장님은 갑자기 손으로 본인의 목을 긁기 시작했다
+J: 이장...님, 괜찮으세요?
+Headman: 가져, 가져갔어 니가
+J: 뭘 말씀이세요 제가 어떤 걸...
+Headman: 니가 그 공무원 흉내내는 놈이랑, 빌어먹을 외지인들
+@printer Narration wait:false
+설마 고결 씨를 말하는 걸까?
+이장님의 손길은 점차 날카로워지더니 어느새 목엔 피가 맺히고 있었다
+Headman: 네놈들이! 가져갔잖아!
+J: 대체 무슨 말씀하시는 거예요 혹시 어제 등대에서라면,
+;진동
+J: 으악!
+@printer Narration wait:false
+이장님은 순식간에 내게 달려들어 내 어깻죽지를 잡아당겼다
+Headman: 내가 거기, 거기 숨겨놓은 걸 누구한테 들은 거야?
+@printer Narration wait:false
+번뜩이는 이장님의 눈은 빨갛게 충혈돼 있었고 심지어는 실핏줄이 터진 곳도 있었다
+;진동
+J: 왜 이러세요 진짜! 이거 놓으세요!
+Headman: 강신재 그 마녀 같은 여자가 말했지? 독사 같은 혀를 휘둘러서
+Headman: 같이 나눠갔자고 했나보지? 응?
+@printer Narration wait:false
+나는 힘껏 이장님을 밀어냈지만 이장님은 조금도 물러나지 않았다
+일흔이 넘은 사람의 완력이라고는 믿기지 않을 만큼 강했다
+Headman: 내가 어떻게 가저온 건데 다 내건데!!!
+Headman: 네놈들이 빼돌, 켁! 켁!
+@printer Narration wait:false
+이장님은 갑자기 그 이상한 기침을 하며 나를 붙잡던 손으로 코를 긁기 시작했다
+Headman: 켁! 켁, 켁!
+
+@sfx 뛰는_발소리
+@spawn RunShake
+@printer Narration wait:false
+나는 잠시 머뭇대다 곧장 뒤도 돌아보지 않고 왔던 길로 뛰기 시작했다
+@back HallNight_on visible:false wait:false
+@back StreetNight
+이쪽으로 가면 등대였지만
+순간적으로 결 씨의 말이 떠올랐다
+@despawn RunShake
+@stopSfx 뛰는_발소리
+
+;3-4 플래시백
+@back StreetNight visible:false wait:false
+@back LighthouseDay
+@char G.Face>찡그림,Body>손머리 position:-0.5,-15.5 scale:1
+G: 우리가 여기 들어온 걸 그 누구도 알아선 안 돼
+@hide G
+@back LighthouseDay visible:false wait:false
+@back StreetNight
+;3-4 플래시백 out
+
+@printer Narration wait:false
+이장님이 쫓아와서 사람들에게 우리가 등대에 있었다는 걸 알리기라도 하면 큰 일이었다
+J: 그럼 어쩌지? 어디로 가야하지?
+@choice "나연의 집" goto:.c
+@choice "선락원" goto:.d
+@choice "동백나무 숲" goto:.e
+@choice "천사의 집" goto:.f
+@hidePrinter
+@stop
+
+#c
+;결 + 10
+J: 일단 집으로 가자
+@printer Narration wait:false
+나는 아주 잠시 숨을 돌리곤 다시 집을 향해 뛰었다
+@hidePrinter
+@back StreetNight visible:false wait:false
+@back JianRoomNight
+집으로 들어와 문을 걸어잠그자마자 다리에 힘이 풀려 제자리에 주저앉고 말았다
+도대체 이장님은 왜 그렇게 되신 걸까
+우리가 뭘 가져갔다는 거지?
+고결 씨가 공무원 흉내를 낸다는 거야? 
+그럼 강신재 그 여자랑은 대체 무슨...
+알 수 없는 것 추성이었다, 원본이 없는 퍼즐 조각을 우르르 받은 기분
+집에 들어왔다는 안도감이 들었음에도 머리는 터질 것 같았다
+
+;철컥 효과음
+J: !!!
+@printer Narration wait:false
+누군가 문을 열려하고 있다
+시계를 힐끔 보니 예배가 끝날 시간까진 아직 남아있었다
+@stopBgm 섬뜩_BG
+@bgm 심각1
+그렇다면 나연이는 아닐텐데,
+;철컥 효과음
+나는 빠르게 일어나 신발장 옆에 놓인 긴 우산을 들었다
+문이 열리자마자 눈을 감은 채 힘껏 우산을 휘둘렀다
+First: 읏!
+J: 어...?
+@printer Narration wait:false
+@char N.Face>기본,Body>기본 position:2.5,-13.5 scale:0.9 wait:false
+@char G.Face>기본,Body>기본 position:-3.1,-13.5 scale:0.9
+감았던 눈을 뜨자 고결과 나연이가 황당하다는 눈으로 나를 바라보고 있었다
+내가 휘두른 우산은 결의 어깨에 착지해 있었고...
+@char G.Face>당황,Body>기본
+G: 너, 이게 뭐 하는...?
+@printer Narration wait:false
+나는 우산을 떨어트리고 양 손으로 입을 틀어막았다
+N: 내가 먼저 들어왔으면 넌 오늘부로 길거리 신세였어
+@hide N
+J: 진짜, 진짜 죄송해요 어쩌죠? 정말 죄송해요...
+@printer Narration wait:false
+그때, 결의 표정이 순식간에 차갑게 굳었다
+@char G.Face>당황,Body>기본 position:-0.5,-15.5 scale:1
+G: 너 이게 어떻게 된 거야?!
+@printer Narration wait:false
+결이 내게 다가와 내 어깨를 매만졌다
+매서운 표정에 비해 조심스러운 손길이었다
+@char G.Face>찡그림,Body>손머리
+J: 아야!
+@printer Narration wait:false
+어깨에서 날카로운 통증이 느껴졌다
+내려다보다 양쪽 어깻죽지 모두 옷을 옷이라고 부를 수 없을 만큼 넝마가 돼있었고,
+한 쪽은 손톱에 긁혔는지 피가 맺혀 있었다
+피를 보자 눈에 열기가 확 몰려들었다
+@char G.Face>당황,Body>기본
+N: 꼴이 이게 뭐야... 너 울어?
+@printer Narration wait:false
+나연의 물음에 눈물이 비오듯 쏟아졌다
+@char G.Face>찡그림,Body>기본
+N: 뭔데, 그 잠깐 사이에 대체 무슨 일이 있었던 건데!
+@printer Narration wait:false
+나는 삐져나오는 울음을 참으며 말했다
+J: 이장, 이장님을 찾으려고 했는데, 마을회관 앞에서 이장님이...
+J: 이장님이 갑자기 나한테, 내가 뭘 가져갔다면서...
+;진동효과
+@char G.Face>찡그림,Body>손머리
+G: 그러길래 등대엔 왜 따라 들어와서...!
+J: 결 씨는? 결 씨는 뭐예요?
+@char G.Face>무표정,Body>팔짱
+J: 정말 공무원이 맞기는 한 거예요? 대체 뭘 숨기고 있는...!
+@printer Narration wait:false
+하고 싶은 말이 턱 밑까지 차올랐지만 목이 막혀 말을 이어갈 수가 없었다
+@char G.Face>찡그림,Body>손머리
+G: ...
+@printer Narration wait:false
+결이 손으로 본인의 얼굴을 쓸어넘기며 한숨을 내쉬었다
+@char G.Face>무표정,Body>팔짱
+G: 나중에 다 얘기할게, 이장은 지금 어디있어?
+J: 마을회관 앞에요, 근데 지금도 계실지는 모르겠어요 뒤도 안 돌아보고 뛰어와서
+@printer Narration wait:false
+결은 곧장 문을 박차고 나갔다
+@hide G wait:false
+@char N.Face>기본,Body>팔짱 position:0,-13.5 scale:1
+J: 잠깐만요! 얘기 다 안 끝났어요!
+N: 됐어, 그냥 둬
+@printer Narration wait:false
+나연이가 차분하게 내 등을 쓸어내리며 나를 달랬다
+J: 결 씨랑 너는 어떻게 온 거야? 아직 예배 끝날 시간 안 됐잖아
+@char N.Face>짜증,Body>기본
+N: 저 오빠가 갑자기 예배 중간에 벌떡 일어나서 나가는 거야,
+@char N.Face>기본,Body>기본
+N: 나는 맨 뒤에 앉아있었는데 오빠 나가는 거 보고 뭔가 싶어서 그냥 따라나왔어
+@char N.Face>눈내리깜,Body>팔짱
+N: 너한테 무슨 일 생겼다는 걸 직감한 건가, 아무튼...
+@char N.Face>기본,Body>기본
+N: 일단 씻고 와 따뜻한 차 마시고 진정 좀 하고 자
+@printer Narration wait:false
+무언가 더 말을 하고 싶었지만,
+나연이 말대로 자고 밝은 낮에 얘기하는게 심신에 더 좋을 듯했다
+
+@hide N
+@hidePrinter
+@back JianRoomNight visible:false time:1
+@endscript
+
+#d
+;다함+10
+@stopBgm 섬뜩_BG
+@bgm 심각1
+J: 선락원, 선락원으로 가야겠어!
+@printer Narration wait:false
+나는 방향을 틀어 숲으로 다시 뛰기 시작했다
+@hidePrinter
+@sfx 뛰는_발소리
+@wait i
+@back StreetNight visible:false wait:false
+@back ForestNight
+이장님이 따라올까 걱정 됐지만 그래도 사람들이 최대한 많은 곳에 있는 게 나을 것 같다는 생각이 들었다
+@hidePrinter
+@stopSfx 뛰는_발소리
+@sfx 뛰는_발소리
+@wait i
+@back ForestNight visible:false wait:false
+@back ParadiseOutsideNight
+드디어 저 멀리 선락원의 입구가 보였다
+@stopSfx 뛰는_발소리
+그리고 그 앞에 선 한 남자도
+@char Silhouette.D scale:1.23 position:0,-15.6
+J: 헉..헉..
+@printer Narration wait:false
+나는 숨을 급하게 몰아쉬며 남자 앞에 멈춰섰다
+@stopBgm 심각1
+@bgm 선락원_BG
+J: 다함 씨...
+@hide Silhouette wait:false
+@char D.Face>걱정,Body>입에손 position:0,-16 scale:1
+D: 이게 대체 무슨...
+@printer Narration wait:false
+@char D.Face>걱정,Body>가슴에손
+그를 보자 다리에 힘이 풀려 쓰러지듯 그의 팔을 붙잡았다
+다함은 놀란 얼굴로 황급히 나를 부축했다
+선락원 안에서는 주민들이 기도하는 소리가 들려왔다
+J: 하, 하아... 다함 씨다... 다행...
+@printer Narration wait:false
+그때 다함은 아무말 없이 나를 끌어당겨 품에 안았다
+@hide D
+@char Silhouette.D scale:1.23 position:0,-15.6
+귀에 닿은 가슴팍으로 그의 심장소리가 여과없이 들려왔다
+온몸이 떨릴 정도로 거칠어진 나의 호흡처럼
+강하고 빠르고, 불규칙했다
+그의 커다란 손이 내 뒷통수를 힘주어 눌렀다
+내가 먼저 그를 잡은 건 맞지만 그렇다고 안기려던 건 아니었는데...
+얼굴이 보이지 않으니 무슨 표정인지 읽을 수가 없었다
+나를 안심시켜주려는 걸까, 아니면 ...
+J: 다, 다함 씨...
+@printer Narration wait:false
+내가 겨우 입술을 움직여 그를 부르자
+다함의 손에 힘이 서서히 풀렸다
+그제야 나는 고개를 들어 그를 바라볼 수 있었다
+@hide Silhouette wait:false
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+D: 괜찮아요, 이제
+@char D.Face>아련,Body>기본
+D: 내가 곁에 있으니까
+@printer Narration wait:false
+그는 마치 내가 겁에 질린 이유를 안다는 듯이 중얼거렸다
+정말로 다함 씨는 이 모든 것이 해결할 수 있을 것만 같아
+J: 이장님이... 이장님이 이상해요, 다함 씨
+@printer Narration wait:false
+나는 더듬거리며 그에게 상황을 설명했다
+@char D.Face>기본,Body>입에손
+J: 가, 강선재 선생님한테 이장님의 상태를 살펴달라는 부탁을 받았어요
+J: 댁으로 가던 중에 마을회관 앞에서 이장님을 만났는데...상태가 이상했어요
+J: 자꾸.. 내가 뭘 가져갔다면서 소리치는 게 무서워서
+J: 여기까지 도망쳐온거고...
+@char D.Face>걱정,Body>입에손
+D: 그렇군요, 이장님이
+@printer Narration wait:false
+다함의 목소리가 스테인리스의 달빛처럼 낮게 깔렸다
+
+@hidePrinter
+@hide D
+@back ParadiseOutsideNight visible:false wait:false
+@back DIllust2
+@stopBgm 선락원_BG
+@bgm 다함_등장
+D: 가여운 지안 씨...
+D: 옷이 더러워졌네요
+D: 눈물도 고였고
+@printer Narration wait:false
+그가 손가락을 들어 내 눈가를 쓸었다
+정말 내가 울고 있었다
+J: 아하하... 이건...
+@printer Narration wait:false
+뒤늦게 민망함이 밀려와 고개를 돌리려는데 그가 멈춰세웠다
+D: 숨길 필요 없어요, 아무것도
+D: 제가 지안 씨를 도울 거니까
+@printer Narration wait:false
+다함이 다시 나를 부드럽게 끌어 안았다
+@hidePrinter
+@back DIllust2 visible:false wait:false
+@back ParadiseOutsideNight
+
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+D: 일단 집에 데려다줄게요
+J: ...네
+@printer Narration wait:false
+나는 그의 품에 안긴 채 고개를 끄덕였다
+
+@hide D
+@hidePrinter
+@back ParadiseOutsideNight visible:false time:1
+@endscript
+
+#e
+;우준+10
+@stopBgm 섬뜩_BG
+@bgm 심각1
+@printer Narration wait:false
+왜 그 남자가 생각나는지 모르겠다
+날 두 번이나 구해줬던 그 남자
+J: 동백나무 숲으로 가야겠어
+@hidePrinter
+@sfx 뛰는_발소리
+@back StreetNight visible:false wait:false
+@back CamelliaNight
+@printer Narration wait:false
+동백나무 숲이 있는 방향으로 뒤도 돌아보지 않고 힘껏 달렸다
+@stopSfx 뛰는_발소리
+@sfx 뛰는_발소리
+@char Silhouette.W scale:1.3 position:0,-18.3
+저 멀리 동백나무 숲을 향해가는 뒷모습이 보였다
+@stopSfx 뛰는_발소리
+내 기척이 느껴졌는지 우준은 멈춰서 뒤를 돌았다
+@stopBgm 심각1
+@bgm 우준_등장
+@hide Silhouette wait:false
+@char W.Face>냉소,Body>기본 position:0,-17.8 scale:1
+W: 하...
+@printer Narration wait:false
+우준은 나를 보더니 인상을 구기며 자기 얼굴을 쓸어내렸다
+; 진동효과
+@char W.Face>화난,Body>기본
+W: 대체 꼴이 그게 뭐야!
+@printer Narration wait:false
+분노를 꾹꾹 눌러참는 목소리였다
+큰 보폭으로 다가와 내 앞에 선 우준은 내게 손을 뻗어왔다
+@char W.Face>화난,Body>기본 position:0,-26 scale:1.3
+J: 읏…!
+@printer Narration wait:false
+다가오는 손을 보고 움츠러든 나는 조심스레 어깨를 어루만지는 손길에 참았던 숨을 내쉬었다
+@char W.Face>화난,Body>경계
+W: 어디서 이랬어? 매번 무슨 짓을 하고 돌아다니는 거야
+W: 내가 돌아가라고 몇 번이나 말했어!
+@printer Narration wait:false
+우준은 대답할 새도 주지 않고 끊임없이 나를 몰아붙였다
+@char W.Face>화난,Body>기본 position:0,-17.8 scale:1
+W: 애초에 여길 왜 들어온 거야?
+W: 넌 왜 항상 나를…!!
+J: 흑...
+@printer Narration wait:false
+그의 분노를 고스란히 받고 있으니 이상하게 안도감이 피어났다
+그러자 참았던 눈물이 걷잡을 수 없이 쏟아지기 시작했다
+우준은 가라앉은 목소리로 말했다
+@char W.Face>기본,Body>손올림
+W: 왜 울어
+W: 울고 싶은 건 난데 니가 왜 울어
+J: 왜 화를 내! 나는 무서워서 여기로 도망친 건데 왜 화내냐고!
+@char W.Face>기본,Body>기본
+W: ...
+@printer Narration wait:false
+우준은 한동안 말이 없었다
+@char W.Face>기본,Body>기본
+W: 누가 이랬어?
+@printer Narration wait:false
+조금 진정되자 울었던 것이 창피해졌다
+J: 이장님이 예배에 오지않아서 내가 이장님을 뵈러 갔어
+J: 근데 마을회관 앞에서 갑자기 나한테 달려들더니,
+J: 내가 뭘 가져갔다고…
+@printer Narration wait:false
+@char W.Face>기본,Body>기본 position:0,-26 scale:1.3
+우준은 젖어있는 내 얼굴을 손등으로 훔치며 말했다
+@char W.Face>화난,Body>기본
+W: 이장은 마을회관에 있어?
+@char W.Face>화난,Body>기본 position:0,-17.8 scale:1
+J: 잘 모르겠어 그냥 뒤도 안 돌아보고 뛰어와서...
+@char W.Face>화난,Body>기본
+W: 일단 집에 들어가서 진정 좀 해 혼자 있지 말고 당분간은 절대, 절대 혼자 돌아다니지마
+@char W.Face>기본,Body>기본
+W: 그리고 혹시나 또 그런 일이 벌어지면,
+@char W.Face>기본,Body>기본
+W: 아니야
+@printer Narration wait:false
+우준은 말을 채 끝맺지 않은 채 데려다주겠노라 말했다
+그러더니 갑자기 걸음을 멈춰서곤 자연스럽게 입고 있던 셔츠 단추를 풀어내려갔다
+@char W.Face>기본,Body>기본 position:0,-26 scale:1.3
+J: 가, 갑자기 옷을 왜 벗어?
+@printer Narration wait:false
+나는 황급히 우준의 손을 잡아 그를 말렸다
+@char W.Face>기본,Body>기본
+W: 너 옷
+J: 내 옷?
+@printer Narration wait:false
+우준의 말에 내 옷을 내려다 보니,
+여기저기 잡아뜯긴 탓에 제 기능을 상실한 채 넝마가 된 옷이 보였다
+J: 그래서, 그 걸 벗어주겠다고?
+J: 셔츠 하나만 입고 있으면서 그 것까지 벗어서 날 주면 넌 어떡해?
+@printer Narration wait:false
+@char W.Face>기본,Body>기본 position:0,-17.8 scale:1
+우준은 무슨 말인지 이해가 안 간다는 표정으로 날 바라봤다
+@char W.Face>냉소,Body>기본
+W: 뭘 어떡해?
+J: 말을 말자... 나 괜찮아 그냥 데려다만 줘
+@printer Narration wait:false
+우준은 탐착치 않은 눈으로 내 옷을 내려다보곤 다시 걷기 시작했다
+그는 처음으로 나를 앞서 가지 않고 나와 나란히 걸었다
+
+@hidePrinter
+@hide W
+@back CamelliaNight visible:false wait:false
+@back StreetNight position:-8.3,0
+@char W.Face>기본,Body>주머니 position:0,-17.8 scale:1
+W: 내가 한 말 명심해 당분간은 절대 혼자 돌아다니지 마
+@char W.Face>기본,Body>기본
+W: 그리고 이장은, 내가 알아볼게
+@printer Narration wait:false
+나는 고개를 주억거리곤 집 안으로 들어왔다
+
+@hide W
+@hidePrinter
+@back StreetNight visible:false time:1
+@endscript
+
+#f
+;유겸 +10
+@stopBgm 섬뜩_BG
+@bgm 심각1
+@printer Narration wait:false
+그때 내 머릿속에 천사의 집이 스쳤다
+그쪽은 주민들도 잘 안 다닌다고 하니까, 숨을만한 공간이 있을거야
+@sfx 뛰는_발소리
+나는 골목을 틀어 천사의 집 방향으로 달렸다
+@stopSfx 뛰는_발소리
+@sfx 뛰는_발소리
+@back StreetNight visible:false wait:false
+@back AngelNight2
+멀리서 불 꺼진 건물이 눈에 들어왔다
+@stopSfx 뛰는_발소리
+J: 헉..헉!
+@printer Narration wait:false
+더 이상 이장님이 쫓아오지 않는 것 같아 나는 허리를 숙여 숨을 몰아쉬었다
+도대체 이장님은 어떻게 된 일일까
+우리가 뭘 가져갔다는 거지...?
+J: 어디서부터 잘못된거야...
+@printer Narration wait:false
+새까만 골목 끝을 바라보고 있으니 나도 모르게 눈물이 고였다
+아니야, 지금 나약하게 울고 있을 때가 아니야
+J: 돌아..가자
+@printer Narration wait:false
+떨어지지 않는 발걸음을 옮기려는데
+@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1
+Y: ...누나?
+J: ..?!
+@printer Narration wait:false
+건물 그림자 밖으로 유겸이 걸어나왔다
+순간 이장님이 쫓아온 줄 알고 심장이 쿵 내려앉았는데
+@stopBgm 심각1
+@bgm 메인03
+유겸을 보자 안도감이 파도처럼 밀려왔다
+@char Y.Face>기본,Body>기본
+Y: 어...누나
+@printer Narration wait:false
+유겸의 얼굴이 굳은 게 보였다
+J: 나...
+@printer Narration wait:false
+그때, 성큼 다가온 유겸이 내 얼굴을 양손으로 감쌌다
+
+@hidePrinter
+@hide Y
+@back AngelNight2 visible:false wait:false
+@back YIllust2
+@printer Narration wait:false
+평소와 달리 손바닥이 뜨거웠고 호흡이 거칠었다
+Y: ...왜 울어요?
+Y: 왜
+Y: 누가 울렸어요?
+J: 아...
+@printer Narration wait:false
+유겸이 손가락으로 내 눈가를 쓸었다
+
+@hidePrinter
+@back YIllust2 visible:false wait:false
+@back AngelNight2
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+나 진짜 울고 있었네
+J: 야...민망하다. 그냥 좀 놀라는 일이 있어서...
+@printer Narration wait:false
+나는 그의 손을 떼어내며 어물쩍 웃었다
+@char Y.Face>울먹,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 뭔데요?
+Y: 말해주면 안돼요?
+@printer Narration wait:false
+@char Y.Face>울먹,Body>입에손 position:-0.25,-15 scale:1
+나는 잠시 망설이다가 입술을 뗐다
+J: 강선재 선생님한테 이장님의 상태를 살펴달라는 부탁을 받았어
+@char Y.Face>기본,Body>기본
+J: 댁으로 가던 중에 마을회관 앞에서 이장님을 만났는데...이장님 상태가 이상했어
+J: 자꾸.. 내가 뭘 가져갔다면서 소리치는 게 무서워서
+J: 여기까지 도망쳐온거야
+J: 이장님, 마치 약에 취한 사람 같았어. 제정신이 아니었어...
+@char Y.Face>아련,Body>입에손
+Y: ...
+Y: 그렇구나
+@printer Narration wait:false
+유겸은 알 수 없는 표정으로 고개를 끄덕였다
+@char Y.Face>기본,Body>기본
+Y: 내가, 회관에 가서 이장님 상태를 볼게요 일단 누나를 좀 데려다 준 다음에...
+@printer Narration wait:false
+유겸이 안심하라는 듯 희미하게 웃었다
+J: 도대체 뭐가 어떻게 된 걸까, 유겸아...
+@char Y.Face>아련,Body>입에손
+Y: 그러게요. 여기 참 이상하죠
+@char Y.Face>기본,Body>기본
+Y: 많이 놀랬겠다, 누나
+Y: 당분간 혼자 다니지마요
+@printer Narration wait:false
+@char Y.Face>기본,Body>기본
+유겸이 구겨진 내 어깨를 안쓰럽다는 듯 쓰다듬으며 중얼거렸다
+집으로 돌아가는 내내, 그의 미소는 볼 수 없었다
+
+@hide Y
+@hidePrinter
+@back AngelNight2 visible:false time:1
+@endscript

@@ -1,0 +1,315 @@
+@back StreetDay position:-8.3,0
+@bgm 메인03
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+Y: 원장님은 천사의 집도 운영하는 분이니까 그렇게 경계하지 않아도 돼요
+@back StreetDay visible:false time:0 wait:false
+@back StoreEye time:0 position:0,0
+@stopBgm 메인03
+@bgm 심각1
+@printer Narration wait:false
+근데 그렇게 좋은 사람이 왜…창고에서 날 훔쳐보고 있던 거지?
+의사에, 천사의 집 원장인 사람이...왜 도망친 건데?
+
+@back StoreEye visible:false wait:false
+@back StreetDay position:-8.3,0 time:0
+다시금 돋아나는 불쾌감에 몸을 떠는데
+@stopBgm 심각1
+@bgm 메인03
+@char Y.Face>기본,Body>기본 position:-0.25,-21.5 scale:1.3
+문득 유겸이 손이 내 머리에 내려 앉았다
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+Y: 누나, 무슨 생각해요?
+J: ….
+@char Y.Face>놀란,Body>기본
+Y: 울어?
+J: 안 울어! 우는 건 네 특기잖아
+Y: 나는 원래 우수에 찬 눈빛인걸요
+@printer Narration wait:false
+@char Y.Face>윙크,Body>기본
+유겸이 눈웃음을 지으며 웃었다
+J: 계속 서 있으니 다리 아파서 그래
+@char Y.Face>기본,Body>기본
+@choice "나 좀 쉴게" goto:.a
+@choice "너도 들어올래?" goto:.b
+@hidePrinter
+@stop
+
+#a
+J: 나는 이만 마저 쉬어야겠어
+@char Y.Face>놀란,Body>기본
+Y: 아, 그래요. 얼른 들어가서 쉬어요!
+J: 나한테 뭐 할 말 있어서 온 거 아니야?
+@char Y.Face>웃는,Body>기본
+Y: 그냥 산책하다가 겸사 들른 거니까 신경쓰지 마요!
+Y: 누나 건강해지면 같이 산책해요
+@printer Narration wait:false
+@char Y.Face>윙크,Body>기본
+유겸이 팔을 붕붕 흔들었다
+J: 어어, 그래. 조심히 가고
+@char Y.Face>기본,Body>기본
+Y: 응! 다음에 또 봐요!
+@printer Narration wait:false
+유겸은 계속 팔을 흔들었다
+자리에서 움직이지는 않고
+J: …
+J: 가기 싫니?
+@char Y.Face>놀란,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 아, 아닌데? 지금 가려고 했는데요?
+@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+뭘, 얼굴에 나랑 더 놀고 싶다고 쓰여있구만
+당황하는 표정을 보니 그만 웃음이 터졌다
+@goto .con1
+#b
+; +5
+J: 일단 너도 들어올래?
+@printer Narration wait:false
+내가 문을 활짝 열자
+; 진동
+@char Y.Face>놀란,Body>입에손 position:-0.25,-21.5 scale:1.3
+유겸이 놀란듯 어깨를 흠칫 떨었다
+@char Y.Face>놀란,Body>입에손 position:-0.25,-15 scale:1
+Y: 집에 누나 혼자 있는 거 아니에요?
+J: 응. 나연이는 잠깐 밖에 나갔거든
+@printer Narration wait:false
+@char Y.Face>놀란,Body>기본
+내 말을 듣는지 마는지, 그는 눈만 끔뻑끔뻑 떴다
+그러더니 자신을 가리키며 되물었다
+Y: 나, 들어오라고…?
+J: 네가 불편하지만 않다면…
+J: 아, 나연이한테 혼나려나
+@char Y.Face>웃는,Body>기본
+Y: 그럼 집에 누나랑 나랑 둘만 있게 되는 건데?
+@printer Narration wait:false
+우리 사이에 잠시 정적이 흘렀다
+그 말을 이해한 나는 그만 웃음이 터졌고
+@char Y.Face>놀란,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 왜, 왜 웃어요!
+@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1
+J: 홍유겸 너 아주!
+J: 머릿속이 이상한 생각으로 가득 찼구나?
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 아, 아니! 이게 내 잘못이에요?
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+J: 잘못이지 그럼!
+J: 순수한 내 호의를 더럽히다니!
+@printer Narration wait:false
+내가 허리춤에 손을 올리자 유겸의 귓가가 급속도로 빨개졌다
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 아니, 내 말은!
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+Y: 나, 나연이가 싫어할거라는 소리죠! 그게 걱정돼서 나는!
+@printer Narration wait:false
+얘가 이렇게 당황하는 모습은 처음본다
+좀… 재밌네?
+J: 나는 병문안 온 사람을 이렇게 세워두기 미안해서 그런건데,
+@char Y.Face>울먹,Body>기본
+Y: 저기 내 말도 좀 들어주세요. 나 진짜 이상한 생각한 거 아니거든요?
+J: 그래, 그렇구나
+@char Y.Face>놀란,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 와, 그 눈빛 진짜 상처다!
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+한참 웃다보니 진짜로 눈물이 다 나왔다
+최근들어 이렇게 웃어본 게 얼마만이더라
+@hideChars
+@hidePrinter
+
+#con1
+@back StreetDay visible:false time:0 wait:false
+@back LivingroomDay position:0,0 time:0
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+J: 유겸이 네가 없었으면 섬생활이 조금은, 아니 조금 많이 심심했을거야
+@char Y.Face>윙크,Body>입에손
+Y: 그런 말 해도 이미 소용없거든요?
+J: 이건 진짠데?
+J: 넌 나랑 달리 되게 밝은 아이니까, 옆에 있으면 나도 모르게 무장이 해제된다니까?
+@char Y.Face>기본,Body>기본
+Y: ….나 그렇게 안 밝은데
+@char Y.Face>아련,Body>입에손
+Y: 언젠가... 그렇게 말한 걸 후회하게 될 지도 몰라요
+@printer Narration wait:false
+유겸이 중얼거렸다
+@choice "그게 무슨 뜻이야?" goto:.c
+@choice "알고 있어" goto:.d
+@hidePrinter
+@stop
+
+#c
+J: 그게 무슨 뜻이야?
+@char Y.Face>웃는,Body>기본
+Y: 하하. 혼잣말이에요
+J: 무슨 혼잣말을 다 들리게 하니….
+@goto .con2
+#d
+J: 그건 나도 알고 있어
+@char Y.Face>놀란,Body>기본
+Y: ...?!
+J: 아까보니까 속이 아주 씨꺼멓던데.
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 아, 누나! 아니라니까요…!
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+J: 알겠어. 믿어줄게~
+
+#con2
+@char Y.Face>기본,Body>기본
+J: 그리고 내가 아주 우중충한 인간을 얼마 전에 봤는데
+J: 옆에 있으면 숨이 턱!하고 막히고 막 심장이 쿵!하고 떨어지고 그러거든
+Y: 나도 아는 사람이에요?
+J: 글쎄…
+@printer Narration wait:false
+까만 머리의 한 남자가 떠올랐다
+J: 차우준이라는 남자인데
+@printer Narration wait:false
+그 이름을 말하자 유겸의 눈썹이 한데 모였다
+@char Y.Face>기본,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 우준이 형?
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+J: 역시, 넌 알 것 같더라
+@char Y.Face>놀란,Body>입에손
+Y: 누나가 우준이 형을 어떻게 알아요? 만났어요?
+J: 뭐… 우연히?
+J: 그 차우준이라는 남자는 주로 어디가면 만날 수 있어?
+J: 자주 출몰하는 장소라던가…
+@printer Narration wait:false
+말하다보니 이 남자, 고양이랑 다른 점이 뭐야
+툭하면 발톱을 내세우는 게 비슷한 것 같기도…
+@char Y.Face>기본,Body>기본
+Y: 그 형이 왜 궁금한데요?
+@char Y.Face>기본,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 아니지. 누나는 왜 매번 나한테 다른 남자들 이야기를 묻는 거에요?
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+@printer Narration wait:false
+유겸이 문을 한 손으로 받치며 나를 바라봤다
+이미지가 솜사탕이라서 그렇지
+올려다보니 체격 차이가 꽤 났다. 남자는 남자다 이건가…
+J: 너, 너가 해록도 마스코트라며!
+J: 마스코트니까 주민 도감도 되주고 그런거지…
+@printer Narration wait:false
+내가 눈을 피하며 얼버무리자 유겸이 한숨을 푹 내쉬었다
+J: 그리고 이번엔 내가 개인적으로 빚진 게 있어서 그래!
+Y: 따지면 나한테 빚진 게 더 많지 않나
+@printer Narration wait:false
+그래. 이 빚쟁이들아. 나한테 받을 거 많아서 좋겠다
+Y: 동백나무 숲
+J: 뭐?
+Y: 달이 밝은 날
+Y: 동백나무 숲에 가면 만날 수 있어요
+@hidePrinter
+@hide Y
+
+@back LivingroomDay visible:false wait:false
+@back CamelliaNight
+@printer Narration wait:false
+동백나무 숲…
+그래, 그 날도 거기서 그를 처음 만났었지
+@hidePrinter
+@back CamelliaNight visible:false wait:false
+@back LivingroomDay
+
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+J: 고..마워, 알려줘서
+Y: 누나, 우리 처음 만난 날 내가 했던 말 생각나요?
+@printer Narration wait:false
+문득 유겸이 물었다
+음...뭐였더라
+@choice "어디서 왔어요, 누나?" goto:.e
+@choice "기다렸어요, 누나" goto:.f
+@hidePrinter
+@stop
+
+#e
+@char Y.Face>기본,Body>기본
+J: 어디서 왔냐고 물었던 것 같은데
+Y: ...
+@char Y.Face>아련,Body>기본
+@printer Narration wait:false
+한숨을 내쉬는 걸 보니 정답이 아닌가 보다
+J: ...표정 좀 풀어줄래
+J: 그러게 갑자기 옛날 얘기는 왜 꺼내!
+@char Y.Face>웃는,Body>기본
+@printer Narration wait:false
+내가 괜히 소리를 지르자, 유겸이 풉 웃음을 터뜨렸다
+Y: 당황한 누나가 귀여우니까 봐줄게요!
+Y: 첫만남 때 내가 뭐라고 했냐면요
+@printer Narration wait:false
+유겸이 한발자국 뒤로 물러나더니
+한 손을 흔들며 환하게 미소지었다
+@hidePrinter
+@hide Y
+@back LivingroomDay visible:false wait:false
+@back YIllust
+기다렸어요, 누나
+그러자 비로소 나는, 햇살이 뜨겁게 내리쬐던 그날의 유겸을 떠올렸다
+@hidePrinter
+@back YIllust visible:false wait:false
+@back LivingroomDay
+@goto .con3
+#f
+; +5
+@char Y.Face>놀란,Body>기본
+J: 날 기다렸다고 했잖아
+@printer Narration wait:false
+@char Y.Face>놀란,Body>기본 position:-0.25,-21.5 scale:1.3
+내 말에 유겸의 눈동자가 잠깐 커졌다가 원래대로 돌아왔다
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+기억할 줄 몰랐다는 듯이
+Y: ...
+J: 저기 맞췄으면 맞췄다고 반응 좀 해줄래?
+@spawn ShakeCamera wait:false
+@char Y.Face>웃는,Body>입에손
+Y: 아, 응! 조금 놀래서요
+J: 훗. 내가 기억력이 좀 좋은 편이야
+@printer Narration wait:false
+괜히 뿌듯해서 턱을 치켜들자 유겸이 풉 웃음을 터뜨렸다
+@char Y.Face>윙크,Body>입에손
+Y: 누나, 정말 귀여워요
+@printer Narration wait:false
+유독 환하게 웃는 그 미소를 보는 순간
+나는 햇살이 뜨겁게 내리쬐던 그날의 유겸이 떠올랐다
+@hidePrinter
+@hide Y
+@back LivingroomDay visible:false wait:false
+@back YIllust
+@wait i
+@back YIllust visible:false wait:false
+@back LivingroomDay
+
+#con3
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+J: 흠흠...
+J: 근데 갑자기 그건 왜 물어봐?
+@char Y.Face>웃는,Body>기본
+Y: 헤헤. 그냥, 잊지 말아달라구요
+J: 새삼스럽게 무슨…엣취!
+@printer Narration wait:false
+앗. 너무 오랫동안 바깥 바람을 쐤나
+@sfx 슝
+@char Y.Face>놀란,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 맞다. 누나, 감기!
+@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1
+Y: 얼른 들어가요, 들어가!
+@printer Narration wait:false
+@sfx 부스럭
+유겸이 무지막지한 힘으로 나를 쑤셔넣었다
+@spawn ShakeBackground wait:false
+J: 자, 잠깐만…!
+@sfx 슝
+@char Y.Face>웃는,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 이불 꽁꽁 덮고! 따뜻한 물 마시고!
+@char Y.Face>윙크,Body>기본 position:-0.25,-15 scale:1
+Y: 알겠죠? 나 걱정시키지 마요! 안녕!
+@sfx 문닫는_소리
+@hide Y
+
+J: 겨우 기침 한번가지고 호들갑은…
+@printer Narration wait:false
+코를 훌쩍이며 뻘쭘하게 돌아섰다
+@stopBgm 메인03
+@bgm 우준_등장
+그러고보니 비가 온 뒤라 날이 맑던데...
+내일 쯤 동백나무 숲으로 가면 그를 만날 수 있는 걸까?
+@back LivingroomDay visible:false time:1
+@hidePrinter
+@endscript
+;차우준 프로필: 좋아하는 장소에 '동백나무숲' 업데이트

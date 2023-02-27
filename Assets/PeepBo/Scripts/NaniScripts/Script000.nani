@@ -1,0 +1,62 @@
+@back StreetNight
+@bgm 지안_독백
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+@spawn OpenEyes
+@wait 2
+@despawn OpenEyes
+@spawn DigitalGlitch
+@wait 2
+
+J: 여긴...
+@printer Narration time:0
+발바닥에 차가운 흙이 밟힌다
+나는 천천히 주위를 둘러봤다
+어딘가 익숙한 담과 지붕이 보였다
+아, 여기가 어디더라
+
+@spawn CloseEyes
+@hidePrinter
+@wait 0.5
+@hideAll
+@despawn CloseEyes
+@wait 1
+@spawn OpenEyes
+@back ForestNight visible:true
+@despawn OpenEyes
+@wait 1
+@spawn DigitalGlitch
+
+…숲이다
+내가 왜 여기에….
+머리가 굳어버린 건지 아무것도 생각할 수가 없었다
+촛불이 꺼지듯 기운이 빠진 나는 다시 눈을 감았다
+
+@spawn CloseEyes
+@hidePrinter
+@wait 0.5
+@hideAll
+@despawn CloseEyes
+@wait 1
+@spawn OpenEyes
+@back ChurchInTheForest visible:true
+@despawn OpenEyes
+@wait 1
+다시 눈을 떴을 때
+뿌연 안개 사이로 한 건물의 윤곽이 보였다 
+J: 십..자가...?
+@printer Narration time:0
+의문스러움도 잠시,
+@sfx 발소리
+누군가 내 몸을 조종하기라도 한 듯 그곳을 향해 다리가 저절로 움직이기 시작했다
+나 지금 어디로 가고 있는 거지?
+저기에 뭐가 있길래?
+@stopSfx 발소리
+@hidePrinter
+@stopBgm 지안_독백 fade:1
+@back ChurchInTheForest visible:false time:1
+
+@movie Prologue time:0
+
+@endscript

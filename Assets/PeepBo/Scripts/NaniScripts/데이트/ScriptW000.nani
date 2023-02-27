@@ -1,0 +1,10 @@
+@back CamelliaDay
+@bgm 메인03
+@sfx 파도
+J: 기껏 힘들게 올라왔는데…
+@printer Narration time:0
+바람에 날리는 동백 꽃잎 외엔 아무것도 보이지 않았다.
+
+@hidePrinter
+@back CamelliaDay visible:false time:1
+@endscript

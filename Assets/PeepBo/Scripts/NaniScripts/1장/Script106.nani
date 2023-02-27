@@ -1,0 +1,347 @@
+@back Black
+@sfx 노크
+@sfx 노크
+@showUI EpisodeTitle
+@wait 2
+@hideUI EpisodeTitle
+J: 으, 뭐야...
+@sfx 노크
+@hidePrinter
+@spawn OpenEyes
+@back Black visible:false time:0
+@back JianRoomDay
+@wait 1
+@despawn OpenEyes
+@bgm 메인03
+@printer Narration time:0
+마지못해 눈을 뜨니 문이 부숴질듯 한 노크소리가 온 집안을 울리고 있었다
+J: 누구지? 나연이는 어딜간 건가?
+@hidePrinter
+@spawn ShakeBackground wait:false
+@sfx 노크 wait:true
+J: 아이참, 네~ 나가요~!
+@printer Narration time:0
+이불을 걷어내고 뛰다시피 계단을 내려갔다
+또 노크 소리가 들려올까 서둘러 문을 열었다
+J: 엇... 이장님?
+@printer Narration time:0
+@char Headman visible:false avatar:Headman
+Headman: 나연 자매가 분명 자고 있을 거라길래 혹시나 하고 계속 두드려봤더니만...
+J: 아침부터 어쩐 일로,
+Headman: 아이고 지금 12시가 넘었는데 아침은 무슨 아침!
+@printer Narration time:0
+앗, 벌써 시간이...
+J: 하하, 제가 잠이 많아서요. 그런데 무슨 일 있으세요?
+Headman: 다른 게 아니고 해록도에 손님이 찾아온게 얼마나 오랜만인지,
+Headman: 주민들이 밥이라도 같이 먹어야 하는 거 아니냐고 성화야
+Headman: 할 것도 없는 섬에서 심심할텐데 오늘 저녁에 회관으로 와
+@printer Narration time:0
+음, 식사를 대접하시겠다는 건가?
+@startchoice 0
+@choice "좋아!" goto:.C
+@choice "불편한데...." goto:.D
+@hidePrinter
+@stop
+
+#C
+@printer Narration time:0
+이게 바로 도시에서는 보기 힘든 이웃간의 정이라는 걸까
+Headman: 벌써 마을회관에서 음식 준비에 한창이야! 자매만 오면 돼~
+@printer Narration time:0
+내가 대답하기도 전에 이장님은 내 팔뚝을 붙잡았다
+근데 보통은 손님인 내 의사를 먼저 물어보지 않나...?
+하지만 여기까지 달려왔는지 땀이 흐르는 이장님을 보니 마음이 뭉근해졌다
+@goto .Con2
+#D
+@printer Narration time:0
+도시에서만 자라서 그런지, 이런 건 익숙하지 않은데...
+나는 밥도 혼자 먹는 게 편하다구
+좋게 돌려서 거절해볼까...?
+Headman: 벌써 마을회관에서 음식 준비에 한창이야! 자매만 오면 돼~
+@printer Narration time:0
+하지만 내가 대답하기도 전에 이장님은 내 팔뚝을 붙잡았다
+여기까지 달려왔는지 땀이 흐르는 이장님을 보니 마음이 뭉근해졌다
+그래, 인사 정도인데 뭘
+
+#Con2
+J: 정말 감사해요 이장님, 이렇게까지 마음써주시다니...
+Headman: 됐어, 됐어! 귀한 손님인데 우리가 대접해야지. 허허허!
+J: 그럼 준비하고 빨리 회관으로 갈게요!
+@printer Narration time:0
+나는 뛰듯이 방으로 들어와 나갈 준비를 했다
+@hidePrinter
+
+@bgm 메인03 volume:0.5
+@back StreetDay visible:false time:0
+@back HallDay
+@sfx 웅성웅성
+@printer Narration time:0
+회관에는 정말로 주민들이 대부분 모여있었다
+@char Y.Face>윙크,Body>기본 position:-0.25,-15 scale:1
+Y: 누나~ 옆자리 비워놨어요
+@sfx 식기소리
+@printer Narration time:0
+갖가지 반찬으로 차려진 테이블에는 이미 자리를 잡은 유겸이가 보이고
+@stopSfx 식기소리
+@hide Y
+@char G.Face>기본,Body>기본 position:-0.5,-15.5 scale:1
+G: ... ...
+@printer Narration time:0
+날 보며 눈썹 한번 까닥하는 걸로 인사를 생략한 결도 보였다
+@hide G
+@char Woman visible:false avatar:woman1
+Woman: 젊은 아가씨가 뭘 좋아할 지 몰라서 고기를 좀 구웠는데, 괜찮으려나 모르겠네?
+@printer Narration time:0
+@sfx 고기
+그릴 위로 노릇노릇한 고기와 버섯이 먹음직스럽게 구워지고 있었다 
+어쩐지 길목에서부터 맛있는 냄새가 진동을 하더라
+@stopSfx 고기
+모두가 내 리액션을 기다리는 듯 눈빛을 초롱초롱하게 빛냈다
+@bgm 메인03 volume:1
+@stopSfx 웅성웅성
+@startchoice 1
+@choice "너무 좋아요" goto:.E
+@choice "제가 고기를 안 좋아해서요" goto:.F
+@hidePrinter
+@stop
+
+#E
+J: 저 고기 너무 좋아해요! 감사합니다
+Headman: 하하하, 그럴 줄 알았어! 지안 자매가 뭘 좀 아네~!
+@goto .Con3
+#F
+J: 아, 제가 고기를 안 좋아해서요
+@printer Narration time:0
+시끌벅적하던 주변의 공기가 순식간에 멈추는 듯 하다
+분위기가 싸하다, 빨리 수습하지 않으면 오늘 밤 당장 서울로 돌아가게 생겼는걸?
+J: ...는 농담이랍니다. 저 고기 엄청 좋아해요
+Headman: 하하하, 지안 자매는 참 유쾌하네~!
+J: 하하하...!
+
+#Con3
+@bgm 메인03 volume:0.5
+@sfx 웅성웅성 fade:2
+Headman: 자자! 다들 자리에 앉아봐요, 제대로 인사를 하자고
+@printer Narration time:0
+이장님은 내 이름과 나이, 그리고 어디서 왔는지 줄줄이 읊었다
+주민들은 내가 무슨 말을 할 때마다 부담스러울 정도로 시선을 모았고
+나는 이런 상황이 어색하면서 낯간지러워서 계속 웃었다
+@char Man visible:false avatar:man1
+Man: 웃는 모습이 단아한게 꼭 우리 딸내미를 보는 것 같네
+@printer Narration time:0
+여기저기서 맞다며 맞장구치는 게 들렸다
+@stopSfx 웅성웅성 fade:2
+@bgm 메인03 volume:1
+그런데 이 곳에 내 또래 여자라고는 보이지 않는데?
+다 참석한 건 아닌가보다
+하긴 나연이도 오지 않았으니까... 얘는 늘 바쁜 가 보네
+Headman: 지안 자매가 참 먼곳에서 우리 해록도를 찾아와줬어요
+Headman: 여기 머무는 동안 좋은 추억만 가져갈 수 있기를 바랍니다!
+@printer Narration time:0
+아직 만난 지 하루밖에 되지 않았지만 정말 친절한 사람들이다
+나는 접시를 비우기 무섭게 쌓이는 음식들과
+주민들의 살가운 목소리를 들으며 이장님을 따라오기 잘했다는 생각을 했다
+분위기에 취하는 기분이랄까 별 것도 아닌데 실없이 자꾸 웃음이 나네?
+왁자지껄하게 시간을 보내는 사이 금방 저녁이 되었다
+@hidePrinter
+
+@back HallDay visible:false time:1
+@back HallNight_on
+@wait 1
+@char Y.Face>웃는,Body>기본 position:-0.25,-15 scale:1
+Y: 와~ 누나 옆자리 한번 앉기가 이렇게 힘드네
+@printer Narration time:0
+어느새 내 옆에 앉은 유겸이 발개진 얼굴로 턱을 괴며 웃었다
+@sfx 슝
+@char Y.Face>윙크,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 해록도 사랑둥이는 전데, 자꾸 그렇게 타이틀을 뺏어가면 나 질투나요!
+J: 밥이나 먹어, 유겸아
+@printer Narration time:0
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+그때, 유겸 등뒤로 목석 같이 앉아있는 남자가 눈에 들어왔다
+J: 고결 씨?
+@char Y.Face>놀란,Body>기본
+Y: 응? 결이 형이요?
+@printer Narration time:0
+유겸이는 내 시선을 따라 구석에 앉은 결을 바라봤다
+@char Y.Face>웃는,Body>입에손
+Y: 왜 저렇게 음식에 입도 안 대고 뚱하게 앉아있나 몰라?
+@printer Narration time:0
+@sfx 부스럭
+나는 유겸이를 데리고 결의 앞에 털썩 앉았다
+@char Y.Face>기본,Body>기본 position:2.5,-13.5 scale:0.9 wait:false
+@char G.Face>찡그림,Body>기본 position:-3.1,-13.5 scale:0.9
+G: 뭐야?
+@stopSfx 부스럭
+@char Y.Face>윙크,Body>기본
+Y: 유겸인데요?
+J: 음식이 뭐 잘못 했어요? 왜 안 먹고 그렇게 뚫어져라 보고만 있어요?
+@char G.Face>기본,Body>기본 wait:false
+@char Y.Face>웃는,Body>입에손
+Y: 누나, 형 엄청 까다로워요 특히 음식에
+@printer Narration time:0
+결의 기분이 안 좋은 건가 싶었는데 자세히 보니 지루해 죽겠다는 표정이었다
+@char G.Face>무표정,Body>기본 wait:false
+@char Y.Face>기본,Body>기본
+J: 아, 결 씨 여기 머물고 있다고 했죠? 오늘 주민들이 다 돌아가기 전까지는 편히 쉴 수가 없겠네요
+@char G.Face>찡그림,Body>손머리 wait:false
+@char Y.Face>기본,Body>기본
+G: 하... 너 때문에 시작된 거니까 네가 파하자고 해
+J: 안 그래도 곧 갈 생각이었거든요? 혼자 있길래 인사나 하고 가려던 거라고요
+@printer Narration time:0
+@char G.Face>기본,Body>기본 wait:false
+@char Y.Face>웃는,Body>기본
+결은 앞에 놓인 물 잔에 조차 손대지 않은 것 같았다
+유겸이 결에게 시시콜콜한 장난을 치는 동안, 첫 날 회관에서 만났던 주민이 우리에게 다가왔다
+
+@char Woman visible:false avatar:woman2
+@char G.Face>무표정,Body>기본 wait:false
+@char Y.Face>기본,Body>기본
+Woman: 젊은이들이 이렇게 모여있으니 꽃밭이 따로 없네!
+Woman: 홍일점인 우리 아가씨는 애인있나?
+@printer Narration time:0
+@char G.Face>기본,Body>팔짱 wait:false
+@char Y.Face>놀란,Body>입에손
+그러자 유겸과 결의 눈동자가 동시에 내 쪽으로 향했다
+뭐야, 다들. 그런 뻔한 가십거리를 좋아하는 편인가봐?
+@char G.Face>비웃음,Body>기본 wait:false
+@char Y.Face>기본,Body>기본
+J: 하하하... 그런 거 없어요
+@char G.Face>찡그림,Body>기본 position:-3.3,-15.5 scale:1 wait:false
+@char Y.Face>웃는,Body>기본 position:2.8,-15.2 scale:1
+@printer Narration time:0
+내 말에 아주머니는 옳다구나하며 유겸과 결의 팔을 하나씩 끌어당겼다
+Woman: 호호호! 그러면 이 둘 중에서 자매 취향은 누구야?
+@char G.Face>기본,Body>기본 wait:false
+@char Y.Face>기본,Body>기본
+@spawn ShakePrinter wait:false
+J: 예?
+@printer Narration time:0
+나는 하마터면 접시를 통째로 떨어뜨릴 뻔했다
+Woman: 응? 비밀로 할게, 나한테만 알려줘~
+@printer Narration time:0
+당사자들이 다 듣고 있는데 어떻게 아주머니만 알려주는 거예요?!
+게다가 이런 질문... 다들 분명 불편할텐데...
+@char G.Face>무표정,Body>기본 wait:false
+@char Y.Face>아련,Body>기본
+나는 슬쩍 눈동자를 돌려 둘의 표정을 살폈다
+으, 무슨 생각하는지 읽을 수도 없다
+Woman: 응? 어떤데?
+@printer Narration time:0
+@char G.Face>기본,Body>기본 wait:false
+@char Y.Face>기본,Body>기본
+하지만 아주머니는 내가 제대로 대답하지 않으면 놓아주지 않을 기세였다
+내 취향이라... 어디까지 말해줘야 할까?
+@startchoice 2
+@choice "하얀 피부" goto:.H target:Y score:5
+@choice "구릿빛 피부" goto:.G target:G score:5
+@hidePrinter
+@stop
+
+#G
+@printer Narration time:0
+에라, 모르겠다
+@char Y.Face>웃는,Body>기본 wait:true
+J: 하..하얀 피부가 좀 더 끌리네요
+@goto .Con4
+#H
+@printer Narration time:0
+에라, 모르겠다
+@char G.Face>거만,Body>기본 wait:true
+J: 구..릿빛 피부가 좀 더 끌리네요
+#Con4
+@char Y.Face>기본,Body>기본 wait:false
+@char G.Face>기본,Body>기본
+Woman: 어머머~ 그리고 또?
+@startchoice 3
+@choice "곱슬머리" goto:.I
+@choice "생머리" goto:.J
+@hidePrinter
+@stop
+
+#I
+J: 으음...곱...슬머리?
+@char Y.Face>웃는,Body>기본
+@goto .Con5
+#J
+J: 으음...생...머리?
+@char G.Face>거만,Body>기본
+#Con5
+@hide Y wait:false
+@hide G
+Woman: 호호호. 그게 뭐야~ 그래서 이 둘 중 누가 더 마음에 든다는....
+@sfx 유리깨지는소리
+@stopBgm 메인03
+@spawn ShakeBackground wait:false
+@printer Narration time:0
+<i>쨍그랑-</i>
+J: 으악!
+@printer Narration time:0
+뭐지? 뭐가 깨진 건가?
+소리가 난 쪽으로 돌아보려는 순간,
+@char Silhouette.D scale:1.23 position:0,-15.6
+@bgm 다함_등장 fade:2
+D: 움직이지 마세요, 지안씨 바로 뒤로 유리병이 떨어졌어요
+@printer Narration time:0
+깨진 유리 조각이 발 밑에 이리저리 튀어있었다
+@hide Silhouette wait:false
+@char D.Face>기본,Body>기본 position:0,-16 scale:1
+J: ... 다함씨?
+@printer Narration time:0
+언제부터 와있었던거지?
+내게 짓궂은 질문을 했던 주민은 치울 것을 가져오겠다며 사라졌다
+@char D.Face>아련,Body>가슴에손
+D: 섬이라 그런지 바람이 매섭죠
+J: 아, 바람에 밀려 떨어졌구나...
+@char D.Face>웃는,Body>입에손
+D: 재밌는 시간 보내고 계신가요? 조금 피곤해 보이는데
+@printer Narration time:0
+다함이 묻자 잊고 있던 피로감이 한꺼번에 몰려드는 듯 했다
+J: 피곤하긴 한데... 다함 씨는 언제 온,
+@char G.Face>비웃음,Body>기본 position:3,-14 scale:0.9 wait:false
+@char D.Face>기본,Body>기본 position:-3,-14.5 scale:0.9
+G: 이만 들어가지 그래? 네가 가야 여기도 끝날 것 같은데
+@printer Narration time:0
+고결은 평소보다 더 딱딱하게 굳은 표정으로 내 말을 가로챘다
+@char G.Face>무표정,Body>기본 wait:false
+@char D.Face>아련,Body>기본
+J: 아, 그럴까요? 
+@printer Narration time:0
+이상하게 어색한 기류가 우리를 맴도는 듯했다
+@char G.Face>찡그림,Body>기본
+G: ...
+@char D.Face>아련,Body>기본
+D: ...
+@hide G wait:false
+@hide D wait:false
+@sfx 슝
+@char Y.Face>놀란,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 응?
+@printer Narration time:0
+얘만 빼고...
+@char Y.Face>놀란,Body>기본 position:-0.25,-15 scale:1
+J: 일단 깨진 유리라도 같이 치우죠
+@char Y.Face>윙크,Body>기본
+Y: 아니에요 누나 지금 이렇게 정신없을 때 가야 안 잡혀요!
+Y: 여긴 우리한테 맡기고 어서 들어가요, 누나!
+@printer Narration time:0
+기분 탓인지 모르겠지만 은근히 이 세 남자 모두 내가 이 자리에 머무는 걸 달가워하지 않는 듯했다
+@char Y.Face>기본,Body>기본
+J: 그, 그럼 이만 가볼게요
+@hide Y
+@printer Narration time:0
+나는 여전히 전파가 잡히지 않는 핸드폰을 들고 자리를 빠져나왔다
+@sfx 숨
+그때, 누군가 내 손목을 잡았다
+First: 데려다줄게
+@printer Narration time:0
+...음...?
+주변의 소음때문에 누구의 목소리인지 금방 감이 잡히지 않았다
+누구지?
+@hidePrinter
+@back HallNight_on visible:false time:1
+@sfx 장소발견 wait:false
+@showUI OpenDate
+@wait i
+@hideUI OpenDate
+@endscript

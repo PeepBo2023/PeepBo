@@ -1,0 +1,545 @@
+;@camera set:*.false
+@back AngelDay
+@bgm 메인03
+@printer Narration time:0
+요근래 생각이 많아진 탓에
+머리를 비우고자 천사의 집에 찾아온게 대략 한 시간 전
+지옥훈련과도 같던 술래잡기를 끝내고
+나는 아이들과 숨바꼭질을 하던 중이었다
+이건 뛰지 않아도 되어서 좋을 줄 알았는데....
+J: ....얘네 울타리 밖으로 나간거 아니야?
+J: 어떻게 이렇게 머리카락 한 올 안 보일수 있어?!
+@printer Narration time:0
+열심히 천사의 집을 둘러봤지만 아이들의 그림자조차 찾을 수 없었다
+앞마당 가장자리에 있는 벤치에 앉아 숨을 돌리는데 문득 건물 내부가 눈에 띄었다
+J: 안에 숨은 건가? 한 번 안으로 들어가봐?
+J: 에이, 아니야 아까 분명히 놀이 시간에는 앞마당에서만 놀아야한다고 아이들이 그랬잖아
+J: 함부로 들어가기도 조금 그렇고…
+@printer Narration time:0
+슬쩍 창문을 들여다보며 고민하고 있을 때
+J: 어?
+@printer Narration time:0
+@char Cut.StoreDoor
+시선 끝에 걸린 조그마한 낡은 문
+앞마당 구석에 작게 나있는 문은 깔끔한 천사의 집 외관과는 달리, 허름하고 오래돼 보였다
+J: 창고 같은 건가?
+@printer Narration time:0
+안 그래도 작은 문은 천사의 집 그림자와 큰 나무에 반쯤 가려져 존재감이라고는 전혀 없어 보였다
+그래서 더욱 숨바꼭질용 장소로 적합해보였고
+아이들이 저 안에 옹기종기 숨어 있을 지도 모른다는 생각이 들었다
+@hide Cut
+J: 으흠...
+@startchoice 0
+@choice "들어가보자" goto:.A
+@choice "들어가지 말자" goto:.B
+@hidePrinter
+@stop
+
+#A
+J: 저기들 숨어있구나? 들어가보자
+@printer Narration time:0
+기척을 죽이고 다가가 살그머니 문을 당기자
+@sfx 문여는_나무문
+낡은 문에선 생각보다 큰 소음이 들렸다
+@goto .Con1
+
+#B
+J: 사유지 같아 보이는데… 들어가지 말자
+J: 여기 앉아있으면 애들이 지쳐서 나오겠지
+@printer Narration time:0
+그렇게 속으로 양을 세듯 숫자를 하나 둘 세며 문으로 쏠린 신경울 돌려보려 애썼다
+그러길 몇 분이 지났을까…
+@spawn ShakeBackground wait:false
+J: 와! 이 호기심 때문에 수명이 깎인다 깎여!
+@printer Narration time:0
+자리에서 벌떡 일어나 문을 향해 성큼성큼 걸어갔다
+J: 여기말고는 더이상 찾아볼 곳도 없는데…
+@printer Narration time:0
+살그머니 문을 당기자
+@sfx 문여는_나무문
+낡은 문에선 생각보다 큰 소음이 들렸다
+
+#Con1
+@hidePrinter
+@back AngelDay visible:false wait:false
+@back StoreDay
+@wait i
+
+@showUI StoreFindUI
+@wait i
+@hideUI StoreFindUI
+
+J: 역시 창고였어
+J: 그런데 애들은 여기도 없잖아?
+@printer Narration time:0
+5평 쯤 되어보이는 공간엔 잡동사니들로 꽉 차 있었다
+게다가 내가 들어온 작은 문 말고도 반대편에 비슷한 문이 하나 더 나있다
+J: 저긴 어디로 나있는 문이지? 뒤뜰인가?
+@printer Narration time:0
+반대편 문으로 나가볼까 했지만,
+왠지 모르게 스산한 기분이 드는 곳이라 그냥 돌아가야겠다는 생각이 들었다
+J: 그래, 함부로 돌아다니지 말고 그냥 벤치에서 아이들을 기다리자
+@printer Narration time:0
+뒤돌아 이 곳을 나가려는 순간
+; 진동
+@spawn ShakeBackground wait:false
+@stopBgm 메인03
+@sfx 206_문_세게_닫는_소리
+@back StoreDay pos:150,50,100 time:0
+J: !!!
+@bgm 110_피_발견
+@stopSfx 206_문_세게_닫는_소리
+@printer Narration time:0
+순간 문이 큰 소리를 내며 닫혔다
+한번 불 땐 매서운 섬 바람에 문이 밀린듯했다
+J: 깜...깜짝이야
+@printer Narration time:0
+문이 닫힌 창고는 생각보다 빛이 들어오지 않아 깜깜해서
+@bgm 심각1
+나는 벽을 더듬거리며 문고리를 찾았다
+어서 나가야겠다는 생각에 닫힌 문을 밀어내려는데
+J: 어…? 이거 왜 안 열려?
+@printer Narration time:0
+나는 양손으로 손잡이를 잡고 흔들었지만
+;삐걱이는 소리
+먼지만 자욱하게 일어날 뿐 문은 꿈쩍도 하지 않았다
+J: 무슨 문이 이래?!
+@printer Narration time:0
+나는 잠시 닫힌 문을 노려보다 크게 숨을 들이마셨다
+J: 좋아, 꼭 열고 만다!
+
+; 시스템창 클리커
+@hidePrinter
+@showUI Clicker
+@wait i
+@hideUI Clicker
+@clicker scriptname:"Script206" clickerName:"2-6Clicker"
+
+# 2-6Clicker
+J: 하아...
+@printer Narration time:0
+틈새에 무언가 걸리기라도 했는지 아무리 세게 밀어내도 문은 열릴 기미가 보이지않았다
+J: 나 갇힌거야 지금?! 아니 어떡하라고, 왜 이러는데 갑자기!
+@sfx 206_문_세게_노크
+J: 저기요! 아무도 없어요!!
+@stopSfx 206_문_세게_노크
+@sfx 206_문_세게_노크
+J: 문이 안 열리는데요!! 도와주세요!!
+@stopSfx 206_문_세게_노크
+@printer Narration time:0
+급하게 반대편 문고리도 당겼지만 상태는 마찬가지였다
+낮인데도 빛 한 점 들지 않는 어두운 창고
+J: 여긴 너무 조, 좁고...어두워....!
+@printer Narration time:0
+예전부터 좁은 공간에만 있으면 미칠듯한 불안감에 몸이 떨렸다
+순식간에 물에 빠진 것처럼 숨이 가빠오기 시작했다
+<i>심지어 누군가 지켜보고 있기라도 한 기분이었다</i>
+J: 심호흡 심호흡...
+J: 의, 의사가 말했잖아. 이럴 때일수록 차, 차분하게 행동하라고...!
+@printer Narration time:0
+나는 이마에 흐르는 땀을 닦으며 겨우 정신을 차렸다
+J: 안되겠어... 문을 부수는 수 밖에!
+@printer Narration time:0
+나는 흐릿한 시야로 문고리를 내리칠만한 무언가가 없는지 창고를 둘러봤다
+@back StoreDay visible:false
+그 순간이었다
+또 다시 섬뜩한 시선이 느껴진 게...
+@back StoreDay visible:true
+J: 아니야 괜찮아, 괜찮아
+@printer Narration time:0
+스스로를 달래며 고개를 드는 순간,
+@hidePrinter
+
+@back StoreDay visible:false wait:false
+@back StoreEye position:0,0 time:0
+@spawn ShakeCamera
+@printer Narration time:0
+맞은 편 문 틈 사이로 누군가와 눈이 마주쳤다
+; 진동
+@spawn ShakeBackground wait:false
+J: !!!
+J: 누, 누구야!!
+@printer Narration time:0
+창고에 들어올 때 보았던 맞은 편 문 틈 사이로 누군가 나를 지켜보고 있었다
+눈이 마주치는 순간 다리에 힘이 풀려 자리에 자리에 주저앉고 말았다
+J: 누, 누구야!
+@printer Narration time:0
+아까부터 느껴진 누군가의 시선은 단순히 두려움에서 온 착각이 아니었다
+정말, 누군가 계속 날 지켜보고 있던거였다
+그렇다면 내게 호의를 가진 사람이 아닐거라는 직감 또한 착각이 아니겠지
+J: 언제부터 날 보고 있던 거야? 나와!
+@printer Narration time:0
+분명 열리지 않는 문과 씨름하고 있는 내 모습을 계속 지켜보고 있을 터였다
+누구냐는 내 물음에도 문 틈 사이의 눈동자는, 한 번의 깜빡거림도 없이 나를 바라보고만 있었다
+@back StoreEye visible:false wait:false
+@back StoreDay pos:150,50,100
+이렇게 가만히 있을 수만은 없어, 뭐라도 해야해!
+힘이 풀린 몸을 애써 일으켜 문 가까이 다가가려하니
+순식간에 날 지켜보던 시선이 사라졌다
+J: 뭐, 뭐야, 어딜간 거야?
+@startchoice 1
+@choice "쫓아가서 누군지 알아내야겠어!" goto:.C
+@choice "일단 먼저 이 곳에서 나가야겠어!" goto:.D
+@hidePrinter
+@stop
+
+#C
+@printer Narration time:0
+쫓아가서 누군지 알아내야겠어!
+맨몸으로 갈 순 없으니 무기가 될만 한 것을 찾아보자
+
+;<도움이 될만 한 것을 찾아보자>
+; 탐색
+
+; ------------ 탐색 -------------
+@hidePrinter 
+@showUI StartRoomModeUI time:1
+@wait i
+@hideUI StartRoomModeUI time:1
+@back id:RoomBackground2-6 
+# RoomStart
+@room scriptname:"Script206" label:"RoomBack"
+# RoomWait
+@stopscript
+@stop
+
+# 문
+J: 저 문은 어디로 난 문이지?
+@printer Narration time:0
+괜히 다가가지 말고 일단 도움이 될만한 것을 찾아보자
+@goto .RoomWait
+
+# 잡동사니
+J: 콜록 콜록… 으 먼지…
+@printer Narration time:0
+오래된 잡동사니들이 쌓여있지만 쓸만 한 것은 없어보인다
+@goto .RoomWait
+
+# 나무판자
+J: 나무판자로 창을 막아놨네… 왜지?
+@printer Narration time:0
+판자 틈으로 세어들어온 햇빛에 먼지가 떠다니는 게 보였다
+J: 아무리 창고라도 그렇지 먼지가 너무 많아
+@goto .RoomWait
+
+# 여행가방
+@printer Narration time:0
+누군가의 여행 가방이다
+@camera offset:-2.5,1.5,-5 zoom:0.5
+J: 어? 뭔가 쓸만 한게 있을 것 같아, 열어보자.
+@printer Narration time:0
+...
+가방을 열었지만 안엔 용도를 알 수 없는 투명한 빈 봉투들이 가득했다
+@camera offset:0,0,0 zoom:0.0
+J: 콜록, 콜록… 이게 대체 뭐야?
+@printer Narration time:0
+가방을 뒤질 수록 먼지들이 휘날렸다
+@goto .RoomWait
+
+# 전등
+J: 불은 안 켜지는 건가?
+@printer Narration time:0
+자세히 보니 전등이 깨져 있었다
+@goto .RoomWait
+
+# 박스
+@printer Narration time:0
+박스를 열어보니 잡동사니들이 가득 들어있었다
+J: 가정용 집기들 같은데, 이삿짐 박스인 건가?
+J: 다른 박스에는 뭐가 있지? 
+J: …어?
+J: 동화책…?
+@printer Narration time:0
+어린이 동화책 시리즈가 박스 안에 가득 담겨있었다
+J: 천사의 집 아이들이 읽는 건가?
+@printer Narration time:0
+맨위에 놓인 동화책 한권을 집어드니 끄트머리에 쓰여있는 글자가 보였다
+J: 으… 뭐라고 써있는 거 같은데…
+@printer Narration time:0
+어두운데다 오랜시간 쌓인 먼지가 늘러 붙어있어 잘 읽히지 않았다
+먼지를 털어내야겠어.
+; 튜토리얼 쉐이킹
+J: 콜록, 콜록…! 잘 안 걷어지네…
+; 시스템 창		다시 한 번 먼지를 털어내보자!
+; 튜토리얼 쉐이킹
+@printer Narration time:0
+뿌옇게 올라오는 먼지에 서둘러 입과 코를 가렸다
+J: 어우, 먼지 맞아? 뿌연 가루 같기도 하고…
+@printer Narration time:0
+먼지를 털어낸 택 모서리엔 빛바랜 글씨가 보였다
+J: 이름인가?
+J: 차… 우… 준?
+J: 이건, 그 남자의 이름인데?
+J: 왜 여기 있지? 다 그 남자의 짐인건가?
+J: 하여튼, 미스테리한 사람이야
+@find name:"박스"
+@goto .RoomWait
+
+
+# 가방
+J: 가방…?
+@printer Narration time:0
+곧바로 열어보려다 순간 멈칫 행동을 멈췄다
+남의 건데, 이렇게 함부로 열어봐도…
+J: 에잇 지금 그런거 따질 때야?
+@printer Narration time:0
+양심의 소리를 애써 무시하며 가방을 열었다
+; 0.5초 진동 효과
+;@vibrate time:5
+J: 어?
+@printer Narration time:0
+가방 속엔 달러 묶음이 가득했다
+J: 이게 뭐, 달러 잖아?!
+J: 이 작은 섬에 웬…
+J: 앗!
+@printer Narration time:0
+나는 빠르게 달러 뭉치를 가방에 넣고 주위를 둘러봤다
+J: 누가 보면 오해받기 십상이겠어
+J: 이런 게 왜 여기있는지는 모르겠지만 제자리에 두는 게…
+@printer Narration time:0
+그때 가방 아래 흩어져 있던 종이들이 눈에 들어왔다
+그 중 하나를 집어드는 순간,
+; 0.5초 진동 효과
+;@vibrate time:5
+J: 으악!
+@printer Narration time:0
+선반 위에 올려져있던 쇠붙이 하나가 큰 소리를 내며 바닥에 떨어졌다
+J: 깜짝이야… 빨리 여길 나가야겠어
+@find name:"가방"
+@goto .RoomWait
+
+# 잡동사니2
+@printer Narration time:0
+잡동사니가 쌓여있다
+쓸만 한 건 없어보인다
+@goto .RoomWait
+
+# 선반
+J: 이게 뭐지?
+@camera offset:-2.5,1.5,-5 zoom:0.5
+@printer Narration time:0
+2층 짜리 선반 위엔 과학실에서나 볼법한 용품들이 어지러이 널려있었다
+J: 뭔가를 만드는 곳 같기도 하고…
+J: 이건 소독약인가?
+@printer Narration time:0
+굴러다니는 빈 병을 들어 창가에서 세어들어오는 햇살에 비춰보았다
+얼마나 오래된 건지 빈병을 두른 띠에는 글씨가 대부분 지워져있지만,
+붉은 잉크로 쓰여있는 ‘음용불가’만은 선명하게 남아있었다
+J: 콜록 콜록, 콜록!
+J: 어후, 먼지가 왜 이렇게 많아? 폐가 안 좋아지는 기분이야…
+J: 그나저나 여긴 정말 온갖 잡동사니들이 다 있네
+@printer Narration time:0
+선반 뒷편엔 포대자루들이 겹겹이 쌓여있다
+@find name:"선반"
+@camera offset:0,0,0 zoom:0.0
+@goto .RoomWait
+
+# 노
+@printer Narration time:0
+열려있는 서랍들 사이에 굳게 닫힌 서랍이 보였다
+J: 왜 이것만 이렇게 닫혀있지? 누군가 의도적으로 닫아 놓기라도 한 것처럼
+@printer Narration time:0
+살짝 문을 당겨보니 금방이라도 열릴듯 달칵거렸다
+J: 안 열리니까 더 열고 싶잖아…
+@printer Narration time:0
+조금 더 힘을 실어 문을 당겼지만 꿈쩍도 하지않았다
+J: 어휴 그냥 다른 곳을 찾아보자
+@goto .RoomWait
+
+# 빨
+@printer Narration time:0
+하나같이 텅 비어있네
+@goto .RoomWait
+
+# 초
+@printer Narration time:0
+열려있는 서랍 안에는 아무렇게나 쑤셔넣어져있는 물건들이 보였다
+@camera offset:-2.5,1.5,-5 zoom:0.5
+J: 이중에 뭔가 쓸만한 게 있을 것 같은데?
+@printer Narration time:0
+그 때, 서랍 맨 아래에 깔려있는 은빛 촛대가 보였다
+J: 오, 좋아! 꽤 단단해 보이는데? 이거면 되겠어
+@printer Narration time:0
+나는 떨리는 손으로 촛대를 집어들려는데, 촛대 위로 쌓인 물건 탓에 촛대를 꺼낼 수 없었다
+J: 물건을 다 꺼내느니 촛대만 당겨서 빼오는게 낫겠어
+
+; 클리커
+@hidePrinter
+@showUI Clicker
+@wait i
+@hideUI Clicker
+@clicker scriptname:"Script206" clickerName:"2-6Clicker2"
+
+# 2-6Clicker2
+; 0.5초 진동 효과
+;@vibrate time:5
+@camera offset:0,0,0 zoom:0.0
+J: 으악!
+@printer Narration time:0
+촛대가 빠짐과 동시에 뒤로 엉덩방아를 찢고 말았다.
+J: 아이 아파라…
+@printer Narration time:0
+그런데, 그때
+; 효과음(찰그락)
+서랍 안에서 무언가가 날카로운 소음을 내며 바닥으로 곤두박질 했다
+J: 뭐지?
+; 펜던트 CUT
+@showUI 2-6RoomPopup1
+@wait i
+@hideUI 2-6RoomPopup1
+J: 이건…
+@printer Narration time:0
+낯익은 펜던트였다.
+J: 내가 이걸 어디서 봤더라…?
+J: 아, 설마!
+; 지안 어린시절 CUT
+@showUI 2-6RoomPopup2
+@wait i
+@hideUI 2-6RoomPopup2
+@printer Narration time:0
+어린시절 사진 속 내가 하고 있던 그 펜던트였다
+이리저리 펜던트를 살펴보다 뒷면을 본 순간 확신했다
+J: 이름, 그리고…
+@printer Narration time:0
+뒷면엔 내 이름과 주소가 적혀있었다
+J: 해록도리 12번지…?
+J: 역시 난 해록도에 살았던게 맞았어
+@printer Narration time:0
+의심이 확인으로 변하는 순간이었다
+J: 그런데 이 펜던트가 왜 여기에…
+@printer Narration time:0
+혼란스러움에 머리마저 아파오기 시작했다
+일단 여길 나가서 생각해보자
+@find name:"초"
+@goto .RoomWait
+
+
+
+
+
+
+# RoomBack
+@hide RoomBackground2-6
+@showUI ExitRoomModeUI time:1.0
+@hideUI ExitRoomModeUI
+@back StoreDay pos:150,50,100
+J: 좋아 이거면 됐어
+@printer Narration time:0
+나는 촛대를 부서질듯이 세게 움켜쥐고 문으로 다가갔다
+그런데,
+J: 어?
+@printer Narration time:0
+이 문 또한 들어온 문과 같이 아무리 밀고 당겨도 꿈쩍하지 않았다
+J: …여기도 잠겨있다고?
+J: 으아 미치겠다...
+J: 그냥 빨리 여길 나가서 생각해보자
+@printer Narration time:0
+나는 들어왔던 문 쪽으로 다시 돌아갔다.
+아무래도 이 문도 순순히 열리진 않을 것 같은데...
+J: 조... 좋아... 안 열리면 부시지 뭐!
+@goto .Con2
+
+#D
+J: 일단 빨리 여기서 나간 다음 생각해봐야겠어
+@printer Narration time:0
+들어왔던 문 쪽으로 재빨리 돌아가려는데
+일단 먼저 이 곳에서 나가야겠어!
+창고를 빠져나간 다음 다른 사람이랑 같이 와보자
+근데 아무래도 힘만으로 저 문을 열 순 없을 거 같은데
+문고리를 부술만한 무언가가 없을까?
+
+
+
+
+
+; <도움이 될만 한 것을 찾아보자>
+
+; ------------ 탐색 -------------
+
+# RoomBack2
+@hide RoomBackground2-6
+@showUI ExitRoomModeUI time:1.0
+@hideUI ExitRoomModeUI
+@back StoreDay pos:150,50,100
+J: 좋아, 이거면 됐어
+@goto .Con2
+
+#Con2
+@printer Narration time:0
+문고리를 부수려 촛대를 높이 치켜든 순간,
+@hidePrinter
+@back StoreDay visible:false
+@sfx 문여는_나무문
+@back AngelDay visible:true
+@stopBgm 심각1
+@bgm 메인03
+@wait i
+
+J: 어?
+@printer Narration time:0
+갑자기 쏟아지는 밝은 빛에 눈을 찡그렸다
+@char Aram visible:false avatar:Aram
+Aram: 언니... 문을 부수려고 한거야?
+J: 너… 어떻게 여기에…
+Aram: 문이... 녹슬어서... 문고리를 부수면... 더 위험해
+Aram: 누군가... 올 때까지 가만히... 기다리라고 배웠어....
+@printer Narration time:0
+아람이는 오밀조밀한 입술을 열심히 움직이며 말했다
+아이를 보니 순간 울컥 치미는 감정에 잠시 아무 말도 할 수 없었다
+Aram: 언니... 울어?
+J: 아니, 안 울어. 근데 아람아 언니 여기 있는 거 어떻게 알았어?
+J: 아까 언니가 소리지른 거 들었어?
+@printer Narration time:0
+그런 거라면 진작 좀 열어주지…
+서러운 마음에 괜한 소리가 나오려는 것을 꾹 참았다
+Aram: 오빠가... 문 열어 주라고 했어
+J: 오빠? 무슨 오빠...?
+Aram: 오빠는... 그냥 오빠야
+@printer Narration time:0
+대체 어느 오빠를 말하는 거지?
+J: 설마...
+@startchoice 2
+@choice 유겸 goto:.E
+@choice 결 goto:.F
+@choice 다함 goto:.G
+@choice "까만 머리에 창백한 남자" goto:.H
+@hidePrinter
+@stop
+
+#E
+; 홍유겸 +10
+J: 유겸이 말하는 거야?
+Aram: 몰라, 오빠는 그냥... 오빠니까
+@goto .Con3
+
+#F
+; 고결 +10
+J: 결 씨 말하는 거야?
+Aram: 몰라, 오빠는 그냥... 오빠니까
+@goto .Con3
+
+#G
+; 주다함 +10
+J: 다함 씨 말하는 거야?
+Aram: 몰라, 오빠는 그냥... 오빠니까
+@goto .Con3
+
+#H
+; 차우준 +10
+J: 혹시 까만 머리에 창백하게 생긴 남자?
+Aram: 몰라, 오빠는 그냥... 오빠니까
+
+#Con3
+J: 이름도 모르면서 오빠는 무슨… 그런게 어딨어
+Aram: 몰라
+Aram: 놀이시간... 끝났어
+@printer Narration time:0
+아람이는 팔랑팔랑 뒤를 돌아 사라졌다
+J: 오빠가 도대체 누구를 말하는 거야...?
+J: 아..손 아파, 다 까졌네....
+@printer Narration time:0
+아무튼 다행이다, 빨리 나가자
+
+@hidePrinter
+@back AngelDay visible:false time:1
+@endscript

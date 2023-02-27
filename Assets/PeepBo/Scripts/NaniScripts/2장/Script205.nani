@@ -1,0 +1,351 @@
+@back StreetNight position:8.3,0
+@bgm 차분_BG
+@printer Narration time:0
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+어떻게 내 사진일 줄 알았냐는 질문에
+유겸이 커다란 눈동자를 데구르르 굴렸다
+@char Y.Face>아련,Body>기본
+Y: 그건...
+@sfx 슝
+@char Y.Face>웃는,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 몰랐는데요?
+@char Y.Face>웃는,Body>입에손 position:-0.25,-15 scale:1
+J: 뭐? 너 또 거짓말하지?!
+@sfx 슝
+@char Y.Face>웃는,Body>기본 position:-0.25,-21.5 scale:1.3
+Y: 하하하. 진짜에요~
+@char Y.Face>윙크,Body>기본 position:-0.25,-15 scale:1
+@printer Narration time:0
+유겸이 내 주먹을 가볍게 피하면서 사르르 눈웃음을 지었다
+Y: 우연히 사진을 주워서 돌려준 건 맞지만
+@char Y.Face>웃는,Body>입에손
+Y: 나는 나연이 사진인 줄 알았거든요
+@printer Narration time:0
+유겸은 사진 속에 한 남자를 가리키며 말을 이었다
+Y: 이 분, 지금이랑 많~이 다르지만 젊었을 때 이장님이세요
+Y: 그러면 지금 내 나이 또래쯤 된 여자일테니
+@char Y.Face>윙크,Body>브이
+Y: 해록도에 나연이밖에 더 있겠어요?
+@printer Narration time:0
+나는 다시 사진을 천천히 살폈다
+J: 이 훤칠한 남성이... 지금의 이장님이라고?
+@char Y.Face>웃는,Body>입에손
+Y: 하하하. 그쵸? 한때 불법어선일로 고생을 많이 하셨다더니 얼굴이 많이 달라졌죠?
+@char Y.Face>기본,Body>기본
+J: 넌 이때 사진 안 찍고 뭐했어?
+J: 유겸이 너 성격이라면 제일 앞 줄을 차지하고 있을 것만 같은데...
+@char Y.Face>웃는,Body>입에손
+Y: 누나~ 저도 어릴 때에는 진중하고 수줍은 많은 아이였거든요?
+@choice "네가?" goto:.a
+@choice "그렇구나~" goto:.b
+@hidePrinter
+@stop
+
+#a
+@char Y.Face>기본,Body>기본
+J: 흠... 네가?
+@goto .con1
+#b
+@char Y.Face>기본,Body>기본
+J: 아...그렇구나~
+#con1
+@char Y.Face>웃는,Body>기본
+Y: 누나 안 믿죠?
+@char Y.Face>아련,Body>기본
+Y: 하~ 해록도에서 귀염뽀짝하기로 유명했던 유겸이를 당장 보여주고 싶지만
+@char Y.Face>아련,Body>입에손
+Y: 아쉽게도 그 사진을 찍었을 때에는 제가 아주 어렸을 때라 못 찍었어요~
+J: 그래? 그래서 이 사진 속에 너가 없었구나
+@char Y.Face>윙크,Body>기본
+Y: 하지만~ 지금 저희 집에 가면 유겸이의 어린시절 앨범을 볼 수가 있...
+@printer Narration time:0
+@char Y.Face>기본,Body>입에손
+조잘조잘 떠들던 유겸이 순간적으로 말을 멈췄다
+무언가 잘못 됐다는 것을 뒤늦게 깨달었다는 듯이
+@char Y.Face>웃는,Body>기본
+Y: 하하하...
+J: 그러니까 네 말대로라면 이때 너는 분명 아기였는데
+@char Y.Face>기본,Body>기본
+J: 왜 너보다 어린 나연이가 여기 찍혀있을까?
+J: 그것도 대략 7살은 되어보이는 나이로?
+@printer Narration time:0
+@char Y.Face>아련,Body>기본
+가로등을 등진 그의 얼굴에 그림자가 지고
+고요한 골목 안에서 유겸이 침을 꼴깍 삼키는 소리만 들렸다
+Y: 하하하 이런...
+@char Y.Face>웃는,Body>입에손
+Y: 누나~ 혹시 곤란해보이는 유겸이를 모른 척 해줄 생각은~
+@choice "있다" goto:.c
+@choice "없다" goto:.d
+@hidePrinter
+@stop
+
+#c
+@printer Narration time:0
+흠...저렇게까지 말하는데, 어떻게 더 파고들겠어
+@char Y.Face>기본,Body>기본
+J: ...알겠어. 못 들은 걸로 할게
+@char Y.Face>윙크,Body>기본
+Y: 누나 최고~
+
+@hide Y
+@hidePrinter
+@back StreetNight visible:false
+@bgm 차분_BG volume:0.5
+@printer Narration time:0
+하지만 내 기억에 관한 중요한 단서를 하나 놓친 것 같아....
+
+@hidePrinter
+@back StreetNight position:8.3,0 visible:true
+@char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
+;빗방울 소리
+@printer Narration time:0
+그때 하늘에서 약한 빗방울이 하나 둘 떨어지기 시작했다
+;비소리
+@char Y.Face>웃는,Body>입에손
+Y: 비가 더 오기 전에 집에 데려다줄테니 얼른 가요!
+@sfx 뛰는_발소리
+@printer Narration time:0
+유겸이 내 손목을 잡고 달렸다
+@goto .con2
+
+#d
+;+5
+J: 당연히 없지
+@char Y.Face>웃는,Body>기본
+Y: 없구나
+@bgm 차분_BG volume:0.5
+@printer Narration time:0
+내가 씨익 미소를 지으며 그를 붙잡으려던 그 때였다
+;빗방울 소리
+<i>톡톡</i>
+;비소리
+@char Y.Face>기본,Body>기본
+약한 빗방울이 하나 둘 떨어지기 시작했다
+Y: 아... 결국 비오네
+@printer Narration time:0
+@char Y.Face>아련,Body>기본
+유겸이 하늘을 올려다보며 중얼거렸다
+Y: 어차피 더 속이는 건 무의미한 것 같네요
+Y: 맞아요. 누나 사진인 걸 알고 돌려줬어요
+@char Y.Face>기본,Body>기본
+Y: 어떻게 알았냐고요?
+;비소리out
+@printer Narration time:0
+이번엔 내가 침을 꼴깍 삼켰다
+@stopBgm 차분_BG
+@bgm 심각1
+@char Y.Face>아련,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 해록도에 누나를...아주 잘 알고 있는 사람들이 있어요
+@char Y.Face>아련,Body>입에손 position:-0.25,-15 scale:1
+J: 뭐..?!
+@char Y.Face>웃는,Body>입에손
+Y: 제가 말해줄 수 있는 건 여기까지에요
+@stopBgm 심각1
+@bgm 차분_BG
+@char Y.Face>윙크,Body>입에손 position:-0.25,-21.5 scale:1.3
+Y: 이 이상은 진짜 비밀!
+;비소리
+@char Y.Face>웃는,Body>입에손 position:-0.25,-15 scale:1
+Y: 으아~ 비가 점점 더 많이 내린다! 
+Y: 집에 데려다줄테니 얼른 가요!
+@sfx 뛰는_발소리
+@printer Narration time:0
+유겸이 내 손목을 잡고 달렸다
+그의 옆모습이 어쩐지 겁에 질려보여서
+@stopSfx 뛰는_발소리
+;비소리out
+나는 사진에 관해 더 캐물을 수 없었다
+
+#con2
+@hide Y
+@printer Narration time:0
+그래, 궁금한 건 나중에 천천히... 물어보지 뭐
+@hidePrinter
+
+@back StreetNight visible:false wait:false
+@back LivingroomNight1
+@sfx 문닫는_소리
+@printer Narration time:0
+나는 유겸이에게 떠밀리듯 집으로 돌아왔다
+@stopBgm 차분_BG
+@bgm 메인03
+@char N.Face>짜증,Body>기본 position:0,-13.5 scale:1
+N: 야야! 바닥에 빗방울 떨어뜨리지 말고 들어와!
+@printer Narration time:0
+현관에 들어서자마자 내 머리 위로 무언가 날아와 덮혔다
+J: 수..건?
+N: 으휴! 아까는 미친 사람마냥 뛰쳐나가더니 이제 다시 멀쩡해졌네?
+J: 아...하하, 미안. 아까 좀 소란스러웠지
+@printer Narration time:0
+@char N.Face>짜증,Body>팔짱
+내 말에 아랑곳않던 나연이 팔짱을 끼며 소리쳤다
+N: 나 너한테 물어볼 거 있어
+J: 응?
+@char N.Face>기본,Body>팔짱
+N: 아까 그 사진 다시 줘 봐
+
+@hide N wait:false
+@char Cut.ChildhoodPhoto
+@printer Narration time:0
+내가 사진을 내밀자 나연이 심각한 표정으로 미간을 찌푸렸다
+@hide Cut
+@char N.Face>짜증,Body>기본 position:0,-13.5 scale:1
+N: 이거, 너야?
+@printer Narration time:0
+나연의 손가락 끝에 작은 여자아이가 보였다
+@choice "솔직하게 말한다" goto:.e
+@choice "말하지 않는다" goto:.f
+@hidePrinter
+@stop
+
+#e
+J: 으응, 맞아
+@printer Narration time:0
+나연이는 다른 주민들과 달리 내 사정을 밝혀도 될 것 같아
+@char N.Face>기본,Body>팔짱
+N: 그래? 사실 관심없어
+@printer Narration time:0
+이럴 줄 알았으니까
+@char N.Face>기본,Body>기본
+N: 그것보다 여기 이 사람들, 누군지 알아?
+@hide N wait:false
+@char Cut.ChildhoodPhoto
+@goto .con3
+#f
+@printer Narration time:0
+나연이에게 내 사정을 밝혀도 될지, 잠깐 고민하는데
+나연이 먼저 선수를 쳤다
+@char N.Face>기본,Body>팔짱
+N: 사실 이 꼬맹이가 너인지 아닌지는 관심없어
+J: ...
+@char N.Face>기본,Body>기본
+N: 그것보다 여기 이 사람들, 누군지 알아?
+@hide N wait:false
+@char Cut.ChildhoodPhoto
+
+#con3
+@printer Narration time:0
+나연이가 가르키는 건 대열 끝에 서 있는 젊은 여자와 남자였다
+@stopBgm 메인03
+@bgm 차분_BG
+N: 우리 엄마와 아빠야
+@spawn ShakeBackground wait:false
+J: 뭐? 진짜?
+@printer Narration time:0
+그 말을 듣고 자세히 살펴보니 나연이와 닮은 것 같기도 했다
+@hide Cut wait:false
+@char N.Face>기본,Body>팔짱 position:0,-13.5 scale:1
+N: 눈치챘겠지만 난 지금 부모님이 안 계셔
+N: 아빠는 내가 두 살 때, 엄마는 내가 열 다섯 살 때 병으로 돌아가셨지
+@printer Narration time:0
+내가 놀라기도 전에, 나연이 덤덤하게 말을 이었다
+N: 해록도에는 딱히 사진관도 없으니
+N: 내가 가지고 있는 부모님 사진은 딱 한 장 뿐이었는데
+@char N.Face>기본,Body>기본
+N: 네가 가진 사진을 보게 되어서....
+@printer Narration time:0
+나연이 손등으로 코를 쓱 훔쳤다
+@sfx 슝
+@char N.Face>기본,Body>기본 position:0,-20 scale:1.3
+N: 뭔가 조금 반갑네
+@hide N wait:false
+@char Silhouette.N scale:1.3 position:0,-14
+@printer Narration time:0
+항상 화가 나 있던 나연이 저런 표정을 짓는 건 처음 봤다
+맞아...얘 아직 스무 살이었지
+나는 망설이다가 조심스럽게 입을 열었다
+@choice "부모님이 많이 그립겠다" goto:.g
+@choice "부모님이 많이 보고싶겠네" goto:.h
+@hidePrinter
+@stop
+
+#g
+J: 부모님이 많이... 그립겠다
+@goto .con4
+#h
+J: 부모님이 많이... 보고 싶겠네
+#con4
+@hide Silhouette wait:false
+@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+N: 흥. 딱히
+@char N.Face>짜증,Body>팔짱 position:0,-20 scale:1.3
+N: 내가 그렇게 나약해보여?
+@char N.Face>기본,Body>팔짱 position:0,-13.5 scale:1
+N: 가끔 생각날 뿐, 난 혼자서도 누구보다 잘 지내
+N: 주민들이 모금을 한다느니, 기도해주겠다느니 난리를 피울 때도 다 거절했지
+@printer Narration time:0
+@char N.Face>기본,Body>기본
+나연은 씩씩하게 가슴을 펴며 말했다
+N: 그나저나 이렇게 옛날 사진을 네가 왜 가지고 있는거야?
+@printer Narration time:0
+나연이가 저렇게까지 이야기를 해줬으니, 나도 말해줄 수 밖에 없네
+J: 이 사진은 내 하나뿐인 가족, 삼촌의 유품이었어
+@char N.Face>짜증,Body>기본
+N: ...유품?
+@char N.Face>기본,Body>기본
+J: 그리고 사진 뒤에 적혀있던 '해록도'라는 메모때문에
+@char N.Face>짜증,Body>기본
+J: 나는 이곳, 해록도의 존재를 알게 됐지
+@char N.Face>기본,Body>기본 position:0,-20 scale:1.3
+N: 그러면 너희 삼촌이... 해록도 출신이라는 소리야?
+@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+@printer Narration time:0
+나연이 어느새 가까이 다가와 물었다
+J: 아니~ 삼촌은 그저 해록도를 관리하는 공무원이었어
+J: 그런데 그 사진 속에 내가 왜 찍혀있는 지는 모르겠어
+J: 어린 시절에 해록도에서 살았던건지, 아니면 잠시 머물렀던 건지...
+J: 나는 그걸 알고 싶어서 찾아온거야
+@char N.Face>짜증,Body>팔짱
+N: 뭔 소리야? 알기 쉽게 말해!
+J: 나는 이상하게도 어렸을 때의 기억이 없거든
+J: 어디에 살았다거나, 어디를 갔었다거나 하는 어렴풋한 것도 전혀
+J: 가장 마지막 기억은...그래, 열 세살 때 정도려나?
+@char N.Face>기본,Body>팔짱
+N: 그럼 해록도에서 어린 시절을 보냈다는 기억은 나지 않는거야?
+@char N.Face>짜증,Body>팔짱
+N: 그래서 사진 하나만 보고 무작정 여기에 찾아온거고?
+J: 정답!
+J: 똑똑한데?
+@printer Narration time:0
+나연은 잠시 고민에 잠긴 듯 말이 없었다
+N: 그러면 이장이나 목사한테 물어보면 잘 알겠네
+N: 그들이 해록도에서 가장 오래 있었을테니까
+J: 음....근데 그게 뭐랄까...
+@printer Narration time:0
+나는 뺨을 긁적이며 곤란하게 웃었다
+J: 물론 모두 상냥하고 대단한 분이지만 어딘가 불편하다고 할지... 위화감이 든다고 할지
+J: 그래서 아직 아무에게도 말 못하고 있어
+N: 뭐?
+@char N.Face>기본,Body>팔짱 position:0,-20 scale:1.3
+N: 풉...푸하하!!!
+@char N.Face>기본,Body>팔짱 position:0,-13.5 scale:1
+J: 왜, 왜 이래?
+@printer Narration time:0
+@char N.Face>기본,Body>기본
+한참을 깔깔 웃던 나연은 겨우 눈물을 닦으며 말했다
+@char N.Face>기본,Body>기본
+N: 너 처음으로 마음에 든다
+@char N.Face>기본,Body>기본
+N: 그들을 깐 건 해록도에서 네가 유일해! 푸하하!
+J: 까, 깐 게 아니라... 그만큼 조심스럽다는 거지!
+@char N.Face>기본,Body>팔짱
+N: 그게 그거지
+@char N.Face>기본,Body>팔짱
+N: 너는 특별히 생활하다가 궁금한 거 있으면 나한테 물어봐도 돼!
+J: 오, 진짜?
+@char N.Face>기본,Body>팔짱 position:0,-20 scale:1.3
+N: 기분 좋으면 대답해줄게~ 그렇다고 너무 기대는 마라?
+@char N.Face>기본,Body>팔짱 position:0,-13.5 scale:1
+@printer Narration time:0
+그렇게 나연은 반달처럼 눈을 휘며 아이처럼 까르르 웃었다
+
+@hidePrinter
+@hide N
+@back LivingroomNight1 visible:false time:1
+@printer Narration time:0
+우리 조금 친해진걸까?
+어느새 창밖으로는 비가 그치고, 풀벌레 소리가 맑게 울리던 밤이었다
+
+@hidePrinter
+@endscript

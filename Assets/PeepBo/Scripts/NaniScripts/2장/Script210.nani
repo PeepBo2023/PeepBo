@@ -1,0 +1,261 @@
+@bgm 메인03
+First: 잘 한다, 잘 해. 미련하게…
+@printer Narration time:0
+누구지? 여긴 어디고…
+First: 도대체 생각이 있는 거야, 없는 거야
+@printer Narration time:0
+나연이 목소리…?
+
+@hidePrinter
+@spawn OpenClose
+@wait i
+@despawn OpenClose
+
+@back JianRoomDay
+@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+N: 야, 정신이 좀 들어?
+@printer Narration time:0
+아..내 방이다
+N: 미쳐버리겠다 진짜
+J: 미치면, 콜록… 안 되지… 콜록, 콜록…
+N: 너 무슨 생각으로 그렇게 비를 맞으면서 돌아다닌 거야?
+N: 이 섬에 병원이라곤 구멍가게 보다 작은 의원 하나 뿐인데!
+N: 거기다가 그 의사, 돌팔이인지 뭔지 알 수가 없다고!
+@printer Narration time:0
+나연의 목소리가 물 먹은 것처럼 웅웅 거리며 들려왔다
+J: 나연아… 근데 나 집에 어떻게 온 거야?
+N: 그 공무원 오빠가 업고 왔어
+N: 너 몸이 아주 불덩이야, 수건만 몇 번째 가는 건지!
+@printer Narration time:0
+이마 위에 차가운 물수건이 얹어졌다
+차가운 기운에 끙끙 거렸더니 나연이가 이불을 목 위로 조금 더 끌어당겼다
+J: 괜찮아… 나 안 죽,
+
+@char N.Face>기본,Body>기본 position:2.5,-13.5 scale:0.9 wait:false
+@char G.Face>기본,Body>기본 position:-3.1,-13.5 scale:0.9
+G: 안 죽었네?
+@sfx 문여는_소리
+@printer Narration time:0
+문이 벌컥 열리며 익숙한 목소리가 들려왔다
+J: 고 결…
+@printer Narration time:0
+그는 씻고 나온 건지 물이 뚝뚝 떨어지는 머리카락을 하고 손엔 수건을 들고 있었다
+G: 어련히 비를 피하고 있겠거니 했더니, 왠걸
+G: 숲 한 가운데서 비를 다 맞고 있어?
+G: 갑자기 쓰러지기나 하고, 너 나한테 이 빚 언제 다 갚을래?
+J: … 정말 고마워요…
+@printer Narration time:0
+몸살 기운이 있다했더니, 숲에서 그만 정신을 잃었던 모양이다
+G: 됐고, 들고 있던 옷은 누구거야?
+G: 딱 봐도 네가 입을만한 사이즈는 아닌데
+G: 너 설마…
+G: 어제 창고에서 봤다던 그 수상한 놈을 다시 만난 건 아니겠지?
+J: 아니에요… 그냥… 화가 잔뜩 난 백설공주를…
+G: 백...뭐?
+N: 얘 진짜 많이 아픈가보네
+@printer Narration time:0
+그러고보니 그 남자, 갑자기 사라졌지…
+대체 어디서 그렇게 나타났다가 사라지는 거지?
+섬 지리를 굉장히 잘 아는 거 같아
+만날 때마다 화를 내긴 하는데, 아람이랑도 친해보이고…
+두 번이나 나를 구해준 걸 보면 그렇게 나쁜 사람은 아닐거야
+J: 그나저나, 결 씨…
+@choice "숲 안 쪽에 뭐가 있었나요?" goto:.a
+@choice "결씨도 비를 맞았을 텐데 괜찮나요?" goto:.b
+@hidePrinter
+@stop
+
+#a
+J: 그래서… 숲 안 쪽에는 뭐가 있었나요?
+G: 하, 금방이라도 죽을 거 같아보이는데 그게 중요해?
+G: 다 나으면 물어봐
+@goto .con1
+#b
+;(호감도+5)
+J: 결 씨도 비를 많이 맞았을 텐데, 괜찮나요?
+@printer Narration time:0
+고결은 수건으로 마구 머리카락을 털어내다가 멈췄다
+G: …
+G: 안 괜찮으면 뭐 어떡할 건데
+G: 그 몸으로 내 병 간호를 할 거야, 뭐야
+@printer Narration time:0
+말을 왜 저렇게 얄밉게 하나 몰라
+저러다가 뒷통수에 돌 맞지
+G: 다 나으면 해 줄 말이 있으니까 찾아와
+#con1
+J: 으으 머리 아파…
+J: 저 이제 좀 잘게요...
+@printer Narration time:0
+간신히 붙들고 있던 정신의 끈을 놔버리자 순식간에 주변의 소리가 아득해졌다
+@hideChars
+@hidePrinter
+@back JianRoomDay visible:false time:1
+
+@wait i
+@back JianRoomDay visible:true
+@spawn OpenClose
+@wait i
+@despawn OpenClose
+J: 으음...
+@printer Narration time:0
+음냐...
+@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+N: 낯빛 돌아온 거 보니 좀 살만한가보네
+J: 으음...나연이다
+J: 역시 아플땐 자고 일어나야 돼
+J: 근데 아직 하늘이 환하네... 푹 잔 줄 알았는데 몇 시간 안 잤나봐
+N: 응. 얼마 안 잤어
+N: 고작 24시간 정도
+@printer Narration time:0
+....
+하루가 흘러서 아침이 된 거였구나
+J: ...등 배겨
+N: 하루를 꼬박 누워있었으니 당연하지
+N: 환자니까 봐준다!
+J: 고맙, 콜록 고맙다
+N: 어우! 나 나갔다가 올테니까 침대에서 꼼짝말고 있어!
+N: 괜히 이리저리 돌아다녀서 여러 사람 신경쓰이게 하지 말고
+J: 코, 콜록...
+N: 억지로 기침하는 거 다 보인다? 너 때문에 지금 몇 명이-
+N: 하, 됐다! 몸이나 마저 추스려!
+@hide N wait:false
+@printer Narration time:0
+나연은 현관이 다 울릴 정도로 거세게 문을 닫고 나갔다
+N: 문 부서져 나연아...
+나는 머지않아 다 뜯어져있을 문짝을 상상하며 다시 잠에 들었다
+@hidePrinter
+@back JianRoomDay visible:false time:1
+
+@wait i
+J: ....
+J: ....
+
+;플래시백 (2-8 눈동자 CUT)
+@hidePrinter
+@back StoreEye time:0
+@spawn ShakeCamera
+@wait i
+@back StoreEye visible:false time:0 wait:false
+;플래시백 (2-8 눈동자 CUT)
+
+J: !!!!
+@back JianRoomDay
+J: 헉...허억...!
+J: …꿈인가?
+@printer Narration time:0
+식은땀으로 잠옷이 흠뻑 젖어있었다
+일어나 불을 켜고 싶었지만 손가락 하나 까딱할 수 없다
+J: 심호흡… 심호흡…
+@printer Narration time:0
+숫자를 세며 천천히 숨을 내쉬니 마음이 진정되기 시작했다
+J: 후....
+@printer Narration time:0
+…지금 몇 시지?
+시계를 보자 나연이가 나가고부터 2시간 정도가 흘러있었다
+하...머리아파, 이것도 몸살인가...
+아직 피로가 쌓여있었지만 더 이상 잠들고싶지 않았다
+나는 젖은 솜 같은 몸을 겨우 일으켜 책상 앞에 앉았다
+@char Cut.UncleDiary scale:0.5 position:0,-1
+책상 구석에 다이어리가 놓여 있었다
+;종이 넘기는 소리
+나는 천천히 다이어리를 폈다
+삼촌이 쓴 일기는 몇번이나 읽은 상태였지만, 오늘은 유독 그리운 마음이 울컷 솟아났다
+J: 삼촌 글씨체…
+@printer Narration time:0
+나는 삼촌의 글씨를 어루만졌다
+;종이 넘기는 소리
+그리고 삼촌의 일기가 끝난 페이지 그 다음부터
+;펜 소리 사각사각
+그동안 해록도에서 겪은 일들을 적기 시작했다
+J: 이러니까 꼭 삼촌한테 편지 쓰고 있는 것 같네
+
+@hide Cut
+@hidePrinter
+@back JianRoomDay visible:false time:1
+
+@printer Narration time:0
+해록도에 온지 벌써 며칠이 흘렀다
+그동안 이 작은 마을에서는 많은 일이 있었다
+
+; 플래시백 
+; (담벼락 글씨 CUT)
+@char Cut.Wall scale:0.5 position:0,-1
+@wait i
+@printer Narration time:0
+별 이상한 낙서부터…
+; (숲 시체 CUT)
+@hide Cut wait:false
+@back Feet
+@wait i
+@printer Narration time:0
+낙상사한 시체...
+; (창고 문 CUT)
+@back Feet visible:false wait:false
+@char Cut.StoreDoor
+@wait i
+@printer Narration time:0
+수상한 창고까지...
+; 펜던트 CUT
+@char Cut.Pendant
+@wait i
+@printer Narration time:0
+참, 그러고보니 펜던트 뒤에 전화번호가 적혀있던데
+J: 이장님에게 물어보면 혹시 아실까?
+@printer Narration time:0
+나중에 팬던트를 가져가서 보여드려야겠다
+@hidePrinter
+@hide Cut
+; 플래시백
+
+@back JianRoomDay
+@printer Narration time:0
+나는 펜을 내려놓고 이만 다이어리를 덮었다
+나연이는 언제쯤 돌아오려나....
+나연이가 돌아오면 밥이라도 같이 먹어야겠다고 생각하는데
+@sfx 노크
+@spawn ShakeBackground wait:false
+누군가 현관문을 두드렸다
+J: 응...?
+@printer Narration time:0
+이장님인가? 아니면 집에 올 사람이 있었나?
+고민하는 사이 문을 두드리는 소리가 멈췄다
+뭐지?
+@choice "일단 내려가보자" goto:.c
+@choice "잘못 들었나봐" goto:.d
+@hidePrinter
+@stop
+
+#c
+@printer Narration time:0
+잘못 들은 건 아닌것 같으니...일단 내려가보자
+@sfx 발소리
+나는 현관문 앞에 서서 밖의 인기척을 살폈지만
+고요하기만 했다
+J: 역시 잘못 들었나보네
+@sfx 노크
+@spawn ShakeCamera wait:false
+@printer Narration time:0
+그때, 돌아서는 어깨 너머로 다시 노크소리가 두어번 울렸다
+마치 내가 다가오길 기다렸다는 듯이
+#d
+J: 잘못 들었나...
+@printer Narration time:0
+미련없이 다시 침대로 돌아가려는데 
+@sfx 노크
+@spawn ShakeCamera wait:false
+그런 나를 불러세우듯 다시 한번 노크소리가 울렸다
+이번엔 잘못 들을 수가 없을정도로 큰 소리였다
+J: 누구지...
+@sfx 발소리
+@printer Narration time:0
+나는 어쩔 수 없이 현관으로 내려갔다
+#con2
+J: ...
+@sfx 문여는_소리
+@printer Narration time:0
+나는 걸쇠를 채우고 조심스럽게 문을 열었다
+J: ...누구세요?
+
+@hidePrinter
+@back JianRoomDay visible:false time:1
+@endscript
