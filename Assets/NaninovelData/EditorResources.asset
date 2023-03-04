@@ -750,6 +750,9 @@ MonoBehaviour:
     - name: "\uBB38\uB2EB\uB294_\uC18C\uB9AC"
       pathPrefix: Audio
       guid: 1471ad8a646abfb458fe2e1ec3cbe5d5
+    - name: "\uBB38_\uC138\uAC8C_\uB2EB\uB294_\uC18C\uB9AC"
+      pathPrefix: Audio
+      guid: f4ce79d29a7b33147b7a7d0c9b462e21
     - name: "\uCC60\uC784\uBCA8"
       pathPrefix: Audio
       guid: ca11b42e5da68344bad00d02671534be
@@ -807,12 +810,6 @@ MonoBehaviour:
     - name: "\uD480\uBC8C\uB808"
       pathPrefix: Audio
       guid: 59be5f0a070d5654e866f0f7df1fef19
-    - name: "206_\uBB38_\uC138\uAC8C_\uB2EB\uB294_\uC18C\uB9AC"
-      pathPrefix: Audio
-      guid: f4ce79d29a7b33147b7a7d0c9b462e21
-    - name: "206_\uBB38_\uC138\uAC8C_\uB178\uD06C"
-      pathPrefix: Audio
-      guid: 6607dfd1d4024b24eaa89659524692b1
   - Id: Characters/896b4cd6-5e3e-4688-9c8f-8de0404325b3
     Resources:
     - name: "\uD53C\uBB4D\uC740\uC190"
