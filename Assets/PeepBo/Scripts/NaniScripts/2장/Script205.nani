@@ -104,9 +104,9 @@ J: 좋아, 꼭 열고 만다!
 @showUI Clicker
 @wait i
 @hideUI Clicker
-@clicker scriptname:"Script206" clickerName:"2-6Clicker"
+@clicker scriptname:"Script205" clickerName:"2-5Clicker"
 
-# 2-6Clicker
+# 2-5Clicker
 J: 하아...
 @printer Narration time:0
 틈새에 무언가 걸리기라도 했는지 아무리 세게 밀어내도 문은 열릴 기미가 보이지 않았다.
@@ -182,9 +182,9 @@ J: 뭐, 뭐야, 어딜간 거야?
 @showUI StartRoomModeUI time:1
 @wait i
 @hideUI StartRoomModeUI time:1
-@back id:RoomBackground2-6 
+@back id:RoomBackground2-5 
 # RoomStart
-@room scriptname:"Script206" label:"RoomBack"
+@room scriptname:"Script205" label:"RoomBack"
 # RoomWait
 @stopscript
 @stop
@@ -354,9 +354,9 @@ J: 물건을 다 꺼내느니 촛대만 당겨서 빼오는게 낫겠어
 @showUI Clicker
 @wait i
 @hideUI Clicker
-@clicker scriptname:"Script206" clickerName:"2-6Clicker2"
+@clicker scriptname:"Script205" clickerName:"2-5Clicker2"
 
-# 2-6Clicker2
+# 2-5Clicker2
 ; 0.5초 진동 효과
 ;@vibrate time:5
 @camera offset:0,0,0 zoom:0.0
@@ -370,18 +370,18 @@ J: 아이 아파라…
 서랍 안에서 무언가가 날카로운 소음을 내며 바닥으로 곤두박질 했다
 J: 뭐지?
 ; 펜던트 CUT
-@showUI 2-6RoomPopup1
+@showUI 2-5RoomPopup1
 @wait i
-@hideUI 2-6RoomPopup1
+@hideUI 2-5RoomPopup1
 J: 이건…
 @printer Narration time:0
 낯익은 펜던트였다.
 J: 내가 이걸 어디서 봤더라…?
 J: 아, 설마!
 ; 지안 어린시절 CUT
-@showUI 2-6RoomPopup2
+@showUI 2-5RoomPopup2
 @wait i
-@hideUI 2-6RoomPopup2
+@hideUI 2-5RoomPopup2
 @printer Narration time:0
 어린시절 사진 속 내가 하고 있던 그 펜던트였다
 이리저리 펜던트를 살펴보다 뒷면을 본 순간 확신했다
@@ -399,35 +399,46 @@ J: 그런데 이 펜던트가 왜 여기에…
 @find name:"초"
 @goto .RoomWait
 
+
+
+
+
+
 # RoomBack
-@hide RoomBackground2-6
+@hide RoomBackground2-5
 @showUI ExitRoomModeUI time:1.0
 @hideUI ExitRoomModeUI
 @back StoreDay pos:150,50,100
-J: 좋아 이거면 됐어.
+J: 좋아 이거면 됐어
 @printer Narration time:0
-나는 촛대를 부서질듯이 세게 움켜쥐고 문으로 다가갔다.
+나는 촛대를 부서질듯이 세게 움켜쥐고 문으로 다가갔다
 그런데,
 J: 어?
 @printer Narration time:0
-이 문 또한 들어온 문과 같이 아무리 밀고 당겨도 꿈쩍하지 않았다.
+이 문 또한 들어온 문과 같이 아무리 밀고 당겨도 꿈쩍하지 않았다
 J: …여기도 잠겨있다고?
 J: 으아 미치겠다...
-J: 그냥 빨리 여길 나가서 생각해보자.
+J: 그냥 빨리 여길 나가서 생각해보자
 @printer Narration time:0
 나는 들어왔던 문 쪽으로 다시 돌아갔다.
-아무래도 이 문도 순순히 열리진 않을 것 같은데... 
+아무래도 이 문도 순순히 열리진 않을 것 같은데...
 J: 조... 좋아... 안 열리면 부시지 뭐!
-@goto .con2
+@goto .Con2
 
 #d
-J: 일단 빨리 여기서 나간 다음 생각해봐야겠어.
-J: 창고를 빠져나간 다음 다른 사람이랑 같이 와보자.
+J: 일단 빨리 여기서 나간 다음 생각해봐야겠어
 @printer Narration time:0
-근데 아무래도 힘만으로 저 문을 열 순 없을 거 같은데...
+들어왔던 문 쪽으로 재빨리 돌아가려는데
+일단 먼저 이 곳에서 나가야겠어!
+창고를 빠져나간 다음 다른 사람이랑 같이 와보자
+근데 아무래도 힘만으로 저 문을 열 순 없을 거 같은데
 문고리를 부술만한 무언가가 없을까?
-;<도움이 될만 한 것을 찾아보자>
-; 탐색
+
+
+
+
+
+; <도움이 될만 한 것을 찾아보자>
 
 ; ------------ 탐색 -------------
 

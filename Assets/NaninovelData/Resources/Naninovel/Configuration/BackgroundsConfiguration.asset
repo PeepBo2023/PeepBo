@@ -51,7 +51,7 @@ MonoBehaviour:
     ids:
     - MainBackground
     - RoomBackground1-1
-    - RoomBackground2-6
+    - RoomBackground2-5
     - EffectBackground
     metas:
     - Implementation: Naninovel.SpriteBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,

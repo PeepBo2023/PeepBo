@@ -245,16 +245,16 @@ MonoBehaviour:
     - name: OpenDate
       pathPrefix: UI
       guid: acd6362c5642d2146b81b40c71dd5809
-    - name: 2-6Clicker
+    - name: 2-5Clicker
       pathPrefix: UI
       guid: e0001dda69680764abdba1c812b084cf
-    - name: 2-6Clicker2
+    - name: 2-5Clicker2
       pathPrefix: UI
       guid: c62843ac8383e9942bb348e23b06ae5a
-    - name: 2-6RoomPopup1
+    - name: 2-5RoomPopup1
       pathPrefix: UI
       guid: 7339194a4e63cc9419d2274384477b82
-    - name: 2-6RoomPopup2
+    - name: 2-5RoomPopup2
       pathPrefix: UI
       guid: 9d89027ec696be244ac50155ff87141d
     - name: EpisodeTitle
@@ -834,7 +834,7 @@ MonoBehaviour:
       guid: b83e8f7f5ef000e47a1dd278b9d0d0d9
   - Id: Backgrounds/8d365e56-e777-460e-b314-e80fad2497b7
     Resources:
-    - name: RoomBackground2-6
+    - name: RoomBackground2-5
       pathPrefix: Backgrounds
       guid: 5f0dc435a9f7c5140a81e93746bc6535
   - Id: TextPrinters/f978568d-5f16-405e-aa80-d2f3b566985f

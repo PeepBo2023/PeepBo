@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4608104398558690}
   - component: {fileID: 114128784393051128}
   m_Layer: 0
-  m_Name: ShakeRoomBackground_206
+  m_Name: ShakeRoomBackground_205
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -57,8 +57,9 @@ namespace PeepBo.Managers
                 UserPlayData.unlockedEpisodeList.Add("000");
 
                 // TODO : 버닝 비버용 테스트 코드
-                
-                
+
+                //테스트 코드
+                /*
                 UserPlayData.unlockedEpisodeList.AddRange(new List<string> { "101","102","103","104","105","106","107","108","109","110","111" });
                 UserPlayData.playedEpisodeDataDict.Add("000", new PlayedEpisodeData { episodeCompleted = true });
                 UserPlayData.playedEpisodeDataDict.Add("101", new PlayedEpisodeData { episodeCompleted = true });
@@ -72,6 +73,32 @@ namespace PeepBo.Managers
                 UserPlayData.playedEpisodeDataDict.Add("109", new PlayedEpisodeData { episodeCompleted = true });
                 UserPlayData.playedEpisodeDataDict.Add("110", new PlayedEpisodeData { episodeCompleted = true });
                 UserPlayData.playedEpisodeDataDict.Add("111", new PlayedEpisodeData { episodeCompleted = true });
+                */
+                UserPlayData.unlockedEpisodeList.AddRange(new List<string> { "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210" });
+                UserPlayData.playedEpisodeDataDict.Add("000", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("101", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("102", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("103", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("104", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("105", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("106", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("107", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("108", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("109", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("110", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("111", new PlayedEpisodeData { episodeCompleted = true });
+
+                UserPlayData.playedEpisodeDataDict.Add("201", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("202", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("203", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("204", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("205", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("206", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("207", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("208", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("209", new PlayedEpisodeData { episodeCompleted = true });
+                UserPlayData.playedEpisodeDataDict.Add("210", new PlayedEpisodeData { episodeCompleted = true });
+
                 GameManager.Date.UnLockDate();
                 
 

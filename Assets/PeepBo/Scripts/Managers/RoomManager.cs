@@ -33,7 +33,7 @@ namespace PeepBo.Managers
                 }
             );
             roomInteractionDict.Add(
-                "Script206", new Dictionary<string, bool>
+                "Script207", new Dictionary<string, bool>
                 {
                     {"문",false },
                     {"잡동사니",false },
@@ -68,6 +68,7 @@ namespace PeepBo.Managers
         public void RoomInteractionOccured(string roomName, string interactionName)
         {
             GameManager.Command.SwitchToNovelByRoom(ScriptName, interactionName);
+            Debug.Log("ScriptName:" + ScriptName + " / " + "interactionName:" + interactionName);
         }
 
         public void EnterRoomMode(StringParameter scriptName, StringParameter roomBackLabel, AsyncToken asyncToken = default)

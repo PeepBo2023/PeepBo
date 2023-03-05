@@ -26,7 +26,7 @@ namespace PeepBo.UI.Popup
             NewImage,
 
             //Diary,
-            Date,
+            //Date,
         }
 
         GameObject dummyGroup;
@@ -41,7 +41,7 @@ namespace PeepBo.UI.Popup
             base.Init();
             BindObjects();
 
-            CheckShowingDate();
+            //CheckShowingDate();
 
             InitEpisodeComponents();
 
@@ -67,10 +67,11 @@ namespace PeepBo.UI.Popup
             lockedImage = GetObject((int)GameObjects.LockedImage).GetComponent<Image>();
             playingImage = GetObject((int)GameObjects.PlayingImage).GetComponent<Image>();
             newImage = GetObject((int)GameObjects.NewImage).GetComponent<Image>();
-
+            /*
             dateButton = GetObject((int)GameObjects.Date);
             AddUIEvent(dateButton, (_) => { GameManager.UI.ShowPopupUI<UI_DatePopup>(); }, Define.UIEvent.Click);
             AddButtonAnim(dateButton);
+            */
         }
 
         private void InitEpisodeComponents()
@@ -114,7 +115,9 @@ namespace PeepBo.UI.Popup
 
             AddUIEventWithScrollbar(episode, (a) =>
             {
+                
                 GameManager.DummyEpisode = episode.name.Substring(5);
+                //GameManager.DummyEpisode = "205"; //테스트 코드
                 SceneManager.LoadScene("InGameScene");
             }, Define.UIEvent.Click, scrollRect);
             AddButtonAnim(episode);
