@@ -21,6 +21,7 @@ namespace PeepBo.Managers
     public class EpisodeManager
     {
         public string NewEpisode { get; set; }
+        public int episodePageNum = 1;
 
         public void InitEpisodeManager()
 		{
