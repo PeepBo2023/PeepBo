@@ -33,7 +33,7 @@ namespace PeepBo.Managers
                 }
             );
             roomInteractionDict.Add(
-                "Script207", new Dictionary<string, bool>
+                "Script205", new Dictionary<string, bool>
                 {
                     {"문",false },
                     {"잡동사니",false },
