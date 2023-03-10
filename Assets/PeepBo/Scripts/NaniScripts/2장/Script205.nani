@@ -211,7 +211,7 @@ J: 아무리 창고라도 그렇지 먼지가 너무 많아
 # 여행가방
 @printer Narration time:0
 누군가의 여행 가방이다
-@camera offset:-2.5,1.5,-5 zoom:0.5
+@roomcamera offset:-7.3,-4.4,-5 zoom:0.5 backobj:2-5(Clone)
 J: 어? 뭔가 쓸만 한게 있을 것 같아, 열어보자.
 @printer Narration time:0
 ...
@@ -302,7 +302,7 @@ J: 깜짝이야… 빨리 여길 나가야겠어
 
 # 선반
 J: 이게 뭐지?
-@camera offset:-2.5,1.5,-5 zoom:0.5
+@roomcamera offset:7.9,-3.5,-5 zoom:0.5 backobj:2-5(Clone)
 @printer Narration time:0
 2층 짜리 선반 위엔 과학실에서나 볼법한 용품들이 어지러이 널려있었다
 J: 뭔가를 만드는 곳 같기도 하고…
@@ -340,7 +340,7 @@ J: 어휴 그냥 다른 곳을 찾아보자
 # 초
 @printer Narration time:0
 열려있는 서랍 안에는 아무렇게나 쑤셔넣어져있는 물건들이 보였다
-@camera offset:-2.5,1.5,-5 zoom:0.5
+@roomcamera offset:14.5,-4.6,-5 zoom:0.5 backobj:2-5(Clone)
 J: 이중에 뭔가 쓸만한 게 있을 것 같은데?
 @printer Narration time:0
 그 때, 서랍 맨 아래에 깔려있는 은빛 촛대가 보였다
@@ -444,7 +444,7 @@ J: 일단 빨리 여기서 나간 다음 생각해봐야겠어
 
 J: 좋아, 이거면 됐어.
 
-#con2
+#Con2
 @printer Narration time:0
 문고리를 부수려 촛대를 높이 치켜든 순간,
 @hidePrinter
