@@ -340,7 +340,7 @@ J: 어휴 그냥 다른 곳을 찾아보자
 # 초
 @printer Narration time:0
 열려있는 서랍 안에는 아무렇게나 쑤셔넣어져있는 물건들이 보였다
-@roomcamera offset:14.5,-4.6,-5 zoom:0.5 backobj:2-5(Clone)
+@roomcamera offset:14.3,-4.6,-5 zoom:0.5 backobj:2-5(Clone)
 J: 이중에 뭔가 쓸만한 게 있을 것 같은데?
 @printer Narration time:0
 그 때, 서랍 맨 아래에 깔려있는 은빛 촛대가 보였다
