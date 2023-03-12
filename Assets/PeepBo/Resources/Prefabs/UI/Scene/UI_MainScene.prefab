@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 5706355054740977308}
   - component: {fileID: 5867847713541879752}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Help
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 2939645524265698975}
   - component: {fileID: 2701064442071033245}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -544,7 +544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 955, y: -405}
+  m_AnchoredPosition: {x: 955, y: -361}
   m_SizeDelta: {x: 174, y: 174}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2939645524265698975
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 4295614445628127033}
   - component: {fileID: 6029788002195640672}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Shop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,7 +1288,7 @@ GameObject:
   - component: {fileID: 3450804684488007089}
   - component: {fileID: 6245532969292963296}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Closet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
