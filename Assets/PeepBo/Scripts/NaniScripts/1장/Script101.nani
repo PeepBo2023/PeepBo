@@ -15,56 +15,66 @@ J: 우웩! 아니요... 제가 배를 처음 타봐서 멀미가 있는 줄 몰�
 @printer Narration time:0
 @spawn ShakePrinter wait:false
 으으... 머리가 깨질 것 같아 나한테 뱃멀미가 있었나?
-출항한지 5분도 안돼서 속은 울렁거리지 머리는 아프지…
-웅크리고 앉아 선장님이 준 비닐봉지에 얼굴을 묻었다
-Captain: 배에 토하면 큰일 나! 아가씨가 다 치우고 내려야 돼!
-J: 네. 걱정 마시, 욱...!
-Captain: 아이고, 멀미약 줄테니까 그거라도 먹어. 도착하려면 1시간은 더 걸려
-J: 네, 흐아... 감사합니다
+출항한 지 5분도 안 돼서 속은 울렁거리지 머리는 아프지…
+웅크리고 앉아 선장님이 준 비닐봉지에 얼굴을 묻었다.
+Captain: 배에 토하면 큰일 나! 아가씨가 다 치우고 내려야 해!
+J: 내 걱정 마시, 욱...!
+Captain: 아이고, 멀미약 줄 테니까 그거라도 먹어. 도착하려면 1시간은 더 걸려.
+J: 네, 흐아... 감사합니다.
 @printer Narration time:0
-나는 겨우 멀미약을 삼킨 뒤 의자 깊숙이 몸을 늘어 뜨렸다
+선장님이 준 약을 먹고 의자 깊숙이 몸을 늘어뜨리곤 눈을 감았다.
+@bgm 파도 volume:1
 ...
 ... ...
-...좀 살 것 같다...
-Captain: 어이구. 이제야 얼굴색이 돌아왔네
-Captain: 좀만 참아, 거의 다 왔으니까
-J: 저, 선장님. 아까부터 궁금했는데
-J: 오늘은 해록도를 방문하는 손님이 저 한 명 뿐인가요?
+...이제 좀 살 것 같네...
+@bgm 파도 volume:0.5
+J: 선장님, 섬이 정말 머네요? 한번 들어가면 나오는 것도 일이겠어요.
+Captain: 그래서 해록도 사람들은 육지로 잘 안 가.
+Captain: 나야 일주일에 한 번씩 벌써 5년째 다니고 있으니까 익숙한데,
+Captain: 어업도 금지고 파도도 험해서 물자선 말고는 섬에 오가는 배가 없어.
+J: 그럼 해록도 주민들은 어떻게 육지로 가는데요?
 @printer Narration time:0
 나는 텅 비어있는 선실을 둘러보며 물었다
-Captain: 어디 오늘 뿐이야? 방문객은 거의 없다고 봐야지
-Captain: 해록도가 무슨 생태보호구역인지 해서 외부인이 들어가려면 절차도 복잡하거든
-Captain: 어업도 금지도 파도도 험해서 물자선 말고는 섬을 오가는 배가 이거 하나 뿐이야
-Captain: 게다가...
+Captain: 거기야 뭐 주민들 사용하는 배가 있기는 한가 보더라고.
+Captain: 그래도 이장님이랑 젊은이 몇 명 말고는 육지로 잘 안 나가는 것 같던데?
+Captain: 그리고 무슨 생태보호구역인지 뭔지 해서 외지인이 들어가려면 절차가 복잡해.
+Captain: 무, 뭐 신원조회서? 그거랑 뭐 써야 하는 종이 쪼가리들이 어찌나 많은지...
 @printer Narration time:0
-선장님이 목에 걸려있던 수건으로 이마를 닦으며 말을 이었다
-Captain: 해록도 주민들은 외부인을 싫어해
-Captain: 10년 째 보는 나랑도 대화를 잘 안 할 정도니 말 다 했지
+그러고보니까 나도 섬에 출입 허가서를 냈었지?
+섬 한 번 들어가는데 왜 그렇게 까다롭나 했더니,
+생태보호구역이라 그런 거구나... 
+Captain: 오래전에 불법 어업 하는 사람들이 해록도에서 소동을 많이 일으켰나 봐.
+Captain: 그 뒤로 주민들이 외부인 들어오는 걸 싫어해.
+Captain: 모르는 배가 정박하려고만 하면 벌 떼 같이 몰려와서 쫓아낸다니까?
+Captain: 10년째 보는 나랑도 대화를 잘 할 정도니 말 다 했지.
 Captain: 아니 그러고 보니까 신기한 일이네?
-Captain: 외부인한테 출입허가를 잘 안 해주는데 아가씨는 무슨 일로 허가를 해줬대
-Captain: 해록도에 가족이 있어?
-J: 글쎄요, 저도 있는지 없는지 확인해보러 가는 거예요
+Captain: 외부인한테 출입허가를 잘 안 해주는데 아가씨는 무슨 일로 허가를 해줬대?
+Captain: 해록도 주민 중에 가족이 있어?
+J: 글쎄요, 저도 있는지 없는지 확인해보러 가는 거예요.
 Captain: 응? 그게 무슨 말이야?
-J: 헤헤, 아무 것도 아니에요
-J: 저희 삼촌이 오랫동안 해록도를 관리하는 담당 공무원이셨거든요
-J: 제가 출입허가서에 삼촌 조카인 걸 적었는데
-J: 아마 그래서 허가 해주신 게 아닐까요?
-Captain: 흐음. 그랬을 수도 있겠네. 그쪽 사람들 마음은 통 알 수가 없으니, 원
+J: 헤헤, 아무것도 아니에요.
+J: 저희 삼촌이 오랫동안 해록도를 관리하는 담당 공무원이셨거든요.
+J: 10년 넘게 일을 해왔으니 주민들과 친하셨을 거예요.
+J: 제가 출입허가서에 삼촌 조카인 걸 적었는데,
+J: 아마 그래서 허가해주신 게 아닐까요?
+Captain: 아아, 그럴 만도 하지.
+Captain: 주민 조사하러 가는 공무원은 적어도 일주일은 해록도에 머무니까 말이야.
+Captain: 어쩌면 다른 외부인들이랑 달리 주민들이랑 친했을 수도 있겠네.
 @hide Captain
 @printer Narration time:0
 해록도에 대해 선장님과 이런저런 얘기를 나누다 보니,
-어느새 저 멀리 삐죽 솟은 외딴 섬 하나가 보였다
+어느새 저 멀리 삐죽 솟은 외딴섬 하나가 보였다.
 @stopBgm 파도
 
 @hidePrinter
 @sfx 섬등장
-@back Sail visible:false time:0
+@back Sail visible:false wait:false
 @back Sea
 @wait 2
 J: 우와 진짜 예뻐요!
 J: 푸른 바다, 푸른 하늘 그리고 녹색 섬이라니 그림 같은데요?
 @printer Narration time:0
-난 곧바로 핸드폰을 꺼내 섬을 촬영했다
+난 곧바로 핸드폰을 꺼내 섬을 촬영했다.
 @bgm 메인00 volume:0.5
 @sfx 셔터 wait:true
 @hidePrinter
@@ -75,7 +85,7 @@ J: 푸른 바다, 푸른 하늘 그리고 녹색 섬이라니 그림 같은데�
 @char SeePhoto position:0,-10.4,,
 @wait 1
 @bgm 메인00 volume:1
-드디어 도착했다, 내가 태어난 곳
+드디어 도착했다, 내가 태어난 곳.
 @stopSfx 셔터
 @hidePrinter
 @hide SeePhoto time:1
@@ -83,6 +93,8 @@ J: 푸른 바다, 푸른 하늘 그리고 녹색 섬이라니 그림 같은데�
 @back Sea visible:false time:1
 
 @wait 1
+@stopBgm 메인00
+@bgm 메인03
 @back StreetDay time:1
 @wait 2
 @printer Dialogue time:0
@@ -90,16 +102,21 @@ J: 푸른 바다, 푸른 하늘 그리고 녹색 섬이라니 그림 같은데�
 J: 아니~ 무슨 무인도도 아니고 어떻게 개미 한 마리도 안 보이냐고오~!
 @sfx 캐리어
 @printer Narration time:0
-무거운 캐리어를 끌고 섬을 돌아다녔지만 인기척조차 들리지 않는다
+20분째 무거운 캐리어를 끌고 섬을 돌아다녔지만,
+주민들의 머리카락조차 보이지 않았다.
 아무리 작은 섬이라지만 어쩜 이렇게 휑할 수 있지?
-지도라도 찾아보기 위해 휴대폰을 켰지만...
+자급자족하는 섬이라고 들었는데 다들 일하러 갔나?
+하긴 농사는 새벽부터 하니까...
+J: 아이참, 그래도 이건 너무 심한 거 아니야?
+@printer Narration time:0
+지도라도 찾아보기 위해 핸드폰을 켰다.
 @stopSfx 캐리어
 @sfx 핸드폰_에러
 @char Phone.impossible position:0,-4 scale:0.7
-J: 으악, 심지어 전파도 안 터지잖아?
+J: 으악, 심지어 핸드폰도 안 터지잖아.
 @stopSfx 핸드폰_에러
 @hide Phone
-J: 주변에 뭔가 도움될만 한 게 없을까?
+J: 주변에 뭔가 도움 될 만한 게 없을까?
 
 ; ------------ 탐색 -------------
 @hidePrinter
@@ -191,25 +208,53 @@ J: 계세요오!
 @showUI ExitRoomModeUI time:1.0
 @hideUI ExitRoomModeUI
 @printer Narration time:0
-이제 더는 둘러볼 것도 없어보여
+이제 더는 둘러볼 것도 없어 보여.
+다리도 아프고 짐도 무겁고... 어떻게 하지?
+@startchoice 0
+@choice "사람이 올 때까지 가만히 기다린다." goto:.e
+@choice "일단 계속 돌아다녀 본다." goto:.f
+@hidePrinter
+@stop
+
+#e
+@printer Narration time:0
+일단 누구든 올 때까지 기다려봐야지.
+…
+… …
+시계를 보니 벌써 20분이나 흘렀다.
+안 되겠다 계속 이대로 있을 순 없어!
+일단 계속 돌아다녀 봐야지.
+@goto .Scream
+#f
+@printer Narration time:0
+…
+… …
+하염없이 직진만 한 지 20분째…
+길가엔 사람 그림자도 보이지 않는다.
+
 
 # Scream
-J: 좋아, 이제 남은 방법은 하나뿐이야
+@hidePrinter
+@back StreetDay visible:false time:1
+@wait 0.5
+@back StreetDay visible:true time:1
+J: 좋아, 이제 남은 방법은 하나뿐이야.
 J: 하압-!
 @printer Narration time:0
-나는 숨을 최대한 깊게 들이마셨다
+나는 숨을 최대한 깊게 들이마셨다.
 @spawn ShakeBackground wait:false
 J: 저기요오오! 아무도오오 없어요오오!
 @spawn ShakeBackground wait:false
 J: 도와-주세요오오오!
-First: 귀청 떨어지겠네
-@spawn ShakeCamera
+First: 귀청 떨어지겠네.
+@spawn ShakeCamera wait:false
+; 진동
 J: 으악!
 @printer Narration time:0
-갑자기 들려오는 목소리에 깜짝 놀라 걸음이 꼬이고 말았다
-꼼짝 없이 넘어지려는 순간
-누군가 내 팔목을 붙들었다
-@stopBgm 메인00 fade:1
+갑자기 들려오는 목소리에 깜짝 놀라 걸음이 꼬이고 말았다.
+꼼짝없이 넘어지려는 순간,
+누군가 내 팔목을 붙들었다.
+@stopBgm 메인03 fade:1
 @bgm 고결_등장 fade:1
 @hidePrinter
 @back StreetDay visible:false wait:true
@@ -217,85 +262,61 @@ J: 으악!
 @back GIllust time:0.3
 @spawn GEffect
 @wait 3
-곧게 뻗은 눈썹, 색소가 옅은 눈동자가 담긴 날카로운 눈매
-티끌 만한 오차도 없이 완벽하게 자리잡은 남자의 이목구비에선,
-왠지 모를 오만함이 느껴졌다
-J: 누, 누구…
-@printer Narration time:0
-남자는 내 팔목을 붙잡은 채 어이없다는 표정으로 나를 훑었다
-First: 고맙다는 말이 먼저일텐데?
+곧게 뻗은 눈썹, 색소가 옅은 눈동자가 담긴 날카로운 눈매.
+티끌만 한 오차도 없이 완벽하게 자리 잡은 남자의 이목구비에선,
+왠지 모를 오만함이 느껴졌다.
+이 작은 섬이 이토록 잘생긴 남자라니…
 
 @despawn GEffect
 @back GIllust visible:false time:0 wait:false
 @back StreetDay
+J: 누, 누구…
 @char G.Face>기본,Body>기본 position:-0.5,-15.5
-J: ...아, 네 감사합니다
-@char G.Face>찡그림,Body>기본
-First: 그쪽은 누군데 그렇게 해록도 떠나가라 소리를 지르고 있어?
-J: 저는 그냥 휴양하러 온 관광객이에요
 @printer Narration time:0
-@char G.Face>기본,Body>팔짱
-남자는 아주 황당한 소리를 들었다는 듯이 되물었다
-@char G.Face>찡그림,Body>팔짱
-First: 관광객? 여기 주민들이 관광객을 받아줬다고?
-@printer Narration time:0
-그의 눈빛에 호기심이 일었지만, 이 남자에게 구구절절 사정을 설명할 필요는 없겠지
-J: 하하, 운이 좋아서 그렇게 됐네요
-J: 혹시 여기 주민이세요? 여쭤볼게 있어서요
-@char G.Face>무표정,Body>기본
-First: 주민은 아니고 주민 조사하러 나온 공무원
-@printer Narration time:0
-...공무원?
+충돌 직전의 나를 붙잡은 이 그림 같은 남자는,
+어이없다는 표정으로 나를 훑어보며 말했다.
 @sfx 슝
-@char G.Face>거만,Body>팔짱 position:-0.5,-23 scale:1.3
-First: 왜. 이렇게 잘생긴 공무원 처음 봐?
+@char G.Face>기본,Body>기본 position:-0.5,-23 scale:1.3
+First: 고맙다는 말이 먼저일텐데?
+@char G.Face>기본,Body>기본 position:-0.5,-15.5 scale:1
+J: 앗 네! 감사합니다. 그런데 누구세요?
+@char G.Face>찡그림,Body>기본
+G: 내가 할 질문 아닌가?
+G: 그쪽은 누군데 그렇게 해록도 떠나가라 소리를 지르고 있어?
+J: 제가 먼저 물어봤잖아요.
 @printer Narration time:0
-...재수없지만, 솔직히 조금 뜨끔했다
+자세를 바로잡으며 그를 쳐다보는데...
+....와, 진짜 잘 생겼네?
 @char G.Face>거만,Body>팔짱 position:-0.5,-15.5 scale:1
-J: 흠흠, 제가 며칠 묵을 곳을 찾고 있는데 여기 여관 같은 곳이 있을까요?
-@char G.Face>비웃음,Body>기본
-First: 이런 시골에 여관이 있을리가. 뭐, 다 쓰러져가는 마을회관이 있긴 하지
+First: 잘생긴 거 아니까 너무 그렇게 뚫어져라 보지 말지?
 @printer Narration time:0
-마을회관이라니, 부탁만 잘하면 머물게 해줄 수도 있겠다
+재수도 없고…
+@char G.Face>거만,Body>팔짱 position:-0.5,-15.5 scale:1
+J: 하하, 혹시 여기 주민이세요? 제가 방금 해록도에 들어왔는데 여쭤볼 게 있어서요.
+G: 주민은 아니고 주민 조사하러 나온 공무원.
+G: 여기 외지인은 안 받는다는데 그쪽이야말로 누구?
+J: 그냥 휴양하러 온 관광객인데요.
+@printer Narration time:0
+남자는 아주 황당한 소리를 들었다는 듯이 되물었다.
+G: 무슨 이런 오지에 관광을 와?
+J: 아, 아무튼 며칠 묵을 곳을 찾고 있어요. 여기 여관 같은 곳이 있을까요?
+@char G.Face>비웃음,Body>기본
+G: 이런 시골에 여관이 있을리가. 뭐, 다 쓰러져가는 마을회관이 있긴 하지.
+@printer Narration time:0
+마을회관이라니, 부탁만 잘하면 머물게 해줄 수도 있겠다.
 근데 거기까진 또 어떻게 가지?
-@char G.Face>기본,Body>기본
-@startchoice 0
-@choice "그에게 길을 물어보자" goto:.Ask
-@choice "마을회관까지 데려다달라고 하자" goto:.Take
-@hidePrinter
-@stop
-
-#Ask
 J: 저 혹시… 마을회관이 어느 쪽에 있나요?
 @printer Narration time:0
 @char G.Face>무표정,Body>기본
-남자는 탐탁치 못하다는 표정으로 어딘가를 가리키며 말했다
+남자는 탐탁지 못하다는 표정으로 어딘가를 가리키며 말했다.
 @char G.Face>무표정,Body>팔짱
-First: 직진하다보면 길 끝에 건물 하나 있어
-J: 감사합니다
+G: ...직진하다보면 길 끝에 건물 하나 있어.
+J: 감사합니다.
 @printer Narration time:0
-굉장히 불성실한 안내지만 쭉 가다보면 나오겠지
-인사를 하고 몸을 돌려 남자가 알려준 방향으로 걷기 시작했다
-@hide G
-@goto .Foot
-#Take
-@char G.Face>찡그림,Body>기본
-J: 저 혹시... 마을회관까지 데려다주실 수 있나요
-J: 제가 길을 잘 헤매는 편이라서요
-@printer Narration time:0
-@char G.Face>무표정,Body>기본
-남자는 탐탁치 못하다는 표정으로 어딘가를 가리키며 말했다
-@char G.Face>무표정,Body>팔짱
-First: 직진하다보면 길 끝에 건물 하나 있어
-@printer Narration time:0
-데려다주긴 싫다는 뜻이지? 쳇
-J: 네에, 감사합니다
-@printer Narration time:0
-그래, 일단 쭉 가다보면 나오겠지
-인사를 하고 몸을 돌려 남자가 알려준 방향으로 걷기 시작했다
+잘 모르겠지만 일단 가다 보면 나오겠지!
+인사를 하고 몸을 돌려 남자가 알려준 방향으로 걷기 시작했다.
 @hide G
 
-#Foot
 @sfx 발소리 volume:0.8
 …
 근데…
@@ -304,57 +325,60 @@ J: 네에, 감사합니다
 @spawn ShakeBackground wait:false
 J: 왜… 왜 따라오세요?!
 @printer Narration time:0
-나는 걸음을 멈추고 남자에게 물었다
+나는 걸음을 멈추고 남자에게 물었다.
 @char G.Body>기본,Face>무표정 position:-0.5,-15.5
-First: 그쪽 안 따라가는데?
+G: 그쪽 안 따라가는데?
 J: 그럼 어디가시는데요?
 @char G.Body>팔짱,Face>거만
-First: 마을회관
+G: 마을회관.
 @spawn ShakeBackground wait:false
 J: 으, 따라오시는 거 맞잖아요!
 @char G.Body>손머리,Face>찡그림
-First: 내가 그쪽을 왜 따라가, 나도 거기에 머물고 있거든?
+G: 내가 그쪽을 왜 따라가, 나도 거기에 머물고 있거든?
 @char G.Body>손머리,Face>비웃음
 @printer Narration time:0
-남자는 어이없다는 듯 웃으며 말했다
-....그럼 그렇다고 진작 말하던가
-@char G.Body>기본,Face>기본
-다시 뒤돌아 회관으로 가려다 잠시 캐리어를 끌던 손을 주물렀다
-비포장 된 길에서 한참 캐리어를 끌어서 그런지 손목이 시큰했다
+남자는 어이없다는 듯 웃으며 말했다.
+아이참, 진작 말하던가.
+다시 뒤돌아 회관으로 가려다 잠시 캐리어를 끌던 손을 주물렀다.
+비포장 된 길에서 한참 캐리어를 끌어서 그런지 손목이 시큰했다.
 @char G.Body>팔짱,Face>무표정
-First: …
+G: …
 @char G.Body>손머리,Face>무표정
-First: 가지가지하네
+G: 가지가지하네
 @printer Narration time:0
 @hide G wait:false
 @char Silhouette.G scale:1.2 position:-0.5,-15
 @sfx 발소리
-남자는 한숨을 쉬더니 내 캐리어를 낚아채더니 앞장 서 걸었다
+남자는 한숨을 쉬더니 내 캐리어를 낚아채더니 앞장서 걸었다.
 J: 엇 괜찮은데! 감사합니다!
 @printer Narration time:0
 @stopSfx 발소리
 @sfx 캐리어
+남자는 대답 없이 묵묵히 캐리어를 끌었다.
 뭐지, 이 친절한 듯 불친절한 행동은?
-난 거의 뛰다시피 걸으며 그와 속도를 맞췄다
+난 거의 뛰다시피 걸으며 그와 속도를 맞췄다.
 @stopSfx 캐리어
 @hide Silhouette wait:false
 @char G.Body>기본,Face>기본 position:-0.5,-15.5 time:0
 J: 그, 성함이 어떻게 되세요?
+@sfx 슝
 @char G.Body>팔짱,Face>거만 scale:1.3 position:-0.5,-23
-G: 고결
+G: 고결.
 @char G.Body>팔짱,Face>거만 scale:1 position:-0.5,-15.5
-J: 고결?
+J: 엇!
 @printer Narration time:0
 @char G.Body>기본,Face>비웃음
-고결은 내 놀란 기색을 느꼈는지 짧게 웃으며 말했다
+남자의 이름을 듣는 순간 깜짝 놀랄 수밖에 없었다.
+생전 처음 듣는 이름과 처음 보는 얼굴인데 남자와 더없이 어울렸던 탓이다.
+고결은 내 놀란 기색을 느꼈는지 짧게 웃으며 말했다.
 @sfx 슝
 @char G.Body>기본,Face>비웃음 scale:1.3 position:-0.5,-23
-G: 알아. 얼굴이랑 꽤나 어울리는 이름이라는 거
+G: 얼굴이랑 꽤 어울리는 이름이긴 하지.
 @printer Narration time:0
-난 순간 할 말을 찾지 못해 입을 꾹 닫고 말을 골랐다
+난 순간 할 말을 찾지 못해 입을 꾹 닫고 말을 골랐다.
 @char G.Body>기본,Face>비웃음 scale:1 position:-0.5,-15.5
 @startchoice 1
-@choice "네... 정말  잘 어울리네요..." goto:.A target:G score:5
+@choice "네... 정말 잘 어울리네요..." goto:.A target:G score:5
 @choice "자기애가 되게 강하신가봐요?" goto:.B
 @hidePrinter 
 @stop
@@ -369,48 +393,26 @@ J: 아, 아닌데요?
 @goto .Con1
 
 # B
-J: 자기애가 되게… 강하신가봐요…?
+J: 자기애가 되게… 강하신가 봐요…?
 @char G.Body>팔짱,Face>비웃음 position:-0.5,-15.5
-G: 꽤 들어 그런 말
+G: 꽤 들어 그런 말.
 @printer Narration time:0
-와, 이 사람 진짜 재수없어.
+와, 이 사람 진짜 재수 없어.
 @char G.Body>팔짱,Face>거만
-G: 재수 없다고 생각했지
-J: 오, 들켰다
+G: 재수 없다고 생각했지.
+J: 오, 들켰다.
 
 # Con1
-@char G.Body>기본,Face>무표정
-G: 여긴 얼마나 머물 생각이야?
-J: 한 달 정도 있을 것 같아요
-@char G.Body>기본,Face>거만
 @printer Narration time:0
-그는 거만하게 웃으며 말했다
-G: 아는 지 모르겠지만 해록도 사람들은 외지인에게 친절한 편이 아니야
-@char G.Body>팔짱,Face>비웃음
-G: 아마 너한테 제일 친절한 사람은 나일걸?
-@startchoice 2
-@choice "...네, 감사합니다..." goto:.C
-@choice "근데 왜 자꾸 반말을 하세요?" goto:.D
-@hidePrinter 
-@stop
-
-#C
-@char G.Body>기본,Face>거만
-J: ... 네에... 감사합니다
+난 장난스레 대답했지만 사실 그의 말마따나 얼굴과 꽤 잘 어울리는 이름이었다
+G: 근데 정말 여긴 왜 왔어?
+G: 보통 혼자 이런 아무것도 없는 섬엔 안 오지 않나?
+J: 관광하러 왔다니까요? 저 대학 막 졸업했거든요.
+J: 졸업여행 삼아 온 거예요.
 @printer Narration time:0
-엎드려 절받는 걸 좋아하는 편인가 보네
-@goto .con2
-#D
-J: 근데 왜 자꾸 반말을 하세요?
-@printer Narration time:0
-@char G.Body>기본,Face>거만
-남자는 또 내 말에 대답하지 않은 채 으쓱 어깨만 끄덕일 뿐이었다
-J: 윽, 진짜…! 참자 참아!
-#con2
-@hidePrinter
-@printer Narration time:0
-시시콜콜한 대화를 하며 10분 정도 걸었을까
-@hideChars
+@hide G
+고결은 별로 내 말을 믿는 눈치가 아니었다.
+시시콜콜한 대화를 하며 10분 정도 걸었을까...
 @hidePrinter
 @stopBgm 고결_등장 fade:1
 @back StreetDay visible:false time:0 wait:false
@@ -423,11 +425,53 @@ J: 윽, 진짜…! 참자 참아!
 @hideUI HallFindUI
 @bgm 메인00 fade:1
 
-G: 안에 주민들이 있을테니까 아무나 붙잡고 도와달라고 해
+@char G.Body>팔짱,Face>비웃음 position:-0.5,-15.5
+J: 감사합니다.
+G: 안에 주민들이 있을 테니까 아무나 붙잡고 도와달라고 해.
+@char G.Body>기본,Face>무표정
+G: 얼마나 머물 생각이야?
+J: 한 달 정도 있을 것 같아요.
+@char G.Body>기본,Face>거만
 @printer Narration time:0
-감사하다는 인사를 남기려던 찰나
+그는 거만하게 웃으며 말했다.
+G: 아는지 모르겠지만 해록도 사람들은 외지인에게 친절한 편이 아니야.
+@char G.Body>팔짱,Face>비웃음
+G: 아마 너한테 제일 친절한 사람은 나일걸?
+J: 아하... 
+@printer Narration time:0
+그런데 어쩌라는 거지?
+@startchoice 2
+@choice "...네, 감사합니다..." goto:.C
+@choice "근데 왜 자꾸 반말하세요?" goto:.D
+@hidePrinter 
+@stop
+
+#C
+@char G.Body>기본,Face>거만
+J: ... 네에... 감사합니다.
+@printer Narration time:0
+엎드려 절받는 걸 좋아하는 편인가 보네.
+@goto .con2
+#D
+J: 근데 왜 자꾸 반말하세요?
+@printer Narration time:0
+@char G.Body>기본,Face>거만
+남자는 또 내 말에 대답하지 않은 채 으쓱 어깨만 끄덕일 뿐이었다.
+J: 윽, 진짜…! 참자 참아!
+#con2
+@printer Narration time:0
+결의 말에 대꾸하는 대신 눈으로 그를 흘겨봤다.
+@hide G
+그나저나 여기가 마을의 중심인 것 같은데 여기라면 핸드폰이 터지지 않을까?!
+
+@sfx 핸드폰_에러
+@char Phone.impossible position:0,-4 scale:0.7
+서둘러 핸드폰을 켜봤지만, 기대완 달리 여전히 핸드폰은 먹통이었다.
+@stopSfx 핸드폰_에러
+@hide Phone
+
 @sfx 문여는_소리
-누군가 회관문을 열고 나왔다
+그때, 누군가 회관 문을 열고 나왔다.
 @hidePrinter
 @back HallDay visible:false time:1
 @endscript

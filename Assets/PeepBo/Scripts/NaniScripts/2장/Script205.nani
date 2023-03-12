@@ -434,14 +434,21 @@ J: 일단 빨리 여기서 나간 다음 생각해봐야겠어
 근데 아무래도 힘만으로 저 문을 열 순 없을 거 같은데
 문고리를 부술만한 무언가가 없을까?
 
-
-
-
-
 ; <도움이 될만 한 것을 찾아보자>
 
 ; ------------ 탐색 -------------
+@hidePrinter 
+@showUI StartRoomModeUI time:1
+@wait i
+@hideUI StartRoomModeUI time:1
+@back id:RoomBackground2-5 
+# RoomStart2
+@room scriptname:"Script205" label:"RoomBack2"
+# RoomWait2
+@stopscript
+@stop
 
+#RoomBack2
 J: 좋아, 이거면 됐어.
 
 #Con2
