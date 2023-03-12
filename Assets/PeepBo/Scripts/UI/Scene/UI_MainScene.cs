@@ -18,6 +18,12 @@ namespace PeepBo.UI.Scene
             SettingButton,
 
             Tutorial,
+            Check,
+
+            Shop,
+            Closet,
+            Ad,
+
             Diary,
             Record,
             Date,
@@ -26,7 +32,7 @@ namespace PeepBo.UI.Scene
             ChangeButton,
         }
 
-        GameObject startButton, settingButton, diaryButton, recordButton, dateButton;
+        GameObject startButton, settingButton, checkButton, shopButton, closetButton, adButton, diaryButton, recordButton, dateButton;
 
         public override void Init()
         {
@@ -52,6 +58,22 @@ namespace PeepBo.UI.Scene
             AddUIEvent(settingButton, OnClickSettingButton, Define.UIEvent.Click);
             AddButtonAnim(settingButton);
 
+            checkButton = GetObject((int)GameObjects.Check);
+            AddUIEvent(checkButton, OnClickCheckButton, Define.UIEvent.Click);
+            AddButtonAnim(checkButton);
+
+            shopButton = GetObject((int)GameObjects.Shop);
+            AddUIEvent(shopButton, OnClickShopButton, Define.UIEvent.Click);
+            AddButtonAnim(shopButton);
+
+            closetButton = GetObject((int) GameObjects.Closet);
+            AddUIEvent(closetButton, OnClickClosetButton, Define.UIEvent.Click);
+            AddButtonAnim(closetButton);
+            
+            adButton = GetObject((int) GameObjects.Ad);
+            AddUIEvent(adButton, OnClickAdButton, Define.UIEvent.Click);
+            AddButtonAnim(adButton);
+            
             diaryButton = GetObject((int)GameObjects.Diary);
             AddUIEvent(diaryButton, OnClickDiaryButton, Define.UIEvent.Click);
             AddButtonAnim(diaryButton);
@@ -126,6 +148,30 @@ namespace PeepBo.UI.Scene
         private void OnClickStartButton(PointerEventData evt)
         {
             GameManager.UI.ShowPopupUI<UI_EpisodePopup>();
+        }
+
+        // todo: 출석체크 popup ui 만들고 수정
+        private void OnClickCheckButton(PointerEventData evt)
+        {
+            GameManager.UI.ShowPopupUI<UI_DiaryListPopup>();
+        }
+
+        // todo: 상점 popup ui 만들고 수정
+        private void OnClickShopButton(PointerEventData evt)
+        {
+            GameManager.UI.ShowPopupUI<UI_RecordPopup>();
+        }
+        
+        // todo: 옷장 popup ui 만들고 수정
+        private void OnClickClosetButton(PointerEventData evt)
+        {
+            GameManager.UI.ShowPopupUI<UI_DiaryListPopup>();
+        }
+
+        // todo: 일손돕기 popup ui 만들고 수정
+        private void OnClickAdButton(PointerEventData evt)
+        {
+            GameManager.UI.ShowPopupUI<UI_RecordPopup>();
         }
 
         private void OnClickDiaryButton(PointerEventData evt)
