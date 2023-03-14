@@ -111,7 +111,7 @@ MonoBehaviour:
   disableInteraction: 0
   visibleOnAwake: 0
   controlOpacity: 1
-  fadeTime: 1.5
+  fadeTime: 0.3
   ignoreTimeScale: 1
   focusObject: {fileID: 0}
   focusMode: 0

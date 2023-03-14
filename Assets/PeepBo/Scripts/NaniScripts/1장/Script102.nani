@@ -4,7 +4,7 @@
 @hideUI EpisodeTitle
 @printer Narration time:0
 @sfx 문여는_소리
-그때, 누군가 회관의 문을 열고 나왔다
+그때, 누군가 회관의 문을 열고 나왔다.
 @stopSfx 문여는_소리
 @bgm 심각1
 @spawn ShakeBackground wait:false
@@ -12,66 +12,59 @@
 Woman: 아이고!
 @printer Narration time:0
 @back 집중선 id:EffectBackground visible:false
-날 보자마자 소스라치게 놀라며 뒷걸음질 친 아주머니는
 @sfx 문닫는_소리
-황급히 문을 닫았다
+날 보자마자 소스라치게 놀라며 뒷걸음질 친 아주머니는 황급히 문을 닫았다
 @stopSfx 문닫는_소리
 @char G.Body>팔짱,Face>무표정 position:-0.5,-15.5
-G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것처럼 저런다니까
+G: 봐봐, 여기 사람들은 외지인만 보면 꼭 귀신이라도 본 것처럼 저런다니까.
 @hide G
 
 @sfx 문여는_소리
 @printer Narration time:0
 @stopBgm 심각1 fade:1
-곧 다시 문이 열리고
+곧 다시 문이 열리고 이번에는 아주머니와 또 다른 아저씨 한 명이 함께 나왔다.
 @bgm 메인03 fade:1
-이번에는 아주머니와 또 다른 아저씨 한 명이 함께 나왔다
+아저씨는 나를 보며 어색한 미소로 말을 건넸다.
 @stopSfx 문여는_소리
 @char Man visible:false avatar:Headman
 @char Woman visible:false avatar:People
-아저씨는 나를 보며 어색한 미소로 말을 건냈다
-Man: 혹시 해록도에 관광오기로 한 아가씨인가?
-J: 아, 네 안녕하세요. 저 출입허가서도 받았어요! 이상한 애 아니에요!
+Man: 혹시 해록도에 관광하러 오기로 한 아가씨인가? 
+J: 아, 네 안녕하세요. 저 출입 허가서도 받았어요! 
 @printer Narration time:0
-주민들 눈에 경계심이 어려있어 다급히 입꼬리를 최대한 끌어올려 빠르게 말했다
-@hide Man wait:false
-Woman: 아~ 그 아가씨구나, 관광 온다는 얘기 들었어요
-Woman: 나는 또 처음보는 사람이라 놀랐지 뭐야
-Woman: 해록도가 원채 오가는 사람도 없고 주민들도 적어~
-Woman: 그래서 누가 들어온다고 하면 우리끼리 다 알거든
+주민들 눈에 경계심이 어려있어 다급히 입꼬리를 최대한 끌어올려 빠르게 말했다.
+Woman: 아~ 그 아가씨구나, 그 이장우 씨의 조카 되는?
 @printer Narration time:0
-경계가 풀렸는지 아주머니는 인자하게 웃으며 다가왔다
-@hide Woman wait:false
-@char Man visible:false avatar:Headman
-Man: 여기가 다 흙길이라서 가방 끌고 오기 힘들었을 텐데
-Man: 선착장에서 조금만 기다리고 있지 그랬어
-Man: 아가씨 오늘 온다는 얘기 듣고 지금 다른 주민이 선착장에 마중나갔는데
-J: 정말요? 제가 배에서 내리자마자 돌아다녀서 길이 엇갈렸나봐요
-J: 마중까지 나와주시고 정말 감사합니다
+주민의 입에서 삼촌의 이름이 나오자 가슴이 욱씬 거렸다.
+J: ...네, 맞아요.
+Woman: 나는 또 처음보는 사람이라 놀랐지, 뭐야.
+Woman: 해록도가 원체 오가는 사람도 없고 주민들도 적어~
+Woman: 그래서 누가 들어온다고 하면 우리끼리 다 알거든.
 @printer Narration time:0
-뒤에서 은근한 시선이 느껴져 돌아보니
-결이 묘한 눈으로 주민들을 빤히 쳐다보고 있었다
+경계가 풀렸는지 아주머니는 인자하게 웃으며 다가왔다.
+Man: 여기가 다 흙길이라서 가방 끌고 오기 힘들었을 텐데 선착장에서 조금만 기다리고 있지 그랬어.
+Man: 아가씨 오늘 온다는 얘기 듣고 지금 다른 주민이 선착장에 마중 나갔는데...
+J: 정말요? 제가 배에서 내리자마자 돌아다녀서 길이 엇갈렸나 봐요.
+J: 마중까지 나와주시고 정말 감사합니다.
+@printer Narration time:0
+뒤에서 은근한 시선이 느껴져 돌아보니 결이 묘한 눈으로 주민들을 빤히 쳐다보고 있었다
 왜 저렇게 쳐다보지?
-@hide Man wait:false
-@char Woman visible:false avatar:People
-Woman: 여기 얼마나 있을 거에요? 해록도가 그 뭐냐
+Woman: 여기 얼마나 있을 거예요? 해록도가 그 뭐냐,
 Woman: 무슨 보호? 생태보호? 그걸로 지정 돼 있는 건 알죠?
-Woman: 나무들이 건강해서 공기도 좋고 해안가 경치도 정말 좋아요
+Woman: 나무들이 건강해서 공기도 좋고 해안가 경치도 정말 좋아요.
 Woman: 오래오래 있으면 좋겠다, 오랜만에 외지인 보니까 정말 반갑네~
+Man: 그러게 말이야, 오랜만에 온 귀한 손님이네!
+Man: 머물 곳은 우리가 다 마련해 놨으니까 따라와요.
 @hide Woman wait:false
-@char Man visible:false avatar:Headman
-Man: 그러게 말이야, 오랜만에 온 귀한 손님이네
-Man: 머물 곳은 우리가 다 마련해 놨으니까 따라와요
 @hide Man
 @printer Narration time:0
-아저씨를 따라 회관을 나서려다 뒤를 돌아 고결에게 말했다
+아저씨를 따라 회관을 나서려다 뒤를 돌아 고결에게 말했다.
 @char G.Body>기본,Face>무표정 position:-0.5,-15.5
-J: 데려다 주셔서 감사합니다 또 뵈어요!
+J: 데려다주셔서 감사합니다 또 뵈어요!
 @printer Narration time:0
 @char G.Body>기본,Face>비웃음
-결은 씨익 웃으며 대답을 대신했다
+결은 씨익 웃으며 대답을 대신했다.
 @hide G
-어? 그런데 이상하다
+어? 그런데 이상하다.
 해록도 주민들은 외지인을 경계한다고 하지 않았나?
 @hidePrinter
 
@@ -79,13 +72,11 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 @back StreetDay position:-8.3,0
 @wait 2
 @sfx 발소리
-아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와
-본인이 해록도의 이장이라는 것을 알려줬다
-회관을 나와 15분 쯤 걸었을까
+아저씨는 나를 데려다주는 길에 해록도에 관한 몇 가지 이야기와 본인이 해록도의 이장이라는 것을 알려줬다
 @stopSfx 발소리
-이장님과 함께 도착한 곳은 소담스런 2층짜리 주택이었다
-지나오면서 본 해록도의 집 중에 제일 큰 것 같은데
-어딘지 모르게 쓸쓸함이 느껴지는 집이었다
+회관을 나와 15분쯤 걸었을까,
+이장님과 함께 도착한 곳은 소담스런 2층짜리 주택이었다.
+지나오면서 본 해록도의 집 중에 제일 큰 것 같은데 어딘지 모르게 쓸쓸함이 느껴지는 집이었다.
 @hidePrinter
 @sfx 장소발견 wait:false
 @showUI NHouseUI
@@ -97,26 +88,28 @@ J: 데려다 주셔서 감사합니다 또 뵈어요!
 Headman: 나연 자매 있어? 손님 왔어!
 @stopSfx 노크
 @printer Narration time:0
-이장님이 문을 두드리며 누군가를 불렀지만 집 안에서는 아무 소리도 들리지 않았다
-Headman: 이런... 아직 안 왔나본데
+이장님이 문을 두드리며 누군가를 불렀지만, 집 안에서는 아무 소리도 들리지 않았다.
+Headman: 이런... 아직 안 왔나 본데...
 J: 여긴 누가 사는 곳인데요?
-Headman: 서나연이라고 아가씨 또래 여자 앤데, 친하게 지내면 좋겠다 싶어서
-Headman: 그런데 잠시 외출한 모양이야
-Headman: 어떡하나, 나는 이제 선박 보수를 도우러 가야하는데...
-J: 아, 괜찮아요 여기서 기다리다보면 곧 오겠죠 뭐! 가서 일보세요 이장님!
+Headman: 서나연이라고 아가씨 또래 여자앤데, 친하게 지내면 좋겠다 싶어서.
+Headman: 그런데 아직 안 돌아온 모양이야. 나연 자매는 <i>천사의 집</i>에서 아이들을 돌보는 일을 하고 있거든.
 @printer Narration time:0
-이장님은 난감한듯 찡그리던 표정을 풀고 넉살 좋게 웃으며 대답했다
-Headman: 하이고 그래도 오랜만에 손님이 왔는데 미안하게 됐네
-Headman: 나연 자매 곧 올테니까 여기서 잠깐만 기다리고 있어~
+천사의 집...?
+Headman: 어떡하나, 나는 이제 선박 보수를 도우러 가야 하는데...
+J: 아, 괜찮아요 여기서 기다리다 보면 곧 오겠죠 뭐! 가서 일보세요 이장님!
 @printer Narration time:0
-말을 마친 이장님이 왔던 길을 돌아가고 나는 문턱 앞에 앉아 스트레칭하듯 다리를 쭉 폈다
+이장님은 난감한 듯 찡그리던 표정을 풀고 넉살 좋게 웃으며 대답했다.
+Headman: 하이고, 그래도 오랜만에 손님이 왔는데 미안하게 됐네.
+Headman: 나연 자매 곧 올 테니까 여기서 잠깐만 기다리고 있어~
+@printer Narration time:0
+말을 마친 이장님이 왔던 길을 돌아가고 나는 문턱 앞에 앉아 스트레칭하듯 다리를 쭉 폈다.
 @spawn ShakeBackground wait:false
-J: 으아~ 다리 아파 이제야 겨우 앉네, 비록 문턱이지만...
+J: 으아~ 다리 아파. 이제야 겨우 앉네, 비록 문턱이지만...
 @printer Narration time:0
-앉자마자 잊고있던 피로감이 몰려왔다
+앉자마자 잊고 있던 피로감이 몰려왔다.
 J: 저 무거운 캐리어를 오전 내내 끌고 다녔으니...
 @printer Narration time:0
-딱딱한 벽돌에 몸을 기대니 눈커풀이 점점 무거워졌다
+딱딱한 벽돌에 몸을 기대니 눈꺼풀이 점점 무거워졌다.
 J: 아... 딱 10초만 눈 감고 있어야지... 진짜... 10초만...
 @hidePrinter
 @spawn CloseEyes
@@ -129,7 +122,7 @@ J: 아... 딱 10초만 눈 감고 있어야지... 진짜... 10초만...
 @printer Narration time:0
 ...
 ... ...
-First: 야
+First: 야.
 @printer Narration time:0
 ...
 First: 안 일어나?
@@ -149,19 +142,19 @@ First: 야..!
 @bgm 메인03 volume:1
 @char N.Face>짜증,Body>팔짱 position:0,-13.5
 @printer Narration time:0
-눈을 뜨니 예쁜 여자애가 잔뜩 인상을 구긴채 날 내려다보고 있었다
+눈을 뜨니 예쁜 여자애가 잔뜩 인상을 구긴 채 날 내려다보고 있었다.
 @startChoice 0
 @choice "누구...?" goto:.w
-@choice "네가 나연이구나" goto:.y
+@choice "네가 나연이구나." goto:.y
 @hidePrinter
 @stop
 
 #w
 @printer Narration time:0
-곱슬거리는 머리카락을 가진 인형같은 여자애
+곱슬거리는 머리카락을 가진 인형같은 여자애.
 J: ...누구...?
 @printer Narration time:0
-내가 눈을 깜빡거리며 고개를 기울이자 여자애는 질린다는 듯 돌연 소리를 빽 질렀다
+내가 눈을 깜빡거리며 고개를 기울이자 여자애는 질린다는 듯 돌연 소리를 빽 질렀다.
 @sfx 슝
 ; 진동
 @char N.Face>짜증,Body>팔짱 position:0,-20 scale:1.3
@@ -170,33 +163,33 @@ N: 내가 할 소리 아냐? 남의 집 앞에 앉아있는 건 너거든?
 @printer Narration time:0
 아, 얘가 이장님이 말씀하셨던 집 주인...?
 @goto .continue
+
 #y
 @printer Narration time:0
-곱슬거리는 머리카락을 가진 인형같은 여자애
+곱슬거리는 머리카락을 가진 인형 같은 여자애.
 J: 네가 이장님이 말씀하셨던 집 주인이구나, 서.. 나연?
 @printer Narration time:0
 @sfx 슝
 ; 진동
 @char N.Face>짜증,Body>팔짱 position:0,-20 scale:1.3
-여자애는 좀전보다 더 험악한 표정으로 날 째려봤다
+여자애는 좀 전보다 더 험악한 표정으로 날 째려봤다.
 @char N.Face>기본,Body>팔짱 position:0,-13.5 scale:1
 @printer Narration time:0
-....성질이 좋진 않네
+....성질이 좋진 않네.
 
 #continue
-@char N.Face>짜증,Body>팔짱
 J: 아, 안녕 나는 오늘부터 해록도에 머물,
 @sfx 슝
-@char N.Face>기본,Body>기본 position:0,-20 scale:1.3
+@char N.Face>짜증,Body>기본 position:0,-20 scale:1.3
 N: 이장님한테 들었어, 대체 왜 집 앞에서 이러고 있는 거야?
-@char N.Face>기본,Body>기본 position:0,-13.5 scale:1
+@char N.Face>짜증,Body>기본 position:0,-13.5 scale:1
 @printer Narration time:0
-나연은 나를 지나쳐 현관을 열고 들어갔다
+나연은 나를 지나쳐 현관을 열고 들어갔다.
 @char N.Face>짜증,Body>팔짱
-어찌할 바를 몰라 그냥 제자리에 가만히 앉아있었더니
+어찌할 바를 몰라 그냥 제자리에 가만히 앉아있었더니,
 @hide N wait:false
 @char Silhouette.N position:0,-12.8
-N: 빨리 안 들어오면 문 잠글거야!
+N: 빨리 안 들어오면 문 잠글 거야!
 J: 기, 기다려!
 @hide Silhouette
 
@@ -205,32 +198,32 @@ J: 기, 기다려!
 @wait 0.5
 @back JianRoomDay position:0,0 time:1
 @char N.Face>짜증,Body>팔짱 position:0,-13.5
-N: 니가 쓸 방이야, 웬만하면 방 밖으로 나오지마 부산스러우니까
+N: 니가 쓸 방이야, 웬만하면 방 밖으로 나오지마 부산스러우니까.
 @printer Narration time:0
-나연이는 온 몸으로 열심히 내가 싫다는 분위기를 풍기고 있었다
-뭐, 나도 얹혀 살게 된 입장이니까...
+나연이는 온몸으로 열심히 내가 싫다는 분위기를 풍기고 있었다.
+뭐, 나도 얹혀살게 된 입장이니까...
 J: 응 알겠어 고마,
 @hidePrinter
 @sfx 문닫는_소리
-@hide N
+@hide N time:0
 J: 대답도 안 듣고 사라지네...
 @printer Narration time:0
-나연이 나가고 방을 천천히 둘러봤다
-J: 고즈넉하니 좋다
+나연이 나가고 방을 천천히 둘러봤다.
+J: 고즈넉하니 좋다.
 @printer Narration time:0
-책상 앞에 난 커다란 창 때문인지 방 안에서는 포근한 햇살 냄새가 났다
-낡은 책상과 빛바랜 커튼, 그리고 방 문 앞에 걸린 낡은 십자가까지...
-묘하게 마음이 편해지는 곳이었다
+책상 앞에 난 커다란 창 때문인지 방 안에서는 포근한 햇살 냄새가 났다.
+낡은 책상과 빛바랜 커튼, 그리고 방문 앞에 걸린 낡은 십자가까지...
+묘하게 마음이 편해지는 곳이었다.
 @sfx 뛰는_발소리
-그때, 방 밖에서 쿵쾅쿵쾅 커다란 발소리가 들려왔다
+그때, 방 밖에서 쿵쾅쿵쾅 커다란 발소리가 들려왔다.
 J: 응? 뭐지?
 @stopSfx 뛰는_발소리
 @sfx 문닫는_소리
 
 @printer Narration time:0
-문을 벌컥 연 주인공은 나연이었다
+문을 벌컥 연 주인공은 나연이었다.
 @char N.Face>짜증,Body>기본 position:0,-13.5
-나연은 짜증을 참을 수 없다는 표정으로 말했다
+나연은 짜증을 참을 수 없다는 표정으로 말했다.
 N: 밖에 누가 찾아왔어!
 J: 나를?
 N: 나였으면 너한테 말을 하겠니?!
@@ -238,12 +231,12 @@ N: 나였으면 너한테 말을 하겠니?!
 @hide N
 
 @printer Narration time:0
-문이 다시 한번 세찬 소리를 내며 닫혔다
+문이 다시 한번 세찬 소리를 내며 닫혔다.
 J: 어후, 쟤도 성질하고는...
 J: 그나저나 나를 찾아 와? 여기서? 누가? 왜?
 @printer Narration time:0
 @sfx 발소리
-나는 풀다 만 짐을 방 한구석에 미뤄두고 계단을 내려갔다
+나는 풀다 만 짐을 방 한구석에 미뤄두고 계단을 내려갔다.
 
 @hidePrinter
 @stopSfx 발소리
@@ -252,7 +245,7 @@ J: 그나저나 나를 찾아 와? 여기서? 누가? 왜?
 @back StreetDay position:-8.3,0 time:1
 @wait 1
 @printer Narration time:0
-문을 열자마자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다
+문을 열자 쏟아지는 햇살이 눈이 부셔 나도 모르게 눈을 꾹 감았다.
 J: 으아, 눈부셔...
 @printer Narration time:0
 천천히 감았던 눈을 뜨자 눈꺼풀 사이로 보이는 건….
@@ -264,8 +257,8 @@ J: 으아, 눈부셔...
 @movie YMovie time:0.3
 @spawn YEffect
 @back YIllust position:0,0 time:0.3
-Y: 기다렸어요, 누나
-Y: 육지에서 손님이 왔다길래 보러왔는데, 와보길 잘했네요
+Y: 기다렸어요, 누나.
+Y: 육지에서 손님이 왔다길래 보러왔는데, 와보길 잘했네.
 @despawn YEffect
 @back YIllust visible:false time:0 wait:true
 @back StreetDay position:-8.3,0
@@ -277,114 +270,114 @@ Y: 하핫, 반가워요!
 @char Y.Face>윙크,Body>입에손
 Y: 누나, 이름이 뭐예요?
 @startchoice 1
-@choice 얼버무린다 goto:.First
-@choice 알려준다 goto:.Second target:Y score:5
+@choice 얼버무린다. goto:.First
+@choice 알려준다. goto:.Second target:Y score:5
 @hidePrinter
 @stop
 
 # First
-J: ….#$*^@...인데요
+J: ….#$*^@...인데요.
 @char Y.Face>웃는,Body>기본
-Y: 아~ 김지안 이라고요?
+Y: 아~ 김지안이라고?
 @printer Narration time:0
-와, 소름
+와, 소름.
 일부러 발음을 잔뜩 뭉갰는데 무슨 귀가 이렇게 좋아?
 @char Y.Face>아련,Body>기본
 Y: 김지안이라…
 @sfx 슝
 @char Y.Face>놀란,Body>입에손 scale:1.3 position:-0.25,-21.5
-Y: 이름이 누나랑 너무 잘 어울리는 거 아니에요?
-Y: 그냥 그 이름은 누나만을 위해 존재해야할 것 같아요!
+Y: 이름이 누나랑 너무 잘 어울리는데?
+Y: 그냥 그 이름은 누나만을 위해 존재해야 할 것 같아요!
 @char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-15
 J: …
 @char Y.Face>웃는,Body>기본
-Y: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네요
+Y: 하하하, 지금 정색한 거예요? 반응 진짜 재밌네.
 @goto .Continue
 
 # Second
-J: ... 김지안인데요
+J: ... 김지안인데요.
 @char Y.Face>놀란,Body>입에손
-Y: 와... 진짜 말도 안 돼, 이름이 누나랑 너무 잘 어울리는 거 아니에요?
+Y: 와... 진짜 말도 안 돼, 이름이 누나랑 너무 잘 어울리는데?
 J: 뭐, 말도 안 될 것까지야...
 @char Y.Face>웃는,Body>기본
-Y: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네요
+Y: 하하하, 지금 정색한 거예요? 누나 반응 진짜 재밌네.
 
 # Continue
 @char Y.Face>기본,Body>기본
-J: 저기 그런데,
-J: 그쪽은 대체 누구신데요?
+J: 저기 그런데...
+J: 그쪽은 대체 누구세요?
 @sfx 유겸_등장_효과음
 @char Y.Face>윙크,Body>브이 scale:1.3 position:-0.25,-21.5
-Y: 홍! 유! 겸! 이에요
-J: ...지금 이름을 물은게 아니잖아요
+Y: 홍! 유! 겸! 이에요.
+J: ...지금 이름을 물은 게 아니잖아요.
 @char Y.Face>웃는,Body>입에손 scale:1 position:-0.25,-15
-Y: 나이는 꽃다운 스물 한 살?
+Y: 나이는 꽃다운 스물한 살? 
 @printer Narration time:0
-이상한 사람인 것 같으니까 말을 말자
+이상한 사람인 것 같으니까 말을 말자.
 @char Y.Face>웃는,Body>기본
-자신을 홍유겸이라고 소개한 남자는 연신 웃고 있었다
-자기도 아는거지, 본인 눈웃음이 엄청난 매력이라는 걸
+자신을 홍유겸이라고 소개한 남자는 연신 웃고 있었다.
+자기도 아는 거지, 본인 눈웃음이 엄청난 매력이라는 걸.
 @sfx 슝
 @char Y.Face>윙크,Body>기본 scale:1.3 position:-0.25,-21.5
 Y: 말 편하게 해도 돼요, 누나!
 @printer Narration time:0
 @char Y.Face>기본,Body>기본 scale:1 position:-0.25,-15
-....졌다 졌어
-J: 그…래, 그나저나 나는 왜 찾아온 거야?
+...졌다 졌어.
+J: 그…래, 그나저나 나는 왜 부른 거야?
 @char Y.Face>윙크,Body>브이
 Y: 해록도에 처음 왔으니, 섬 구경을 해야 하지 않겠어요?
 @char Y.Face>웃는,Body>기본
-Y: 사실 제가 해록도의 비공식 마스코트를 맡고 있거든요
-Y: 해록도하면 유겸이, 유겸이는 귀여워, 귀여우면 홍유겸
+Y: 사실 내가 해록도의 비공식 마스코트를 맡고 있거든요.
+Y: 해록도하면 유겸이, 유겸이하면 해록도, 해록도하면 유,
 J: 응! 그래서?
 @printer Narration time:0
 멍하니 듣고 있다가는 해가 질 것 같다.
 @char Y.Face>윙크,Body>브이
-Y: 그러니까 유겸이가 지안 누나만의 특별 가이드를 해주려 왔다는 거죠
+Y: 그러니까 특별 가이드를 해주러 왔다는 거지.
 J: 가이드?
 @char Y.Face>웃는,Body>기본
-Y: 도시에 비해선 작지만, 해록도 골목이 비슷비슷해서 은근 헷갈리거든요!
-Y: 주민이 아니면 길을 잃기 쉬워요
+Y: 도시에 비해선 작지만, 해록도 골목이 비슷비슷해서 은근히 헷갈리거든요.
+Y: 주민이 아니면 길을 잃기 쉬워요.
 @printer Narration time:0
 @char Y.Face>기본,Body>기본
-섬을 안내 해주겠다는 그의 말에 나는 잠시 고민에 빠졌다
+섬을 안내해 주겠다는 그의 말에 나는 잠시 고민에 빠졌다.
 안 그래도 오늘부터 해록도를 탐방하려고 하긴 했지...
-자기가 먼저 안내해주겠다고 하는데 나쁠 건 없어 보이기도 하고
+자기가 먼저 안내해주겠다고 하는데 나쁠 건 없어 보이기도 하고...
 어떡할까?
 @char Y.Face>웃는,Body>기본
 @startchoice 2
-@choice "어색한 건 딱 질색, 혼자 다닌다" goto:.Alone
-@choice "의외로 좋은 기회일지도. 같이 다닌다" goto:.Together target:Y score:5
+@choice "어색한 건 딱 질색, 혼자 다닌다." goto:.Alone
+@choice "의외로 좋은 기회일지도. 같이 다닌다." goto:.Together target:Y score:5
 @hidePrinter 
 @stop
 
 # Alone
 @printer Narration time:0
-역시 처음 보는 사람과 단둘이 다니는 건, 생각만 해도 어색해
-J: 아니, 괜찮아. 나는 혼자 다니는 게 편하거든
+역시 처음 보는 사람과 단둘이 다니는 건, 생각만 해도 어색해.
+J: 아니, 괜찮아. 나는 혼자 다니는 게 편하거든.
 @char Y.Face>울먹,Body>입에손
-Y: 앗… 제가 불편해요…?
+Y: 앗… 내가 불편해요…?
 @printer Narration time:0
 @char Y.Face>아련,Body>입에손
-그가 갑자기 내 소매 끝을 잡았다
+그가 갑자기 내 소매 끝을 잡았다.
 @sfx 슝
 @char Y.Face>아련,Body>입에손 scale:1.3 position:-0.25,-21.5
 그리고 푹 숙인 고개를 천천히 드는데...
 @char Y.Face>울먹,Body>입에손 scale:1 position:-0.25,-15
-아... 저 커다랗고 맑은 눈동자
+아... 저 커다랗고 맑은 눈동자.
 J: ….
 @char Y.Face>웃는,Body>입에손
-J: ....그래 알겠어, 같이 다니자. 길 헤매는 것보단 낫겠지
+J: ....그래 알겠어, 같이 다니자. 길 헤매는 것보단 낫겠지.
 @char Y.Face>윙크,Body>브이
 Y: 탁월한 선택이에요!
 @goto .Walk
 
 # Together
 @printer Narration time:0
-그래. 도움 받을 수 있는 건 받자. 시끄럽지만 친절한 애 같으니
+그래. 도움받을 수 있는 건 받자. 시끄럽지만 친절한 애 같으니.
 J: 고마워, 시간 괜찮아?
 @char Y.Face>윙크,Body>브이
-Y: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
+Y: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는 걸?
 @printer Narration time:0
 저 동글동글한 눈빛을 보고도 차갑게 거절할 수 있는 사람이 어딨겠어?
 
@@ -394,16 +387,16 @@ Y: 당연하죠! 오늘 하루는 누나를 위해 비워뒀는걸요?
 @back StreetDay position:8.8,0
 @wait 2
 @char Y.Face>기본,Body>기본 position:-0.25,-15
-Y: 누나가 묵고 있는 곳에서 조금만 더 나오면 바로 큰 길가에요
+Y: 나연이네 집에서 조금만 더 나오면 바로 큰 길가예요.
 @printer Narration time:0
-유겸은 새하얀 손가락으로 이곳 저곳을 가리켰다
+유겸은 새하얀 손가락으로 이곳저곳을 가리켰다.
 @char Y.Face>웃는,Body>기본
-Y: 이쪽으로 쭉 내려가면 마을 회관이 나오고, 반대편으로 가면 이장님 댁이에요
-Y: 주민들은 마을 회관에 자주 모이죠
+Y: 이쪽으로 쭉 내려가면 마을 회관이 나오고, 반대편으로 가면 이장님 댁.
+Y: 주민들은 마을 회관에 자주 모이죠.
 @char Y.Face>윙크,Body>기본
-Y: 필요한 게 생기거나 궁금한 게 있을 땐 마을 회관으로 가면 돼요
+Y: 필요한 게 생기거나 궁금한 게 있을 땐 마을 회관으로 가면 돼요.
 @printer Narration time:0
-난 그가 알려준 곳들을 열심히 기억했다
+난 그가 알려준 곳들을 열심히 기억했다.
 @char Y.Face>웃는,Body>기본
 Y: 흠, 이제 어디 먼저 가볼래요? 선착장이랑 등대 중에 골라봐요!
 @startchoice 3
@@ -427,36 +420,37 @@ J: 선착장에 가보자!
 @showUI DockFindUI
 @wait i
 @hideUI DockFindUI
+
 @char Y.Face>기본,Body>기본 position:-0.25,-15
-Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요
+Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요.
 Y: 이주에 한 번 물자선이 오는 정도?
 @char Y.Face>아련,Body>기본
 J: 그럼 해록도 사람들은 육지로 잘 안 나가?
 @char Y.Face>웃는,Body>기본
-Y: 특별한 일이 없으면 굳이 안 나가죠
-Y: 그런데 그래도 괜찮아요
+Y: 특별한 일이 없으면 굳이 안 나가죠.
+Y: 그런데 그래도 괜찮아요.
 @char Y.Face>기본,Body>기본
-Y: 주민들 중에 육지에서 온 사람들도 있는데
+Y: 주민 중에 육지에서 온 사람들도 있는데...
 @char Y.Face>웃는,Body>브이
-Y: 모두 해록도가 훨~씬 살기 좋다고 하더라고요!	
+Y: 모두 해록도가 훨~씬 살기 좋다고 하더라고요!
 Y: 그리고...
 @char Y.Face>웃는,Body>기본
-Y: 보다시피 해록도가 너무너무 아름답잖아요?	
+Y: 보다시피 해록도가 너무너무 아름답잖아요?
 @printer Narration time:0
 @char Y.Face>아련,Body>기본
-유겸은 눈을 내리깐 채 조용히 웃으며 말을 이었다
-Y: 한 번 오면... 다신 떠나고 싶지 않을 만큼
+유겸은 눈을 내리깐 채 조용히 웃으며 말을 이었다.
+Y: 한 번 오면... 다신 떠나고 싶지 않을 만큼.
 @printer Narration time:0
 @char Y.Face>기본,Body>기본
-뭐지, 방금 분위기가 갑자기 묘하게 어른스러워졌는데?	
-J: 맞아 아름답긴 하더라
+뭐지, 방금 분위기가 갑자기 묘하게 어른스러워졌는데?
+J: 맞아 아름답긴 하더라.
 @char Y.Face>웃는,Body>기본
-J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
+J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야.
 @printer Narration time:0
-나는 어제 배 위에서 처음 본 해록도의 전경을 다시 되뇌었다
+나는 어제 배 위에서 처음 본 해록도의 전경을 다시 되뇌었다.
 @char Y.Face>기본,Body>기본
 Y: 여긴 다 봤으니 이제 등대에 가볼래요?
-J: 좋아, 등대도 궁금했어
+J: 좋아, 등대도 궁금했어.
 
 @hide Y
 @hidePrinter
@@ -469,32 +463,33 @@ J: 좋아, 등대도 궁금했어
 @showUI LHFindUI
 @wait i
 @hideUI LHFindUI
+
 @printer Narration time:0
-등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯 하다
+등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯하다.
 @char Y.Face>웃는,Body>입에손 position:-0.25,-15
 Y: 여긴 진짜 별게 없어요!
-Y: 등대 안에 들어가봤자 계단 뿐이죠
+Y: 등대 안에 들어가봤자 계단뿐이죠.
 @char Y.Face>기본,Body>기본
-Y: 예전에는 여기로 불법 어선들이 자주 나타났대요
+Y: 예전에는 여기로 불법 어선들이 자주 나타났대요.
 @char Y.Face>웃는,Body>기본
-Y: 그래서 주민들이 돌아가면서 등대지기를 하고 있어요
+Y: 그래서 주민들이 돌아가면서 등대지기를 하고 있어요.
 J: 그렇구나, 너도 해본 적 있어?
 ; 진동
 @sfx 슝
 @char Y.Face>놀란,Body>입에손 scale:1.3 position:-0.25,-21.5
-Y: 엑…! 저는 이런 어둡고 음침한 곳과 안 어울리죠….! 그리고 제가 잠도 많은 편이라...
+Y: 엑…! 나는 이런 어둡고 음침한 곳은 좀... 그리고 내가 잠도 많은 편이라...
 @char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-15
-J: 무서워서 빠졌구나
+J: 무서워서 빠졌구나?
 @char Y.Face>울먹,Body>기본
 @printer Dialogue_O time:0
 @spawn ShakePrinter wait:false
-Y: 당연….이 아니고! 아, 누나!
+Y: 당연…이 아니고! 아, 누나!
 @printer Narration time:0
-그가 꽥 소리를 지르는 바람에 귀가 아팠다
+그가 꽥 소리를 지르는 바람에 귀가 아팠다.
 @char Y.Face>아련,Body>기본
-Y: 아무튼 누나도 여기 혼자 오지말아요!
+Y: 아무튼 누나도 여기 혼자 오지 말아요!
 @char Y.Face>기본,Body>기본
-Y: 새빨간 데다가 엄청 낡아서 뭔가…. 으스스 하다구요!
+Y: 새빨간 데다가 엄청 낡아서 뭔가…. 으스스 하다고!
 @goto .Forest
 
 # Lighthouse
@@ -513,35 +508,36 @@ J: 등대에 가보자!
 @showUI LHFindUI
 @wait i
 @hideUI LHFindUI
+
 @printer Narration time:0
-등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯 하다
+등대 근처에 창고로 보이는 건물이 하나 있지만, 굳게 닫혀 있는 듯하다.
 @char Y.Face>웃는,Body>입에손 position:-0.25,-15
 Y: 여긴 진짜 별게 없어요!
-Y: 등대 안에 들어가봤자 계단 뿐이죠
+Y: 등대 안에 들어가봤자 계단 뿐이죠.
 @char Y.Face>기본,Body>기본
-Y: 예전에는 여기로 불법 어선들이 자주 나타났대요
+Y: 예전에는 여기로 불법 어선들이 자주 나타났대요.
 @char Y.Face>웃는,Body>기본
-Y: 그래서 주민들이 돌아가면서 등대지기를 하고 있어요
+Y: 그래서 주민들이 돌아가면서 등대지기를 하고 있어요.
 J: 그렇구나, 너도 해본 적 있어?
 ; 진동
 @sfx 슝
 @char Y.Face>놀란,Body>입에손 scale:1.3 position:-0.25,-21.5
-Y: 엑…! 저는 이런 어둡고 음침한 곳과 안 어울리죠….! 그리고 제가 잠도 많은 편이라...
+Y: 엑…! 나는 이런 어둡고 음침한 곳은 좀... 그리고 내가 잠도 많은 편이라...
 @char Y.Face>놀란,Body>입에손 scale:1 position:-0.25,-15
-J: 무서워서 빠졌구나
+J: 무서워서 빠졌구나?
 @char Y.Face>울먹,Body>기본
 @printer Dialogue_O time:0
 @spawn ShakePrinter wait:false
-Y: 당연….이 아니고! 아, 누나!
+Y: 당연…이 아니고! 아, 누나!
 @printer Narration time:0
-그가 꽥 소리를 지르는 바람에 귀가 아팠다
+그가 꽥 소리를 지르는 바람에 귀가 아팠다.
 @char Y.Face>아련,Body>기본
-Y: 아무튼 누나도 여기 혼자 오지말아요!
+Y: 아무튼 누나도 여기 혼자 오지 말아요!
 @char Y.Face>기본,Body>기본
-Y: 새빨간 데다가 엄청 낡아서 뭔가…. 으스스 하다구요!
+Y: 새빨간 데다가 엄청 낡아서 뭔가... 으스스 하다고!
 @char Y.Face>웃는,Body>기본
 Y: 자, 등대는 다 봤으니 어서 선착장으로 가요!
-J: 너 여길 빨리 벗어나고 싶어하는 것 같은데? 아무튼, 좋아 선착장으로 가자
+J: 너 여길 빨리 벗어나고 싶어하는 것 같은데? 아무튼, 좋아 선착장으로 가자.
 
 @hidePrinter
 @hide Y
@@ -554,52 +550,53 @@ J: 너 여길 빨리 벗어나고 싶어하는 것 같은데? 아무튼, 좋아 
 @showUI DockFindUI
 @wait i
 @hideUI DockFindUI
+
 @char Y.Face>기본,Body>기본 position:-0.25,-15
-Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요
+Y: 누나도 알다시피 해록도로 오는 배가 별로 없어요.
 Y: 이주에 한 번 물자선이 오는 정도?
 @char Y.Face>아련,Body>기본
 J: 그럼 해록도 사람들은 육지로 잘 안 나가?
 @char Y.Face>웃는,Body>기본
-Y: 특별한 일이 없으면 굳이 안 나가죠
-Y: 그런데 그래도 괜찮아요
+Y: 특별한 일이 없으면 굳이 안 나가죠.
+Y: 그런데 그래도 괜찮아요.
 @char Y.Face>기본,Body>기본
-Y: 주민들 중에 육지에서 온 사람들도 있는데
+Y: 주민 중에 육지에서 온 사람들도 있는데...
 @char Y.Face>웃는,Body>브이
-Y: 모두 해록도가 훨~씬 살기 좋다고 하더라고요!	
+Y: 모두 해록도가 훨~씬 살기 좋다고 하더라고요!
 Y: 그리고...
 @char Y.Face>웃는,Body>기본
-Y: 보다시피 해록도가 너무너무 아름답잖아요?	
+Y: 보다시피 해록도가 너무너무 아름답잖아요?
 @printer Narration time:0
 @char Y.Face>아련,Body>기본
-유겸은 눈을 내리깐 채 조용히 웃으며 말을 이었다
-Y: 한 번 오면... 다신 떠나고 싶지 않을 만큼
+유겸은 눈을 내리깐 채 조용히 웃으며 말을 이었다.
+Y: 한 번 오면... 다신 떠나고 싶지 않을 만큼.
 @printer Narration time:0
 @char Y.Face>기본,Body>기본
-뭐지, 방금 분위기가 갑자기 묘하게 어른스러워졌는데?	
-J: 맞아 아름답긴 하더라
+뭐지, 방금 분위기가 갑자기 묘하게 어른스러워졌는데?
+J: 맞아 아름답긴 하더라.
 @char Y.Face>웃는,Body>기본
-J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야
+J: 누구든 해록도를 보면 여기 머물고 싶다고 생각할 거야.
 @printer Narration time:0
-나는 어제 배 위에서 처음 본 해록도의 전경을 다시 되뇌었다
+나는 어제 배 위에서 처음 본 해록도의 전경을 다시 되뇌었다.
 @goto .Forest
 
 #Forest
 @stopSfx 파도
-J: 아, 그런데 해록도가 생태보전 구역이잖아 동백나무 숲이 엄청 아름답다던데...
+J: 아, 그런데 해록도가 생태보호 구역이잖아 동백나무 숲이 엄청 아름답다던데...
 @sfx 슝
 @char Y.Face>기본,Body>기본 position:-0.25,-21.5 scale:1.3
-Y: 맞아요! 누나 설마 동백나무 숲 가보고 싶어요?
+Y: 누나 혹시, 동백나무 숲을 가보고 싶어요?
 @char Y.Face>기본,Body>기본 position:-0.25,-15 scale:1
 J: 응 당연하지!
 @printer Narration time:0
-내 대답을 들은 유겸이 잠시 난감한 표정을 지었다
+내 대답을 들은 유겸이 잠시 난감한 표정을 지었다.
 @char Y.Face>아련,Body>입에손
 Y: 음... 그런데 거기는...
 J: 왜, 왜그래 갑자기?
 @char Y.Face>웃는,Body>기본
-Y: 아니에요, 누나가 가고 싶다면 가야죠...
+Y: 아니... 누나가 가고 싶다면 가야지... 
 @char Y.Face>아련,Body>기본
-Y: 하지만... 후회할 수도 있어요
+Y: 하지만... 후회할 수도 있어요.
 
 @hide Y
 @hidePrinter
