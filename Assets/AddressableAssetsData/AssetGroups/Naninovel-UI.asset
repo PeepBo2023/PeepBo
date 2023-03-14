@@ -17,28 +17,58 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 711b0b6527cba4c4dafaeef51d1b4cfd
   m_SerializeEntries:
+  - m_GUID: 07f64df177a22d448a584f7e5a45267c
+    m_Address: Naninovel/UI/2-5RoomPopup4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: eaa0bb5889fc1c2479acbb6444adb440
+    m_Address: Naninovel/UI/2-5RoomPopup3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 1e4b9dbe06cdf894cb20116ec7103034
+    m_Address: Naninovel/UI/AgainShaker
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 9539c433e5fac2747b4ea9549ea839c0
+    m_Address: Naninovel/UI/2-5Shaker2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: eb9bc039deddc204a9e645cf027fc09b
+    m_Address: Naninovel/UI/Shaker
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: fae19d28058e0f7478c78f5c7efcbd7f
+    m_Address: Naninovel/UI/2-5Shaker
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
   - m_GUID: 9ad8bc95500509d419b9525b0ed88f7b
     m_Address: Naninovel/UI/EpisodeTitle
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
   - m_GUID: 9d89027ec696be244ac50155ff87141d
-    m_Address: Naninovel/UI/2-6RoomPopup2
+    m_Address: Naninovel/UI/2-5RoomPopup2
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
   - m_GUID: 7339194a4e63cc9419d2274384477b82
-    m_Address: Naninovel/UI/2-6RoomPopup1
+    m_Address: Naninovel/UI/2-5RoomPopup1
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
   - m_GUID: c62843ac8383e9942bb348e23b06ae5a
-    m_Address: Naninovel/UI/2-6Clicker2
+    m_Address: Naninovel/UI/2-5Clicker2
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
   - m_GUID: e0001dda69680764abdba1c812b084cf
-    m_Address: Naninovel/UI/2-6Clicker
+    m_Address: Naninovel/UI/2-5Clicker
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel

@@ -17,6 +17,96 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: e51fefb1fdf3d8d4abbe5f83aa8fa572
   m_SerializeEntries:
+  - m_GUID: 5c0959049f7c278498522f40f3956c67
+    m_Address: Naninovel/Scripts/Script210
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 981407756d709854ea6222c7ca957312
+    m_Address: Naninovel/Scripts/Script209
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 0bc2db82bff01b344a6266dcb272733f
+    m_Address: Naninovel/Scripts/Script208
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: f6b6c6aacdc8e0b48b6831a3ce6679bd
+    m_Address: Naninovel/Scripts/Script207
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 0ec1a8c5a15d0854e8b1b57bdbef3dbb
+    m_Address: Naninovel/Scripts/Script205
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 7b1880360207a9a419bfd85ab64af6b9
+    m_Address: Naninovel/Scripts/Script204
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 967f5a0404c434c45a9b084ea5c6d0ea
+    m_Address: Naninovel/Scripts/Script203
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: d5c7f6fbc1f4e6540b8c09649843f9e3
+    m_Address: Naninovel/Scripts/Script202
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 116a939c6031f2549a3131c0e7183b4c
+    m_Address: Naninovel/Scripts/Script303
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: c04c39cc361325d478f77d96c7ec4fdb
+    m_Address: Naninovel/Scripts/Script304
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 9e124f12f28e8fb44a2547825faa72db
+    m_Address: Naninovel/Scripts/Script305
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 42b207d5ff3a40e47842cb3447bcd9a3
+    m_Address: Naninovel/Scripts/Script306
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 813154bfc92ddd144a4f24c8b245b368
+    m_Address: Naninovel/Scripts/Script307
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 8531d50ada6fb1e41b5c0a129db41608
+    m_Address: Naninovel/Scripts/Script308
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: ba9e660947197db4aad2ce346a4174e7
+    m_Address: Naninovel/Scripts/Script309
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: b52a344771be1f148b56e3938bd690b8
+    m_Address: Naninovel/Scripts/Script302
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: c3b94225f9c9eed4799e5147e52af7cf
+    m_Address: Naninovel/Scripts/Script301
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 019dbc5c672896e4bb514e869ec9fd00
+    m_Address: Naninovel/Scripts/Script201
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
   - m_GUID: 57e096249daac284b9a60736bf21bdc2
     m_Address: Naninovel/Scripts/ScriptW000
     m_ReadOnly: 0

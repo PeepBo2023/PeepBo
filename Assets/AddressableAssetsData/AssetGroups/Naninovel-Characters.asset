@@ -17,6 +17,26 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b2f2df24830bbec49a21b663e16e3e24
   m_SerializeEntries:
+  - m_GUID: 0b8c227789b797246889d8079b6947fd
+    m_Address: Naninovel/Characters/Cut/Pendant
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: cceb1357d1057984e81cc09e57c22866
+    m_Address: Naninovel/Characters/Cut/WooBook
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 5a1eb01c403d03a44ba373a0b97e0a32
+    m_Address: Naninovel/Characters/Cut/StoreDoor
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: 8baeb447d5b25b84688a9ff36cc2d869
+    m_Address: Naninovel/Characters/Cut/ChildhoodPhoto
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
   - m_GUID: f78edc2aafdb5764bb90165c7700ab21
     m_Address: Naninovel/Characters/Cut/FlowerCrown
     m_ReadOnly: 0
