@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 313798485}
   - component: {fileID: 313798486}
   - component: {fileID: 313798487}
+  - component: {fileID: 313798488}
   m_Layer: 0
   m_Name: '@Scene'
   m_TagString: Untagged
@@ -264,6 +265,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &313798488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313798484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5baf76c9a824fe3a92fad0380bbd78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleKey: 96
+  openOnStart: 0
+  shakeToOpen: 1
+  shakeRequiresTouch: 0
+  shakeAcceleration: 3
+  toggleThresholdSeconds: 0.5
+  restrictLogCount: 0
+  maxLogCount: 1000
+  collapseLogOnStart: 0
+  logFontSize: 12
+  scaleFactor: 1
 --- !u!1 &915594068
 GameObject:
   m_ObjectHideFlags: 0
