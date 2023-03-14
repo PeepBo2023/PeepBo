@@ -127,33 +127,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
-  - m_GUID: 7568a3c84e928354782ff45d1e00b51f
-    m_Address: Naninovel/Backgrounds/MainBackground/ParadiseInsideNight
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
   - m_GUID: 8f966c37384d74145ad7c15bab38cc28
     m_Address: Naninovel/Backgrounds/MainBackground/ParadiseInsideDay
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: 8fb1fa61cadaf3a4a95222667cde3f9e
-    m_Address: Naninovel/Backgrounds/MainBackground/ParadiseOutsideNight_cut
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: 8b6be6e8d48c75e41903715db6697e47
-    m_Address: Naninovel/Backgrounds/MainBackground/ParadiseOutsideNight
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: 7a56e97ac117436458f5ed975bcce4e8
-    m_Address: Naninovel/Backgrounds/MainBackground/ParadiseOutsideDay_cut
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: 5fc19a49777083543a06c3fb28840dd5
-    m_Address: Naninovel/Backgrounds/MainBackground/ParadiseOutsideDay
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
@@ -172,23 +147,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
-  - m_GUID: 3be969e174206cc4ab16f133b59ea4a2
-    m_Address: Naninovel/Backgrounds/MainBackground/StoreDay
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
   - m_GUID: 859f1163d25042844a953d1e21ae5503
     m_Address: Naninovel/Backgrounds/MainBackground/ForestNightBlood
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: 78584917595c236468ad79dde0bfb0f2
-    m_Address: Naninovel/Backgrounds/MainBackground/ForestNight
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: 692b272cbdd02124288161fdf8d2bb49
-    m_Address: Naninovel/Backgrounds/MainBackground/ForestDay
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
@@ -202,23 +162,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
-  - m_GUID: 21af9e9f52a69204b850b397fff54f0c
-    m_Address: Naninovel/Backgrounds/MainBackground/LighthouseDay
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: a88f759698b14e7499d96b296bdce8e2
-    m_Address: Naninovel/Backgrounds/MainBackground/DockDay
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
   - m_GUID: 8f1b4eddf3130d447979dc5a0cfdcf99
     m_Address: Naninovel/Backgrounds/MainBackground/StreetNight
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: e13cb99a3c44a9642af3575f03b0bc55
-    m_Address: Naninovel/Backgrounds/MainBackground/StreetDay
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
@@ -232,11 +177,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel
-  - m_GUID: d82d8f20d2407c84bad3b8995bd0f565
-    m_Address: Naninovel/Backgrounds/MainBackground/HallDay
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
   - m_GUID: f89b26f59d968ea4ba0585facf56e5f7
     m_Address: Naninovel/Backgrounds/MainBackground/Hospital
     m_ReadOnly: 0
@@ -244,11 +184,6 @@ MonoBehaviour:
     - Naninovel
   - m_GUID: 2f819926ce0ea6f498fa86a29736506e
     m_Address: Naninovel/Backgrounds/MainBackground/JianRoomNight
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: 5a284a6c0d602744f91ef8b1e25440d0
-    m_Address: Naninovel/Backgrounds/MainBackground/JianRoomDay
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel

@@ -464,7 +464,7 @@ MonoBehaviour:
       guid: b06b61a11282baf418f9f0730b4e2bf2
     - name: JianRoomDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 5a284a6c0d602744f91ef8b1e25440d0
+      guid: d0083bafd0f670044ae7b1b62719534b
     - name: JianRoomNight
       pathPrefix: Backgrounds/MainBackground
       guid: 2f819926ce0ea6f498fa86a29736506e
@@ -473,7 +473,7 @@ MonoBehaviour:
       guid: f89b26f59d968ea4ba0585facf56e5f7
     - name: HallDay
       pathPrefix: Backgrounds/MainBackground
-      guid: d82d8f20d2407c84bad3b8995bd0f565
+      guid: 2d1ae380bc939134ebc02702e3802215
     - name: HallNight_on
       pathPrefix: Backgrounds/MainBackground
       guid: ad9d5df22ee6bfd4fb119411fffe008b
@@ -482,13 +482,13 @@ MonoBehaviour:
       guid: 1a926bd43aa0452469838557cac4f4cd
     - name: StreetDay
       pathPrefix: Backgrounds/MainBackground
-      guid: e13cb99a3c44a9642af3575f03b0bc55
+      guid: ca0e445c0b37ff843936cf8eaccd7d51
     - name: StreetNight
       pathPrefix: Backgrounds/MainBackground
       guid: 8f1b4eddf3130d447979dc5a0cfdcf99
     - name: DockDay
       pathPrefix: Backgrounds/MainBackground
-      guid: a88f759698b14e7499d96b296bdce8e2
+      guid: a8bee549d7883974f855b6a691fcb843
     - name: LighthouseDay
       pathPrefix: Backgrounds/MainBackground
       guid: 21af9e9f52a69204b850b397fff54f0c
@@ -500,16 +500,16 @@ MonoBehaviour:
       guid: a45646716e71ebb4d8bb470b870972d1
     - name: ForestDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 692b272cbdd02124288161fdf8d2bb49
+      guid: 517f96e7e55ab4a47a34f8754c00e382
     - name: ForestNight
       pathPrefix: Backgrounds/MainBackground
-      guid: 78584917595c236468ad79dde0bfb0f2
+      guid: 221b3341f11a3844a8c35eeb0703a32d
     - name: ForestNightBlood
       pathPrefix: Backgrounds/MainBackground
       guid: 859f1163d25042844a953d1e21ae5503
     - name: StoreDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 3be969e174206cc4ab16f133b59ea4a2
+      guid: 640e10ca759ffed47871dcd49b4720d5
     - name: StoreEye
       pathPrefix: Backgrounds/MainBackground
       guid: 4b96165fc4af6e14eac4d3adbbf3d032
@@ -521,22 +521,22 @@ MonoBehaviour:
       guid: 3534a4ba3c179974b9b799f3f547349b
     - name: ParadiseOutsideDay
       pathPrefix: Backgrounds/MainBackground
-      guid: 5fc19a49777083543a06c3fb28840dd5
+      guid: e54bb7505719a36499861ad71d894ef8
     - name: ParadiseOutsideDay_cut
       pathPrefix: Backgrounds/MainBackground
-      guid: 7a56e97ac117436458f5ed975bcce4e8
+      guid: a44bcc2c23cf1f94c9db83fdd71959ac
     - name: ParadiseOutsideNight
       pathPrefix: Backgrounds/MainBackground
-      guid: 8b6be6e8d48c75e41903715db6697e47
+      guid: d5766ddedfb95ce4d8e1d195f8df7b0f
     - name: ParadiseOutsideNight_cut
       pathPrefix: Backgrounds/MainBackground
-      guid: 8fb1fa61cadaf3a4a95222667cde3f9e
+      guid: 9b907f44b0213df46a003d342338c470
     - name: ParadiseInsideDay
       pathPrefix: Backgrounds/MainBackground
       guid: 8f966c37384d74145ad7c15bab38cc28
     - name: ParadiseInsideNight
       pathPrefix: Backgrounds/MainBackground
-      guid: 7568a3c84e928354782ff45d1e00b51f
+      guid: 7e2e4ec48b094a44e94d7b89f54a79d4
     - name: ChurchInTheForest
       pathPrefix: Backgrounds/MainBackground
       guid: 75c7ad8f3262cab45abd0aa188082db0
