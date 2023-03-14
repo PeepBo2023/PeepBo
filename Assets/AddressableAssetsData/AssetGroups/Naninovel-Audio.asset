@@ -17,16 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 07fd207b9ac098140ae229d41a39ea2b
   m_SerializeEntries:
-  - m_GUID: 6607dfd1d4024b24eaa89659524692b1
-    m_Address: "Naninovel/Audio/206_\uBB38_\uC138\uAC8C_\uB178\uD06C"
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
-  - m_GUID: f4ce79d29a7b33147b7a7d0c9b462e21
-    m_Address: "Naninovel/Audio/206_\uBB38_\uC138\uAC8C_\uB2EB\uB294_\uC18C\uB9AC"
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Naninovel
   - m_GUID: 59be5f0a070d5654e866f0f7df1fef19
     m_Address: "Naninovel/Audio/\uD480\uBC8C\uB808"
     m_ReadOnly: 0
@@ -119,6 +109,11 @@ MonoBehaviour:
     - Naninovel
   - m_GUID: ca11b42e5da68344bad00d02671534be
     m_Address: "Naninovel/Audio/\uCC60\uC784\uBCA8"
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Naninovel
+  - m_GUID: f4ce79d29a7b33147b7a7d0c9b462e21
+    m_Address: "Naninovel/Audio/\uBB38_\uC138\uAC8C_\uB2EB\uB294_\uC18C\uB9AC"
     m_ReadOnly: 0
     m_SerializedLabels:
     - Naninovel

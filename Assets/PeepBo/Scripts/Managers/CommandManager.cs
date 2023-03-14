@@ -13,6 +13,7 @@ namespace PeepBo.Managers
     {
         public StringParameter ScriptName { get; set; } = null;
         public StringParameter ClickerName { get; set; } = null;
+        public StringParameter ShakerName { get; set; } = null;
 
         public void SwitchToNovelByRoom(StringParameter scriptName, StringParameter label)
         {
@@ -22,6 +23,11 @@ namespace PeepBo.Managers
         public void SwitchToNovelByClicker()
         {
             new SwitchToNovelMode { ScriptName = ScriptName, Label = ClickerName }.ExecuteAsync().Forget();
+        }
+
+        public void SwitchToNovelByShaker()
+        {
+            new SwitchToNovelMode { ScriptName = ScriptName, Label = ShakerName }.ExecuteAsync().Forget();
         }
     }
 
@@ -94,15 +100,37 @@ namespace PeepBo.Managers
         }
     }
 
-/*    [CommandAlias("vibrate")]
-    public class Vibrate : Command
+    [CommandAlias("shaker")]
+    public class SwitchToShakerMode : Command
     {
-        [ParameterAlias("time")] public IntegerParameter Time; // float가 없어서 int로 대체, 0.1초면 1에 해당
+        [ParameterAlias("scriptname")] public StringParameter ScriptName; // 쉐이커를 실행 할 나니스크립트
+        [ParameterAlias("shakerName")] public StringParameter ShakerName; // 실행 시킬 쉐이커UI 이름
+
         public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
         {
-            VibrateManager.Vibrate(Time*100);
+            var showUI = new ShowUI { UINames = new List<string> { ShakerName } };
+            showUI.ExecuteAsync(asyncToken).Forget();
+
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            scriptPlayer.Stop();
+
+            var hidePrinter = new HidePrinter();
+            hidePrinter.ExecuteAsync(asyncToken).Forget();
+
+            GameManager.Command.ScriptName = ScriptName;
+            GameManager.Command.ShakerName = ShakerName;
         }
-    }*/
+    }
+
+    /*    [CommandAlias("vibrate")]
+        public class Vibrate : Command
+        {
+            [ParameterAlias("time")] public IntegerParameter Time; // float가 없어서 int로 대체, 0.1초면 1에 해당
+            public override async UniTask ExecuteAsync(AsyncToken asyncToken = default)
+            {
+                VibrateManager.Vibrate(Time*100);
+            }
+        }*/
 
     [CommandAlias("room")]
     public class SwitchToRoomMode : Command

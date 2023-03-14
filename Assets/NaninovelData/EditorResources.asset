@@ -260,6 +260,24 @@ MonoBehaviour:
     - name: EpisodeTitle
       pathPrefix: UI
       guid: 9ad8bc95500509d419b9525b0ed88f7b
+    - name: 2-5Shaker
+      pathPrefix: UI
+      guid: fae19d28058e0f7478c78f5c7efcbd7f
+    - name: Shaker
+      pathPrefix: UI
+      guid: eb9bc039deddc204a9e645cf027fc09b
+    - name: 2-5Shaker2
+      pathPrefix: UI
+      guid: 9539c433e5fac2747b4ea9549ea839c0
+    - name: AgainShaker
+      pathPrefix: UI
+      guid: 1e4b9dbe06cdf894cb20116ec7103034
+    - name: 2-5RoomPopup3
+      pathPrefix: UI
+      guid: eaa0bb5889fc1c2479acbb6444adb440
+    - name: 2-5RoomPopup4
+      pathPrefix: UI
+      guid: 07f64df177a22d448a584f7e5a45267c
   - Id: Scripts
     Resources:
     - name: Script101

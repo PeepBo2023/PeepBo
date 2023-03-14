@@ -238,16 +238,40 @@ J: 동화책…?
 @printer Narration time:0
 어린이 동화책 시리즈가 박스 안에 가득 담겨있었다
 J: 천사의 집 아이들이 읽는 건가?
+
+; 동화책 CUT
+@showUI 2-5RoomPopup3
+@wait i
+@hideUI 2-5RoomPopup3
+
 @printer Narration time:0
 맨위에 놓인 동화책 한권을 집어드니 끄트머리에 쓰여있는 글자가 보였다
 J: 으… 뭐라고 써있는 거 같은데…
 @printer Narration time:0
 어두운데다 오랜시간 쌓인 먼지가 늘러 붙어있어 잘 읽히지 않았다
 먼지를 털어내야겠어.
-; 튜토리얼 쉐이킹
+
+; 쉐이커
+@hidePrinter
+@showUI Shaker
+@wait i
+@hideUI Shaker
+@shaker scriptname:"Script205" shakerName:"2-5Shaker"
+
+# 2-5Shaker
+
 J: 콜록, 콜록…! 잘 안 걷어지네…
 ; 시스템 창		다시 한 번 먼지를 털어내보자!
-; 튜토리얼 쉐이킹
+
+; 쉐이커2
+@hidePrinter
+@showUI AgainShaker
+@wait i
+@hideUI AgainShaker
+@shaker scriptname:"Script205" shakerName:"2-5Shaker2"
+
+# 2-5Shaker2
+
 @printer Narration time:0
 뿌옇게 올라오는 먼지에 서둘러 입과 코를 가렸다
 J: 어우, 먼지 맞아? 뿌연 가루 같기도 하고…
@@ -278,6 +302,13 @@ J: 어?
 J: 이게 뭐, 달러 잖아?!
 J: 이 작은 섬에 웬…
 J: 앗!
+
+; 달러뭉치
+@showUI 2-5RoomPopup4
+@wait i
+@hideUI 2-5RoomPopup4
+
+
 @printer Narration time:0
 나는 빠르게 달러 뭉치를 가방에 넣고 주위를 둘러봤다
 J: 누가 보면 오해받기 십상이겠어
