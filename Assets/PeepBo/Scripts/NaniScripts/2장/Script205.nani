@@ -31,7 +31,7 @@ J: 으흠...
 @hidePrinter
 @stop
 
-#b
+#a
 J: 저기들 숨어있구나? 들어가보자.
 @printer Narration time:0
 기척을 죽이고 다가가 살그머니 문을 당기자,
@@ -39,7 +39,7 @@ J: 저기들 숨어있구나? 들어가보자.
 낡은 문에선 생각보다 큰 소음이 들렸다.
 @goto .con1
 
-#a
+#b
 J: 사유지 같아 보이는데… 들어가지 말자.
 J: 여기 앉아있으면 애들이 지쳐서 나오겠지.
 @printer Narration time:0
